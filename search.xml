@@ -130,37 +130,51 @@
   <entry>
     <title>Windows环境下配置Emacs+LaTeX</title>
     <url>/2021/11/27/LaTeXConfigure/</url>
-    <content><![CDATA[<h2 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h2>
-<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋</p>
-<p>beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
 <span id="more"></span>
-<h2 id="下载过程"><a class="markdownIt-Anchor" href="#下载过程"></a> 下载过程</h2>
+<h2 id="下载过程">下载过程</h2>
 <p>一开始就走了弯路，没注意到无论是Linux还是Windows环境，都需要先准备好LaTeX环境，还以为能通过下Emacs的插件可以直接编译LaTeX</p>
-<h3 id="tex-live下载"><a class="markdownIt-Anchor" href="#tex-live下载"></a> Tex Live下载</h3>
-<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group (tug.org)</a></p>
-<p>Tex Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex Live的环境，时间1小时往上</p>
-<p><a href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
-<p>另一种是下载iso文件，点击on DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
-<p><a href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
-<p><a href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
-<p><a href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
+<h3 id="tex-live下载">Tex Live下载</h3>
+<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group
+(tug.org)</a></p>
+<p>Tex
+Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex
+Live的环境，时间1小时往上</p>
+<p><a
+href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
+<p>另一种是下载iso文件，点击on
+DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
+<p><a
+href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
 <p>可以选择下载带有包管理器的基本版，沒有的东西可以用包管理器装</p>
-<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code> 出版本号就基本可以确定安装成功了</p>
-<h3 id="emacs插件安装"><a class="markdownIt-Anchor" href="#emacs插件安装"></a> Emacs插件安装</h3>
+<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code>
+出版本号就基本可以确定安装成功了</p>
+<h3 id="emacs插件安装">Emacs插件安装</h3>
 <p>在emacs中输入<code>M-x package-install RET *** RET</code></p>
 <p>***={auctex，yasnippets，yasnippets-snippets}</p>
-<h2 id="tex导出中文"><a class="markdownIt-Anchor" href="#tex导出中文"></a> Tex导出中文</h2>
+<h2 id="tex导出中文">Tex导出中文</h2>
 <p>将以下添加到.emacs.d/init.el文件里面，设置xelatex为默认latex编译器</p>
 <figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line"><span class="comment">; LaTex插件</span></span><br><span class="line">(<span class="name">add-to-list</span> &#x27;load-path <span class="string">&quot;~/.emacs.d/elpa&quot;</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">require</span> &#x27;yasnippet)</span><br><span class="line">(<span class="name">yas-global-mode</span> <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">setq</span> TeX-output-view-style (<span class="name">quote</span> ((<span class="string">&quot;^pdf$&quot;</span> <span class="string">&quot;.&quot;</span> <span class="string">&quot;evince %o %(outpage)&quot;</span>))))</span><br><span class="line"></span><br><span class="line">(<span class="name">add-hook</span> &#x27;LaTeX-mode-hook</span><br><span class="line">(<span class="name">lambda</span>()</span><br><span class="line">(<span class="name">add-to-list</span> &#x27;TeX-command-list &#x27;(<span class="string">&quot;XeLaTeX&quot;</span> <span class="string">&quot;%`xelatex%(mode)%&#x27; %t&quot;</span> TeX-run-TeX nil t))</span><br><span class="line">(<span class="name">setq</span> TeX-command-default <span class="string">&quot;XeLaTeX&quot;</span>)))</span><br></pre></td></tr></table></figure>
-<h2 id="编译"><a class="markdownIt-Anchor" href="#编译"></a> 编译</h2>
-<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c C-l</code> 可以看到是用什么编译的</p>
+<h2 id="编译">编译</h2>
+<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c
+C-l</code> 可以看到是用什么编译的</p>
 <p><code>C-C C-V</code>可以直接打开新建的pdf文件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\usepackage&#123;xeCJK, fontspec, xunicode, xltxtra&#125;</span><br><span class="line">\usepackage&#123;amsmath&#125;</span><br><span class="line"></span><br><span class="line">\CTEXsetup[name=&#123;第,节&#125;,number=&#123;\chinese&#123;section&#125;&#125;]&#123;section&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line"></span><br><span class="line">\section&#123;你好中国&#125;</span><br><span class="line">中国在East Asia.</span><br><span class="line"></span><br><span class="line">\subsection&#123;Hello Beijing&#125;</span><br><span class="line">北京是capital of China.</span><br><span class="line"></span><br><span class="line">\subsubsection&#123;Hello Dongcheng District&#125;</span><br><span class="line">\paragraph&#123;Tian&#x27;anmen Square&#125;</span><br><span class="line">is in the center of Beijing</span><br><span class="line">\subparagraph&#123;Chairman Mao&#125;</span><br><span class="line">is in the center of 天安门广场。</span><br><span class="line">\subsection&#123;Hello 山东&#125;</span><br><span class="line">\paragraph&#123;山东大学&#125; is one of the best university in 山东。</span><br><span class="line"></span><br><span class="line">這是繁體中文。</span><br><span class="line"></span><br><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line"> \hline</span><br><span class="line">操作系统&amp; 发行版&amp; 编辑器\\</span><br><span class="line"> \hline</span><br><span class="line">Windows &amp; MikTeX &amp; TexMakerX \\</span><br><span class="line"> \hline</span><br><span class="line">Unix/Linux &amp; teTeX &amp; Kile \\</span><br><span class="line"> \hline</span><br><span class="line">Mac OS &amp; MacTeX &amp; TeXShop \\</span><br><span class="line"> \hline</span><br><span class="line">通用&amp; TeX Live &amp; TeXworks \\</span><br><span class="line"> \hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line"></span><br><span class="line">$$\int_0^1 \frac&#123;1&#125;&#123;e^x&#125; =  \frac&#123;e-1&#125;&#123;e&#125;$$</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
-<p><a href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
-<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p><a
+href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
+<h2 id="总结">总结</h2>
 <ul>
-<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code> 。使用<code>C-c C-l</code> 提示 ‘pdflatex’ 不是内部或外部命令，也不是可运行的程序或批处理文件</li>
+<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c
+C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
+。使用<code>C-c C-l</code> 提示 ‘pdflatex’
+不是内部或外部命令，也不是可运行的程序或批处理文件</li>
 <li>pdflatex 和 xelatex 都是 texlive 的一部分</li>
 </ul>
 ]]></content>
