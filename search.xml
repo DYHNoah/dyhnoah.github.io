@@ -94,6 +94,40 @@
       </tags>
   </entry>
   <entry>
+    <title>台服5月摩羯座会战</title>
+    <url>/2020/06/09/Clan-Capricorn/</url>
+    <content><![CDATA[<p>本文主要讲述台服2020年5月魔羯座公会战情况。</p>
+<span id="more"></span>
+<h2 id="本期情况"><a class="markdownIt-Anchor" href="#本期情况"></a> 本期情况</h2>
+<p>台服本期是摩羯座，属于春黑第一个月，终于自己体会到了春黑刀的恶心之处。</p>
+<p>首先讲本期我所在的公会情况吧，上期由于冲300最后220，当时大家都打得挺累的，所以本期的计划是随缘300，会内不进行排刀，也不要求必出春黑刀，当然追梦随意，最后这期体感上大家比上期更休闲，最后排名270。</p>
+<h2 id="出刀"><a class="markdownIt-Anchor" href="#出刀"></a> 出刀</h2>
+<p>对于100-300的会来说，我个人感觉，本期最好出两春黑刀，一刀物理，然后垃圾刀全丢五王应该是没问题的。本期5个boss都有春黑一刀的作业，从一阶段到三阶段用上的春黑工具人有：镜子、充电宝、黄骑、露娜、水黑、春田、中二、水电、nnk、mcw、春女仆、圣千、莫妮卡。</p>
+<p>春黑来了后，300会就能一天打进三阶段了，第一天建议早出刀，晚出刀面对三阶段没有作业还是挺难受的。而本期我比较偷懒，3王的春黑轴比较简单，所以这期我出335或者235，3来一刀春黑，2或者3可能填一刀物理，5再来一个不能一刀的春黑刀。</p>
+<p>春黑的常见三件套，露娜、黄骑、中二，我个人没有露娜，所以没法出两刀这样的春黑刀。</p>
+<h2 id="感受"><a class="markdownIt-Anchor" href="#感受"></a> 感受</h2>
+<p>简单说下打完第一期春黑刀后我对于春黑的感受吧。</p>
+<p>利：1个月能拿相当于过去2.5个月的战队币，对于战队币比较缺的玩家来说合适，一刀一个boss，可能不会因为大尾巴卡住，或者说卡住的情况会变少。</p>
+<p>弊：<strong>凹暴击</strong>，如果春黑开始暴击不够，后续的伤害也叠不起来；<strong>费时长</strong>，有些春黑刀需要打很久，new year burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸色；<strong>伤害上下差距拉大</strong>，春黑之前的法队和物理队作业伤害差距不会太大，可能有个200w，但春黑来后都是一刀一个boss，如果你不出春黑刀，你就会被拉开，强行逼着你春黑刀。</p>
+<p>总的来说，通过观察日服春黑诞生至今的会战，可以毫不夸张地说，春黑是pcr里面设计得非常失败的角色，春黑的核心在于频繁地释放ub，ub效果如下：</p>
+<blockquote>
+<p>對敵方單體造成 56671 【60.0 + 60.0*技能等級 + 4.8 *atk】的魔法傷害。</p>
+<p>技能說明補正：攻擊 * 0.1125。</p>
+<p>提升自身1550 【10.0 + 10.0*技能等級】的魔法攻擊力。</p>
+<p>持續：【18.0】 秒。</p>
+</blockquote>
+<p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
+<p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows环境下配置Emacs+LaTeX</title>
     <url>/2021/11/27/LaTeXConfigure/</url>
     <content><![CDATA[<p>本文主要讲述Windows配置Emacs+LaTeX环境。</p>
@@ -296,113 +330,28 @@
       </tags>
   </entry>
   <entry>
-    <title>台服5月摩羯座会战</title>
-    <url>/2020/06/09/Clan-Capricorn/</url>
-    <content><![CDATA[<p>本文主要讲述台服2020年5月魔羯座公会战情况。</p>
-<span id="more"></span>
-<h2 id="本期情况"><a class="markdownIt-Anchor" href="#本期情况"></a> 本期情况</h2>
-<p>台服本期是摩羯座，属于春黑第一个月，终于自己体会到了春黑刀的恶心之处。</p>
-<p>首先讲本期我所在的公会情况吧，上期由于冲300最后220，当时大家都打得挺累的，所以本期的计划是随缘300，会内不进行排刀，也不要求必出春黑刀，当然追梦随意，最后这期体感上大家比上期更休闲，最后排名270。</p>
-<h2 id="出刀"><a class="markdownIt-Anchor" href="#出刀"></a> 出刀</h2>
-<p>对于100-300的会来说，我个人感觉，本期最好出两春黑刀，一刀物理，然后垃圾刀全丢五王应该是没问题的。本期5个boss都有春黑一刀的作业，从一阶段到三阶段用上的春黑工具人有：镜子、充电宝、黄骑、露娜、水黑、春田、中二、水电、nnk、mcw、春女仆、圣千、莫妮卡。</p>
-<p>春黑来了后，300会就能一天打进三阶段了，第一天建议早出刀，晚出刀面对三阶段没有作业还是挺难受的。而本期我比较偷懒，3王的春黑轴比较简单，所以这期我出335或者235，3来一刀春黑，2或者3可能填一刀物理，5再来一个不能一刀的春黑刀。</p>
-<p>春黑的常见三件套，露娜、黄骑、中二，我个人没有露娜，所以没法出两刀这样的春黑刀。</p>
-<h2 id="感受"><a class="markdownIt-Anchor" href="#感受"></a> 感受</h2>
-<p>简单说下打完第一期春黑刀后我对于春黑的感受吧。</p>
-<p>利：1个月能拿相当于过去2.5个月的战队币，对于战队币比较缺的玩家来说合适，一刀一个boss，可能不会因为大尾巴卡住，或者说卡住的情况会变少。</p>
-<p>弊：<strong>凹暴击</strong>，如果春黑开始暴击不够，后续的伤害也叠不起来；<strong>费时长</strong>，有些春黑刀需要打很久，new year burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸色；<strong>伤害上下差距拉大</strong>，春黑之前的法队和物理队作业伤害差距不会太大，可能有个200w，但春黑来后都是一刀一个boss，如果你不出春黑刀，你就会被拉开，强行逼着你春黑刀。</p>
-<p>总的来说，通过观察日服春黑诞生至今的会战，可以毫不夸张地说，春黑是pcr里面设计得非常失败的角色，春黑的核心在于频繁地释放ub，ub效果如下：</p>
-<blockquote>
-<p>對敵方單體造成 56671 【60.0 + 60.0*技能等級 + 4.8 *atk】的魔法傷害。</p>
-<p>技能說明補正：攻擊 * 0.1125。</p>
-<p>提升自身1550 【10.0 + 10.0*技能等級】的魔法攻擊力。</p>
-<p>持續：【18.0】 秒。</p>
-</blockquote>
-<p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
-<p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Qt中使用Sqlite</title>
-    <url>/2021/11/15/Qt-sql/</url>
-    <content><![CDATA[<p>在Qt中使用Sqlite的一些笔记。 <span id="more"></span></p>
-<h2 id="背景">背景</h2>
-<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
-<h2 id="使用">使用</h2>
-<h3 id="头文件准备">头文件准备</h3>
-<p>首先在.pro文件里加入</p>
-<blockquote>
-<p>QT += sql</p>
-</blockquote>
-<p>然后在.h文件里加入</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="库函数调用">库函数调用</h3>
-<ul>
-<li><p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p></li>
-<li><p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure></li>
-<li><p>QSqlQuery
-sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
-<p>可以直接用.exec(const QString&amp;
-query)执行query里面的sql语句内容</p>
-<p>也可以使用.prepare(const QString&amp; query),
-.exec()预先输入query里的sql语句，再加以执行</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
-<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p></li>
-</ul>
-<h2 id="ubuntu小工具">Ubuntu小工具</h2>
-<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu
-sqlite可视化工具<strong>Sqlite Browser</strong></p>
-]]></content>
-      <categories>
-        <category>Qt</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LeetCode 138 复制带随机指针的链表</title>
     <url>/2021/11/14/leetcode-138/</url>
-    <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
-<p><a
-href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode
-138题目链接</a></p>
-<h2 id="题目大意">题目大意</h2>
+    <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。</p>
+<span id="more"></span>
+<p><a href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode 138题目链接</a></p>
+<h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
 <p>一个链表，定义如下</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    Node* next;</span><br><span class="line">    Node* random;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Node</span>(<span class="keyword">int</span> _val) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        next = <span class="literal">NULL</span>;</span><br><span class="line">        random = <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>除了常规的val值和next指针，还有一个random指针，该指针可以指向链表中的任何节点或空节点。</p>
-<p><a href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img
-src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"
-alt="链表图" /></a></p>
-<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个
-<strong>全新</strong>
-节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
-指针和 random
-指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong>
-。</p>
-<h2 id="题目难点">题目难点</h2>
+<p><a href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png" alt="链表图" /></a></p>
+<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个 <strong>全新</strong> 节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next 指针和 random 指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong> 。</p>
+<h2 id="题目难点"><a class="markdownIt-Anchor" href="#题目难点"></a> 题目难点</h2>
 <p>如果只是常规地复制链表，很容易就能实现。该题不同之处在于每个节点有一个random指针，它可能指向任意的一个节点，可能指向前面也可能指向后面，在目前还没有初始化的节点，所以对于random指针的处理是本题的关键</p>
-<h2 id="解题思路">解题思路</h2>
-<h3 id="方法一-map">方法一 Map</h3>
-<p>利用C++
-STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
-<h3 id="方法二-在原节点的基础上修改">方法二 在原节点的基础上修改</h3>
+<h2 id="解题思路"><a class="markdownIt-Anchor" href="#解题思路"></a> 解题思路</h2>
+<h3 id="方法一-map"><a class="markdownIt-Anchor" href="#方法一-map"></a> 方法一 Map</h3>
+<p>利用C++ STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
+<h3 id="方法二-在原节点的基础上修改"><a class="markdownIt-Anchor" href="#方法二-在原节点的基础上修改"></a> 方法二 在原节点的基础上修改</h3>
 <p>在链表的每个节点后面新建一个节点，新节点和该节点一样，然后旧节点指向新节点，新节点的next等于原先旧节点的next，这样直接在新节点上修改，random指针也很方便。</p>
-<p><a href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img
-src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"
-alt="新链表图" /></a></p>
-<h2 id="代码">代码</h2>
+<p><a href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png" alt="新链表图" /></a></p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">// Definition for a Node.</span></span><br><span class="line"><span class="comment">class Node &#123;</span></span><br><span class="line"><span class="comment">public:</span></span><br><span class="line"><span class="comment">    int val;</span></span><br><span class="line"><span class="comment">    Node* next;</span></span><br><span class="line"><span class="comment">    Node* random;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    Node(int _val) &#123;</span></span><br><span class="line"><span class="comment">        val = _val;</span></span><br><span class="line"><span class="comment">        next = NULL;</span></span><br><span class="line"><span class="comment">        random = NULL;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">Node* <span class="title">copyRandomList</span><span class="params">(Node* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        Node*p=head,*q;</span><br><span class="line">        <span class="keyword">while</span>(p)&#123;</span><br><span class="line">            q=p-&gt;next;</span><br><span class="line">            p-&gt;next=<span class="keyword">new</span> <span class="built_in">Node</span>(p-&gt;val);</span><br><span class="line">            p-&gt;next-&gt;next=q;</span><br><span class="line">            p=q;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;random)</span><br><span class="line">                p-&gt;next-&gt;random=p-&gt;random-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;next-&gt;next) p=p-&gt;next-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;q=head-&gt;next;</span><br><span class="line">        Node *ret=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(p&amp;&amp;q)&#123;</span><br><span class="line">            p-&gt;next=q-&gt;next;</span><br><span class="line">            p=p-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p)q-&gt;next=p-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">            q=q-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="解题总结">解题总结</h2>
+<h2 id="解题总结"><a class="markdownIt-Anchor" href="#解题总结"></a> 解题总结</h2>
 <p>题目其实不难，方法一可能是比较常见的思路，方法二比较巧妙，在长度为n的链表里每个节点再新建一个节点，使其长度达到2n，这样可以方便地对使用旧节点的数据，也可以修改新节点的值，操作起来比较方便，而且也可以选择性地保留节点。</p>
 ]]></content>
       <categories>
@@ -415,30 +364,24 @@ alt="新链表图" /></a></p>
   <entry>
     <title>LeetCode 391 完美矩形</title>
     <url>/2021/11/16/leetcode-391/</url>
-    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
-<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
-完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
-<h2 id="题目大意">题目大意</h2>
-<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
-表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
-(ai, bi) 。</p>
-<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
-false 。</p>
-<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
-src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
-alt="示例" /></a></p>
+    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。</p>
+<span id="more"></span>
+<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391. 完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
+<h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi] 表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是 (ai, bi) 。</p>
+<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回 false 。</p>
+<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png" alt="示例" /></a></p>
 <blockquote>
-<p><strong>输入：</strong> rectangles =
-[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
-<strong>输出：</strong> true <strong>解释：</strong> 5
-个矩形一起可以精确地覆盖一个矩形区域。</p>
+<p><strong>输入：</strong> rectangles = [[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]<br />
+<strong>输出：</strong> true<br />
+<strong>解释：</strong> 5 个矩形一起可以精确地覆盖一个矩形区域。</p>
 </blockquote>
-<h2 id="解题思路">解题思路</h2>
+<h2 id="解题思路"><a class="markdownIt-Anchor" href="#解题思路"></a> 解题思路</h2>
 <p>感觉与其说是算法题，还不如说是找规律…</p>
 <p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
 <p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
 <p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
-<h2 id="代码">代码</h2>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
@@ -446,6 +389,49 @@ alt="示例" /></a></p>
       </categories>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Qt中使用Sqlite</title>
+    <url>/2021/11/15/Qt-sql/</url>
+    <content><![CDATA[<p>在Qt中使用Sqlite的一些笔记。</p>
+<span id="more"></span>
+<h2 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h2>
+<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
+<h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2>
+<h3 id="头文件准备"><a class="markdownIt-Anchor" href="#头文件准备"></a> 头文件准备</h3>
+<p>首先在.pro文件里加入</p>
+<blockquote>
+<p>QT += sql</p>
+</blockquote>
+<p>然后在.h文件里加入</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="库函数调用"><a class="markdownIt-Anchor" href="#库函数调用"></a> 库函数调用</h3>
+<ul>
+<li>
+<p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p>
+</li>
+<li>
+<p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>QSqlQuery sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
+<p>可以直接用.exec(const QString&amp; query)执行query里面的sql语句内容</p>
+<p>也可以使用.prepare(const QString&amp; query), .exec()预先输入query里的sql语句，再加以执行</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p>
+</li>
+</ul>
+<h2 id="ubuntu小工具"><a class="markdownIt-Anchor" href="#ubuntu小工具"></a> Ubuntu小工具</h2>
+<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu sqlite可视化工具<strong>Sqlite Browser</strong></p>
+]]></content>
+      <categories>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
