@@ -27,11 +27,14 @@
 <meta property="og:site_name" content="Ushioの鸽子屋">
 <meta property="og:description" content="本文为LeetCode 138 复制带随机指针的链表的题解。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png">
+<meta property="og:image" content="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png">
 <meta property="article:published_time" content="2021-11-13T17:13:55.000Z">
 <meta property="article:modified_time" content="2021-11-13T17:13:55.000Z">
 <meta property="article:author" content="Ushio">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png">
 
 <link rel="canonical" href="https://dyhnoah.github.io/2021/11/14/leetcode-138/">
 
@@ -217,37 +220,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
-<p><a
-target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode
-138题目链接</a></p>
-<h2 id="题目大意">题目大意</h2>
+        <p>本文为LeetCode 138 复制带随机指针的链表的题解。</p>
+<span id="more"></span>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode 138题目链接</a></p>
+<h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
 <p>一个链表，定义如下</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    Node* next;</span><br><span class="line">    Node* random;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Node</span>(<span class="keyword">int</span> _val) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        next = <span class="literal">NULL</span>;</span><br><span class="line">        random = <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>除了常规的val值和next指针，还有一个random指针，该指针可以指向链表中的任何节点或空节点。</p>
-<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img
-src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"
-alt="链表图" /></a></p>
-<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个
-<strong>全新</strong>
-节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
-指针和 random
-指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong>
-。</p>
-<h2 id="题目难点">题目难点</h2>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png" alt="链表图" /></a></p>
+<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个 <strong>全新</strong> 节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next 指针和 random 指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong> 。</p>
+<h2 id="题目难点"><a class="markdownIt-Anchor" href="#题目难点"></a> 题目难点</h2>
 <p>如果只是常规地复制链表，很容易就能实现。该题不同之处在于每个节点有一个random指针，它可能指向任意的一个节点，可能指向前面也可能指向后面，在目前还没有初始化的节点，所以对于random指针的处理是本题的关键</p>
-<h2 id="解题思路">解题思路</h2>
-<h3 id="方法一-map">方法一 Map</h3>
-<p>利用C++
-STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
-<h3 id="方法二-在原节点的基础上修改">方法二 在原节点的基础上修改</h3>
+<h2 id="解题思路"><a class="markdownIt-Anchor" href="#解题思路"></a> 解题思路</h2>
+<h3 id="方法一-map"><a class="markdownIt-Anchor" href="#方法一-map"></a> 方法一 Map</h3>
+<p>利用C++ STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
+<h3 id="方法二-在原节点的基础上修改"><a class="markdownIt-Anchor" href="#方法二-在原节点的基础上修改"></a> 方法二 在原节点的基础上修改</h3>
 <p>在链表的每个节点后面新建一个节点，新节点和该节点一样，然后旧节点指向新节点，新节点的next等于原先旧节点的next，这样直接在新节点上修改，random指针也很方便。</p>
-<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img
-src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"
-alt="新链表图" /></a></p>
-<h2 id="代码">代码</h2>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png" alt="新链表图" /></a></p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">// Definition for a Node.</span></span><br><span class="line"><span class="comment">class Node &#123;</span></span><br><span class="line"><span class="comment">public:</span></span><br><span class="line"><span class="comment">    int val;</span></span><br><span class="line"><span class="comment">    Node* next;</span></span><br><span class="line"><span class="comment">    Node* random;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    Node(int _val) &#123;</span></span><br><span class="line"><span class="comment">        val = _val;</span></span><br><span class="line"><span class="comment">        next = NULL;</span></span><br><span class="line"><span class="comment">        random = NULL;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">Node* <span class="title">copyRandomList</span><span class="params">(Node* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        Node*p=head,*q;</span><br><span class="line">        <span class="keyword">while</span>(p)&#123;</span><br><span class="line">            q=p-&gt;next;</span><br><span class="line">            p-&gt;next=<span class="keyword">new</span> <span class="built_in">Node</span>(p-&gt;val);</span><br><span class="line">            p-&gt;next-&gt;next=q;</span><br><span class="line">            p=q;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;random)</span><br><span class="line">                p-&gt;next-&gt;random=p-&gt;random-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;next-&gt;next) p=p-&gt;next-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;q=head-&gt;next;</span><br><span class="line">        Node *ret=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(p&amp;&amp;q)&#123;</span><br><span class="line">            p-&gt;next=q-&gt;next;</span><br><span class="line">            p=p-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p)q-&gt;next=p-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">            q=q-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="解题总结">解题总结</h2>
+<h2 id="解题总结"><a class="markdownIt-Anchor" href="#解题总结"></a> 解题总结</h2>
 <p>题目其实不难，方法一可能是比较常见的思路，方法二比较巧妙，在长度为n的链表里每个节点再新建一个节点，使其长度达到2n，这样可以方便地对使用旧节点的数据，也可以修改新节点的值，操作起来比较方便，而且也可以选择性地保留节点。</p>
 
     </div>
@@ -349,7 +341,7 @@ alt="新链表图" /></a></p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F"><span class="nav-number">1.</span> <span class="nav-text">题目大意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E9%9A%BE%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">题目难点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="nav-number">3.</span> <span class="nav-text">解题思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80-map"><span class="nav-number">3.1.</span> <span class="nav-text">方法一 Map</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C-%E5%9C%A8%E5%8E%9F%E8%8A%82%E7%82%B9%E7%9A%84%E5%9F%BA%E7%A1%80%E4%B8%8A%E4%BF%AE%E6%94%B9"><span class="nav-number">3.2.</span> <span class="nav-text">方法二 在原节点的基础上修改</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%BB%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">解题总结</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F"><span class="nav-number">1.</span> <span class="nav-text"> 题目大意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E9%9A%BE%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text"> 题目难点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="nav-number">3.</span> <span class="nav-text"> 解题思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80-map"><span class="nav-number">3.1.</span> <span class="nav-text"> 方法一 Map</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C-%E5%9C%A8%E5%8E%9F%E8%8A%82%E7%82%B9%E7%9A%84%E5%9F%BA%E7%A1%80%E4%B8%8A%E4%BF%AE%E6%94%B9"><span class="nav-number">3.2.</span> <span class="nav-text"> 方法二 在原节点的基础上修改</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">4.</span> <span class="nav-text"> 代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%BB%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text"> 解题总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -365,7 +357,7 @@ alt="新链表图" /></a></p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -378,7 +370,7 @@ alt="新链表图" /></a></p>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

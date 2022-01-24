@@ -27,11 +27,13 @@
 <meta property="og:site_name" content="Ushioの鸽子屋">
 <meta property="og:description" content="本文为LeetCode 391 完美矩形的题解。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png">
 <meta property="article:published_time" content="2021-11-15T17:11:14.000Z">
 <meta property="article:modified_time" content="2021-11-15T17:11:14.000Z">
 <meta property="article:author" content="Ushio">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png">
 
 <link rel="canonical" href="https://dyhnoah.github.io/2021/11/16/leetcode-391/">
 
@@ -217,30 +219,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
-<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
-完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
-<h2 id="题目大意">题目大意</h2>
-<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
-表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
-(ai, bi) 。</p>
-<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
-false 。</p>
-<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
-src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
-alt="示例" /></a></p>
+        <p>本文为LeetCode 391 完美矩形的题解。</p>
+<span id="more"></span>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/perfect-rectangle/">391. 完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
+<h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi] 表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是 (ai, bi) 。</p>
+<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回 false 。</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png" alt="示例" /></a></p>
 <blockquote>
-<p><strong>输入：</strong> rectangles =
-[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
-<strong>输出：</strong> true <strong>解释：</strong> 5
-个矩形一起可以精确地覆盖一个矩形区域。</p>
+<p><strong>输入：</strong> rectangles = [[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]<br />
+<strong>输出：</strong> true<br />
+<strong>解释：</strong> 5 个矩形一起可以精确地覆盖一个矩形区域。</p>
 </blockquote>
-<h2 id="解题思路">解题思路</h2>
+<h2 id="解题思路"><a class="markdownIt-Anchor" href="#解题思路"></a> 解题思路</h2>
 <p>感觉与其说是算法题，还不如说是找规律…</p>
 <p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
 <p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
 <p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
-<h2 id="代码">代码</h2>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
     </div>
@@ -342,7 +338,7 @@ alt="示例" /></a></p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F"><span class="nav-number">1.</span> <span class="nav-text">题目大意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F"><span class="nav-number">1.</span> <span class="nav-text"> 题目大意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text"> 解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text"> 代码</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -358,7 +354,7 @@ alt="示例" /></a></p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -371,7 +367,7 @@ alt="示例" /></a></p>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

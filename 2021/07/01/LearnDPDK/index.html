@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"dyhnoah.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="背景 由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。">
+  <meta name="description" content="背景 由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DPDK学习">
 <meta property="og:url" content="https://dyhnoah.github.io/2021/07/01/LearnDPDK/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
-<meta property="og:description" content="背景 由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。">
+<meta property="og:description" content="背景 由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png">
 <meta property="og:image" content="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png">
@@ -235,124 +235,73 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="背景">背景</h2>
+        <h2 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h2>
 <p>由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。</p>
 <span id="more"></span>
-<h2 id="dpdk介绍">DPDK介绍</h2>
+<h2 id="dpdk介绍"><a class="markdownIt-Anchor" href="#dpdk介绍"></a> DPDK介绍</h2>
 <blockquote>
-<p>DPDK全称Intel Data Plane Development
-Kit，是intel提供的数据平面开发工具集，为Intel
-architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
+<p>DPDK全称Intel Data Plane Development Kit，是intel提供的数据平面开发工具集，为Intel architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
 <p>DPDK不同于Linux系统以通用性设计为目的，而是专注于网络应用中数据包的高性能处理。具体体现在DPDK应用程序是运行在用户空间上利用自身提供的数据平面库来收发数据包，绕过了Linux内核协议栈对数据包处理过程。它不是一个用户可以直接建立应用程序的完整产品，不包含需要与控制层（包括内核和协议堆栈）进行交互的工具。</p>
-<p>相比原生 Linux（Native Linux），采用Intel
-DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel
-x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
+<p>相比原生 Linux（Native Linux），采用Intel DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
 </blockquote>
-<figure>
-<img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png"
-alt="DPDK工作图" />
-<figcaption aria-hidden="true">DPDK工作图</figcaption>
-</figure>
+<p><img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png" alt="DPDK工作图" /></p>
 <p>简单说，DPDK可以接管你的操作系统，在处理数据包的时候可以绕过内核，大大提高传输速率。</p>
-<h2 id="dpdk开发环境搭建">DPDK开发环境搭建</h2>
-<h3 id="选择长期支持的版本lts">选择长期支持的版本LTS</h3>
+<h2 id="dpdk开发环境搭建"><a class="markdownIt-Anchor" href="#dpdk开发环境搭建"></a> DPDK开发环境搭建</h2>
+<h3 id="选择长期支持的版本lts"><a class="markdownIt-Anchor" href="#选择长期支持的版本lts"></a> 选择长期支持的版本LTS</h3>
 <p>DPDK的下载官网如下：</p>
-<p>https://core.dpdk.org/download/</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png"
-alt="DPDK版本图" />
-<figcaption aria-hidden="true">DPDK版本图</figcaption>
-</figure>
+<p><a target="_blank" rel="noopener" href="https://core.dpdk.org/download/">https://core.dpdk.org/download/</a></p>
+<p><img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png" alt="DPDK版本图" /></p>
 <p>我的开发环境是Ubuntu18.04 64位，选择的是DPDK 19.11.8(LTS)版本。</p>
-<h3 id="其余的软件环境">其余的软件环境</h3>
-<p>从下面的文档可以查看不同版本的System
-Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
-<p>http://core.dpdk.org/doc/archives/</p>
-<h3 id="虚拟机配置">虚拟机配置</h3>
+<h3 id="其余的软件环境"><a class="markdownIt-Anchor" href="#其余的软件环境"></a> 其余的软件环境</h3>
+<p>从下面的文档可以查看不同版本的System Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
+<p><a target="_blank" rel="noopener" href="http://core.dpdk.org/doc/archives/">http://core.dpdk.org/doc/archives/</a></p>
+<h3 id="虚拟机配置"><a class="markdownIt-Anchor" href="#虚拟机配置"></a> 虚拟机配置</h3>
 <ul>
-<li><p>核心：4个</p></li>
-<li><p>内存：4G，感觉可以再分大些</p></li>
-<li><p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p></li>
+<li>
+<p>核心：4个</p>
+</li>
+<li>
+<p>内存：4G，感觉可以再分大些</p>
+</li>
+<li>
+<p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p>
+</li>
 </ul>
-<h2 id="dpdk安装">DPDK安装</h2>
-<h3 id="下载源代码">下载源代码</h3>
-<p>https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</p>
-<h3 id="设置环境变量">设置环境变量</h3>
+<h2 id="dpdk安装"><a class="markdownIt-Anchor" href="#dpdk安装"></a> DPDK安装</h2>
+<h3 id="下载源代码"><a class="markdownIt-Anchor" href="#下载源代码"></a> 下载源代码</h3>
+<p><a target="_blank" rel="noopener" href="https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz">https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</a></p>
+<h3 id="设置环境变量"><a class="markdownIt-Anchor" href="#设置环境变量"></a> 设置环境变量</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">64位系统：</span><br><span class="line">export RTE_SDK=`pwd`</span><br><span class="line">export RTE_TARGET=x86_64-native-linuxapp-gcc</span><br><span class="line"></span><br><span class="line">32位系统：</span><br><span class="line">export RTE_SDK=`pwd` </span><br><span class="line">export RTE_TARGET=i686-default-linuxapp-gcc</span><br></pre></td></tr></table></figure>
-<h3 id="利用setup.sh进行配置">利用setup.sh进行配置</h3>
+<h3 id="利用setupsh进行配置"><a class="markdownIt-Anchor" href="#利用setupsh进行配置"></a> 利用setup.sh进行配置</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd dpdk-stable-19.11.8/usertools</span><br><span class="line">source ./dpdk-setup.sh</span><br></pre></td></tr></table></figure>
-<h4 id="编辑dpdk">编辑DPDK</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png"
-alt="编译DPDK" />
-<figcaption aria-hidden="true">编译DPDK</figcaption>
-</figure>
+<h4 id="编辑dpdk"><a class="markdownIt-Anchor" href="#编辑dpdk"></a> 编辑DPDK</h4>
+<p><img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png" alt="编译DPDK" /></p>
 <p>编译完后提示没有指定安装路径，我们只是编译而不是install就不用理会。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png"
-alt="编译后提示" />
-<figcaption aria-hidden="true">编译后提示</figcaption>
-</figure>
-<h4 id="插入igb-uio模块">插入IGB UIO模块</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png"
-alt="插入IGB UIO模块" />
-<figcaption aria-hidden="true">插入IGB UIO模块</figcaption>
-</figure>
-<h4 id="设置大页内存">设置大页内存</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png"
-alt="设置大页内存" />
-<figcaption aria-hidden="true">设置大页内存</figcaption>
-</figure>
+<p><img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png" alt="编译后提示" /></p>
+<h4 id="插入igb-uio模块"><a class="markdownIt-Anchor" href="#插入igb-uio模块"></a> 插入IGB UIO模块</h4>
+<p><img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png" alt="插入IGB UIO模块" /></p>
+<h4 id="设置大页内存"><a class="markdownIt-Anchor" href="#设置大页内存"></a> 设置大页内存</h4>
+<p><img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png" alt="设置大页内存" /></p>
 <p>默认设置的是2M的大页内存，这里输入1024，表示申请2G的大页内存。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
+<p><img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png" alt="大页内存" /></p>
 <p>查看配置的大页内存</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png"
-alt="查看大页内存" />
-<figcaption aria-hidden="true">查看大页内存</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
-<h4 id="查看网卡信息">查看网卡信息</h4>
+<p><img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png" alt="查看大页内存" /></p>
+<p><img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png" alt="大页内存" /></p>
+<h4 id="查看网卡信息"><a class="markdownIt-Anchor" href="#查看网卡信息"></a> 查看网卡信息</h4>
 <p>记得通过ifconfig xxx down指令将网卡关闭。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png"
-alt="查看网卡信息" />
-<figcaption aria-hidden="true">查看网卡信息</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png"
-alt="网卡信息" />
-<figcaption aria-hidden="true">网卡信息</figcaption>
-</figure>
-<h4 id="绑定网卡">绑定网卡</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png"
-alt="绑定网卡" />
-<figcaption aria-hidden="true">绑定网卡</figcaption>
-</figure>
-<p>输入pci的地址，0000开始到'前的全输入。</p>
-<h4 id="运行testpmd测试程序">运行testpmd测试程序</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png"
-alt="测试程序" />
-<figcaption aria-hidden="true">测试程序</figcaption>
-</figure>
+<p><img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png" alt="查看网卡信息" /></p>
+<p><img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png" alt="网卡信息" /></p>
+<h4 id="绑定网卡"><a class="markdownIt-Anchor" href="#绑定网卡"></a> 绑定网卡</h4>
+<p><img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png" alt="绑定网卡" /></p>
+<p>输入pci的地址，0000开始到’前的全输入。</p>
+<h4 id="运行testpmd测试程序"><a class="markdownIt-Anchor" href="#运行testpmd测试程序"></a> 运行testpmd测试程序</h4>
+<p><img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png" alt="测试程序" /></p>
 <p>输入0xf代表程序运行在0~3核心。</p>
-<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" /></p>
+<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" alt="" /></p>
 <p>输入start开始抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" /></p>
+<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" alt="" /></p>
 <p>stop停止抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" /></p>
+<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" alt="" /></p>
 
     </div>
 
@@ -454,7 +403,7 @@ alt="测试程序" />
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dpdk%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text">DPDK介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dpdk%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">3.</span> <span class="nav-text">DPDK开发环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E9%95%BF%E6%9C%9F%E6%94%AF%E6%8C%81%E7%9A%84%E7%89%88%E6%9C%AClts"><span class="nav-number">3.1.</span> <span class="nav-text">选择长期支持的版本LTS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BD%99%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%8E%AF%E5%A2%83"><span class="nav-number">3.2.</span> <span class="nav-text">其余的软件环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE"><span class="nav-number">3.3.</span> <span class="nav-text">虚拟机配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dpdk%E5%AE%89%E8%A3%85"><span class="nav-number">4.</span> <span class="nav-text">DPDK安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">4.1.</span> <span class="nav-text">下载源代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">4.2.</span> <span class="nav-text">设置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8setup.sh%E8%BF%9B%E8%A1%8C%E9%85%8D%E7%BD%AE"><span class="nav-number">4.3.</span> <span class="nav-text">利用setup.sh进行配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%96%E8%BE%91dpdk"><span class="nav-number">4.3.1.</span> <span class="nav-text">编辑DPDK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5igb-uio%E6%A8%A1%E5%9D%97"><span class="nav-number">4.3.2.</span> <span class="nav-text">插入IGB UIO模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%A4%A7%E9%A1%B5%E5%86%85%E5%AD%98"><span class="nav-number">4.3.3.</span> <span class="nav-text">设置大页内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E4%BF%A1%E6%81%AF"><span class="nav-number">4.3.4.</span> <span class="nav-text">查看网卡信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%91%E5%AE%9A%E7%BD%91%E5%8D%A1"><span class="nav-number">4.3.5.</span> <span class="nav-text">绑定网卡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E8%A1%8Ctestpmd%E6%B5%8B%E8%AF%95%E7%A8%8B%E5%BA%8F"><span class="nav-number">4.3.6.</span> <span class="nav-text">运行testpmd测试程序</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text"> 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dpdk%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text"> DPDK介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dpdk%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">3.</span> <span class="nav-text"> DPDK开发环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E9%95%BF%E6%9C%9F%E6%94%AF%E6%8C%81%E7%9A%84%E7%89%88%E6%9C%AClts"><span class="nav-number">3.1.</span> <span class="nav-text"> 选择长期支持的版本LTS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BD%99%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%8E%AF%E5%A2%83"><span class="nav-number">3.2.</span> <span class="nav-text"> 其余的软件环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE"><span class="nav-number">3.3.</span> <span class="nav-text"> 虚拟机配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dpdk%E5%AE%89%E8%A3%85"><span class="nav-number">4.</span> <span class="nav-text"> DPDK安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">4.1.</span> <span class="nav-text"> 下载源代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">4.2.</span> <span class="nav-text"> 设置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8setupsh%E8%BF%9B%E8%A1%8C%E9%85%8D%E7%BD%AE"><span class="nav-number">4.3.</span> <span class="nav-text"> 利用setup.sh进行配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%96%E8%BE%91dpdk"><span class="nav-number">4.3.1.</span> <span class="nav-text"> 编辑DPDK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5igb-uio%E6%A8%A1%E5%9D%97"><span class="nav-number">4.3.2.</span> <span class="nav-text"> 插入IGB UIO模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%A4%A7%E9%A1%B5%E5%86%85%E5%AD%98"><span class="nav-number">4.3.3.</span> <span class="nav-text"> 设置大页内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%BD%91%E5%8D%A1%E4%BF%A1%E6%81%AF"><span class="nav-number">4.3.4.</span> <span class="nav-text"> 查看网卡信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%91%E5%AE%9A%E7%BD%91%E5%8D%A1"><span class="nav-number">4.3.5.</span> <span class="nav-text"> 绑定网卡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E8%A1%8Ctestpmd%E6%B5%8B%E8%AF%95%E7%A8%8B%E5%BA%8F"><span class="nav-number">4.3.6.</span> <span class="nav-text"> 运行testpmd测试程序</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -470,7 +419,7 @@ alt="测试程序" />
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -483,7 +432,7 @@ alt="测试程序" />
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
