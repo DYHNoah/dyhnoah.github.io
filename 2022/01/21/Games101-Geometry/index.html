@@ -235,7 +235,21 @@
                 </span>
             </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
 
         </div>
       </header>
@@ -247,12 +261,12 @@
 
       
         <h2 id="geometry">Geometry</h2>
-<p>本文主要讲述图形学中的几何形体，包含<strong>几何的存储</strong>、<strong>渲染问题</strong>等。</p>
-<p>几何可以分为两种不同的表示方式，分别为<strong>Implicit（隐式几何）</strong>、<strong>Explicit（显式几何）</strong>。</p>
+<p>本文主要讲述图形学中的几何形体，包含<strong>几何的存储</strong>、<strong>渲染问题</strong>等。
+几何可以分为两种不同的表示方式，分别为<strong>Implicit（隐式几何）</strong>、<strong>Explicit（显式几何）</strong>。</p>
 <span id="more"></span>
 <h2 id="implicit隐式几何">Implicit（隐式几何）</h2>
-<p>不直接提供点的具体坐标，而是提供点满足的关系。</p>
-<p>E.g. 球： <span class="math display">\[
+<p>不直接提供点的具体坐标，而是提供点满足的关系。 E.g. 球： <span
+class="math display">\[
 x^2+y^2+z^2 = 1
 \]</span></p>
 <p><img src="https://s2.loli.net/2022/01/24/IZey2Qr4LN9uRkb.png" alt="Implicit" style="zoom:50%;" /></p>
@@ -401,21 +415,21 @@ Regularization）</strong>其所作的便是将三角面都变的尽可能相同
 </ul>
 <p>我们将所有的顶点分为两类，一类是新生成的顶点，一类是老的原来就有的顶点，对于新生成的顶点做如下处理：</p>
 <p><img src="https://s2.loli.net/2022/01/24/R6omzDSfkEQHlcF.png" style="zoom:50%;" /></p>
-<p>这里新的顶点就是白色的那个顶点，其位置为周围4个顶点的权重之和，各顶点权重如图所示，其余边上的新顶点处理类似。</p>
-<p>对于旧的顶点，做如下处理：</p>
+<p>这里新的顶点就是白色的那个顶点，其位置为周围4个顶点的权重之和，各顶点权重如图所示，其余边上的新顶点处理类似。
+对于旧的顶点，做如下处理：</p>
 <p><img src="https://s2.loli.net/2022/01/24/StsP2orYI8nlX6i.png" style="zoom:50%;" /></p>
-<p>其实旧每个顶点的处理也十分类似，这里以图中一个白色旧顶点为例，也是其自身以及邻接顶点的权重和，但权重的设置与该旧顶点度数有关，具体如图中右下部分所示。</p>
-<p>以上就是Loop细分的全过程了，最后看看效果：
+<p>其实旧每个顶点的处理也十分类似，这里以图中一个白色旧顶点为例，也是其自身以及邻接顶点的权重和，但权重的设置与该旧顶点度数有关，具体如图中右下部分所示。
+以上就是Loop细分的全过程了，最后看看效果：
 (这是一个不断进行Loop细分的例子)</p>
 <p><img src="https://s2.loli.net/2022/01/24/sbcO3j4x8I5fazZ.jpg" style="zoom: 80%;" /></p>
 <h4 id="曲面简化mesh-smplication">曲面简化（Mesh Smplication）</h4>
 <p><img src="https://s2.loli.net/2022/01/24/Aks6Cj37cBNxyt5.jpg" style="zoom: 50%;" /></p>
-<p>其实曲面简化所利用的一个方法叫做边坍缩，如上图所示就是将一条边的两个顶点合成为一个顶点。但随之而来的问题就是，曲面简化需要尽量保持原本模型的shape，如何坍缩一条边，或者说坍缩哪一条边能够使得原模型样貌被改变的程度最小，这就是曲面简化的关键所在。</p>
-<p>为此引入一个度量，即<strong>二次误差度量(Quadric Error
+<p>其实曲面简化所利用的一个方法叫做边坍缩，如上图所示就是将一条边的两个顶点合成为一个顶点。但随之而来的问题就是，曲面简化需要尽量保持原本模型的shape，如何坍缩一条边，或者说坍缩哪一条边能够使得原模型样貌被改变的程度最小，这就是曲面简化的关键所在。
+为此引入一个度量，即<strong>二次误差度量(Quadric Error
 Metrics)</strong></p>
 <p><img src="https://s2.loli.net/2022/01/24/fNmqE9nkhFp1D5t.jpg" style="zoom:50%;" /></p>
-<p>即坍缩之后蓝色新顶点所在的位置与<strong>原来各个平面的距离之和</strong>。如果能够使得这个误差最小那么对整个模型样貌修改一定程度上也会较小。</p>
-<p>那么其实到这整个曲面简化的算法流程已经比较清晰了，可以使用<strong>堆</strong>来进行计算。</p>
+<p>即坍缩之后蓝色新顶点所在的位置与<strong>原来各个平面的距离之和</strong>。如果能够使得这个误差最小那么对整个模型样貌修改一定程度上也会较小。
+那么其实到这整个曲面简化的算法流程已经比较清晰了，可以使用<strong>堆</strong>来进行计算。</p>
 <ul>
 <li><p><strong>为模型每条边赋值，其值为简化这条边之后，代替两个老顶点的新顶点所能得到的最小二次误差度量</strong></p></li>
 <li><p><strong>选取权值最小的边做简化，新顶点位置为原来计算得出使得二次误差最小的位置</strong></p></li>
@@ -600,6 +614,16 @@ Object File(.obj) Format，obj文件</span></a></li></ol></li><li class="nav-ite
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Ushio</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">25k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">22 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>

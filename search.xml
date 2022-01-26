@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>台服5月摩羯座会战</title>
+    <url>/2020/06/09/Clan-Capricorn/</url>
+    <content><![CDATA[<p>本文主要讲述台服2020年5月魔羯座公会战情况。 <span id="more"></span></p>
+<h2 id="本期情况">本期情况</h2>
+<p>台服本期是摩羯座，属于春黑第一个月，终于自己体会到了春黑刀的恶心之处。</p>
+<p>首先讲本期我所在的公会情况吧，上期由于冲300最后220，当时大家都打得挺累的，所以本期的计划是随缘300，会内不进行排刀，也不要求必出春黑刀，当然追梦随意，最后这期体感上大家比上期更休闲，最后排名270。</p>
+<h2 id="出刀">出刀</h2>
+<p>对于100-300的会来说，我个人感觉，本期最好出两春黑刀，一刀物理，然后垃圾刀全丢五王应该是没问题的。本期5个boss都有春黑一刀的作业，从一阶段到三阶段用上的春黑工具人有：镜子、充电宝、黄骑、露娜、水黑、春田、中二、水电、nnk、mcw、春女仆、圣千、莫妮卡。</p>
+<p>春黑来了后，300会就能一天打进三阶段了，第一天建议早出刀，晚出刀面对三阶段没有作业还是挺难受的。而本期我比较偷懒，3王的春黑轴比较简单，所以这期我出335或者235，3来一刀春黑，2或者3可能填一刀物理，5再来一个不能一刀的春黑刀。</p>
+<p>春黑的常见三件套，露娜、黄骑、中二，我个人没有露娜，所以没法出两刀这样的春黑刀。</p>
+<h2 id="感受">感受</h2>
+<p>简单说下打完第一期春黑刀后我对于春黑的感受吧。</p>
+<p>利：1个月能拿相当于过去2.5个月的战队币，对于战队币比较缺的玩家来说合适，一刀一个boss，可能不会因为大尾巴卡住，或者说卡住的情况会变少。</p>
+<p>弊：<strong>凹暴击</strong>，如果春黑开始暴击不够，后续的伤害也叠不起来；<strong>费时长</strong>，有些春黑刀需要打很久，new
+year
+burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸色；<strong>伤害上下差距拉大</strong>，春黑之前的法队和物理队作业伤害差距不会太大，可能有个200w，但春黑来后都是一刀一个boss，如果你不出春黑刀，你就会被拉开，强行逼着你春黑刀。</p>
+<p>总的来说，通过观察日服春黑诞生至今的会战，可以毫不夸张地说，春黑是pcr里面设计得非常失败的角色，春黑的核心在于频繁地释放ub，ub效果如下：</p>
+<blockquote>
+<p>對敵方單體造成 56671 【60.0 + 60.0<em>技能等級 + 4.8
+</em>atk】的魔法傷害。</p>
+<p>技能說明補正：攻擊 * 0.1125。</p>
+<p>提升自身1550 【10.0 + 10.0*技能等級】的魔法攻擊力。</p>
+<p>持續：【18.0】 秒。</p>
+</blockquote>
+<p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
+<p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>台服6月水瓶座会战</title>
     <url>/2020/07/05/Clan-Aquarius/</url>
     <content><![CDATA[<p>本文主要讲述台服2020年6月水瓶座公会战情况。 <span id="more"></span></p>
@@ -80,12 +116,12 @@ href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪
     <title>Games101-Lecture10-13（Geometry）学习笔记</title>
     <url>/2022/01/21/Games101-Geometry/</url>
     <content><![CDATA[<h2 id="geometry">Geometry</h2>
-<p>本文主要讲述图形学中的几何形体，包含<strong>几何的存储</strong>、<strong>渲染问题</strong>等。</p>
-<p>几何可以分为两种不同的表示方式，分别为<strong>Implicit（隐式几何）</strong>、<strong>Explicit（显式几何）</strong>。</p>
+<p>本文主要讲述图形学中的几何形体，包含<strong>几何的存储</strong>、<strong>渲染问题</strong>等。
+几何可以分为两种不同的表示方式，分别为<strong>Implicit（隐式几何）</strong>、<strong>Explicit（显式几何）</strong>。</p>
 <span id="more"></span>
 <h2 id="implicit隐式几何">Implicit（隐式几何）</h2>
-<p>不直接提供点的具体坐标，而是提供点满足的关系。</p>
-<p>E.g. 球： <span class="math display">\[
+<p>不直接提供点的具体坐标，而是提供点满足的关系。 E.g. 球： <span
+class="math display">\[
 x^2+y^2+z^2 = 1
 \]</span></p>
 <p><img src="https://s2.loli.net/2022/01/24/IZey2Qr4LN9uRkb.png" alt="Implicit" style="zoom:50%;" /></p>
@@ -234,21 +270,21 @@ Regularization）</strong>其所作的便是将三角面都变的尽可能相同
 </ul>
 <p>我们将所有的顶点分为两类，一类是新生成的顶点，一类是老的原来就有的顶点，对于新生成的顶点做如下处理：</p>
 <p><img src="https://s2.loli.net/2022/01/24/R6omzDSfkEQHlcF.png" style="zoom:50%;" /></p>
-<p>这里新的顶点就是白色的那个顶点，其位置为周围4个顶点的权重之和，各顶点权重如图所示，其余边上的新顶点处理类似。</p>
-<p>对于旧的顶点，做如下处理：</p>
+<p>这里新的顶点就是白色的那个顶点，其位置为周围4个顶点的权重之和，各顶点权重如图所示，其余边上的新顶点处理类似。
+对于旧的顶点，做如下处理：</p>
 <p><img src="https://s2.loli.net/2022/01/24/StsP2orYI8nlX6i.png" style="zoom:50%;" /></p>
-<p>其实旧每个顶点的处理也十分类似，这里以图中一个白色旧顶点为例，也是其自身以及邻接顶点的权重和，但权重的设置与该旧顶点度数有关，具体如图中右下部分所示。</p>
-<p>以上就是Loop细分的全过程了，最后看看效果：
+<p>其实旧每个顶点的处理也十分类似，这里以图中一个白色旧顶点为例，也是其自身以及邻接顶点的权重和，但权重的设置与该旧顶点度数有关，具体如图中右下部分所示。
+以上就是Loop细分的全过程了，最后看看效果：
 (这是一个不断进行Loop细分的例子)</p>
 <p><img src="https://s2.loli.net/2022/01/24/sbcO3j4x8I5fazZ.jpg" style="zoom: 80%;" /></p>
 <h4 id="曲面简化mesh-smplication">曲面简化（Mesh Smplication）</h4>
 <p><img src="https://s2.loli.net/2022/01/24/Aks6Cj37cBNxyt5.jpg" style="zoom: 50%;" /></p>
-<p>其实曲面简化所利用的一个方法叫做边坍缩，如上图所示就是将一条边的两个顶点合成为一个顶点。但随之而来的问题就是，曲面简化需要尽量保持原本模型的shape，如何坍缩一条边，或者说坍缩哪一条边能够使得原模型样貌被改变的程度最小，这就是曲面简化的关键所在。</p>
-<p>为此引入一个度量，即<strong>二次误差度量(Quadric Error
+<p>其实曲面简化所利用的一个方法叫做边坍缩，如上图所示就是将一条边的两个顶点合成为一个顶点。但随之而来的问题就是，曲面简化需要尽量保持原本模型的shape，如何坍缩一条边，或者说坍缩哪一条边能够使得原模型样貌被改变的程度最小，这就是曲面简化的关键所在。
+为此引入一个度量，即<strong>二次误差度量(Quadric Error
 Metrics)</strong></p>
 <p><img src="https://s2.loli.net/2022/01/24/fNmqE9nkhFp1D5t.jpg" style="zoom:50%;" /></p>
-<p>即坍缩之后蓝色新顶点所在的位置与<strong>原来各个平面的距离之和</strong>。如果能够使得这个误差最小那么对整个模型样貌修改一定程度上也会较小。</p>
-<p>那么其实到这整个曲面简化的算法流程已经比较清晰了，可以使用<strong>堆</strong>来进行计算。</p>
+<p>即坍缩之后蓝色新顶点所在的位置与<strong>原来各个平面的距离之和</strong>。如果能够使得这个误差最小那么对整个模型样貌修改一定程度上也会较小。
+那么其实到这整个曲面简化的算法流程已经比较清晰了，可以使用<strong>堆</strong>来进行计算。</p>
 <ul>
 <li><p><strong>为模型每条边赋值，其值为简化这条边之后，代替两个老顶点的新顶点所能得到的最小二次误差度量</strong></p></li>
 <li><p><strong>选取权值最小的边做简化，新顶点位置为原来计算得出使得二次误差最小的位置</strong></p></li>
@@ -257,92 +293,6 @@ Metrics)</strong></p>
 </ul>
 <p>这其实是一个标准的<strong>贪心算法</strong>，可能到不了全局最优解，但事实证明最终的结果依然相当不错。</p>
 <p><img src="https://s2.loli.net/2022/01/24/Cb8PkFZMjagJ9D6.jpg" style="zoom: 67%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>台服5月摩羯座会战</title>
-    <url>/2020/06/09/Clan-Capricorn/</url>
-    <content><![CDATA[<p>本文主要讲述台服2020年5月魔羯座公会战情况。 <span id="more"></span></p>
-<h2 id="本期情况">本期情况</h2>
-<p>台服本期是摩羯座，属于春黑第一个月，终于自己体会到了春黑刀的恶心之处。</p>
-<p>首先讲本期我所在的公会情况吧，上期由于冲300最后220，当时大家都打得挺累的，所以本期的计划是随缘300，会内不进行排刀，也不要求必出春黑刀，当然追梦随意，最后这期体感上大家比上期更休闲，最后排名270。</p>
-<h2 id="出刀">出刀</h2>
-<p>对于100-300的会来说，我个人感觉，本期最好出两春黑刀，一刀物理，然后垃圾刀全丢五王应该是没问题的。本期5个boss都有春黑一刀的作业，从一阶段到三阶段用上的春黑工具人有：镜子、充电宝、黄骑、露娜、水黑、春田、中二、水电、nnk、mcw、春女仆、圣千、莫妮卡。</p>
-<p>春黑来了后，300会就能一天打进三阶段了，第一天建议早出刀，晚出刀面对三阶段没有作业还是挺难受的。而本期我比较偷懒，3王的春黑轴比较简单，所以这期我出335或者235，3来一刀春黑，2或者3可能填一刀物理，5再来一个不能一刀的春黑刀。</p>
-<p>春黑的常见三件套，露娜、黄骑、中二，我个人没有露娜，所以没法出两刀这样的春黑刀。</p>
-<h2 id="感受">感受</h2>
-<p>简单说下打完第一期春黑刀后我对于春黑的感受吧。</p>
-<p>利：1个月能拿相当于过去2.5个月的战队币，对于战队币比较缺的玩家来说合适，一刀一个boss，可能不会因为大尾巴卡住，或者说卡住的情况会变少。</p>
-<p>弊：<strong>凹暴击</strong>，如果春黑开始暴击不够，后续的伤害也叠不起来；<strong>费时长</strong>，有些春黑刀需要打很久，new
-year
-burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸色；<strong>伤害上下差距拉大</strong>，春黑之前的法队和物理队作业伤害差距不会太大，可能有个200w，但春黑来后都是一刀一个boss，如果你不出春黑刀，你就会被拉开，强行逼着你春黑刀。</p>
-<p>总的来说，通过观察日服春黑诞生至今的会战，可以毫不夸张地说，春黑是pcr里面设计得非常失败的角色，春黑的核心在于频繁地释放ub，ub效果如下：</p>
-<blockquote>
-<p>對敵方單體造成 56671 【60.0 + 60.0<em>技能等級 + 4.8
-</em>atk】的魔法傷害。</p>
-<p>技能說明補正：攻擊 * 0.1125。</p>
-<p>提升自身1550 【10.0 + 10.0*技能等級】的魔法攻擊力。</p>
-<p>持續：【18.0】 秒。</p>
-</blockquote>
-<p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
-<p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Lecture3-4（Transformation）学习笔记</title>
-    <url>/2022/01/25/Games101-Transformation/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<ul>
-<li>变换</li>
-<li>为什么要学习“变换”</li>
-<li>2D变换：旋转、缩放、切变</li>
-<li>齐次坐标</li>
-<li>组合变换</li>
-<li>3D变换</li>
-</ul>
-<span id="more"></span>
-<h2 id="前情提要">前情提要</h2>
-<ul>
-<li><p>向量</p>
-<p>基本运算：加法、乘法。</p></li>
-<li><p>点乘</p>
-<p>通过点乘结果的正负用来判断前后关系。</p></li>
-<li><p>叉乘</p>
-<p>通过叉乘结果的朝向，可以用来判断左右关系，比如判断点是否在图形内。</p></li>
-<li><p>矩阵计算</p></li>
-</ul>
-<p>本章节将开启Transformation（变换）的内容，以上是变换内容的基础。</p>
-<h2 id="为什么要变换">为什么要变换</h2>
-<p>在动画制作和展示中，不可避免的要涉及到视角、各种模型的变换，还有将3维空间视图转化为2维空间的变换。</p>
-<p><img src="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png" style="zoom: 33%;" /></p>
-<h2 id="d变换">2D变换</h2>
-<ul>
-<li><p>将变换与矩阵联系起来</p></li>
-<li><p>旋转、缩放、切变</p></li>
-</ul>
-<h3 id="缩放">缩放</h3>
-<p>对于原来的x，y坐标，我们对于x缩小至0.5倍，y不变的一个不均匀缩放，使其左乘缩放矩阵即可。</p>
-<p><img src="https://s2.loli.net/2022/01/26/yIYPX27m4ckHFJd.png" style="zoom: 33%;" /></p>
-<h3 id="镜像">镜像</h3>
-<p>对图像以y轴做镜像变换，使其x坐标相反即可。</p>
-<p><img src="https://s2.loli.net/2022/01/26/yeWZCvQIOum5UzS.png" style="zoom:33%;" /></p>
-<h3 id="切变">切变</h3>
-<p>y轴坐标不变，x轴移动a方向距离，如果图像y轴坐标为1，切变变换的矩阵如下。</p>
-<p><img src="https://s2.loli.net/2022/01/26/WecD4di7vZuQnTz.png" style="zoom:33%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -373,133 +323,199 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
       </tags>
   </entry>
   <entry>
-    <title>DPDK学习</title>
-    <url>/2021/07/01/LearnDPDK/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。</p>
-<span id="more"></span>
-<h2 id="dpdk介绍">DPDK介绍</h2>
-<blockquote>
-<p>DPDK全称Intel Data Plane Development
-Kit，是intel提供的数据平面开发工具集，为Intel
-architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
-<p>DPDK不同于Linux系统以通用性设计为目的，而是专注于网络应用中数据包的高性能处理。具体体现在DPDK应用程序是运行在用户空间上利用自身提供的数据平面库来收发数据包，绕过了Linux内核协议栈对数据包处理过程。它不是一个用户可以直接建立应用程序的完整产品，不包含需要与控制层（包括内核和协议堆栈）进行交互的工具。</p>
-<p>相比原生 Linux（Native Linux），采用Intel
-DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel
-x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
-</blockquote>
-<figure>
-<img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png"
-alt="DPDK工作图" />
-<figcaption aria-hidden="true">DPDK工作图</figcaption>
-</figure>
-<p>简单说，DPDK可以接管你的操作系统，在处理数据包的时候可以绕过内核，大大提高传输速率。</p>
-<h2 id="dpdk开发环境搭建">DPDK开发环境搭建</h2>
-<h3 id="选择长期支持的版本lts">选择长期支持的版本LTS</h3>
-<p>DPDK的下载官网如下：</p>
-<p>https://core.dpdk.org/download/</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png"
-alt="DPDK版本图" />
-<figcaption aria-hidden="true">DPDK版本图</figcaption>
-</figure>
-<p>我的开发环境是Ubuntu18.04 64位，选择的是DPDK 19.11.8(LTS)版本。</p>
-<h3 id="其余的软件环境">其余的软件环境</h3>
-<p>从下面的文档可以查看不同版本的System
-Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
-<p>http://core.dpdk.org/doc/archives/</p>
-<h3 id="虚拟机配置">虚拟机配置</h3>
+    <title>Games101-Lecture3-4（Transformation）学习笔记</title>
+    <url>/2022/01/25/Games101-Transformation/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
 <ul>
-<li><p>核心：4个</p></li>
-<li><p>内存：4G，感觉可以再分大些</p></li>
-<li><p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p></li>
+<li>变换</li>
+<li>为什么要学习“变换”</li>
+<li>2D变换：旋转、缩放、切变</li>
+<li>齐次坐标</li>
+<li>组合变换</li>
+<li>3D变换</li>
 </ul>
-<h2 id="dpdk安装">DPDK安装</h2>
-<h3 id="下载源代码">下载源代码</h3>
-<p>https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</p>
-<h3 id="设置环境变量">设置环境变量</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">64位系统：</span><br><span class="line">export RTE_SDK=`pwd`</span><br><span class="line">export RTE_TARGET=x86_64-native-linuxapp-gcc</span><br><span class="line"></span><br><span class="line">32位系统：</span><br><span class="line">export RTE_SDK=`pwd` </span><br><span class="line">export RTE_TARGET=i686-default-linuxapp-gcc</span><br></pre></td></tr></table></figure>
-<h3 id="利用setup.sh进行配置">利用setup.sh进行配置</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd dpdk-stable-19.11.8/usertools</span><br><span class="line">source ./dpdk-setup.sh</span><br></pre></td></tr></table></figure>
-<h4 id="编辑dpdk">编辑DPDK</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png"
-alt="编译DPDK" />
-<figcaption aria-hidden="true">编译DPDK</figcaption>
-</figure>
-<p>编译完后提示没有指定安装路径，我们只是编译而不是install就不用理会。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png"
-alt="编译后提示" />
-<figcaption aria-hidden="true">编译后提示</figcaption>
-</figure>
-<h4 id="插入igb-uio模块">插入IGB UIO模块</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png"
-alt="插入IGB UIO模块" />
-<figcaption aria-hidden="true">插入IGB UIO模块</figcaption>
-</figure>
-<h4 id="设置大页内存">设置大页内存</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png"
-alt="设置大页内存" />
-<figcaption aria-hidden="true">设置大页内存</figcaption>
-</figure>
-<p>默认设置的是2M的大页内存，这里输入1024，表示申请2G的大页内存。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
-<p>查看配置的大页内存</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png"
-alt="查看大页内存" />
-<figcaption aria-hidden="true">查看大页内存</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
-<h4 id="查看网卡信息">查看网卡信息</h4>
-<p>记得通过ifconfig xxx down指令将网卡关闭。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png"
-alt="查看网卡信息" />
-<figcaption aria-hidden="true">查看网卡信息</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png"
-alt="网卡信息" />
-<figcaption aria-hidden="true">网卡信息</figcaption>
-</figure>
-<h4 id="绑定网卡">绑定网卡</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png"
-alt="绑定网卡" />
-<figcaption aria-hidden="true">绑定网卡</figcaption>
-</figure>
-<p>输入pci的地址，0000开始到'前的全输入。</p>
-<h4 id="运行testpmd测试程序">运行testpmd测试程序</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png"
-alt="测试程序" />
-<figcaption aria-hidden="true">测试程序</figcaption>
-</figure>
-<p>输入0xf代表程序运行在0~3核心。</p>
-<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" /></p>
-<p>输入start开始抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" /></p>
-<p>stop停止抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" /></p>
+<span id="more"></span>
+<h2 id="前情提要">前情提要</h2>
+<ul>
+<li><p>向量 基本运算：加法、乘法。</p></li>
+<li><p>点乘 通过点乘结果的正负用来判断前后关系。</p></li>
+<li><p>叉乘
+通过叉乘结果的朝向，可以用来判断左右关系，比如判断点是否在图形内。</p></li>
+<li><p>矩阵计算</p></li>
+</ul>
+<p>本章节将开启Transformation（变换）的内容，以上是变换内容的基础。</p>
+<h2 id="为什么要变换">为什么要变换</h2>
+<p>在动画制作和展示中，不可避免的要涉及到视角、各种模型的变换，还有将3维空间视图转化为2维空间的变换。</p>
+<p><img src="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png" style="zoom: 33%;" /></p>
+<h2 id="d变换">2D变换</h2>
+<ul>
+<li><p>将变换与矩阵联系起来</p></li>
+<li><p>旋转、缩放、切变</p></li>
+</ul>
+<h3 id="缩放">缩放</h3>
+<p>对于原来的x，y坐标，我们对于x缩小至0.5倍，y不变的一个不均匀缩放，使其左乘缩放矩阵即可。</p>
+<p><img src="https://s2.loli.net/2022/01/26/yIYPX27m4ckHFJd.png" style="zoom: 33%;" /></p>
+<h3 id="镜像">镜像</h3>
+<p>对图像以y轴做镜像变换，使其x坐标相反即可。</p>
+<p><img src="https://s2.loli.net/2022/01/26/yeWZCvQIOum5UzS.png" style="zoom:33%;" /></p>
+<h3 id="切变">切变</h3>
+<p>y轴坐标不变，x轴移动a方向距离，如果图像y轴坐标为1，切变变换的矩阵如下。</p>
+<p><img src="https://s2.loli.net/2022/01/26/WecD4di7vZuQnTz.png" style="zoom:33%;" /></p>
+<h3 id="旋转">旋转</h3>
+<p>一般情况下，我们默认旋转是围绕原点逆时针旋转θ角度。对于下图的旋转，我们可以考虑2个特殊的点，即原四边形<strong>右下</strong>和<strong>左上</strong>的2个点。
+假设正方形长为1，两点坐标分别为<strong>(1, 0)</strong>、<strong>(0,
+1)</strong>，在旋转θ角后，两点坐标变换为<strong>(cos θ, sin
+θ)</strong>、<strong>(-sin θ, cos
+θ)</strong>，由此可以联立方程解得如下。 <span class="math display">\[
+\begin{bmatrix}
+cos\theta \\
+sin\theta \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+0 \\
+\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{bmatrix}
+-sin\theta \\
+cos\theta \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+0 \\
+1 \\
+\end{bmatrix}
+\]</span></p>
+<p><img src="https://s2.loli.net/2022/01/26/xoKwb36AUQIFu8H.png" style="zoom:33%;" /></p>
+<h3 id="线性变换矩阵">线性变换（矩阵）</h3>
+<p>以上的变换都可以转换成如下的线性变换，通过矩阵乘法改变坐标。 <span
+class="math display">\[
+\begin{bmatrix}
+x&#39; \\
+y&#39; \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{split}
+x&#39; = ax + by \\
+y&#39; = cx + dy \\
+x&#39; = M x
+\end{split}
+\]</span></p>
+<h2 id="齐次坐标">齐次坐标</h2>
+<h3 id="为什么引入齐次坐标">为什么引入齐次坐标</h3>
+<p><img src="https://s2.loli.net/2022/01/27/UKuHVL3vhB6Z2Y9.png" style="zoom:33%;" /></p>
+<p>因为平移变换比较特殊，对于如上的坐标平移，我们虽然能够直接写出 <span
+class="math display">\[
+x&#39; = x + t_x \\
+y&#39; = y + t_y \\
+\]</span>
+但是，我们无法将其写成如上的二维矩阵乘法形式，我们只能写成如下形式，因此平移操作并不属于我们如上定义的线性变换。
+我们考虑如何将平移变换加入线性变换，能将各种变换统一起来，因此，我们引入齐次坐标的概念。
+<span class="math display">\[
+\begin{bmatrix}
+x&#39; \\
+y&#39; \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+\end{bmatrix}
++
+\begin{bmatrix}
+t_x \\
+t_y \\
+\end{bmatrix}
+\]</span></p>
+<h3 id="仿射变换线性变换-平移">仿射变换（线性变换 + 平移）</h3>
+<p>对于n的维度，我们可以在表示的时候<strong>增加一个维度</strong>。</p>
+<ul>
+<li><p><span class="math display">\[
+2维点 = (x, y, 1)^T
+\]</span></p></li>
+<li><p><span class="math display">\[
+2维向量 = (x, y, 0)^T
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{pmatrix}
+x \\
+y \\
+w \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+x/w \\
+y/w \\
+1 \\
+\end{pmatrix}
+, (w \neq 0)
+\]</span></p></li>
+</ul>
+<p>因此可以得到如下（2维坐标）</p>
+<ul>
+<li>向量 + 向量= 向量</li>
+<li>点 - 点 = 向量</li>
+<li>点 + 向量 = 点</li>
+<li>点 + 点 = 两点的中点</li>
+</ul>
+<p>因此在2维空间下，线性变换可以表示如下：</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="分解放射变换">分解放射变换</h2>
+<h3 id="仿射变换顺序">仿射变换顺序</h3>
+<ul>
+<li>矩阵乘法不满足交换律，不能随意改变乘法的顺序。</li>
+<li>同时因为是左乘变换矩阵，我们可以先将左边的变换矩阵结合起来，将左边变成一个变换矩阵。</li>
+</ul>
+<p><span class="math display">\[
+A_n(...A_2(A_1(x))) = A_n···A_2·A_1·
+\begin{pmatrix}
+x \\
+y \\
+1 \\
+\end{pmatrix}
+\]</span></p>
+<ul>
+<li>同时，仿射变换是<strong>先线性变换，再平移变换</strong>。</li>
+</ul>
+<h3 id="绕非原点旋转">绕非原点旋转</h3>
+<p>由于旋转默认是以原点为中心的，因此如果我们想绕非原点进行旋转，可以拆分成以下3步：</p>
+<ul>
+<li>将旋转中心平移至原点，物体也进行相同的平移变换。</li>
+<li>物体绕原点旋转。</li>
+<li>物体平移回去。</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/27/SzPGmcsuYfeBQwl.png" style="zoom: 50%;" /></p>
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>图形学</category>
       </categories>
       <tags>
-        <tag>DPDK</tag>
-        <tag>linux</tag>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
       </tags>
   </entry>
   <entry>
@@ -644,46 +660,133 @@ alt="图形渲染管线流程" />
       </tags>
   </entry>
   <entry>
-    <title>LeetCode 138 复制带随机指针的链表</title>
-    <url>/2021/11/14/leetcode-138/</url>
-    <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
-<p><a
-href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode
-138题目链接</a></p>
-<h2 id="题目大意">题目大意</h2>
-<p>一个链表，定义如下</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    Node* next;</span><br><span class="line">    Node* random;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Node</span>(<span class="keyword">int</span> _val) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        next = <span class="literal">NULL</span>;</span><br><span class="line">        random = <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>除了常规的val值和next指针，还有一个random指针，该指针可以指向链表中的任何节点或空节点。</p>
-<p><a href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img
-src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"
-alt="链表图" /></a></p>
-<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个
-<strong>全新</strong>
-节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
-指针和 random
-指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong>
-。</p>
-<h2 id="题目难点">题目难点</h2>
-<p>如果只是常规地复制链表，很容易就能实现。该题不同之处在于每个节点有一个random指针，它可能指向任意的一个节点，可能指向前面也可能指向后面，在目前还没有初始化的节点，所以对于random指针的处理是本题的关键</p>
-<h2 id="解题思路">解题思路</h2>
-<h3 id="方法一-map">方法一 Map</h3>
-<p>利用C++
-STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
-<h3 id="方法二-在原节点的基础上修改">方法二 在原节点的基础上修改</h3>
-<p>在链表的每个节点后面新建一个节点，新节点和该节点一样，然后旧节点指向新节点，新节点的next等于原先旧节点的next，这样直接在新节点上修改，random指针也很方便。</p>
-<p><a href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img
-src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"
-alt="新链表图" /></a></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">// Definition for a Node.</span></span><br><span class="line"><span class="comment">class Node &#123;</span></span><br><span class="line"><span class="comment">public:</span></span><br><span class="line"><span class="comment">    int val;</span></span><br><span class="line"><span class="comment">    Node* next;</span></span><br><span class="line"><span class="comment">    Node* random;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    Node(int _val) &#123;</span></span><br><span class="line"><span class="comment">        val = _val;</span></span><br><span class="line"><span class="comment">        next = NULL;</span></span><br><span class="line"><span class="comment">        random = NULL;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">Node* <span class="title">copyRandomList</span><span class="params">(Node* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        Node*p=head,*q;</span><br><span class="line">        <span class="keyword">while</span>(p)&#123;</span><br><span class="line">            q=p-&gt;next;</span><br><span class="line">            p-&gt;next=<span class="keyword">new</span> <span class="built_in">Node</span>(p-&gt;val);</span><br><span class="line">            p-&gt;next-&gt;next=q;</span><br><span class="line">            p=q;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;random)</span><br><span class="line">                p-&gt;next-&gt;random=p-&gt;random-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;next-&gt;next) p=p-&gt;next-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;q=head-&gt;next;</span><br><span class="line">        Node *ret=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(p&amp;&amp;q)&#123;</span><br><span class="line">            p-&gt;next=q-&gt;next;</span><br><span class="line">            p=p-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p)q-&gt;next=p-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">            q=q-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="解题总结">解题总结</h2>
-<p>题目其实不难，方法一可能是比较常见的思路，方法二比较巧妙，在长度为n的链表里每个节点再新建一个节点，使其长度达到2n，这样可以方便地对使用旧节点的数据，也可以修改新节点的值，操作起来比较方便，而且也可以选择性地保留节点。</p>
+    <title>DPDK学习</title>
+    <url>/2021/07/01/LearnDPDK/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。</p>
+<span id="more"></span>
+<h2 id="dpdk介绍">DPDK介绍</h2>
+<blockquote>
+<p>DPDK全称Intel Data Plane Development
+Kit，是intel提供的数据平面开发工具集，为Intel
+architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
+<p>DPDK不同于Linux系统以通用性设计为目的，而是专注于网络应用中数据包的高性能处理。具体体现在DPDK应用程序是运行在用户空间上利用自身提供的数据平面库来收发数据包，绕过了Linux内核协议栈对数据包处理过程。它不是一个用户可以直接建立应用程序的完整产品，不包含需要与控制层（包括内核和协议堆栈）进行交互的工具。</p>
+<p>相比原生 Linux（Native Linux），采用Intel
+DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel
+x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
+</blockquote>
+<figure>
+<img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png"
+alt="DPDK工作图" />
+<figcaption aria-hidden="true">DPDK工作图</figcaption>
+</figure>
+<p>简单说，DPDK可以接管你的操作系统，在处理数据包的时候可以绕过内核，大大提高传输速率。</p>
+<h2 id="dpdk开发环境搭建">DPDK开发环境搭建</h2>
+<h3 id="选择长期支持的版本lts">选择长期支持的版本LTS</h3>
+<p>DPDK的下载官网如下：</p>
+<p>https://core.dpdk.org/download/</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png"
+alt="DPDK版本图" />
+<figcaption aria-hidden="true">DPDK版本图</figcaption>
+</figure>
+<p>我的开发环境是Ubuntu18.04 64位，选择的是DPDK 19.11.8(LTS)版本。</p>
+<h3 id="其余的软件环境">其余的软件环境</h3>
+<p>从下面的文档可以查看不同版本的System
+Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
+<p>http://core.dpdk.org/doc/archives/</p>
+<h3 id="虚拟机配置">虚拟机配置</h3>
+<ul>
+<li><p>核心：4个</p></li>
+<li><p>内存：4G，感觉可以再分大些</p></li>
+<li><p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p></li>
+</ul>
+<h2 id="dpdk安装">DPDK安装</h2>
+<h3 id="下载源代码">下载源代码</h3>
+<p>https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</p>
+<h3 id="设置环境变量">设置环境变量</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">64位系统：</span><br><span class="line">export RTE_SDK=`pwd`</span><br><span class="line">export RTE_TARGET=x86_64-native-linuxapp-gcc</span><br><span class="line"></span><br><span class="line">32位系统：</span><br><span class="line">export RTE_SDK=`pwd` </span><br><span class="line">export RTE_TARGET=i686-default-linuxapp-gcc</span><br></pre></td></tr></table></figure>
+<h3 id="利用setup.sh进行配置">利用setup.sh进行配置</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd dpdk-stable-19.11.8/usertools</span><br><span class="line">source ./dpdk-setup.sh</span><br></pre></td></tr></table></figure>
+<h4 id="编辑dpdk">编辑DPDK</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png"
+alt="编译DPDK" />
+<figcaption aria-hidden="true">编译DPDK</figcaption>
+</figure>
+<p>编译完后提示没有指定安装路径，我们只是编译而不是install就不用理会。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png"
+alt="编译后提示" />
+<figcaption aria-hidden="true">编译后提示</figcaption>
+</figure>
+<h4 id="插入igb-uio模块">插入IGB UIO模块</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png"
+alt="插入IGB UIO模块" />
+<figcaption aria-hidden="true">插入IGB UIO模块</figcaption>
+</figure>
+<h4 id="设置大页内存">设置大页内存</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png"
+alt="设置大页内存" />
+<figcaption aria-hidden="true">设置大页内存</figcaption>
+</figure>
+<p>默认设置的是2M的大页内存，这里输入1024，表示申请2G的大页内存。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png"
+alt="大页内存" />
+<figcaption aria-hidden="true">大页内存</figcaption>
+</figure>
+<p>查看配置的大页内存</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png"
+alt="查看大页内存" />
+<figcaption aria-hidden="true">查看大页内存</figcaption>
+</figure>
+<figure>
+<img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png"
+alt="大页内存" />
+<figcaption aria-hidden="true">大页内存</figcaption>
+</figure>
+<h4 id="查看网卡信息">查看网卡信息</h4>
+<p>记得通过ifconfig xxx down指令将网卡关闭。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png"
+alt="查看网卡信息" />
+<figcaption aria-hidden="true">查看网卡信息</figcaption>
+</figure>
+<figure>
+<img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png"
+alt="网卡信息" />
+<figcaption aria-hidden="true">网卡信息</figcaption>
+</figure>
+<h4 id="绑定网卡">绑定网卡</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png"
+alt="绑定网卡" />
+<figcaption aria-hidden="true">绑定网卡</figcaption>
+</figure>
+<p>输入pci的地址，0000开始到'前的全输入。</p>
+<h4 id="运行testpmd测试程序">运行testpmd测试程序</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png"
+alt="测试程序" />
+<figcaption aria-hidden="true">测试程序</figcaption>
+</figure>
+<p>输入0xf代表程序运行在0~3核心。</p>
+<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" /></p>
+<p>输入start开始抓包</p>
+<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" /></p>
+<p>stop停止抓包</p>
+<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" /></p>
 ]]></content>
       <categories>
-        <category>数据结构</category>
+        <category>linux</category>
       </categories>
       <tags>
-        <tag>数据结构</tag>
+        <tag>DPDK</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -727,39 +830,46 @@ sqlite可视化工具<strong>Sqlite Browser</strong></p>
       </tags>
   </entry>
   <entry>
-    <title>LeetCode 391 完美矩形</title>
-    <url>/2021/11/16/leetcode-391/</url>
-    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
-<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
-完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
+    <title>LeetCode 138 复制带随机指针的链表</title>
+    <url>/2021/11/14/leetcode-138/</url>
+    <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
+<p><a
+href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode
+138题目链接</a></p>
 <h2 id="题目大意">题目大意</h2>
-<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
-表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
-(ai, bi) 。</p>
-<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
-false 。</p>
-<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
-src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
-alt="示例" /></a></p>
-<blockquote>
-<p><strong>输入：</strong> rectangles =
-[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
-<strong>输出：</strong> true <strong>解释：</strong> 5
-个矩形一起可以精确地覆盖一个矩形区域。</p>
-</blockquote>
+<p>一个链表，定义如下</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    Node* next;</span><br><span class="line">    Node* random;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Node</span>(<span class="keyword">int</span> _val) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        next = <span class="literal">NULL</span>;</span><br><span class="line">        random = <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>除了常规的val值和next指针，还有一个random指针，该指针可以指向链表中的任何节点或空节点。</p>
+<p><a href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img
+src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"
+alt="链表图" /></a></p>
+<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个
+<strong>全新</strong>
+节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
+指针和 random
+指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong>
+。</p>
+<h2 id="题目难点">题目难点</h2>
+<p>如果只是常规地复制链表，很容易就能实现。该题不同之处在于每个节点有一个random指针，它可能指向任意的一个节点，可能指向前面也可能指向后面，在目前还没有初始化的节点，所以对于random指针的处理是本题的关键</p>
 <h2 id="解题思路">解题思路</h2>
-<p>感觉与其说是算法题，还不如说是找规律…</p>
-<p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
-<p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
-<p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
+<h3 id="方法一-map">方法一 Map</h3>
+<p>利用C++
+STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
+<h3 id="方法二-在原节点的基础上修改">方法二 在原节点的基础上修改</h3>
+<p>在链表的每个节点后面新建一个节点，新节点和该节点一样，然后旧节点指向新节点，新节点的next等于原先旧节点的next，这样直接在新节点上修改，random指针也很方便。</p>
+<p><a href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img
+src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"
+alt="新链表图" /></a></p>
 <h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">// Definition for a Node.</span></span><br><span class="line"><span class="comment">class Node &#123;</span></span><br><span class="line"><span class="comment">public:</span></span><br><span class="line"><span class="comment">    int val;</span></span><br><span class="line"><span class="comment">    Node* next;</span></span><br><span class="line"><span class="comment">    Node* random;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    Node(int _val) &#123;</span></span><br><span class="line"><span class="comment">        val = _val;</span></span><br><span class="line"><span class="comment">        next = NULL;</span></span><br><span class="line"><span class="comment">        random = NULL;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">Node* <span class="title">copyRandomList</span><span class="params">(Node* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        Node*p=head,*q;</span><br><span class="line">        <span class="keyword">while</span>(p)&#123;</span><br><span class="line">            q=p-&gt;next;</span><br><span class="line">            p-&gt;next=<span class="keyword">new</span> <span class="built_in">Node</span>(p-&gt;val);</span><br><span class="line">            p-&gt;next-&gt;next=q;</span><br><span class="line">            p=q;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;random)</span><br><span class="line">                p-&gt;next-&gt;random=p-&gt;random-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;next-&gt;next) p=p-&gt;next-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;q=head-&gt;next;</span><br><span class="line">        Node *ret=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(p&amp;&amp;q)&#123;</span><br><span class="line">            p-&gt;next=q-&gt;next;</span><br><span class="line">            p=p-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p)q-&gt;next=p-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">            q=q-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="解题总结">解题总结</h2>
+<p>题目其实不难，方法一可能是比较常见的思路，方法二比较巧妙，在长度为n的链表里每个节点再新建一个节点，使其长度达到2n，这样可以方便地对使用旧节点的数据，也可以修改新节点的值，操作起来比较方便，而且也可以选择性地保留节点。</p>
 ]]></content>
       <categories>
-        <category>算法</category>
+        <category>数据结构</category>
       </categories>
       <tags>
-        <tag>算法</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -843,6 +953,42 @@ href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
       </categories>
       <tags>
         <tag>pcr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode 391 完美矩形</title>
+    <url>/2021/11/16/leetcode-391/</url>
+    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
+<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
+完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
+<h2 id="题目大意">题目大意</h2>
+<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
+表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
+(ai, bi) 。</p>
+<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
+false 。</p>
+<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
+src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
+alt="示例" /></a></p>
+<blockquote>
+<p><strong>输入：</strong> rectangles =
+[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
+<strong>输出：</strong> true <strong>解释：</strong> 5
+个矩形一起可以精确地覆盖一个矩形区域。</p>
+</blockquote>
+<h2 id="解题思路">解题思路</h2>
+<p>感觉与其说是算法题，还不如说是找规律…</p>
+<p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
+<p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
+<p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
