@@ -20,15 +20,26 @@
     var CONFIG = {"hostname":"dyhnoah.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Ushioの鸽子屋">
-<meta property="og:url" content="https://dyhnoah.github.io/categories/LaTeX/index.html">
+  <meta name="description" content="本章内容  变换 为什么要学习“变换” 2D变换：旋转、缩放、切变 齐次坐标 组合变换 3D变换">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Games101-Lecture3-4（Transformation）学习笔记">
+<meta property="og:url" content="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
+<meta property="og:description" content="本章内容  变换 为什么要学习“变换” 2D变换：旋转、缩放、切变 齐次坐标 组合变换 3D变换">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/26/yIYPX27m4ckHFJd.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/26/yeWZCvQIOum5UzS.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/26/WecD4di7vZuQnTz.png">
+<meta property="article:published_time" content="2022-01-25T15:01:56.000Z">
+<meta property="article:modified_time" content="2022-01-25T15:01:56.000Z">
 <meta property="article:author" content="Ushio">
+<meta property="article:tag" content="图形学">
+<meta property="article:tag" content="Games101">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png">
 
-<link rel="canonical" href="https://dyhnoah.github.io/categories/LaTeX/">
+<link rel="canonical" href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">
 
 
 <script id="page-configurations">
@@ -36,12 +47,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: LaTeX | Ushioの鸽子屋</title>
+  <title>Games101-Lecture3-4（Transformation）学习笔记 | Ushioの鸽子屋</title>
   
 
 
@@ -159,51 +170,143 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">LaTeX
-          <small>分类</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ushio">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ushioの鸽子屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Games101-Lecture3-4（Transformation）学习笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-01-25 23:01:56" itemprop="dateCreated datePublished" datetime="2022-01-25T23:01:56+08:00">2022-01-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">图形学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <h2 id="本章内容">本章内容</h2>
+<ul>
+<li>变换</li>
+<li>为什么要学习“变换”</li>
+<li>2D变换：旋转、缩放、切变</li>
+<li>齐次坐标</li>
+<li>组合变换</li>
+<li>3D变换</li>
+</ul>
+<span id="more"></span>
+<h2 id="前情提要">前情提要</h2>
+<ul>
+<li><p>向量</p>
+<p>基本运算：加法、乘法。</p></li>
+<li><p>点乘</p>
+<p>通过点乘结果的正负用来判断前后关系。</p></li>
+<li><p>叉乘</p>
+<p>通过叉乘结果的朝向，可以用来判断左右关系，比如判断点是否在图形内。</p></li>
+<li><p>矩阵计算</p></li>
+</ul>
+<p>本章节将开启Transformation（变换）的内容，以上是变换内容的基础。</p>
+<h2 id="为什么要变换">为什么要变换</h2>
+<p>在动画制作和展示中，不可避免的要涉及到视角、各种模型的变换，还有将3维空间视图转化为2维空间的变换。</p>
+<p><img src="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png" style="zoom: 33%;" /></p>
+<h2 id="d变换">2D变换</h2>
+<ul>
+<li><p>将变换与矩阵联系起来</p></li>
+<li><p>旋转、缩放、切变</p></li>
+</ul>
+<h3 id="缩放">缩放</h3>
+<p>对于原来的x，y坐标，我们对于x缩小至0.5倍，y不变的一个不均匀缩放，使其左乘缩放矩阵即可。</p>
+<p><img src="https://s2.loli.net/2022/01/26/yIYPX27m4ckHFJd.png" style="zoom: 33%;" /></p>
+<h3 id="镜像">镜像</h3>
+<p>对图像以y轴做镜像变换，使其x坐标相反即可。</p>
+<p><img src="https://s2.loli.net/2022/01/26/yeWZCvQIOum5UzS.png" style="zoom:33%;" /></p>
+<h3 id="切变">切变</h3>
+<p>y轴坐标不变，x轴移动a方向距离，如果图像y轴坐标为1，切变变换的矩阵如下。</p>
+<p><img src="https://s2.loli.net/2022/01/26/WecD4di7vZuQnTz.png" style="zoom:33%;" /></p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+        
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-11-27T01:09:41+08:00"
-              content="2021-11-27">
-          11-27
-        </time>
-      </div>
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Ushio
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/" title="Games101-Lecture3-4（Transformation）学习笔记">https://dyhnoah.github.io/2022/01/25/Games101-Transformation/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/27/LaTeXConfigure/" itemprop="url">
-            <span itemprop="name">Windows环境下配置Emacs+LaTeX</span>
-          </a>
-      </div>
 
-    </header>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" rel="tag"># 图形学</a>
+              <a href="/tags/Games101/" rel="tag"># Games101</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/21/Games101-Geometry/" rel="prev" title="Games101-Lecture10-13（Geometry）学习笔记">
+      <i class="fa fa-chevron-left"></i> Games101-Lecture10-13（Geometry）学习笔记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -256,6 +359,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="nav-number">2.</span> <span class="nav-text">前情提要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8F%98%E6%8D%A2"><span class="nav-number">3.</span> <span class="nav-text">为什么要变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d%E5%8F%98%E6%8D%A2"><span class="nav-number">4.</span> <span class="nav-text">2D变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E6%94%BE"><span class="nav-number">4.1.</span> <span class="nav-text">缩放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%95%9C%E5%83%8F"><span class="nav-number">4.2.</span> <span class="nav-text">镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%87%E5%8F%98"><span class="nav-number">4.3.</span> <span class="nav-text">切变</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
