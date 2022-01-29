@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"dyhnoah.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本章内容  变换 为什么要学习“变换” 2D变换：旋转、缩放、切变 齐次坐标 组合变换 3D变换 观测变换">
+  <meta name="description" content="本章内容  变换 为什么要学习“变换” 2D变换：旋转、缩放、切变 齐次坐标 组合变换 3D变换 视图变换 投影变换">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Games101-Lecture3-4（Transformation）学习笔记">
 <meta property="og:url" content="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
-<meta property="og:description" content="本章内容  变换 为什么要学习“变换” 2D变换：旋转、缩放、切变 齐次坐标 组合变换 3D变换 观测变换">
+<meta property="og:description" content="本章内容  变换 为什么要学习“变换” 2D变换：旋转、缩放、切变 齐次坐标 组合变换 3D变换 视图变换 投影变换">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/26/yIYPX27m4ckHFJd.png">
@@ -39,12 +39,14 @@
 <meta property="og:image" content="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/28/mAsKIMWbnqHiCeo.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/28/bwi8sPWnOd15BTC.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/29/Es8SbcUlQGaq5Ae.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/29/jxWdO9bIvNfhzao.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/29/l8Rs6ujITvExWOF.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/29/wWUJMuztb9f7LPD.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/28/hiJpX4sA9CfORcZ.png">
 <meta property="article:published_time" content="2022-01-25T15:01:56.000Z">
-<meta property="article:modified_time" content="2022-01-25T15:01:56.000Z">
+<meta property="article:modified_time" content="2022-01-29T15:01:56.000Z">
 <meta property="article:author" content="Ushio">
 <meta property="article:tag" content="图形学">
 <meta property="article:tag" content="Games101">
@@ -214,6 +216,13 @@
 
               <time title="创建时间：2022-01-25 23:01:56" itemprop="dateCreated datePublished" datetime="2022-01-25T23:01:56+08:00">2022-01-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-01-29 23:01:56" itemprop="dateModified" datetime="2022-01-29T23:01:56+08:00">2022-01-29</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -230,14 +239,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>5.6k</span>
+              <span>6.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>5 分钟</span>
+              <span>6 分钟</span>
             </span>
 
         </div>
@@ -257,7 +266,8 @@
 <li>齐次坐标</li>
 <li>组合变换</li>
 <li>3D变换</li>
-<li>观测变换</li>
+<li>视图变换</li>
+<li>投影变换</li>
 </ul>
 <span id="more"></span>
 <h2 id="前情提要">前情提要</h2>
@@ -448,7 +458,7 @@ cos\theta &amp; sin\theta \\
 R^T_\theta
 \]</span></p>
 <p><span class="math display">\[
-R_{-\theta} = R^{-1}_{\theta}
+R_{-\theta} = R^{T}_{\theta} = R^{-1}_{\theta}
 \]</span></p>
 <h2 id="d变换-1">3D变换</h2>
 <h3 id="缩放和平移">缩放和平移</h3>
@@ -478,7 +488,8 @@ n_z &amp; 0 &amp; -n_x \\
 -n_y &amp; n_x &amp; 0 \\
 \end{pmatrix}
 \]</span></p>
-<h2 id="视图变换">视图变换</h2>
+<h2 id="视图变换viewcamera-transformation">视图变换（View/Camera
+Transformation）</h2>
 <h3 id="视角or相机变换">视角or相机变换</h3>
 <h4 id="定义相机">定义相机</h4>
 <ul>
@@ -488,9 +499,71 @@ n_z &amp; 0 &amp; -n_x \\
 </ul>
 <p><img src="https://s2.loli.net/2022/01/28/bwi8sPWnOd15BTC.png" style="zoom: 40%;" /></p>
 <p>为了方便计算，我们可以<strong>将相机放在原点，相机朝向z轴的负方向，相机上方的方向是y轴正方向</strong>。同时，我们在移动相机或者视角的时候，当作<strong>相机位置和朝向始终不动，而是物体在移动</strong>。</p>
-<h4 id="通过变换将相机放到标准位置上">通过变换将相机放到标准位置上</h4>
-<p>。。。</p>
-<h3 id="投影变换">投影变换</h3>
+<h4 id="通过m_view变换将相机放到标准位置上">通过<span
+class="math inline">\(M_{view}\)</span>变换将相机放到标准位置上</h4>
+<p>基本思想：</p>
+<ul>
+<li>将<span
+class="math inline">\(\vec{e}\)</span>（相机中心点）移动到原点</li>
+<li>将<span
+class="math inline">\(\vec{g}\)</span>旋转到<strong>z轴的负方向</strong></li>
+<li>将<span
+class="math inline">\(\vec{t}\)</span>旋转到<strong>y轴的正方向</strong></li>
+<li>此时<span class="math inline">\((\vec{g} *
+\vec{t})\)</span>和x轴的正方向一样</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/29/Es8SbcUlQGaq5Ae.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/01/29/jxWdO9bIvNfhzao.png" style="zoom:50%;" />
+<span class="math display">\[
+\begin{align*}
+M_{view} &amp; = R_{view}*T_{view} \\
+T_{view} &amp;=
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; -x_{\vec{e}} \\
+0 &amp; 1 &amp; 0 &amp; -y_{\vec{e}} \\
+0 &amp; 0 &amp; 1 &amp; -z_{\vec{e}} \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix}
+\end{align*}
+\]</span> 以上的步骤虽然明确，但是我们很难写出这样的<span
+class="math inline">\(R_{view}\)</span>矩阵来表示从<span
+class="math inline">\(\vec{g}\)</span>、<span
+class="math inline">\(\vec{t}\)</span>等轴旋转到z轴负方向和y轴正方向的操作。
+因此我们考虑反过来表示，我们将z轴负方向和y轴正方向旋转到<span
+class="math inline">\(\vec{g}\)</span>、<span
+class="math inline">\(\vec{t}\)</span>等轴，再利用之前<strong>旋转的变换矩阵是正交矩阵</strong>，<span
+class="math inline">\(R_{-\theta} = R^{T}_{\theta} =
+R^{-1}_{\theta}\)</span>，从而可以求出<span
+class="math inline">\(R_{view}\)</span>，于是我们考虑将x轴旋转到<span
+class="math inline">\((\vec{g} * \vec{t})\)</span>，y轴旋转到<span
+class="math inline">\(\vec{t}\)</span>，z轴旋转到<span
+class="math inline">\(-\vec{g}\)</span>，同时为了保证相对运动不变，其它所有物体都需要跟着做这个变换。
+<span class="math display">\[
+\begin{align*}
+R^{-1}_{view} &amp; =
+\begin{bmatrix}
+x_{\vec{g}*\vec{t}} &amp; x_{\vec{t}} &amp; x_{-\vec{g}} &amp; 0 \\
+y_{\vec{g}*\vec{t}} &amp; y_{\vec{t}} &amp; y_{-\vec{g}} &amp; 0 \\
+z_{\vec{g}*\vec{t}} &amp; z_{\vec{t}} &amp; z_{-\vec{g}} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix} \\
+\Rightarrow
+R_{view} &amp; =
+\begin{bmatrix}
+x_{\vec{g}*\vec{t}} &amp; y_{\vec{g}*\vec{t}} &amp; z_{\vec{g}*\vec{t}}
+&amp; 0 \\
+x_{\vec{t}} &amp; y_{\vec{t}} &amp; z_{\vec{t}} &amp; 0 \\
+x_{-\vec{g}} &amp; y_{-\vec{g}} &amp; z_{-\vec{g}} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix} \\
+\end{align*}
+\]</span></p>
+<h3 id="总结">总结</h3>
+<ul>
+<li>物体要与相机一同移动</li>
+<li>保证相机在原点，up为y轴正方向，朝向z轴负方向</li>
+</ul>
+<h2 id="投影变换">投影变换</h2>
 <h3 id="正交投影">正交投影</h3>
 <p><strong>正交投影</strong>是<strong>将相机放在无限远的位置</strong>上，打出来的是平行光，相同的物体不论距离，呈现的大小一样。
 如下图所示，左下角是该物体原本的位置和形状，我们需要通过正交投影使其落在<span
@@ -614,7 +687,7 @@ M_{persp-&gt;ortho}\)</span></p>
 <strong>透视投影</strong>是<strong>将相机放在一个点</strong>上，符合<strong>近大远小</strong>的特点。</p>
 <p><img src="https://s2.loli.net/2022/01/28/hiJpX4sA9CfORcZ.png" style="zoom: 50%;" /></p>
 <h3 id="思考题">思考题</h3>
-<p>对于中间平面的点，再经过“挤压变换”后，z轴的坐标是会更靠近近平面还是原远离近平面？</p>
+<p>对于中间平面的点，再经过“挤压变换”后，z轴的坐标是会更<strong>靠近</strong>近平面还是<strong>远离</strong>近平面？</p>
 <p>其实带入点<span class="math inline">\((x, y, z, 1), (n &lt; z &lt;
 f)\)</span>，得 <span class="math display">\[
 M_{persp-&gt;ortho}^{(4*4)} *
@@ -735,7 +808,8 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="nav-number">2.</span> <span class="nav-text">前情提要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8F%98%E6%8D%A2"><span class="nav-number">3.</span> <span class="nav-text">为什么要变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d%E5%8F%98%E6%8D%A2"><span class="nav-number">4.</span> <span class="nav-text">2D变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E6%94%BE"><span class="nav-number">4.1.</span> <span class="nav-text">缩放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%95%9C%E5%83%8F"><span class="nav-number">4.2.</span> <span class="nav-text">镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%87%E5%8F%98"><span class="nav-number">4.3.</span> <span class="nav-text">切变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC"><span class="nav-number">4.4.</span> <span class="nav-text">旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5"><span class="nav-number">4.5.</span> <span class="nav-text">线性变换（矩阵）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BD%90%E6%AC%A1%E5%9D%90%E6%A0%87"><span class="nav-number">5.</span> <span class="nav-text">齐次坐标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%95%E5%85%A5%E9%BD%90%E6%AC%A1%E5%9D%90%E6%A0%87"><span class="nav-number">5.1.</span> <span class="nav-text">为什么引入齐次坐标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2-%E5%B9%B3%E7%A7%BB"><span class="nav-number">5.2.</span> <span class="nav-text">仿射变换（线性变换 + 平移）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E8%A7%A3%E6%94%BE%E5%B0%84%E5%8F%98%E6%8D%A2"><span class="nav-number">6.</span> <span class="nav-text">分解放射变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E9%A1%BA%E5%BA%8F"><span class="nav-number">6.1.</span> <span class="nav-text">仿射变换顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%95%E9%9D%9E%E5%8E%9F%E7%82%B9%E6%97%8B%E8%BD%AC"><span class="nav-number">6.2.</span> <span class="nav-text">绕非原点旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E7%9A%84%E9%80%86%E7%9F%A9%E9%98%B5"><span class="nav-number">6.3.</span> <span class="nav-text">旋转的逆矩阵</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d%E5%8F%98%E6%8D%A2-1"><span class="nav-number">7.</span> <span class="nav-text">3D变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E6%94%BE%E5%92%8C%E5%B9%B3%E7%A7%BB"><span class="nav-number">7.1.</span> <span class="nav-text">缩放和平移</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC-1"><span class="nav-number">7.2.</span> <span class="nav-text">旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F"><span class="nav-number">7.3.</span> <span class="nav-text">罗德里格斯旋转公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%86%E5%9B%BE%E5%8F%98%E6%8D%A2"><span class="nav-number">8.</span> <span class="nav-text">视图变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%86%E8%A7%92or%E7%9B%B8%E6%9C%BA%E5%8F%98%E6%8D%A2"><span class="nav-number">8.1.</span> <span class="nav-text">视角or相机变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%9B%B8%E6%9C%BA"><span class="nav-number">8.1.1.</span> <span class="nav-text">定义相机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E5%8F%98%E6%8D%A2%E5%B0%86%E7%9B%B8%E6%9C%BA%E6%94%BE%E5%88%B0%E6%A0%87%E5%87%86%E4%BD%8D%E7%BD%AE%E4%B8%8A"><span class="nav-number">8.1.2.</span> <span class="nav-text">通过变换将相机放到标准位置上</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%95%E5%BD%B1%E5%8F%98%E6%8D%A2"><span class="nav-number">8.2.</span> <span class="nav-text">投影变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1"><span class="nav-number">8.3.</span> <span class="nav-text">正交投影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%8F%E8%A7%86%E6%8A%95%E5%BD%B1"><span class="nav-number">8.4.</span> <span class="nav-text">透视投影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E7%82%B9"><span class="nav-number">8.4.1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">8.4.2.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%B1%82%E5%BE%97m_persp-ortho%E7%9F%A9%E9%98%B5"><span class="nav-number">8.4.3.</span> <span class="nav-text">如何求得\(M_{persp-&gt;ortho}\)矩阵</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1-vs-%E9%80%8F%E8%A7%86%E6%8A%95%E5%BD%B1"><span class="nav-number">8.5.</span> <span class="nav-text">正交投影 vs 透视投影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%80%83%E9%A2%98"><span class="nav-number">8.6.</span> <span class="nav-text">思考题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="nav-number">2.</span> <span class="nav-text">前情提要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8F%98%E6%8D%A2"><span class="nav-number">3.</span> <span class="nav-text">为什么要变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d%E5%8F%98%E6%8D%A2"><span class="nav-number">4.</span> <span class="nav-text">2D变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E6%94%BE"><span class="nav-number">4.1.</span> <span class="nav-text">缩放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%95%9C%E5%83%8F"><span class="nav-number">4.2.</span> <span class="nav-text">镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%87%E5%8F%98"><span class="nav-number">4.3.</span> <span class="nav-text">切变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC"><span class="nav-number">4.4.</span> <span class="nav-text">旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5"><span class="nav-number">4.5.</span> <span class="nav-text">线性变换（矩阵）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BD%90%E6%AC%A1%E5%9D%90%E6%A0%87"><span class="nav-number">5.</span> <span class="nav-text">齐次坐标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%95%E5%85%A5%E9%BD%90%E6%AC%A1%E5%9D%90%E6%A0%87"><span class="nav-number">5.1.</span> <span class="nav-text">为什么引入齐次坐标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2-%E5%B9%B3%E7%A7%BB"><span class="nav-number">5.2.</span> <span class="nav-text">仿射变换（线性变换 + 平移）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E8%A7%A3%E6%94%BE%E5%B0%84%E5%8F%98%E6%8D%A2"><span class="nav-number">6.</span> <span class="nav-text">分解放射变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E9%A1%BA%E5%BA%8F"><span class="nav-number">6.1.</span> <span class="nav-text">仿射变换顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%95%E9%9D%9E%E5%8E%9F%E7%82%B9%E6%97%8B%E8%BD%AC"><span class="nav-number">6.2.</span> <span class="nav-text">绕非原点旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E7%9A%84%E9%80%86%E7%9F%A9%E9%98%B5"><span class="nav-number">6.3.</span> <span class="nav-text">旋转的逆矩阵</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d%E5%8F%98%E6%8D%A2-1"><span class="nav-number">7.</span> <span class="nav-text">3D变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E6%94%BE%E5%92%8C%E5%B9%B3%E7%A7%BB"><span class="nav-number">7.1.</span> <span class="nav-text">缩放和平移</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC-1"><span class="nav-number">7.2.</span> <span class="nav-text">旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F"><span class="nav-number">7.3.</span> <span class="nav-text">罗德里格斯旋转公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%86%E5%9B%BE%E5%8F%98%E6%8D%A2viewcamera-transformation"><span class="nav-number">8.</span> <span class="nav-text">视图变换（View&#x2F;Camera
+Transformation）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%86%E8%A7%92or%E7%9B%B8%E6%9C%BA%E5%8F%98%E6%8D%A2"><span class="nav-number">8.1.</span> <span class="nav-text">视角or相机变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%9B%B8%E6%9C%BA"><span class="nav-number">8.1.1.</span> <span class="nav-text">定义相机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%9A%E8%BF%87m_view%E5%8F%98%E6%8D%A2%E5%B0%86%E7%9B%B8%E6%9C%BA%E6%94%BE%E5%88%B0%E6%A0%87%E5%87%86%E4%BD%8D%E7%BD%AE%E4%B8%8A"><span class="nav-number">8.1.2.</span> <span class="nav-text">通过\(M_{view}\)变换将相机放到标准位置上</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">8.2.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%95%E5%BD%B1%E5%8F%98%E6%8D%A2"><span class="nav-number">9.</span> <span class="nav-text">投影变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1"><span class="nav-number">9.1.</span> <span class="nav-text">正交投影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%8F%E8%A7%86%E6%8A%95%E5%BD%B1"><span class="nav-number">9.2.</span> <span class="nav-text">透视投影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E7%82%B9"><span class="nav-number">9.2.1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">9.2.2.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%B1%82%E5%BE%97m_persp-ortho%E7%9F%A9%E9%98%B5"><span class="nav-number">9.2.3.</span> <span class="nav-text">如何求得\(M_{persp-&gt;ortho}\)矩阵</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1-vs-%E9%80%8F%E8%A7%86%E6%8A%95%E5%BD%B1"><span class="nav-number">9.3.</span> <span class="nav-text">正交投影 vs 透视投影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%80%83%E9%A2%98"><span class="nav-number">9.4.</span> <span class="nav-text">思考题</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -811,12 +885,12 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">28k</span>
+    <span title="站点总字数">30k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">26 分钟</span>
+    <span title="站点阅读时长">27 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
