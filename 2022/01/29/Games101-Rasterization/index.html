@@ -48,8 +48,10 @@
 <meta property="og:image" content="https://s2.loli.net/2022/01/31/21NEvK9FVj8rXJx.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/31/3T9aobHKsBpjGMW.png">
 <meta property="og:image" content="https://s2.loli.net/2022/01/31/WOEP9DmJxXbloCi.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/01/wABlx2Opsg3zaFj.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/01/H63LCcSQb1nqTAE.png">
 <meta property="article:published_time" content="2022-01-29T11:51:41.000Z">
-<meta property="article:modified_time" content="2022-01-31T10:00:41.000Z">
+<meta property="article:modified_time" content="2022-02-01T15:00:41.000Z">
 <meta property="article:author" content="Ushio">
 <meta property="article:tag" content="图形学">
 <meta property="article:tag" content="Games101">
@@ -199,7 +201,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Ushio">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="咕咕咕">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -224,7 +226,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-31 18:00:41" itemprop="dateModified" datetime="2022-01-31T18:00:41+08:00">2022-01-31</time>
+                <time title="修改时间：2022-02-01 23:00:41" itemprop="dateModified" datetime="2022-02-01T23:00:41+08:00">2022-02-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -242,14 +244,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.7k</span>
+              <span>3.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -312,7 +314,7 @@ M_{viewport} =
 \end{bmatrix}
 \]</span></p></li>
 </ul>
-<h3 id="帧缓冲区">帧缓冲区</h3>
+<h3 id="帧缓存区">帧缓存区</h3>
 <p>内存中一个用来光栅化展示的区域</p>
 <h3 id="三角形基本形状图元">三角形——基本形状图元</h3>
 <ul>
@@ -447,7 +449,27 @@ AA），将上一帧感知到的结果应用到当前帧，相当于把MSAA对�
 <li>对于高分辨率下未知的像素点，使用深度学习的方法进行猜测，DLSS (Deep
 Learning Super Sampling)</li>
 </ul>
-<h2 id="深度测试">深度测试</h2>
+<h2 id="深度测试z-buffering">深度测试（Z-buffering）</h2>
+<h3 id="油画家算法">油画家算法</h3>
+<p>从远到近，让近处的物体覆盖远处的物体。开销为O(n log
+n)，但是对于相互覆盖的物体无法判断，如下图。</p>
+<p><img src="https://s2.loli.net/2022/02/01/wABlx2Opsg3zaFj.png" style="zoom: 50%;" /></p>
+<h3 id="z-buffer">Z-Buffer</h3>
+<p>为了解决上述问题，这里使用Z-Buffer，思想如下</p>
+<ul>
+<li>存储每个像素当前的最小z值</li>
+<li>需要用一个额外的缓存区来存储深度信息，始终同步生成两个缓存区</li>
+<li>帧缓存区存储颜色值</li>
+<li>深度缓存区存储深度，维护遮挡信息</li>
+<li>简单起见，我们假设z始终为正，z越大表示离相机越远</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/01/H63LCcSQb1nqTAE.png" style="zoom: 40%;" /></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//每个像素深度的初始值为无限大</span></span><br><span class="line"><span class="keyword">for</span> (each triangle T)</span><br><span class="line">	<span class="keyword">for</span> (each <span class="built_in">sample</span> (x,y,z) in T)</span><br><span class="line">		<span class="keyword">if</span> (z &lt; zbuffer[x,y]) <span class="comment">// closest sample so far</span></span><br><span class="line">			framebuffer[x,y] = rgb; <span class="comment">// update color</span></span><br><span class="line">			zbuffer[x,y] = z; <span class="comment">// update depth</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">					; <span class="comment">// do nothing, this sample is occluded</span></span><br></pre></td></tr></table></figure>
+<h3 id="总结-1">总结</h3>
+<ul>
+<li>深度缓存复杂度为O(n)</li>
+<li>几乎应用在所有的GPU硬件中</li>
+</ul>
 
     </div>
 
@@ -549,8 +571,8 @@ Learning Super Sampling)</li>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%8F%E5%B9%95"><span class="nav-number">2.1.</span> <span class="nav-text">屏幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E6%A0%85%E5%8C%96"><span class="nav-number">2.2.</span> <span class="nav-text">光栅化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%83%8F%E7%B4%A0"><span class="nav-number">2.3.</span> <span class="nav-text">像素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%8F%E5%B9%95%E7%9A%84%E7%A9%BA%E9%97%B4"><span class="nav-number">2.4.</span> <span class="nav-text">屏幕的空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E6%AD%A3%E5%88%99%E7%AB%8B%E6%96%B9%E4%BD%93-113%E5%8F%98%E6%8D%A2%E5%88%B0%E5%B1%8F%E5%B9%95"><span class="nav-number">2.5.</span> <span class="nav-text">从正则立方体\([-1,1]^3\)变换到屏幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%A7%E7%BC%93%E5%86%B2%E5%8C%BA"><span class="nav-number">2.6.</span> <span class="nav-text">帧缓冲区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9F%BA%E6%9C%AC%E5%BD%A2%E7%8A%B6%E5%9B%BE%E5%85%83"><span class="nav-number">2.7.</span> <span class="nav-text">三角形——基本形状图元</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%85%89%E6%A0%85%E5%8C%96%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">一个简单的光栅化方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E8%B5%B0%E6%A0%B7"><span class="nav-number">4.</span> <span class="nav-text">反走样</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%91%E5%9F%9F"><span class="nav-number">5.</span> <span class="nav-text">频域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2"><span class="nav-number">5.1.</span> <span class="nav-text">傅里叶变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%B0%E6%A0%B7%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">5.2.</span> <span class="nav-text">走样的定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BB%A4%E6%B3%A2"><span class="nav-number">6.</span> <span class="nav-text">滤波</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">6.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E5%83%8F%E7%9A%84%E9%A2%91%E7%8E%87%E5%86%85%E5%AE%B9"><span class="nav-number">6.2.</span> <span class="nav-text">可视化图像的频率内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AB%98%E9%80%9A%E6%BB%A4%E6%B3%A2"><span class="nav-number">6.3.</span> <span class="nav-text">高通滤波</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%8E%E9%80%9A%E6%BB%A4%E6%B3%A2"><span class="nav-number">6.4.</span> <span class="nav-text">低通滤波</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%97%B6%E5%8E%BB%E6%8E%89%E9%AB%98%E9%A2%91%E5%92%8C%E4%BD%8E%E9%A2%91%E4%BF%A1%E6%81%AF"><span class="nav-number">6.5.</span> <span class="nav-text">同时去掉高频和低频信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%B7%E7%A7%AF%E5%B9%B3%E5%9D%87"><span class="nav-number">7.</span> <span class="nav-text">卷积（平均）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%90%86"><span class="nav-number">7.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%8D%B7%E7%A7%AF%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="nav-number">7.2.</span> <span class="nav-text">实现卷积的两种方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80"><span class="nav-number">7.2.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="nav-number">7.2.2.</span> <span class="nav-text">方法二</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%87%E6%A0%B7%E9%87%8D%E5%A4%8D%E9%A2%91%E7%8E%87%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">8.</span> <span class="nav-text">采样（重复频率的内容）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%B0%E6%A0%B7%E9%A2%91%E7%8E%87%E7%9A%84%E6%B7%B7%E5%90%88"><span class="nav-number">9.</span> <span class="nav-text">走样（频率的混合）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E8%B5%B0%E6%A0%B7%E7%9A%84%E9%94%99%E8%AF%AF"><span class="nav-number">10.</span> <span class="nav-text">如何减少走样的错误</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%E5%A2%9E%E5%8A%A0%E9%87%87%E6%A0%B7%E7%8E%87%E7%BB%88%E6%9E%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="nav-number">10.1.</span> <span class="nav-text">方法一：增加采样率（终极解决方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%E5%8F%8D%E8%B5%B0%E6%A0%B7"><span class="nav-number">10.2.</span> <span class="nav-text">方法二：反走样</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E8%B6%85%E9%87%87%E6%A0%B7msaamultisampling-anti-aliasing%E8%BF%9B%E8%A1%8C%E5%8F%8D%E8%B5%B0%E6%A0%B7"><span class="nav-number">11.</span> <span class="nav-text">通过超采样（MSAA—MultiSampling
-Anti-Aliasing）进行反走样</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">11.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">11.2.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E4%BB%B7"><span class="nav-number">11.2.1.</span> <span class="nav-text">代价</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E5%AE%83%E6%96%B9%E6%B3%95"><span class="nav-number">11.2.2.</span> <span class="nav-text">其它方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B6%85%E5%88%86%E8%BE%A8%E7%8E%87"><span class="nav-number">11.2.3.</span> <span class="nav-text">超分辨率</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%95"><span class="nav-number">12.</span> <span class="nav-text">深度测试</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%8F%E5%B9%95"><span class="nav-number">2.1.</span> <span class="nav-text">屏幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E6%A0%85%E5%8C%96"><span class="nav-number">2.2.</span> <span class="nav-text">光栅化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%83%8F%E7%B4%A0"><span class="nav-number">2.3.</span> <span class="nav-text">像素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%8F%E5%B9%95%E7%9A%84%E7%A9%BA%E9%97%B4"><span class="nav-number">2.4.</span> <span class="nav-text">屏幕的空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E6%AD%A3%E5%88%99%E7%AB%8B%E6%96%B9%E4%BD%93-113%E5%8F%98%E6%8D%A2%E5%88%B0%E5%B1%8F%E5%B9%95"><span class="nav-number">2.5.</span> <span class="nav-text">从正则立方体\([-1,1]^3\)变换到屏幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%A7%E7%BC%93%E5%AD%98%E5%8C%BA"><span class="nav-number">2.6.</span> <span class="nav-text">帧缓存区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9F%BA%E6%9C%AC%E5%BD%A2%E7%8A%B6%E5%9B%BE%E5%85%83"><span class="nav-number">2.7.</span> <span class="nav-text">三角形——基本形状图元</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%85%89%E6%A0%85%E5%8C%96%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">一个简单的光栅化方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E8%B5%B0%E6%A0%B7"><span class="nav-number">4.</span> <span class="nav-text">反走样</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%91%E5%9F%9F"><span class="nav-number">5.</span> <span class="nav-text">频域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2"><span class="nav-number">5.1.</span> <span class="nav-text">傅里叶变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%B0%E6%A0%B7%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">5.2.</span> <span class="nav-text">走样的定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BB%A4%E6%B3%A2"><span class="nav-number">6.</span> <span class="nav-text">滤波</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">6.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E5%83%8F%E7%9A%84%E9%A2%91%E7%8E%87%E5%86%85%E5%AE%B9"><span class="nav-number">6.2.</span> <span class="nav-text">可视化图像的频率内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AB%98%E9%80%9A%E6%BB%A4%E6%B3%A2"><span class="nav-number">6.3.</span> <span class="nav-text">高通滤波</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%8E%E9%80%9A%E6%BB%A4%E6%B3%A2"><span class="nav-number">6.4.</span> <span class="nav-text">低通滤波</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%97%B6%E5%8E%BB%E6%8E%89%E9%AB%98%E9%A2%91%E5%92%8C%E4%BD%8E%E9%A2%91%E4%BF%A1%E6%81%AF"><span class="nav-number">6.5.</span> <span class="nav-text">同时去掉高频和低频信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%B7%E7%A7%AF%E5%B9%B3%E5%9D%87"><span class="nav-number">7.</span> <span class="nav-text">卷积（平均）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%90%86"><span class="nav-number">7.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%8D%B7%E7%A7%AF%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="nav-number">7.2.</span> <span class="nav-text">实现卷积的两种方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80"><span class="nav-number">7.2.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="nav-number">7.2.2.</span> <span class="nav-text">方法二</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%87%E6%A0%B7%E9%87%8D%E5%A4%8D%E9%A2%91%E7%8E%87%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">8.</span> <span class="nav-text">采样（重复频率的内容）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%B0%E6%A0%B7%E9%A2%91%E7%8E%87%E7%9A%84%E6%B7%B7%E5%90%88"><span class="nav-number">9.</span> <span class="nav-text">走样（频率的混合）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E8%B5%B0%E6%A0%B7%E7%9A%84%E9%94%99%E8%AF%AF"><span class="nav-number">10.</span> <span class="nav-text">如何减少走样的错误</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%E5%A2%9E%E5%8A%A0%E9%87%87%E6%A0%B7%E7%8E%87%E7%BB%88%E6%9E%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="nav-number">10.1.</span> <span class="nav-text">方法一：增加采样率（终极解决方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%E5%8F%8D%E8%B5%B0%E6%A0%B7"><span class="nav-number">10.2.</span> <span class="nav-text">方法二：反走样</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E8%B6%85%E9%87%87%E6%A0%B7msaamultisampling-anti-aliasing%E8%BF%9B%E8%A1%8C%E5%8F%8D%E8%B5%B0%E6%A0%B7"><span class="nav-number">11.</span> <span class="nav-text">通过超采样（MSAA—MultiSampling
+Anti-Aliasing）进行反走样</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">11.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">11.2.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E4%BB%B7"><span class="nav-number">11.2.1.</span> <span class="nav-text">代价</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E5%AE%83%E6%96%B9%E6%B3%95"><span class="nav-number">11.2.2.</span> <span class="nav-text">其它方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B6%85%E5%88%86%E8%BE%A8%E7%8E%87"><span class="nav-number">11.2.3.</span> <span class="nav-text">超分辨率</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E6%B5%8B%E8%AF%95z-buffering"><span class="nav-number">12.</span> <span class="nav-text">深度测试（Z-buffering）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B2%B9%E7%94%BB%E5%AE%B6%E7%AE%97%E6%B3%95"><span class="nav-number">12.1.</span> <span class="nav-text">油画家算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#z-buffer"><span class="nav-number">12.2.</span> <span class="nav-text">Z-Buffer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93-1"><span class="nav-number">12.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -559,14 +581,14 @@ Anti-Aliasing）进行反走样</span></a><ol class="nav-child"><li class="nav-i
     <img class="site-author-image" itemprop="image" alt="Ushio"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Ushio</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">咕咕咕</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -631,7 +653,7 @@ Anti-Aliasing）进行反走样</span></a><ol class="nav-child"><li class="nav-i
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">30 分钟</span>
+    <span title="站点阅读时长">31 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
