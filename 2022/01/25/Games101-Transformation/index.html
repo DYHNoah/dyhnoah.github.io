@@ -242,7 +242,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7.2k</span>
+              <span>7.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -475,12 +475,14 @@ class="math inline">\(xz=-y\)</span>，所以相当于为了满足坐标系的�
 class="math inline">\(-\alpha\)</span></p>
 <p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
 <h3 id="罗德里格斯旋转公式">罗德里格斯旋转公式</h3>
-<p>定义绕x轴y轴z轴分别旋转α、β、γ的角度，公式的<strong>I</strong>表示单位矩阵。
-<span class="math display">\[
+<p>定义绕x轴y轴z轴分别旋转α、β、γ的角度。 <span class="math display">\[
 R_{xyz}(\alpha, \beta, \gamma) = R_x(\alpha,)R_y(\beta)R_z(\gamma)
 \]</span></p>
-<p><img src="https://s2.loli.net/2022/01/28/mAsKIMWbnqHiCeo.png" style="zoom: 33%;" />
-<span class="math display">\[
+<p><img src="https://s2.loli.net/2022/01/28/mAsKIMWbnqHiCeo.png" style="zoom: 33%;" /></p>
+<p>罗德里格旋转公式是计算三维空间中，一个向量绕旋转轴旋转给定角度以后得到的新向量的计算公式。这个公式使用原向量，旋转轴及它们叉积作为标架表示出旋转以后的向量。可以改写为矩阵形式，被广泛应用于空间解析几何和计算机图形学领域，成为刚体运动的基本计算公式。<span
+class="math inline">\(n\)</span>表示旋转轴，<span
+class="math inline">\(I\)</span>表示单位矩阵。 <span
+class="math display">\[
 \boldsymbol{R}(\boldsymbol{n},\alpha) = cos(\alpha)\boldsymbol{I} +
 (1-cos(\alpha))\boldsymbol{nn}^T + sin(\alpha)
 \begin{pmatrix}
@@ -599,8 +601,8 @@ class="math inline">\(M_{ortho}\)</span>)</li>
 <p><img src="https://s2.loli.net/2022/01/29/l8Rs6ujITvExWOF.png" style="zoom:50%;" /></p>
 <h4 id="如何求得m_persp-ortho矩阵">如何求得<span
 class="math inline">\(M_{persp-&gt;ortho}\)</span>矩阵</h4>
-<p>远平面距离是z，近平面距离是n，首先假设点远平面坐标是(x, y,
-z)，变换后的近平面坐标是(x', y',
+<p>远平面坐标是z，近平面坐标是n（<strong>注意这里n和f可以为负，并且大多数情况是负数，因为相机朝向z轴负方向</strong>），首先假设点远平面坐标是(x,
+y, z)，变换后的近平面坐标是(x', y',
 z')，可以根据相似三角形的比例关系得到如下比例关系和矩阵变换<strong>（由齐次坐标系的特点，x、y、z、w同乘以z，还是表示同样的点）</strong>：</p>
 <p><img src="https://s2.loli.net/2022/01/29/wWUJMuztb9f7LPD.png" style="zoom: 50%;" />
 <span class="math display">\[
@@ -915,12 +917,12 @@ Transformation）</span></a><ol class="nav-child"><li class="nav-item nav-level-
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">34k</span>
+    <span title="站点总字数">36k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">31 分钟</span>
+    <span title="站点阅读时长">33 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
