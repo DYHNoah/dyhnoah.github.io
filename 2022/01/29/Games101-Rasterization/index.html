@@ -465,7 +465,7 @@ n)，但是对于相互覆盖的物体无法判断，如下图。</p>
 <li>简单起见，我们假设z始终为正，z越大表示离相机越远</li>
 </ul>
 <p><img src="https://s2.loli.net/2022/02/01/H63LCcSQb1nqTAE.png" style="zoom: 40%;" /></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//每个像素深度的初始值为无限大</span></span><br><span class="line"><span class="keyword">for</span> (each triangle T)</span><br><span class="line">	<span class="keyword">for</span> (each <span class="built_in">sample</span> (x,y,z) in T)</span><br><span class="line">		<span class="keyword">if</span> (z &lt; zbuffer[x,y]) <span class="comment">// closest sample so far</span></span><br><span class="line">			framebuffer[x,y] = rgb; <span class="comment">// update color</span></span><br><span class="line">			zbuffer[x,y] = z; <span class="comment">// update depth</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">					; <span class="comment">// do nothing, this sample is occluded</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//每个像素深度的初始值为无限大</span></span><br><span class="line"><span class="keyword">for</span> (each triangle T)</span><br><span class="line">    <span class="keyword">for</span> (each <span class="built_in">sample</span> (x,y,z) in T)</span><br><span class="line">        <span class="keyword">if</span> (z &lt; zbuffer[x,y]) <span class="comment">// closest sample so far</span></span><br><span class="line">            framebuffer[x,y] = rgb; <span class="comment">// update color</span></span><br><span class="line">            zbuffer[x,y] = z; <span class="comment">// update depth</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">                   ; <span class="comment">// do nothing, this sample is occluded</span></span><br></pre></td></tr></table></figure>
 <h3 id="总结-1">总结</h3>
 <ul>
 <li>深度缓存复杂度为O(n)</li>
@@ -589,7 +589,7 @@ Anti-Aliasing）进行反走样</span></a><ol class="nav-child"><li class="nav-i
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -649,12 +649,12 @@ Anti-Aliasing）进行反走样</span></a><ol class="nav-child"><li class="nav-i
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">37k</span>
+    <span title="站点总字数">39k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">33 分钟</span>
+    <span title="站点阅读时长">36 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
