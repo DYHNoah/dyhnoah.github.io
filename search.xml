@@ -81,6 +81,38 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
       </tags>
   </entry>
   <entry>
+    <title>Games101-Homework0</title>
+    <url>/2022/01/31/Games101-Homework0/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>主要讲述Games101的作业0内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>搭建环境，详情可参见下述链接</li>
+</ul>
+<p><a
+href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
+Studio2019 + vcpkg</a></p>
+<ul>
+<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
+(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>根据齐次坐标的定义，P定义为(2, 1,
+1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
     <url>/2022/01/05/Games101-Environment/</url>
     <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用vs2019+vcpkg完成。
@@ -132,28 +164,115 @@ href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework0</title>
-    <url>/2022/01/31/Games101-Homework0/</url>
+    <title>Games101-Homework1</title>
+    <url>/2022/02/01/Games101-Homework1/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>主要讲述Games101的作业0内容。</p>
+<p>本章主要讲述Games101的作业1内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<p>实现以下三个内容</p>
+<ul>
+<li><strong>Eigen::Matrix4f get_model_matrix(float
+rotation_angle)</strong>:
+逐个元素地构建模型变换矩阵并返回该矩阵。在此函数中，你只需要实现三维中绕
+z 轴旋转的变换矩阵，而不用处理平移与缩放。</li>
+<li><strong>Eigen::Matrix4f get_projection_matrix(float eye_fov, float
+aspect_ratio, float zNear, float zFar)</strong>:
+使用给定的参数逐个元素地构建透视投影矩阵并返回该矩阵</li>
+<li><strong>Eigen::Matrix4f get_rotation(Vector3f axis, float
+angle)</strong>：main.cpp
+中构造一个函数，该函数的作用是得到绕任意过原点的轴的旋转变换矩阵。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>作业1已经给出了<strong>Eigen::Matrix4f
+get_view_matrix(Eigen::Vector3f
+eye_pos)</strong>的实现方法，即<strong>mvp矩阵</strong>中的<strong>v</strong>，我们需要实现的就是<strong>m和p矩阵</strong>。</p>
+<h3 id="model矩阵">Model矩阵</h3>
+<p>作业1只需要实现三维中绕 z 轴旋转的变换矩阵，
+而不用处理平移与缩放，参考下图计算公式即可。</p>
+<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
+<h3 id="projection矩阵">Projection矩阵</h3>
+<p>根据<a
+href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">视图变换的学习笔记</a>可知，公式如下，注意公式里的<strong><em>(l,r,t,b,n,f)</em></strong>都是具体的坐标，有正负符号的。</p>
+<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" />
+<span class="math display">\[
+M_{persp-&gt;ortho}^{(4*4)} = \begin{bmatrix}n &amp; 0 &amp; 0 &amp; 0
+\\0 &amp; n &amp; 0 &amp; 0 \\0 &amp; 0 &amp; n+f &amp; -nf \\0 &amp; 0
+&amp; 1 &amp; 0 \\\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
+\]</span></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_view_matrix</span><span class="params">(Eigen::Vector3f eye_pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f view = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    translate &lt;&lt; <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, -eye_pos[<span class="number">0</span>], <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, -eye_pos[<span class="number">1</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>,</span><br><span class="line">        -eye_pos[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    view = translate * view;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> view;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_model_matrix</span><span class="params">(<span class="keyword">float</span> rotation_angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f model = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    rotation_angle = rotation_angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line"></span><br><span class="line">    translate &lt;&lt; std::<span class="built_in">cos</span>(rotation_angle), -std::<span class="built_in">sin</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        std::<span class="built_in">sin</span>(rotation_angle), std::<span class="built_in">cos</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    model = translate * model;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> model;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_projection_matrix</span><span class="params">(<span class="keyword">float</span> eye_fov, <span class="keyword">float</span> aspect_ratio,</span></span></span><br><span class="line"><span class="params"><span class="function">                                      <span class="keyword">float</span> zNear, <span class="keyword">float</span> zFar)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f projection = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f persp, persp2ortho, scaleOrtho, translateOrtho;</span><br><span class="line">    std::cout &lt;&lt; zNear &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">float</span> r, l, t, b, n, f;</span><br><span class="line">    t = -zNear * std::<span class="built_in">tan</span>(eye_fov / <span class="number">2.0</span> * MY_PI / <span class="number">180.0f</span>);</span><br><span class="line">    r = t * aspect_ratio;</span><br><span class="line">    b = -t, l = -r, n = zNear, f = zFar;</span><br><span class="line"></span><br><span class="line">    translateOrtho &lt;&lt; <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>, -(n + f) / <span class="number">2.0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    scaleOrtho &lt;&lt; <span class="number">2.0</span> / (r - l), <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">2.0</span> / (t - b), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">2.0</span> / (n - f), <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    persp2ortho &lt;&lt; n, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, n, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, n + f, -n * f,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    persp = scaleOrtho * translateOrtho * persp2ortho;</span><br><span class="line">    projection = persp * projection;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> projection;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_rotation</span><span class="params">(Vector3f axis, <span class="keyword">float</span> angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f rotation = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line">    Eigen::Matrix3f normalMat3f = Eigen::Matrix3f::<span class="built_in">Identity</span>(), R, tmpMat;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> angleRadian = angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line">    </span><br><span class="line">    tmpMat &lt;&lt; <span class="number">0</span>, -axis[<span class="number">2</span>], axis[<span class="number">1</span>],</span><br><span class="line">        axis[<span class="number">2</span>], <span class="number">0</span>, -axis[<span class="number">0</span>],</span><br><span class="line">        -axis[<span class="number">1</span>], axis[<span class="number">0</span>], <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    R = std::<span class="built_in">cos</span>(angleRadian) * normalMat3f + (<span class="number">1</span> - std::<span class="built_in">cos</span>(angleRadian)) * axis * axis.<span class="built_in">transpose</span>() </span><br><span class="line">        + std::<span class="built_in">sin</span>(angleRadian) * tmpMat;</span><br><span class="line"></span><br><span class="line">    rotation.<span class="built_in">block</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">3</span>) = R;</span><br><span class="line">    std::cout &lt;&lt; rotation &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> rotation;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="运行结果">运行结果</h2>
+<p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
+<p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework2</title>
+    <url>/2022/02/07/Games101-Homework2/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章主要讲述Games101的作业2内容。</p>
 <span id="more"></span>
 <h2 id="作业内容">作业内容</h2>
 <ul>
-<li>搭建环境，详情可参见下述链接</li>
+<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
+<li>[20 分] 正确实现三角形栅格化算法。</li>
+<li>[10 分] 正确测试点是否在三角形内。</li>
+<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
+<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
+到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
+来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
+并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
+一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
+list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
 </ul>
-<p><a
-href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
-Studio2019 + vcpkg</a></p>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
+<p>需要修改的函数如下：</p>
 <ul>
-<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
-(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+<li>rasterize_triangle(): 执行三角形栅格化算法</li>
+<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
+数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
 </ul>
-<h2 id="具体实现">具体实现</h2>
-<p>根据齐次坐标的定义，P定义为(2, 1,
-1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>rasterize_triangle()：</p>
+<ul>
+<li>创建三角形的 2 维 bounding box。</li>
+<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
+心的屏幕空间坐标来检查中心点是否在三角形内。</li>
+<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
+与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
+<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
+buffer)，。</li>
+</ul>
+<p>static bool insideTriangle()：</p>
+<ul>
+<li>作该点与三角形三个顶点的向量</li>
+<li>按某个方向依次两两向量叉乘</li>
+<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
+</ul>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果">运行结果</h3>
+<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
+<p><img src="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
+<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
+<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -346,125 +465,6 @@ Metrics)</strong></p>
 </ul>
 <p>这其实是一个标准的<strong>贪心算法</strong>，可能到不了全局最优解，但事实证明最终的结果依然相当不错。</p>
 <p><img src="https://s2.loli.net/2022/01/24/Cb8PkFZMjagJ9D6.jpg" style="zoom: 67%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework1</title>
-    <url>/2022/02/01/Games101-Homework1/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业1内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<p>实现以下三个内容</p>
-<ul>
-<li><strong>Eigen::Matrix4f get_model_matrix(float
-rotation_angle)</strong>:
-逐个元素地构建模型变换矩阵并返回该矩阵。在此函数中，你只需要实现三维中绕
-z 轴旋转的变换矩阵，而不用处理平移与缩放。</li>
-<li><strong>Eigen::Matrix4f get_projection_matrix(float eye_fov, float
-aspect_ratio, float zNear, float zFar)</strong>:
-使用给定的参数逐个元素地构建透视投影矩阵并返回该矩阵</li>
-<li><strong>Eigen::Matrix4f get_rotation(Vector3f axis, float
-angle)</strong>：main.cpp
-中构造一个函数，该函数的作用是得到绕任意过原点的轴的旋转变换矩阵。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>作业1已经给出了<strong>Eigen::Matrix4f
-get_view_matrix(Eigen::Vector3f
-eye_pos)</strong>的实现方法，即<strong>mvp矩阵</strong>中的<strong>v</strong>，我们需要实现的就是<strong>m和p矩阵</strong>。</p>
-<h3 id="model矩阵">Model矩阵</h3>
-<p>作业1只需要实现三维中绕 z 轴旋转的变换矩阵，
-而不用处理平移与缩放，参考下图计算公式即可。</p>
-<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
-<h3 id="projection矩阵">Projection矩阵</h3>
-<p>根据<a
-href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">视图变换的学习笔记</a>可知，公式如下，注意公式里的<strong><em>(l,r,t,b,n,f)</em></strong>都是具体的坐标，有正负符号的。</p>
-<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" />
-<span class="math display">\[
-M_{persp-&gt;ortho}^{(4*4)} = \begin{bmatrix}n &amp; 0 &amp; 0 &amp; 0
-\\0 &amp; n &amp; 0 &amp; 0 \\0 &amp; 0 &amp; n+f &amp; -nf \\0 &amp; 0
-&amp; 1 &amp; 0 \\\end{bmatrix}
-\]</span></p>
-<p><span class="math display">\[
-M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
-\]</span></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_view_matrix</span><span class="params">(Eigen::Vector3f eye_pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f view = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    translate &lt;&lt; <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, -eye_pos[<span class="number">0</span>], <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, -eye_pos[<span class="number">1</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>,</span><br><span class="line">        -eye_pos[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    view = translate * view;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> view;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_model_matrix</span><span class="params">(<span class="keyword">float</span> rotation_angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f model = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    rotation_angle = rotation_angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line"></span><br><span class="line">    translate &lt;&lt; std::<span class="built_in">cos</span>(rotation_angle), -std::<span class="built_in">sin</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        std::<span class="built_in">sin</span>(rotation_angle), std::<span class="built_in">cos</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    model = translate * model;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> model;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_projection_matrix</span><span class="params">(<span class="keyword">float</span> eye_fov, <span class="keyword">float</span> aspect_ratio,</span></span></span><br><span class="line"><span class="params"><span class="function">                                      <span class="keyword">float</span> zNear, <span class="keyword">float</span> zFar)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f projection = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f persp, persp2ortho, scaleOrtho, translateOrtho;</span><br><span class="line">    std::cout &lt;&lt; zNear &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">float</span> r, l, t, b, n, f;</span><br><span class="line">    t = -zNear * std::<span class="built_in">tan</span>(eye_fov / <span class="number">2.0</span> * MY_PI / <span class="number">180.0f</span>);</span><br><span class="line">    r = t * aspect_ratio;</span><br><span class="line">    b = -t, l = -r, n = zNear, f = zFar;</span><br><span class="line"></span><br><span class="line">    translateOrtho &lt;&lt; <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>, -(n + f) / <span class="number">2.0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    scaleOrtho &lt;&lt; <span class="number">2.0</span> / (r - l), <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">2.0</span> / (t - b), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">2.0</span> / (n - f), <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    persp2ortho &lt;&lt; n, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, n, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, n + f, -n * f,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    persp = scaleOrtho * translateOrtho * persp2ortho;</span><br><span class="line">    projection = persp * projection;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> projection;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_rotation</span><span class="params">(Vector3f axis, <span class="keyword">float</span> angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f rotation = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line">    Eigen::Matrix3f normalMat3f = Eigen::Matrix3f::<span class="built_in">Identity</span>(), R, tmpMat;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> angleRadian = angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line">    </span><br><span class="line">    tmpMat &lt;&lt; <span class="number">0</span>, -axis[<span class="number">2</span>], axis[<span class="number">1</span>],</span><br><span class="line">        axis[<span class="number">2</span>], <span class="number">0</span>, -axis[<span class="number">0</span>],</span><br><span class="line">        -axis[<span class="number">1</span>], axis[<span class="number">0</span>], <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    R = std::<span class="built_in">cos</span>(angleRadian) * normalMat3f + (<span class="number">1</span> - std::<span class="built_in">cos</span>(angleRadian)) * axis * axis.<span class="built_in">transpose</span>() </span><br><span class="line">        + std::<span class="built_in">sin</span>(angleRadian) * tmpMat;</span><br><span class="line"></span><br><span class="line">    rotation.<span class="built_in">block</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">3</span>) = R;</span><br><span class="line">    std::cout &lt;&lt; rotation &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> rotation;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="运行结果">运行结果</h2>
-<p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
-<p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework2</title>
-    <url>/2022/02/07/Games101-Homework2/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业2内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
-<li>[20 分] 正确实现三角形栅格化算法。</li>
-<li>[10 分] 正确测试点是否在三角形内。</li>
-<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
-<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
-到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
-来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
-并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
-一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
-list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
-</ul>
-<h2 id="基础部分">基础部分</h2>
-<h3 id="实现">实现</h3>
-<p>需要修改的函数如下：</p>
-<ul>
-<li>rasterize_triangle(): 执行三角形栅格化算法</li>
-<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
-数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
-</ul>
-<p>rasterize_triangle()：</p>
-<ul>
-<li>创建三角形的 2 维 bounding box。</li>
-<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
-心的屏幕空间坐标来检查中心点是否在三角形内。</li>
-<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
-与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
-<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
-buffer)，。</li>
-</ul>
-<p>static bool insideTriangle()：</p>
-<ul>
-<li>作该点与三角形三个顶点的向量</li>
-<li>按某个方向依次两两向量叉乘</li>
-<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
-</ul>
-<h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果">运行结果</h3>
-<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
-<p><img src="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
-<h2 id="提高部分">提高部分</h2>
-<h3 id="实现-1">实现</h3>
-<h3 id="代码-1">代码</h3>
-<h3 id="运行结果-1">运行结果</h3>
-<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
-<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -700,7 +700,7 @@ n)，但是对于相互覆盖的物体无法判断，如下图。</p>
 <p>在之前的章节，我们已经学习了视图变换、投影变换，将物体投影到<span
 class="math inline">\([-1,1]^{3}\)</span>的区间上，再进行光栅化，本章将讲述Shading（着色）部分。</p>
 <span id="more"></span>
-<h2 id="blinn-phong模型">Blinn-Phong模型</h2>
+<h2 id="blinn-phong模型经验模型">Blinn-Phong模型（经验模型）</h2>
 <ul>
 <li>Specular highlights（高光）</li>
 <li>Diffuse reflection（漫反射）</li>
@@ -1317,89 +1317,6 @@ C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
       </tags>
   </entry>
   <entry>
-    <title>LearnOpenGL学习入门</title>
-    <url>/2021/07/22/LearnOpenGL-1/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>最近趁着暑假学习OpenGL，跟着 <a
-href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
-的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
-<span id="more"></span>
-<h2 id="opengl">OpenGL</h2>
-<blockquote>
-<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
-Programming Interface,
-应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
-href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
-<p>OpenGL自身是一个巨大的状态机。</p>
-</blockquote>
-<h2 id="库函数">库函数</h2>
-<p>GLFW：http://www.glfw.org/download.html</p>
-<p>GLAD：https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</p>
-<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
-Mathematics (GLM) (github.com)</a></p>
-<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
-stb single-file public domain libraries for C/C++ (github.com)</a></p>
-<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
-Studio下设置项目的链接。</p>
-<h2 id="你好三角形">你好，三角形</h2>
-<p>几个比较重要的概念：</p>
-<ul>
-<li><p>顶点数组对象（Vertex Array
-Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
-<li><p>顶点缓冲对象（Vertex Buffer
-Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
-<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
-Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
-<li><p>顶点着色器（Vertex
-Shader）：计算顶点的坐标，输出到gl_position。</p></li>
-<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
-</ul>
-<figure>
-<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
-alt="图形渲染管线流程" />
-<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
-</figure>
-<p>图形渲染管线可以被划分为两个主要部分：</p>
-<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
-<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
-<h2 id="着色器">着色器</h2>
-<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
-<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
-<blockquote>
-<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
-</blockquote>
-<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
-<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
-<h2 id="纹理">纹理</h2>
-<p>用stb_image.h头文件进行图像加载。</p>
-<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
-<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
-<h2 id="变换">变换</h2>
-<p>这一章的基础是线性代数。</p>
-<p>GLM是Open<strong>GL</strong>
-<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
-<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
-<h2 id="坐标系统">坐标系统</h2>
-<p>几个概念：</p>
-<ul>
-<li>局部空间</li>
-<li>世界空间</li>
-<li>观察空间</li>
-<li>裁剪空间</li>
-<li>屏幕空间</li>
-</ul>
-<h2 id="摄像机">摄像机</h2>
-<p>（待更新...)</p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>OpenGL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DPDK学习</title>
     <url>/2021/07/01/LearnDPDK/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -1530,6 +1447,129 @@ alt="测试程序" />
       </tags>
   </entry>
   <entry>
+    <title>LearnOpenGL学习入门</title>
+    <url>/2021/07/22/LearnOpenGL-1/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>最近趁着暑假学习OpenGL，跟着 <a
+href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
+的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
+<span id="more"></span>
+<h2 id="opengl">OpenGL</h2>
+<blockquote>
+<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
+Programming Interface,
+应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
+href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
+<p>OpenGL自身是一个巨大的状态机。</p>
+</blockquote>
+<h2 id="库函数">库函数</h2>
+<p>GLFW：http://www.glfw.org/download.html</p>
+<p>GLAD：https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</p>
+<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
+Mathematics (GLM) (github.com)</a></p>
+<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
+stb single-file public domain libraries for C/C++ (github.com)</a></p>
+<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
+Studio下设置项目的链接。</p>
+<h2 id="你好三角形">你好，三角形</h2>
+<p>几个比较重要的概念：</p>
+<ul>
+<li><p>顶点数组对象（Vertex Array
+Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
+<li><p>顶点缓冲对象（Vertex Buffer
+Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
+<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
+Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
+<li><p>顶点着色器（Vertex
+Shader）：计算顶点的坐标，输出到gl_position。</p></li>
+<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
+</ul>
+<figure>
+<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
+alt="图形渲染管线流程" />
+<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
+</figure>
+<p>图形渲染管线可以被划分为两个主要部分：</p>
+<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
+<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
+<h2 id="着色器">着色器</h2>
+<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
+<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
+<blockquote>
+<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
+</blockquote>
+<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
+<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
+<h2 id="纹理">纹理</h2>
+<p>用stb_image.h头文件进行图像加载。</p>
+<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
+<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
+<h2 id="变换">变换</h2>
+<p>这一章的基础是线性代数。</p>
+<p>GLM是Open<strong>GL</strong>
+<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
+<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
+<h2 id="坐标系统">坐标系统</h2>
+<p>几个概念：</p>
+<ul>
+<li>局部空间</li>
+<li>世界空间</li>
+<li>观察空间</li>
+<li>裁剪空间</li>
+<li>屏幕空间</li>
+</ul>
+<h2 id="摄像机">摄像机</h2>
+<p>（待更新...)</p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>OpenGL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Qt中使用Sqlite</title>
+    <url>/2021/11/15/Qt-sql/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
+<span id="more"></span>
+<h2 id="使用">使用</h2>
+<h3 id="头文件准备">头文件准备</h3>
+<p>首先在.pro文件里加入</p>
+<blockquote>
+<p>QT += sql</p>
+</blockquote>
+<p>然后在.h文件里加入</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="库函数调用">库函数调用</h3>
+<ul>
+<li><p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p></li>
+<li><p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>QSqlQuery
+sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
+<p>可以直接用.exec(const QString&amp;
+query)执行query里面的sql语句内容</p>
+<p>也可以使用.prepare(const QString&amp; query),
+.exec()预先输入query里的sql语句，再加以执行</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p></li>
+</ul>
+<h2 id="ubuntu小工具">Ubuntu小工具</h2>
+<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu
+sqlite可视化工具<strong>Sqlite Browser</strong></p>
+]]></content>
+      <categories>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LeetCode 138 复制带随机指针的链表</title>
     <url>/2021/11/14/leetcode-138/</url>
     <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
@@ -1573,43 +1613,26 @@ alt="新链表图" /></a></p>
       </tags>
   </entry>
   <entry>
-    <title>Qt中使用Sqlite</title>
-    <url>/2021/11/15/Qt-sql/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
-<span id="more"></span>
-<h2 id="使用">使用</h2>
-<h3 id="头文件准备">头文件准备</h3>
-<p>首先在.pro文件里加入</p>
-<blockquote>
-<p>QT += sql</p>
-</blockquote>
-<p>然后在.h文件里加入</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="库函数调用">库函数调用</h3>
-<ul>
-<li><p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p></li>
-<li><p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure></li>
-<li><p>QSqlQuery
-sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
-<p>可以直接用.exec(const QString&amp;
-query)执行query里面的sql语句内容</p>
-<p>也可以使用.prepare(const QString&amp; query),
-.exec()预先输入query里的sql语句，再加以执行</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
-<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p></li>
-</ul>
-<h2 id="ubuntu小工具">Ubuntu小工具</h2>
-<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu
-sqlite可视化工具<strong>Sqlite Browser</strong></p>
+    <title>公会的神奇操作</title>
+    <url>/2020/04/06/magic-clan/</url>
+    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
+<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
+<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
+<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
+，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
+<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
+<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
+<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
+<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
+<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
+<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
+<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
 ]]></content>
       <categories>
-        <category>Qt</category>
+        <category>公主连结</category>
       </categories>
       <tags>
-        <tag>Qt</tag>
+        <tag>pcr</tag>
       </tags>
   </entry>
   <entry>
@@ -1671,29 +1694,6 @@ href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
 <p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
 <p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
 <p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公会的神奇操作</title>
-    <url>/2020/04/06/magic-clan/</url>
-    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
-<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
-<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
-<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
-，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
-<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
-<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
-<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
-<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
-<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
-<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
-<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
