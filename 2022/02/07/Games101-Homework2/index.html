@@ -27,15 +27,16 @@
 <meta property="og:site_name" content="Ushioの鸽子屋">
 <meta property="og:description" content="本章内容 本章主要讲述Games101的作业2内容。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2022/02/09/qzC79jxE5Gim1rB.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/09/khFLVZ7tNyrulnO.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png">
 <meta property="article:published_time" content="2022-02-07T11:56:29.000Z">
 <meta property="article:modified_time" content="2022-02-08T17:56:29.000Z">
 <meta property="article:author" content="Ushio">
 <meta property="article:tag" content="图形学">
 <meta property="article:tag" content="Games101">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.loli.net/2022/02/09/qzC79jxE5Gim1rB.png">
+<meta name="twitter:image" content="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png">
 
 <link rel="canonical" href="https://dyhnoah.github.io/2022/02/07/Games101-Homework2/">
 
@@ -224,7 +225,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
+              <span>2.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -259,14 +260,15 @@
 一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
 list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
 </ul>
-<h2 id="基础部分实现">基础部分实现</h2>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
 <p>需要修改的函数如下：</p>
 <ul>
 <li>rasterize_triangle(): 执行三角形栅格化算法</li>
 <li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
 数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
 </ul>
-<h3 id="rasterize_triangle">rasterize_triangle()</h3>
+<p>rasterize_triangle()：</p>
 <ul>
 <li>创建三角形的 2 维 bounding box。</li>
 <li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
@@ -274,21 +276,27 @@ list。最后，如果你实现正确的话，你得到的三角形不应该有�
 <li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
 与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
 <li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
-buffer)。</li>
+buffer)，。</li>
 </ul>
-<h3 id="static-bool-insidetriangle">static bool insideTriangle()</h3>
+<p>static bool insideTriangle()：</p>
 <ul>
 <li>作该点与三角形三个顶点的向量</li>
 <li>按某个方向依次两两向量叉乘</li>
 <li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
 </ul>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min, index;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x, y, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &lt; depth_buf[index]) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, <span class="number">1</span>), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="运行结果">运行结果</h2>
+<h3 id="运行结果">运行结果</h3>
 <p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
-<p><img src="https://s2.loli.net/2022/02/09/qzC79jxE5Gim1rB.png" style="zoom: 50%;" /></p>
-<p><img src="https://s2.loli.net/2022/02/09/khFLVZ7tNyrulnO.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
+<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
+<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
 
     </div>
 
@@ -328,7 +336,10 @@ buffer)。</li>
     <a href="/2022/02/01/Games101-Homework1/" rel="prev" title="Games101-Homework1">
       <i class="fa fa-chevron-left"></i> Games101-Homework1
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/02/09/Games101-Shading/" rel="next" title="Games101-Lecture7-9（Shading）学习笔记">
+      Games101-Lecture7-9（Shading）学习笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -387,7 +398,7 @@ buffer)。</li>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A%E5%86%85%E5%AE%B9"><span class="nav-number">2.</span> <span class="nav-text">作业内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.</span> <span class="nav-text">基础部分实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#rasterize_triangle"><span class="nav-number">3.1.</span> <span class="nav-text">rasterize_triangle()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#static-bool-insidetriangle"><span class="nav-number">3.2.</span> <span class="nav-text">static bool insideTriangle()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="nav-number">5.</span> <span class="nav-text">运行结果</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A%E5%86%85%E5%AE%B9"><span class="nav-number">2.</span> <span class="nav-text">作业内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86"><span class="nav-number">3.</span> <span class="nav-text">基础部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.1.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">3.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="nav-number">3.3.</span> <span class="nav-text">运行结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E9%AB%98%E9%83%A8%E5%88%86"><span class="nav-number">4.</span> <span class="nav-text">提高部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0-1"><span class="nav-number">4.1.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81-1"><span class="nav-number">4.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-1"><span class="nav-number">4.3.</span> <span class="nav-text">运行结果</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -403,7 +414,7 @@ buffer)。</li>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -463,12 +474,12 @@ buffer)。</li>
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">39k</span>
+    <span title="站点总字数">40k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">36 分钟</span>
+    <span title="站点阅读时长">37 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
