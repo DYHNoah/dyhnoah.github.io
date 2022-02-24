@@ -61,58 +61,6 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
       </tags>
   </entry>
   <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework0</title>
-    <url>/2022/01/31/Games101-Homework0/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>主要讲述Games101的作业0内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>搭建环境，详情可参见下述链接</li>
-</ul>
-<p><a
-href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
-Studio2019 + vcpkg</a></p>
-<ul>
-<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
-(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>根据齐次坐标的定义，P定义为(2, 1,
-1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
     <url>/2022/01/05/Games101-Environment/</url>
     <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用vs2019+vcpkg完成。
@@ -164,122 +112,23 @@ href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework1</title>
-    <url>/2022/02/01/Games101-Homework1/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业1内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<p>实现以下三个内容</p>
-<ul>
-<li><strong>Eigen::Matrix4f get_model_matrix(float
-rotation_angle)</strong>:
-逐个元素地构建模型变换矩阵并返回该矩阵。在此函数中，你只需要实现三维中绕
-z 轴旋转的变换矩阵，而不用处理平移与缩放。</li>
-<li><strong>Eigen::Matrix4f get_projection_matrix(float eye_fov, float
-aspect_ratio, float zNear, float zFar)</strong>:
-使用给定的参数逐个元素地构建透视投影矩阵并返回该矩阵</li>
-<li><strong>Eigen::Matrix4f get_rotation(Vector3f axis, float
-angle)</strong>：main.cpp
-中构造一个函数，该函数的作用是得到绕任意过原点的轴的旋转变换矩阵。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>作业1已经给出了<strong>Eigen::Matrix4f
-get_view_matrix(Eigen::Vector3f
-eye_pos)</strong>的实现方法，即<strong>mvp矩阵</strong>中的<strong>v</strong>，我们需要实现的就是<strong>m和p矩阵</strong>。</p>
-<h3 id="model矩阵">Model矩阵</h3>
-<p>作业1只需要实现三维中绕 z 轴旋转的变换矩阵，
-而不用处理平移与缩放，参考下图计算公式即可。</p>
-<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
-<h3 id="projection矩阵">Projection矩阵</h3>
-<p>根据<a
-href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">视图变换的学习笔记</a>可知，公式如下，注意公式里的<strong><em>(l,r,t,b,n,f)</em></strong>都是具体的坐标，有正负符号的。</p>
-<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" />
-<span class="math display">\[
-M_{persp-&gt;ortho}^{(4*4)} = \begin{bmatrix}n &amp; 0 &amp; 0 &amp; 0
-\\0 &amp; n &amp; 0 &amp; 0 \\0 &amp; 0 &amp; n+f &amp; -nf \\0 &amp; 0
-&amp; 1 &amp; 0 \\\end{bmatrix}
-\]</span></p>
-<p><span class="math display">\[
-M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
-\]</span></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_view_matrix</span><span class="params">(Eigen::Vector3f eye_pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f view = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    translate &lt;&lt; <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, -eye_pos[<span class="number">0</span>], <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, -eye_pos[<span class="number">1</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>,</span><br><span class="line">        -eye_pos[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    view = translate * view;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> view;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_model_matrix</span><span class="params">(<span class="keyword">float</span> rotation_angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f model = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    rotation_angle = rotation_angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line"></span><br><span class="line">    translate &lt;&lt; std::<span class="built_in">cos</span>(rotation_angle), -std::<span class="built_in">sin</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        std::<span class="built_in">sin</span>(rotation_angle), std::<span class="built_in">cos</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    model = translate * model;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> model;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_projection_matrix</span><span class="params">(<span class="keyword">float</span> eye_fov, <span class="keyword">float</span> aspect_ratio,</span></span></span><br><span class="line"><span class="params"><span class="function">                                      <span class="keyword">float</span> zNear, <span class="keyword">float</span> zFar)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f projection = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f persp, persp2ortho, scaleOrtho, translateOrtho;</span><br><span class="line">    std::cout &lt;&lt; zNear &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">float</span> r, l, t, b, n, f;</span><br><span class="line">    t = -zNear * std::<span class="built_in">tan</span>(eye_fov / <span class="number">2.0</span> * MY_PI / <span class="number">180.0f</span>);</span><br><span class="line">    r = t * aspect_ratio;</span><br><span class="line">    b = -t, l = -r, n = zNear, f = zFar;</span><br><span class="line"></span><br><span class="line">    translateOrtho &lt;&lt; <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>, -(n + f) / <span class="number">2.0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    scaleOrtho &lt;&lt; <span class="number">2.0</span> / (r - l), <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">2.0</span> / (t - b), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">2.0</span> / (n - f), <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    persp2ortho &lt;&lt; n, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, n, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, n + f, -n * f,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    persp = scaleOrtho * translateOrtho * persp2ortho;</span><br><span class="line">    projection = persp * projection;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> projection;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_rotation</span><span class="params">(Vector3f axis, <span class="keyword">float</span> angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f rotation = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line">    Eigen::Matrix3f normalMat3f = Eigen::Matrix3f::<span class="built_in">Identity</span>(), R, tmpMat;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> angleRadian = angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line">    </span><br><span class="line">    tmpMat &lt;&lt; <span class="number">0</span>, -axis[<span class="number">2</span>], axis[<span class="number">1</span>],</span><br><span class="line">        axis[<span class="number">2</span>], <span class="number">0</span>, -axis[<span class="number">0</span>],</span><br><span class="line">        -axis[<span class="number">1</span>], axis[<span class="number">0</span>], <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    R = std::<span class="built_in">cos</span>(angleRadian) * normalMat3f + (<span class="number">1</span> - std::<span class="built_in">cos</span>(angleRadian)) * axis * axis.<span class="built_in">transpose</span>() </span><br><span class="line">        + std::<span class="built_in">sin</span>(angleRadian) * tmpMat;</span><br><span class="line"></span><br><span class="line">    rotation.<span class="built_in">block</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">3</span>) = R;</span><br><span class="line">    std::cout &lt;&lt; rotation &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> rotation;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="运行结果">运行结果</h2>
-<p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
-<p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
 ]]></content>
       <categories>
-        <category>图形学</category>
+        <category>公主连结</category>
       </categories>
       <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework2</title>
-    <url>/2022/02/07/Games101-Homework2/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业2内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
-<li>[20 分] 正确实现三角形栅格化算法。</li>
-<li>[10 分] 正确测试点是否在三角形内。</li>
-<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
-<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
-到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
-来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
-并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
-一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
-list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
-</ul>
-<h2 id="基础部分">基础部分</h2>
-<h3 id="实现">实现</h3>
-<p>需要修改的函数如下：</p>
-<ul>
-<li>rasterize_triangle(): 执行三角形栅格化算法</li>
-<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
-数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
-</ul>
-<p>rasterize_triangle()：</p>
-<ul>
-<li>创建三角形的 2 维 bounding box。</li>
-<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
-心的屏幕空间坐标来检查中心点是否在三角形内。</li>
-<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
-与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
-<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
-buffer)，。</li>
-</ul>
-<p>static bool insideTriangle()：</p>
-<ul>
-<li>作该点与三角形三个顶点的向量</li>
-<li>按某个方向依次两两向量叉乘</li>
-<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
-</ul>
-<h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果">运行结果</h3>
-<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
-<p><img src="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
-<h2 id="提高部分">提高部分</h2>
-<h3 id="实现-1">实现</h3>
-<h3 id="代码-1">代码</h3>
-<h3 id="运行结果-1">运行结果</h3>
-<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
-<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
       </tags>
   </entry>
   <entry>
@@ -465,6 +314,157 @@ Metrics)</strong></p>
 </ul>
 <p>这其实是一个标准的<strong>贪心算法</strong>，可能到不了全局最优解，但事实证明最终的结果依然相当不错。</p>
 <p><img src="https://s2.loli.net/2022/01/24/Cb8PkFZMjagJ9D6.jpg" style="zoom: 67%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework0</title>
+    <url>/2022/01/31/Games101-Homework0/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>主要讲述Games101的作业0内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>搭建环境，详情可参见下述链接</li>
+</ul>
+<p><a
+href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
+Studio2019 + vcpkg</a></p>
+<ul>
+<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
+(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>根据齐次坐标的定义，P定义为(2, 1,
+1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework1</title>
+    <url>/2022/02/01/Games101-Homework1/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章主要讲述Games101的作业1内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<p>实现以下三个内容</p>
+<ul>
+<li><strong>Eigen::Matrix4f get_model_matrix(float
+rotation_angle)</strong>:
+逐个元素地构建模型变换矩阵并返回该矩阵。在此函数中，你只需要实现三维中绕
+z 轴旋转的变换矩阵，而不用处理平移与缩放。</li>
+<li><strong>Eigen::Matrix4f get_projection_matrix(float eye_fov, float
+aspect_ratio, float zNear, float zFar)</strong>:
+使用给定的参数逐个元素地构建透视投影矩阵并返回该矩阵</li>
+<li><strong>Eigen::Matrix4f get_rotation(Vector3f axis, float
+angle)</strong>：main.cpp
+中构造一个函数，该函数的作用是得到绕任意过原点的轴的旋转变换矩阵。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>作业1已经给出了<strong>Eigen::Matrix4f
+get_view_matrix(Eigen::Vector3f
+eye_pos)</strong>的实现方法，即<strong>mvp矩阵</strong>中的<strong>v</strong>，我们需要实现的就是<strong>m和p矩阵</strong>。</p>
+<h3 id="model矩阵">Model矩阵</h3>
+<p>作业1只需要实现三维中绕 z 轴旋转的变换矩阵，
+而不用处理平移与缩放，参考下图计算公式即可。</p>
+<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
+<h3 id="projection矩阵">Projection矩阵</h3>
+<p>根据<a
+href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">视图变换的学习笔记</a>可知，公式如下，注意公式里的<strong><em>(l,r,t,b,n,f)</em></strong>都是具体的坐标，有正负符号的。</p>
+<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" />
+<span class="math display">\[
+M_{persp-&gt;ortho}^{(4*4)} = \begin{bmatrix}n &amp; 0 &amp; 0 &amp; 0
+\\0 &amp; n &amp; 0 &amp; 0 \\0 &amp; 0 &amp; n+f &amp; -nf \\0 &amp; 0
+&amp; 1 &amp; 0 \\\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
+\]</span></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_view_matrix</span><span class="params">(Eigen::Vector3f eye_pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f view = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    translate &lt;&lt; <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, -eye_pos[<span class="number">0</span>], <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, -eye_pos[<span class="number">1</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>,</span><br><span class="line">        -eye_pos[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    view = translate * view;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> view;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_model_matrix</span><span class="params">(<span class="keyword">float</span> rotation_angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f model = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    rotation_angle = rotation_angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line"></span><br><span class="line">    translate &lt;&lt; std::<span class="built_in">cos</span>(rotation_angle), -std::<span class="built_in">sin</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        std::<span class="built_in">sin</span>(rotation_angle), std::<span class="built_in">cos</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    model = translate * model;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> model;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_projection_matrix</span><span class="params">(<span class="keyword">float</span> eye_fov, <span class="keyword">float</span> aspect_ratio,</span></span></span><br><span class="line"><span class="params"><span class="function">                                      <span class="keyword">float</span> zNear, <span class="keyword">float</span> zFar)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f projection = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f persp, persp2ortho, scaleOrtho, translateOrtho;</span><br><span class="line">    std::cout &lt;&lt; zNear &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">float</span> r, l, t, b, n, f;</span><br><span class="line">    t = -zNear * std::<span class="built_in">tan</span>(eye_fov / <span class="number">2.0</span> * MY_PI / <span class="number">180.0f</span>);</span><br><span class="line">    r = t * aspect_ratio;</span><br><span class="line">    b = -t, l = -r, n = zNear, f = zFar;</span><br><span class="line"></span><br><span class="line">    translateOrtho &lt;&lt; <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>, -(n + f) / <span class="number">2.0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    scaleOrtho &lt;&lt; <span class="number">2.0</span> / (r - l), <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">2.0</span> / (t - b), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">2.0</span> / (n - f), <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    persp2ortho &lt;&lt; n, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, n, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, n + f, -n * f,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    persp = scaleOrtho * translateOrtho * persp2ortho;</span><br><span class="line">    projection = persp * projection;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> projection;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_rotation</span><span class="params">(Vector3f axis, <span class="keyword">float</span> angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f rotation = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line">    Eigen::Matrix3f normalMat3f = Eigen::Matrix3f::<span class="built_in">Identity</span>(), R, tmpMat;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> angleRadian = angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line">    </span><br><span class="line">    tmpMat &lt;&lt; <span class="number">0</span>, -axis[<span class="number">2</span>], axis[<span class="number">1</span>],</span><br><span class="line">        axis[<span class="number">2</span>], <span class="number">0</span>, -axis[<span class="number">0</span>],</span><br><span class="line">        -axis[<span class="number">1</span>], axis[<span class="number">0</span>], <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    R = std::<span class="built_in">cos</span>(angleRadian) * normalMat3f + (<span class="number">1</span> - std::<span class="built_in">cos</span>(angleRadian)) * axis * axis.<span class="built_in">transpose</span>() </span><br><span class="line">        + std::<span class="built_in">sin</span>(angleRadian) * tmpMat;</span><br><span class="line"></span><br><span class="line">    rotation.<span class="built_in">block</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">3</span>) = R;</span><br><span class="line">    std::cout &lt;&lt; rotation &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> rotation;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="运行结果">运行结果</h2>
+<p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
+<p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework2</title>
+    <url>/2022/02/07/Games101-Homework2/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章主要讲述Games101的作业2内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
+<li>[20 分] 正确实现三角形栅格化算法。</li>
+<li>[10 分] 正确测试点是否在三角形内。</li>
+<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
+<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
+到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
+来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
+并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
+一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
+list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
+</ul>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
+<p>需要修改的函数如下：</p>
+<ul>
+<li>rasterize_triangle(): 执行三角形栅格化算法</li>
+<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
+数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
+</ul>
+<p>rasterize_triangle()：</p>
+<ul>
+<li>创建三角形的 2 维 bounding box。</li>
+<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
+心的屏幕空间坐标来检查中心点是否在三角形内。</li>
+<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
+与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
+<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
+buffer)，。</li>
+</ul>
+<p>static bool insideTriangle()：</p>
+<ul>
+<li>作该点与三角形三个顶点的向量</li>
+<li>按某个方向依次两两向量叉乘</li>
+<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
+</ul>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果">运行结果</h3>
+<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
+<p><img src="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
+<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
+<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -759,6 +759,86 @@ point，得到的漫反射能量完全一样，这也符合生活现象，漫反
 <h4 id="k_d系数渐变的漫反射情况"><span
 class="math inline">\(k_d\)</span>系数渐变的漫反射情况</h4>
 <p><img src="https://s2.loli.net/2022/02/23/xVOm7tjln2STs1Q.png" style="zoom:50%;" /></p>
+<h3 id="镜面光照">镜面光照</h3>
+<ul>
+<li>高光，平面比较光滑</li>
+<li>观察方向接近镜面反射方向，会显示出高光，即下图<span
+class="math inline">\(\vec{v}\)</span>和<span
+class="math inline">\(\vec{R}\)</span>足够接近</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/24/stBMJEzdCr27o9c.png" style="zoom:50%;" /></p>
+<ul>
+<li>在Blinn-Phong中，观察方向和镜面反射方向接近 =
+法线方向和半程向量方向接近，如下图，半程向量为<span
+class="math inline">\(\vec{h}\)</span>，<span
+class="math inline">\(\vec{h}\)</span>和<span
+class="math inline">\(\vec{n}\)</span>接近反映了上图的<span
+class="math inline">\(\vec{v}\)</span>和<span
+class="math inline">\(\vec{R}\)</span>接近，通过<strong>向量的点乘</strong>可以判断是否接近</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/24/mVBcqirw4aW3j8Q.png" style="zoom:50%;" /></p>
+<ul>
+<li>增大p使反射波形变窄，因为观察方向和镜面方向夹角很小时，能看到高光，因此是一开始变换就很大，我们可以给它加上幂函数，改变原本的余弦函数形状，p用来控制高光的大小</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/idgrfnzQEsThlHX.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/25/w2sQeYuJaItXMoy.png" style="zoom: 50%;" /></p>
+<h3 id="环境光照">环境光照</h3>
+<ul>
+<li><p>光线通过多次弹射打到空间四面八方的各个点上</p></li>
+<li><p>来自环境的光永远都是相同的，是一个常数</p></li>
+<li><p>与观测的远近、方向无关</p></li>
+<li><p>保证没有地方完全是黑的</p></li>
+<li><p>如下公式，<span
+class="math inline">\(L_{a}\)</span>是反射的环境光，<span
+class="math inline">\(k_{a}\)</span>是环境系数，</p></li>
+</ul>
+<p><span class="math display">\[
+L_{a} = k_{a}*I_{a}
+\]</span></p>
+<h3 id="blinn-phong反射模型">Blinn-Phong反射模型</h3>
+<p><img src="https://s2.loli.net/2022/02/25/iKU6tNFSMxRLGjD.png" style="zoom:50%;" /></p>
+<h2 id="着色频率">着色频率</h2>
+<p>3种不同着色频率结果如下：</p>
+<p><img src="https://s2.loli.net/2022/02/25/wl6GKUfTejqvyF2.png" style="zoom:50%;" /></p>
+<h3 id="平面着色">平面着色</h3>
+<ul>
+<li>每个三角形是一个平面，将每个三角形的法线求出来，三角形两边做一个叉积可以求出三角形法线，再进行着色，每个三角形使用一个着色结果</li>
+<li>三角形面是平的，意味着只有一个法向量</li>
+<li>不适合光滑的表面</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/ItY4yve7LNhWroD.png" style="zoom:50%;" /></p>
+<h3 id="gouraud着色">Gouraud着色</h3>
+<ul>
+<li>在任意一个顶点上求出它的法线，借此每个顶点进行着色，三角形三个顶点都有颜色后，三角形内部通过插值的方法计算颜色</li>
+<li>从三角形的顶点插入颜色</li>
+<li>每个顶点都有一个法线向量</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/DK78gnfvsRb3aJo.png" style="zoom:50%;" /></p>
+<h3 id="phong着色">Phong着色</h3>
+<ul>
+<li>三角形每个顶点求出各自法线后，通过插值的方法求出三角形内部各个点的法线，再对每个像素进行着色</li>
+<li>在每个三角形上插入法线向量</li>
+<li>计算每个像素的完整着色模型</li>
+<li>不是 Blinn-Phong 反射模型</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/VcSQCOFdTIL1YEt.png" style="zoom:50%;" /></p>
+<h3 id="着色模型对比">着色模型对比</h3>
+<p>当模型已经足够复杂，有足够多的面的时候，逐像素着色效果不一定比后两者差，还可以减小开销。</p>
+<p><img src="https://s2.loli.net/2022/02/25/qjab4XhiwfQyWTI.png" style="zoom:50%;" /></p>
+<h3 id="计算每个顶点的法线向量">计算每个顶点的法线向量</h3>
+<ul>
+<li>最好的方法是从底层几何体中获取顶点法线，即已经知道通过三角形表示什么几何体，然后根据这个几何体计算出顶点的法线</li>
+<li>否则必须从三角形面推断顶点法线，一个简单的方案，平均周围面法线：任何一个顶点，会被很多面共用，于是我们通过求相邻面的法线的平均作为该顶点的法线，如下公式，面积大的三角形给更大的加权，通过加权平均进行改进</li>
+</ul>
+<p><span class="math display">\[
+N_{v} = \frac{\Sigma_{i}N_{i}}{||\Sigma_iN_i||}
+\]</span></p>
+<p><img src="https://s2.loli.net/2022/02/25/WZNHnrFk7pAYCjS.png" style="zoom:50%;" /></p>
+<h3 id="计算每个像素的法线向量">计算每个像素的法线向量</h3>
+<ul>
+<li>通过重心坐标计算（稍后会讲），已知最左和最右两个顶点的法线，计算中间每个像素的法线向量</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/RpWeYHElDofxs1k.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1613,29 +1693,6 @@ alt="新链表图" /></a></p>
       </tags>
   </entry>
   <entry>
-    <title>公会的神奇操作</title>
-    <url>/2020/04/06/magic-clan/</url>
-    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
-<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
-<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
-<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
-，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
-<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
-<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
-<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
-<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
-<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
-<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
-<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LeetCode 391 完美矩形</title>
     <url>/2021/11/16/leetcode-391/</url>
     <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
@@ -1669,6 +1726,29 @@ alt="示例" /></a></p>
       </categories>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公会的神奇操作</title>
+    <url>/2020/04/06/magic-clan/</url>
+    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
+<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
+<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
+<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
+，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
+<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
+<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
+<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
+<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
+<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
+<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
+<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
       </tags>
   </entry>
   <entry>
