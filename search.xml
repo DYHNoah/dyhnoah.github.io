@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>台服6月水瓶座会战</title>
     <url>/2020/07/05/Clan-Aquarius/</url>
     <content><![CDATA[<p>本文主要讲述台服2020年6月水瓶座公会战情况。 <span id="more"></span></p>
@@ -132,35 +112,23 @@ href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework0</title>
-    <url>/2022/01/31/Games101-Homework0/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>主要讲述Games101的作业0内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>搭建环境，详情可参见下述链接</li>
-</ul>
-<p><a
-href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
-Studio2019 + vcpkg</a></p>
-<ul>
-<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
-(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>根据齐次坐标的定义，P定义为(2, 1,
-1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
 ]]></content>
       <categories>
-        <category>图形学</category>
+        <category>公主连结</category>
       </categories>
       <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
       </tags>
   </entry>
   <entry>
@@ -356,6 +324,38 @@ Metrics)</strong></p>
       </tags>
   </entry>
   <entry>
+    <title>Games101-Homework0</title>
+    <url>/2022/01/31/Games101-Homework0/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>主要讲述Games101的作业0内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>搭建环境，详情可参见下述链接</li>
+</ul>
+<p><a
+href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
+Studio2019 + vcpkg</a></p>
+<ul>
+<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
+(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>根据齐次坐标的定义，P定义为(2, 1,
+1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101-Homework1</title>
     <url>/2022/02/01/Games101-Homework1/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -400,6 +400,19 @@ M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
 <h2 id="运行结果">运行结果</h2>
 <p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
 <p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework3</title>
+    <url>/2022/02/27/Games101-Homework3/</url>
+    <content><![CDATA[
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -684,6 +697,71 @@ n)，但是对于相互覆盖的物体无法判断，如下图。</p>
 <li>深度缓存复杂度为O(n)</li>
 <li>几乎应用在所有的GPU硬件中</li>
 </ul>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Lecture13-16（RayTracing）学习笔记</title>
+    <url>/2022/02/27/Games101-RayTracing/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>在之前的章节，我们已经学习了Shading（着色）部分，本章将讲述Shadow
+Mapping和Ray Tracing。</p>
+<span id="more"></span>
+<h2 id="shadow-mapping">Shadow Mapping</h2>
+<p>一种图像空间算法</p>
+<ul>
+<li>在阴影计算期间不了解场景的几何形状</li>
+<li>必须处理混叠伪影</li>
+</ul>
+<p>关键思想：</p>
+<ul>
+<li>不在阴影中的点必须被光线和相机都看到</li>
+</ul>
+<h3 id="流程">流程</h3>
+<ul>
+<li>从光源看向场景，相当于把摄像机放在光源，对准场景，做一遍光栅化</li>
+<li>但是我们不对其做着色，而是记录看到的<strong>点的深度</strong></li>
+<li>将摄像机放在眼睛位置，真正地看向场景，记录看到的点的深度</li>
+<li>可以将看到的点投影回之前摄像机放在光源的虚拟成像上，如果我们从光源看这个点，它应该出现在图像的哪个位置上。从摄像机看这个点，这个点投影回光源，就知道它在之前深度图的哪个像素上。我们之前记录了该点的深度，此时可以计算该点到光源的深度，如果两个深度一致，说明该点是可以被光源看到的。该点是可见
+的，可以被摄像机看到，也可以被光源看到。（如图3橙色线段所示）</li>
+<li>如果两者深度不一样，说明该点是之前光源看不到的点，说明该点在阴影中。（如图4红色线段所示）</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/Y83ibz1IdRS24QU.png" style="zoom:50%;" />
+<img src="https://s2.loli.net/2022/02/27/yJHruYAZNT5Bjwz.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/oNEJMqenVyHPzTh.png" style="zoom:50%;" /></p>
+<h3 id="可视化shadow-mapping过程">可视化Shadow Mapping过程</h3>
+<ul>
+<li>如下图所示，一个较为复杂带有阴影的场景，点光源在左上角</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/wR8oujWpKafhZVX.png" style="zoom:50%;" /></p>
+<ul>
+<li>将摄像机放在光源位置，记录深度值</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/NfJR7MTehG2pXmj.png" style="zoom:50%;" /></p>
+<ul>
+<li>将摄像机摆在实际位置，绿色是阴影贴图上距离（光，shadow point）≈
+深度的地方，非绿色是阴影应该在的地方</li>
+<li>但下图，球的上半区域存在灰色，可能是由于浮点判断误差引起的</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/p9uGgBRfLJ6hO7k.png" style="zoom:50%;" /></p>
+<h3 id="存在的问题">存在的问题</h3>
+<ul>
+<li>硬阴影（仅限点光源）</li>
+<li>质量取决于阴影贴图分辨率（基于图像的技术的一般问题）</li>
+<li>涉及浮点深度值的相等比较意味着规模、偏差、容差问题</li>
+</ul>
+<p>硬阴影与软阴影：</p>
+<ul>
+<li>硬阴影是非0即1，没有过渡</li>
+<li>软阴影有过渡，阴影是逐渐消失的</li>
+<li>点光源不会产生软阴影，产生软阴影说明光源存在一定的大小</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/wzecB6UEJIZNqb3.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1498,6 +1576,89 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
       </tags>
   </entry>
   <entry>
+    <title>LearnOpenGL学习入门</title>
+    <url>/2021/07/22/LearnOpenGL-1/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>最近趁着暑假学习OpenGL，跟着 <a
+href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
+的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
+<span id="more"></span>
+<h2 id="opengl">OpenGL</h2>
+<blockquote>
+<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
+Programming Interface,
+应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
+href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
+<p>OpenGL自身是一个巨大的状态机。</p>
+</blockquote>
+<h2 id="库函数">库函数</h2>
+<p>GLFW：http://www.glfw.org/download.html</p>
+<p>GLAD：https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</p>
+<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
+Mathematics (GLM) (github.com)</a></p>
+<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
+stb single-file public domain libraries for C/C++ (github.com)</a></p>
+<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
+Studio下设置项目的链接。</p>
+<h2 id="你好三角形">你好，三角形</h2>
+<p>几个比较重要的概念：</p>
+<ul>
+<li><p>顶点数组对象（Vertex Array
+Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
+<li><p>顶点缓冲对象（Vertex Buffer
+Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
+<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
+Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
+<li><p>顶点着色器（Vertex
+Shader）：计算顶点的坐标，输出到gl_position。</p></li>
+<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
+</ul>
+<figure>
+<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
+alt="图形渲染管线流程" />
+<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
+</figure>
+<p>图形渲染管线可以被划分为两个主要部分：</p>
+<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
+<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
+<h2 id="着色器">着色器</h2>
+<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
+<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
+<blockquote>
+<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
+</blockquote>
+<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
+<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
+<h2 id="纹理">纹理</h2>
+<p>用stb_image.h头文件进行图像加载。</p>
+<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
+<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
+<h2 id="变换">变换</h2>
+<p>这一章的基础是线性代数。</p>
+<p>GLM是Open<strong>GL</strong>
+<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
+<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
+<h2 id="坐标系统">坐标系统</h2>
+<p>几个概念：</p>
+<ul>
+<li>局部空间</li>
+<li>世界空间</li>
+<li>观察空间</li>
+<li>裁剪空间</li>
+<li>屏幕空间</li>
+</ul>
+<h2 id="摄像机">摄像机</h2>
+<p>（待更新...)</p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>OpenGL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows环境下配置Emacs+LaTeX</title>
     <url>/2021/11/27/LaTeXConfigure/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -1686,89 +1847,6 @@ alt="测试程序" />
       </tags>
   </entry>
   <entry>
-    <title>LearnOpenGL学习入门</title>
-    <url>/2021/07/22/LearnOpenGL-1/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>最近趁着暑假学习OpenGL，跟着 <a
-href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
-的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
-<span id="more"></span>
-<h2 id="opengl">OpenGL</h2>
-<blockquote>
-<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
-Programming Interface,
-应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
-href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
-<p>OpenGL自身是一个巨大的状态机。</p>
-</blockquote>
-<h2 id="库函数">库函数</h2>
-<p>GLFW：http://www.glfw.org/download.html</p>
-<p>GLAD：https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</p>
-<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
-Mathematics (GLM) (github.com)</a></p>
-<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
-stb single-file public domain libraries for C/C++ (github.com)</a></p>
-<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
-Studio下设置项目的链接。</p>
-<h2 id="你好三角形">你好，三角形</h2>
-<p>几个比较重要的概念：</p>
-<ul>
-<li><p>顶点数组对象（Vertex Array
-Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
-<li><p>顶点缓冲对象（Vertex Buffer
-Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
-<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
-Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
-<li><p>顶点着色器（Vertex
-Shader）：计算顶点的坐标，输出到gl_position。</p></li>
-<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
-</ul>
-<figure>
-<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
-alt="图形渲染管线流程" />
-<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
-</figure>
-<p>图形渲染管线可以被划分为两个主要部分：</p>
-<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
-<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
-<h2 id="着色器">着色器</h2>
-<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
-<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
-<blockquote>
-<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
-</blockquote>
-<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
-<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
-<h2 id="纹理">纹理</h2>
-<p>用stb_image.h头文件进行图像加载。</p>
-<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
-<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
-<h2 id="变换">变换</h2>
-<p>这一章的基础是线性代数。</p>
-<p>GLM是Open<strong>GL</strong>
-<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
-<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
-<h2 id="坐标系统">坐标系统</h2>
-<p>几个概念：</p>
-<ul>
-<li>局部空间</li>
-<li>世界空间</li>
-<li>观察空间</li>
-<li>裁剪空间</li>
-<li>屏幕空间</li>
-</ul>
-<h2 id="摄像机">摄像机</h2>
-<p>（待更新...)</p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>OpenGL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Qt中使用Sqlite</title>
     <url>/2021/11/15/Qt-sql/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -1888,6 +1966,37 @@ alt="示例" /></a></p>
       </tags>
   </entry>
   <entry>
+    <title>公主连结Re:Dive常用地址</title>
+    <url>/2020/03/17/pcr-tool/</url>
+    <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
+<span id="more"></span>
+<h3 id="日常向">日常向</h3>
+<p><a
+href="https://pcredivewiki.tw/">兰德索尔图书馆</a>：各个功能都比较实用，推荐其中的<a
+href="https://pcredivewiki.tw/Armory">装备库</a>功能，平时看活动预测、角色站位以及其余小工具都比较方便。</p>
+<h3 id="jjc向">JJC向</h3>
+<p><a
+href="https://bbs.nga.cn/read.php?tid=14878762">初音笔记（iOS）</a>和<a
+href="https://bbs.nga.cn/read.php?tid=20499613">静流笔记（Android）</a>：我只用过前者，不过后者应该是差不多的，这个可以用来查询角色的技能、属性、伤害、循环以及推图、露娜塔、公会战的Boss信息。</p>
+<p><a
+href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
+<h3 id="社交推荐">社交推荐</h3>
+<p>NGA和贴吧。
+可以去nga找找当期活动的sp和vh打法，贴吧看看热闹，毕竟这游戏的jjc和公会战都离不开别的玩家，在jjc里py或者找工会还是需要多留心注意的。</p>
+<h3 id="b站up主推荐">B站up主推荐</h3>
+<p><a href="https://space.bilibili.com/9135820/">盐取shiotori</a></p>
+<p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
+<p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
+<p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>公会的神奇操作</title>
     <url>/2020/04/06/magic-clan/</url>
     <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
@@ -1937,37 +2046,6 @@ title="POJ-1753链接">POJ-1753链接</a></p>
         <tag>算法</tag>
         <tag>POJ</tag>
         <tag>搜索</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公主连结Re:Dive常用地址</title>
-    <url>/2020/03/17/pcr-tool/</url>
-    <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
-<span id="more"></span>
-<h3 id="日常向">日常向</h3>
-<p><a
-href="https://pcredivewiki.tw/">兰德索尔图书馆</a>：各个功能都比较实用，推荐其中的<a
-href="https://pcredivewiki.tw/Armory">装备库</a>功能，平时看活动预测、角色站位以及其余小工具都比较方便。</p>
-<h3 id="jjc向">JJC向</h3>
-<p><a
-href="https://bbs.nga.cn/read.php?tid=14878762">初音笔记（iOS）</a>和<a
-href="https://bbs.nga.cn/read.php?tid=20499613">静流笔记（Android）</a>：我只用过前者，不过后者应该是差不多的，这个可以用来查询角色的技能、属性、伤害、循环以及推图、露娜塔、公会战的Boss信息。</p>
-<p><a
-href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
-<h3 id="社交推荐">社交推荐</h3>
-<p>NGA和贴吧。
-可以去nga找找当期活动的sp和vh打法，贴吧看看热闹，毕竟这游戏的jjc和公会战都离不开别的玩家，在jjc里py或者找工会还是需要多留心注意的。</p>
-<h3 id="b站up主推荐">B站up主推荐</h3>
-<p><a href="https://space.bilibili.com/9135820/">盐取shiotori</a></p>
-<p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
-<p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
-<p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
       </tags>
   </entry>
   <entry>
