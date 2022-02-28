@@ -20,28 +20,19 @@
     var CONFIG = {"hostname":"dyhnoah.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本章内容 在之前的章节，我们已经学习了Shading（着色）部分，本章将讲述Shadow Mapping和Ray Tracing。">
+  <meta name="description" content="本章内容 在之前的章节，我们已经学习了光栅化和几何部分，本章将讲述Ray Tracing（光线追踪）。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Games101-Lecture13-16（RayTracing）学习笔记">
+<meta property="og:title" content="Games101-Lecture13-16（Ray Tracing）学习笔记">
 <meta property="og:url" content="https://dyhnoah.github.io/2022/02/27/Games101-RayTracing/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
-<meta property="og:description" content="本章内容 在之前的章节，我们已经学习了Shading（着色）部分，本章将讲述Shadow Mapping和Ray Tracing。">
+<meta property="og:description" content="本章内容 在之前的章节，我们已经学习了光栅化和几何部分，本章将讲述Ray Tracing（光线追踪）。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/Y83ibz1IdRS24QU.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/yJHruYAZNT5Bjwz.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/oNEJMqenVyHPzTh.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/wR8oujWpKafhZVX.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/NfJR7MTehG2pXmj.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/p9uGgBRfLJ6hO7k.png">
-<meta property="og:image" content="https://s2.loli.net/2022/02/27/wzecB6UEJIZNqb3.png">
 <meta property="article:published_time" content="2022-02-26T16:51:58.000Z">
 <meta property="article:modified_time" content="2022-02-26T16:51:58.000Z">
 <meta property="article:author" content="Ushio">
 <meta property="article:tag" content="图形学">
 <meta property="article:tag" content="Games101">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png">
 
 <link rel="canonical" href="https://dyhnoah.github.io/2022/02/27/Games101-RayTracing/">
 
@@ -56,7 +47,7 @@
   };
 </script>
 
-  <title>Games101-Lecture13-16（RayTracing）学习笔记 | Ushioの鸽子屋</title>
+  <title>Games101-Lecture13-16（Ray Tracing）学习笔记 | Ushioの鸽子屋</title>
   
 
 
@@ -195,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Games101-Lecture13-16（RayTracing）学习笔记
+          Games101-Lecture13-16（Ray Tracing）学习笔记
         </h1>
 
         <div class="post-meta">
@@ -223,7 +214,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>708</span>
+              <span>280</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -243,58 +234,27 @@
 
       
         <h2 id="本章内容">本章内容</h2>
-<p>在之前的章节，我们已经学习了Shading（着色）部分，本章将讲述Shadow
-Mapping和Ray Tracing。</p>
+<p>在之前的章节，我们已经学习了光栅化和几何部分，本章将讲述Ray
+Tracing（光线追踪）。</p>
 <span id="more"></span>
-<h2 id="shadow-mapping">Shadow Mapping</h2>
-<p>一种图像空间算法</p>
+<h2 id="前言">前言</h2>
+<h3 id="为什么要光线追踪">为什么要光线追踪</h3>
+<p>光栅化不能很好地处理全局的效果：</p>
 <ul>
-<li>在阴影计算期间不了解场景的几何形状</li>
-<li>必须处理混叠伪影</li>
+<li>软阴影</li>
+<li>对于类似打磨比较光滑的金属、毛玻璃，有反射的高光，也有本身的粗糙性，光线会在场景中多次反射，光栅化的效果不是很好</li>
 </ul>
-<p>关键思想：</p>
+<p>光线追踪是<strong>准确</strong>的算法，但是<strong>非常慢</strong>：</p>
 <ul>
-<li>不在阴影中的点必须被光线和相机都看到</li>
+<li>光栅化是<strong>实时</strong>的，光线追踪是<strong>离线</strong>的</li>
 </ul>
-<h3 id="流程">流程</h3>
+<h3 id="关于光线的3个想法">关于光线的3个想法</h3>
 <ul>
-<li>从光源看向场景，相当于把摄像机放在光源，对准场景，做一遍光栅化</li>
-<li>但是我们不对其做着色，而是记录看到的<strong>点的深度</strong></li>
-<li>将摄像机放在眼睛位置，真正地看向场景，记录看到的点的深度</li>
-<li>可以将看到的点投影回之前摄像机放在光源的虚拟成像上，如果我们从光源看这个点，它应该出现在图像的哪个位置上。从摄像机看这个点，这个点投影回光源，就知道它在之前深度图的哪个像素上。我们之前记录了该点的深度，此时可以计算该点到光源的深度，如果两个深度一致，说明该点是可以被光源看到的。该点是可见
-的，可以被摄像机看到，也可以被光源看到。（如图3橙色线段所示）</li>
-<li>如果两者深度不一样，说明该点是之前光源看不到的点，说明该点在阴影中。（如图4红色线段所示）</li>
+<li>光以直线传播（虽然这是错误的）</li>
+<li>光线交叉时不会相互“碰撞”（尽管这仍然是错误的）</li>
+<li>光线从光源传播到眼睛（但物理在路径反转 - 互易性下是不变的）。</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/Y83ibz1IdRS24QU.png" style="zoom:50%;" />
-<img src="https://s2.loli.net/2022/02/27/yJHruYAZNT5Bjwz.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/oNEJMqenVyHPzTh.png" style="zoom:50%;" /></p>
-<h3 id="可视化shadow-mapping过程">可视化Shadow Mapping过程</h3>
-<ul>
-<li>如下图所示，一个较为复杂带有阴影的场景，点光源在左上角</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/wR8oujWpKafhZVX.png" style="zoom:50%;" /></p>
-<ul>
-<li>将摄像机放在光源位置，记录深度值</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/NfJR7MTehG2pXmj.png" style="zoom:50%;" /></p>
-<ul>
-<li>将摄像机摆在实际位置，绿色是阴影贴图上距离（光，shadow point）≈
-深度的地方，非绿色是阴影应该在的地方</li>
-<li>但下图，球的上半区域存在灰色，可能是由于浮点判断误差引起的</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/p9uGgBRfLJ6hO7k.png" style="zoom:50%;" /></p>
-<h3 id="存在的问题">存在的问题</h3>
-<ul>
-<li>硬阴影（仅限点光源）</li>
-<li>质量取决于阴影贴图分辨率（基于图像的技术的一般问题）</li>
-<li>涉及浮点深度值的相等比较意味着规模、偏差、容差问题</li>
-</ul>
-<p>硬阴影与软阴影：</p>
-<ul>
-<li>硬阴影是非0即1，没有过渡</li>
-<li>软阴影有过渡，阴影是逐渐消失的</li>
-<li>点光源不会产生软阴影，产生软阴影说明光源存在一定的大小</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/wzecB6UEJIZNqb3.png" style="zoom:50%;" /></p>
+<p>“如果你凝视深渊，深渊也会凝视你。” ——弗里德里希·威廉·尼采（翻译）</p>
 
     </div>
 
@@ -310,7 +270,7 @@ Mapping和Ray Tracing。</p>
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://dyhnoah.github.io/2022/02/27/Games101-RayTracing/" title="Games101-Lecture13-16（RayTracing）学习笔记">https://dyhnoah.github.io/2022/02/27/Games101-RayTracing/</a>
+    <a href="https://dyhnoah.github.io/2022/02/27/Games101-RayTracing/" title="Games101-Lecture13-16（Ray Tracing）学习笔记">https://dyhnoah.github.io/2022/02/27/Games101-RayTracing/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -393,7 +353,7 @@ Mapping和Ray Tracing。</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shadow-mapping"><span class="nav-number">2.</span> <span class="nav-text">Shadow Mapping</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">2.1.</span> <span class="nav-text">流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96shadow-mapping%E8%BF%87%E7%A8%8B"><span class="nav-number">2.2.</span> <span class="nav-text">可视化Shadow Mapping过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.3.</span> <span class="nav-text">存在的问题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA"><span class="nav-number">2.1.</span> <span class="nav-text">为什么要光线追踪</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%85%89%E7%BA%BF%E7%9A%843%E4%B8%AA%E6%83%B3%E6%B3%95"><span class="nav-number">2.2.</span> <span class="nav-text">关于光线的3个想法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -469,12 +429,12 @@ Mapping和Ray Tracing。</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">44k</span>
+    <span title="站点总字数">45k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">40 分钟</span>
+    <span title="站点阅读时长">41 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>

@@ -25,6 +25,26 @@
       </tags>
   </entry>
   <entry>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>台服5月摩羯座会战</title>
     <url>/2020/06/09/Clan-Capricorn/</url>
     <content><![CDATA[<p>本文主要讲述台服2020年5月魔羯座公会战情况。 <span id="more"></span></p>
@@ -51,77 +71,6 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
 </blockquote>
 <p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
 <p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
-    <url>/2022/01/05/Games101-Environment/</url>
-    <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用vs2019+vcpkg完成。
-<span id="more"></span></p>
-<h2 id="准备">准备</h2>
-<p>因为之前在做Games101作业的时候，使用官方提供的虚拟机总是出问题，于是想着搭建Windows平台下的环境，Games101作业需要安装两个库：<code>eigen3</code>、<code>opencv2</code></p>
-<p>为了方便，这次使用vcpkg来安装库。</p>
-<h3 id="安装cmake">安装Cmake</h3>
-<p>链接<a href="https://cmake.org/download/">Download | CMake</a></p>
-<h3 id="安装vcpkg">安装vcpkg</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/microsoft/vcpkg</span><br><span class="line">.\vcpkg\bootstrap-vcpkg.bat</span><br></pre></td></tr></table></figure>
-<h3 id="安装库环境">安装库环境</h3>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\vcpkg.exe install eigen3:x64<span class="literal">-windows</span></span><br><span class="line">.\vcpkg.exe install opencv:x64<span class="literal">-windows</span></span><br><span class="line">//使用管理员权限</span><br><span class="line">.\vcpkg.exe integrate install </span><br></pre></td></tr></table></figure>
-<p><a
-href="https://s2.loli.net/2022/01/09/jCeAmtMqudFi6fw.png"><img src="https://s2.loli.net/2022/01/09/jCeAmtMqudFi6fw.png" alt="powershell_screenshot" style="zoom:50%;" /></a></p>
-<h2 id="设置visual-studio">设置Visual Studio</h2>
-<h3 id="设置项目为64位">设置项目为64位</h3>
-<p><a href="https://s2.loli.net/2022/01/09/gdHsBzYLqcxWRMU.png"><img
-src="https://s2.loli.net/2022/01/09/gdHsBzYLqcxWRMU.png"
-alt="x64" /></a></p>
-<h3 id="设置vs中的解决方案平台">设置VS中的解决方案平台</h3>
-<p>项目 -&gt; 属性 -&gt; C/C++ -&gt; 语言 -&gt; C语言标准：选择c17。
-因为代码中有使用<code>std::optional</code>这个特性，这个特性是c++17中才有的</p>
-<p><a
-href="https://s2.loli.net/2022/01/09/KOLlgcodfSJI3jF.png"><img src="https://s2.loli.net/2022/01/09/KOLlgcodfSJI3jF.png" alt="std:c++17" style="zoom:50%;" /></a></p>
-<h3 id="编译后模型文件目录">编译后模型文件目录</h3>
-<p>编译后，如果有依赖的模型文件，要按照代码中的路径关系，和exe的位置设置相同的路径关系</p>
-<h3 id="添加预编译指令">添加预编译指令</h3>
-<p>在这里面添加<code>_CRT_SECURE_NO_WARNINGS</code>
-因为有一些作业需要用<code>fopen</code>命令生成图片，会报错，其实是警告，添加预处理命令忽略警告就可以了</p>
-<p><a
-href="https://s2.loli.net/2022/01/09/InE4jimqN53OMKf.png"><img src="https://s2.loli.net/2022/01/09/InE4jimqN53OMKf.png" alt="预处理器定义" style="zoom:50%;" /></a></p>
-<h2 id="遇到的问题">遇到的问题</h2>
-<ul>
-<li>使用vcpkg下载的时候好几次报错，检查发现是网络问题，和电脑代理有关，可以多下几次</li>
-<li>一开始没注意编译器，直接运行，提示找不到库，才发现要设置为<code>x64</code>，不能使用<code>x86</code></li>
-</ul>
-<h2 id="参考资料">参考资料</h2>
-<p><a
-href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪：Games101
-现代计算机图形学-作业环境配置：vs2019+win_不要熬夜多喝热水的博客-CSDN博客_games101环境</a></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
@@ -324,6 +273,57 @@ Metrics)</strong></p>
       </tags>
   </entry>
   <entry>
+    <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
+    <url>/2022/01/05/Games101-Environment/</url>
+    <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用vs2019+vcpkg完成。
+<span id="more"></span></p>
+<h2 id="准备">准备</h2>
+<p>因为之前在做Games101作业的时候，使用官方提供的虚拟机总是出问题，于是想着搭建Windows平台下的环境，Games101作业需要安装两个库：<code>eigen3</code>、<code>opencv2</code></p>
+<p>为了方便，这次使用vcpkg来安装库。</p>
+<h3 id="安装cmake">安装Cmake</h3>
+<p>链接<a href="https://cmake.org/download/">Download | CMake</a></p>
+<h3 id="安装vcpkg">安装vcpkg</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/microsoft/vcpkg</span><br><span class="line">.\vcpkg\bootstrap-vcpkg.bat</span><br></pre></td></tr></table></figure>
+<h3 id="安装库环境">安装库环境</h3>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\vcpkg.exe install eigen3:x64<span class="literal">-windows</span></span><br><span class="line">.\vcpkg.exe install opencv:x64<span class="literal">-windows</span></span><br><span class="line">//使用管理员权限</span><br><span class="line">.\vcpkg.exe integrate install </span><br></pre></td></tr></table></figure>
+<p><a
+href="https://s2.loli.net/2022/01/09/jCeAmtMqudFi6fw.png"><img src="https://s2.loli.net/2022/01/09/jCeAmtMqudFi6fw.png" alt="powershell_screenshot" style="zoom:50%;" /></a></p>
+<h2 id="设置visual-studio">设置Visual Studio</h2>
+<h3 id="设置项目为64位">设置项目为64位</h3>
+<p><a href="https://s2.loli.net/2022/01/09/gdHsBzYLqcxWRMU.png"><img
+src="https://s2.loli.net/2022/01/09/gdHsBzYLqcxWRMU.png"
+alt="x64" /></a></p>
+<h3 id="设置vs中的解决方案平台">设置VS中的解决方案平台</h3>
+<p>项目 -&gt; 属性 -&gt; C/C++ -&gt; 语言 -&gt; C语言标准：选择c17。
+因为代码中有使用<code>std::optional</code>这个特性，这个特性是c++17中才有的</p>
+<p><a
+href="https://s2.loli.net/2022/01/09/KOLlgcodfSJI3jF.png"><img src="https://s2.loli.net/2022/01/09/KOLlgcodfSJI3jF.png" alt="std:c++17" style="zoom:50%;" /></a></p>
+<h3 id="编译后模型文件目录">编译后模型文件目录</h3>
+<p>编译后，如果有依赖的模型文件，要按照代码中的路径关系，和exe的位置设置相同的路径关系</p>
+<h3 id="添加预编译指令">添加预编译指令</h3>
+<p>在这里面添加<code>_CRT_SECURE_NO_WARNINGS</code>
+因为有一些作业需要用<code>fopen</code>命令生成图片，会报错，其实是警告，添加预处理命令忽略警告就可以了</p>
+<p><a
+href="https://s2.loli.net/2022/01/09/InE4jimqN53OMKf.png"><img src="https://s2.loli.net/2022/01/09/InE4jimqN53OMKf.png" alt="预处理器定义" style="zoom:50%;" /></a></p>
+<h2 id="遇到的问题">遇到的问题</h2>
+<ul>
+<li>使用vcpkg下载的时候好几次报错，检查发现是网络问题，和电脑代理有关，可以多下几次</li>
+<li>一开始没注意编译器，直接运行，提示找不到库，才发现要设置为<code>x64</code>，不能使用<code>x86</code></li>
+</ul>
+<h2 id="参考资料">参考资料</h2>
+<p><a
+href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪：Games101
+现代计算机图形学-作业环境配置：vs2019+win_不要熬夜多喝热水的博客-CSDN博客_games101环境</a></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101-Homework0</title>
     <url>/2022/01/31/Games101-Homework0/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -410,19 +410,6 @@ M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework3</title>
-    <url>/2022/02/27/Games101-Homework3/</url>
-    <content><![CDATA[
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101-Homework2</title>
     <url>/2022/02/07/Games101-Homework2/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -478,6 +465,19 @@ buffer)，。</li>
 <h3 id="运行结果-1">运行结果</h3>
 <p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
 <p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework3</title>
+    <url>/2022/02/27/Games101-Homework3/</url>
+    <content><![CDATA[
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -707,61 +707,30 @@ n)，但是对于相互覆盖的物体无法判断，如下图。</p>
       </tags>
   </entry>
   <entry>
-    <title>Games101-Lecture13-16（RayTracing）学习笔记</title>
+    <title>Games101-Lecture13-16（Ray Tracing）学习笔记</title>
     <url>/2022/02/27/Games101-RayTracing/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>在之前的章节，我们已经学习了Shading（着色）部分，本章将讲述Shadow
-Mapping和Ray Tracing。</p>
+<p>在之前的章节，我们已经学习了光栅化和几何部分，本章将讲述Ray
+Tracing（光线追踪）。</p>
 <span id="more"></span>
-<h2 id="shadow-mapping">Shadow Mapping</h2>
-<p>一种图像空间算法</p>
+<h2 id="前言">前言</h2>
+<h3 id="为什么要光线追踪">为什么要光线追踪</h3>
+<p>光栅化不能很好地处理全局的效果：</p>
 <ul>
-<li>在阴影计算期间不了解场景的几何形状</li>
-<li>必须处理混叠伪影</li>
+<li>软阴影</li>
+<li>对于类似打磨比较光滑的金属、毛玻璃，有反射的高光，也有本身的粗糙性，光线会在场景中多次反射，光栅化的效果不是很好</li>
 </ul>
-<p>关键思想：</p>
+<p>光线追踪是<strong>准确</strong>的算法，但是<strong>非常慢</strong>：</p>
 <ul>
-<li>不在阴影中的点必须被光线和相机都看到</li>
+<li>光栅化是<strong>实时</strong>的，光线追踪是<strong>离线</strong>的</li>
 </ul>
-<h3 id="流程">流程</h3>
+<h3 id="关于光线的3个想法">关于光线的3个想法</h3>
 <ul>
-<li>从光源看向场景，相当于把摄像机放在光源，对准场景，做一遍光栅化</li>
-<li>但是我们不对其做着色，而是记录看到的<strong>点的深度</strong></li>
-<li>将摄像机放在眼睛位置，真正地看向场景，记录看到的点的深度</li>
-<li>可以将看到的点投影回之前摄像机放在光源的虚拟成像上，如果我们从光源看这个点，它应该出现在图像的哪个位置上。从摄像机看这个点，这个点投影回光源，就知道它在之前深度图的哪个像素上。我们之前记录了该点的深度，此时可以计算该点到光源的深度，如果两个深度一致，说明该点是可以被光源看到的。该点是可见
-的，可以被摄像机看到，也可以被光源看到。（如图3橙色线段所示）</li>
-<li>如果两者深度不一样，说明该点是之前光源看不到的点，说明该点在阴影中。（如图4红色线段所示）</li>
+<li>光以直线传播（虽然这是错误的）</li>
+<li>光线交叉时不会相互“碰撞”（尽管这仍然是错误的）</li>
+<li>光线从光源传播到眼睛（但物理在路径反转 - 互易性下是不变的）。</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/Y83ibz1IdRS24QU.png" style="zoom:50%;" />
-<img src="https://s2.loli.net/2022/02/27/yJHruYAZNT5Bjwz.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/oNEJMqenVyHPzTh.png" style="zoom:50%;" /></p>
-<h3 id="可视化shadow-mapping过程">可视化Shadow Mapping过程</h3>
-<ul>
-<li>如下图所示，一个较为复杂带有阴影的场景，点光源在左上角</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/wR8oujWpKafhZVX.png" style="zoom:50%;" /></p>
-<ul>
-<li>将摄像机放在光源位置，记录深度值</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/NfJR7MTehG2pXmj.png" style="zoom:50%;" /></p>
-<ul>
-<li>将摄像机摆在实际位置，绿色是阴影贴图上距离（光，shadow point）≈
-深度的地方，非绿色是阴影应该在的地方</li>
-<li>但下图，球的上半区域存在灰色，可能是由于浮点判断误差引起的</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/p9uGgBRfLJ6hO7k.png" style="zoom:50%;" /></p>
-<h3 id="存在的问题">存在的问题</h3>
-<ul>
-<li>硬阴影（仅限点光源）</li>
-<li>质量取决于阴影贴图分辨率（基于图像的技术的一般问题）</li>
-<li>涉及浮点深度值的相等比较意味着规模、偏差、容差问题</li>
-</ul>
-<p>硬阴影与软阴影：</p>
-<ul>
-<li>硬阴影是非0即1，没有过渡</li>
-<li>软阴影有过渡，阴影是逐渐消失的</li>
-<li>点光源不会产生软阴影，产生软阴影说明光源存在一定的大小</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/wzecB6UEJIZNqb3.png" style="zoom:50%;" /></p>
+<p>“如果你凝视深渊，深渊也会凝视你。” ——弗里德里希·威廉·尼采（翻译）</p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1076,6 +1045,55 @@ class="math inline">\(\frac{dp}{du}=c2*[h(v+1)-h(v)]\)</span></li>
 <li>要求模型的三角形足够细、多</li>
 </ul>
 <p><img src="https://s2.loli.net/2022/02/26/Qh4lMEcbwZdJym2.png" style="zoom:50%;" /></p>
+<h2 id="shadow-mapping">Shadow Mapping</h2>
+<p>一种图像空间算法</p>
+<ul>
+<li>在阴影计算期间不了解场景的几何形状</li>
+<li>必须处理混叠伪影</li>
+</ul>
+<p>关键思想：</p>
+<ul>
+<li>不在阴影中的点必须被光线和相机都看到</li>
+</ul>
+<h3 id="流程-2">流程</h3>
+<ul>
+<li>从光源看向场景，相当于把摄像机放在光源，对准场景，做一遍光栅化</li>
+<li>但是我们不对其做着色，而是记录看到的<strong>点的深度</strong></li>
+<li>将摄像机放在眼睛位置，真正地看向场景，记录看到的点的深度</li>
+<li>可以将看到的点投影回之前摄像机放在光源的虚拟成像上，如果我们从光源看这个点，它应该出现在图像的哪个位置上。从摄像机看这个点，这个点投影回光源，就知道它在之前深度图的哪个像素上。我们之前记录了该点的深度，此时可以计算该点到光源的深度，如果两个深度一致，说明该点是可以被光源看到的。该点是可见
+的，可以被摄像机看到，也可以被光源看到。（如图3橙色线段所示）</li>
+<li>如果两者深度不一样，说明该点是之前光源看不到的点，说明该点在阴影中。（如图4红色线段所示）</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/Y83ibz1IdRS24QU.png" style="zoom:50%;" />
+<img src="https://s2.loli.net/2022/02/27/yJHruYAZNT5Bjwz.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/oNEJMqenVyHPzTh.png" style="zoom:50%;" /></p>
+<h3 id="可视化shadow-mapping过程">可视化Shadow Mapping过程</h3>
+<ul>
+<li>如下图所示，一个较为复杂带有阴影的场景，点光源在左上角</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/wR8oujWpKafhZVX.png" style="zoom:50%;" /></p>
+<ul>
+<li>将摄像机放在光源位置，记录深度值</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/NfJR7MTehG2pXmj.png" style="zoom:50%;" /></p>
+<ul>
+<li>将摄像机摆在实际位置，绿色是阴影贴图上距离（光，shadow point）≈
+深度的地方，非绿色是阴影应该在的地方</li>
+<li>但下图，球的上半区域存在灰色，可能是由于浮点判断误差引起的</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/p9uGgBRfLJ6hO7k.png" style="zoom:50%;" /></p>
+<h3 id="存在的问题">存在的问题</h3>
+<ul>
+<li>硬阴影（仅限点光源）</li>
+<li>质量取决于阴影贴图分辨率（基于图像的技术的一般问题）</li>
+<li>涉及浮点深度值的相等比较意味着规模、偏差、容差问题</li>
+</ul>
+<p>硬阴影与软阴影：</p>
+<ul>
+<li>硬阴影是非0即1，没有过渡</li>
+<li>软阴影有过渡，阴影是逐渐消失的</li>
+<li>点光源不会产生软阴影，产生软阴影说明光源存在一定的大小</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/wzecB6UEJIZNqb3.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1576,89 +1594,6 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
       </tags>
   </entry>
   <entry>
-    <title>LearnOpenGL学习入门</title>
-    <url>/2021/07/22/LearnOpenGL-1/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>最近趁着暑假学习OpenGL，跟着 <a
-href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
-的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
-<span id="more"></span>
-<h2 id="opengl">OpenGL</h2>
-<blockquote>
-<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
-Programming Interface,
-应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
-href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
-<p>OpenGL自身是一个巨大的状态机。</p>
-</blockquote>
-<h2 id="库函数">库函数</h2>
-<p>GLFW：http://www.glfw.org/download.html</p>
-<p>GLAD：https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</p>
-<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
-Mathematics (GLM) (github.com)</a></p>
-<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
-stb single-file public domain libraries for C/C++ (github.com)</a></p>
-<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
-Studio下设置项目的链接。</p>
-<h2 id="你好三角形">你好，三角形</h2>
-<p>几个比较重要的概念：</p>
-<ul>
-<li><p>顶点数组对象（Vertex Array
-Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
-<li><p>顶点缓冲对象（Vertex Buffer
-Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
-<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
-Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
-<li><p>顶点着色器（Vertex
-Shader）：计算顶点的坐标，输出到gl_position。</p></li>
-<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
-</ul>
-<figure>
-<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
-alt="图形渲染管线流程" />
-<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
-</figure>
-<p>图形渲染管线可以被划分为两个主要部分：</p>
-<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
-<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
-<h2 id="着色器">着色器</h2>
-<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
-<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
-<blockquote>
-<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
-</blockquote>
-<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
-<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
-<h2 id="纹理">纹理</h2>
-<p>用stb_image.h头文件进行图像加载。</p>
-<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
-<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
-<h2 id="变换">变换</h2>
-<p>这一章的基础是线性代数。</p>
-<p>GLM是Open<strong>GL</strong>
-<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
-<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
-<h2 id="坐标系统">坐标系统</h2>
-<p>几个概念：</p>
-<ul>
-<li>局部空间</li>
-<li>世界空间</li>
-<li>观察空间</li>
-<li>裁剪空间</li>
-<li>屏幕空间</li>
-</ul>
-<h2 id="摄像机">摄像机</h2>
-<p>（待更新...)</p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>OpenGL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows环境下配置Emacs+LaTeX</title>
     <url>/2021/11/27/LaTeXConfigure/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -1847,6 +1782,89 @@ alt="测试程序" />
       </tags>
   </entry>
   <entry>
+    <title>LearnOpenGL学习入门</title>
+    <url>/2021/07/22/LearnOpenGL-1/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>最近趁着暑假学习OpenGL，跟着 <a
+href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
+的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
+<span id="more"></span>
+<h2 id="opengl">OpenGL</h2>
+<blockquote>
+<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
+Programming Interface,
+应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
+href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
+<p>OpenGL自身是一个巨大的状态机。</p>
+</blockquote>
+<h2 id="库函数">库函数</h2>
+<p>GLFW：http://www.glfw.org/download.html</p>
+<p>GLAD：https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</p>
+<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
+Mathematics (GLM) (github.com)</a></p>
+<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
+stb single-file public domain libraries for C/C++ (github.com)</a></p>
+<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
+Studio下设置项目的链接。</p>
+<h2 id="你好三角形">你好，三角形</h2>
+<p>几个比较重要的概念：</p>
+<ul>
+<li><p>顶点数组对象（Vertex Array
+Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
+<li><p>顶点缓冲对象（Vertex Buffer
+Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
+<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
+Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
+<li><p>顶点着色器（Vertex
+Shader）：计算顶点的坐标，输出到gl_position。</p></li>
+<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
+</ul>
+<figure>
+<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
+alt="图形渲染管线流程" />
+<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
+</figure>
+<p>图形渲染管线可以被划分为两个主要部分：</p>
+<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
+<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
+<h2 id="着色器">着色器</h2>
+<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
+<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
+<blockquote>
+<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
+</blockquote>
+<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
+<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
+<h2 id="纹理">纹理</h2>
+<p>用stb_image.h头文件进行图像加载。</p>
+<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
+<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
+<h2 id="变换">变换</h2>
+<p>这一章的基础是线性代数。</p>
+<p>GLM是Open<strong>GL</strong>
+<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
+<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
+<h2 id="坐标系统">坐标系统</h2>
+<p>几个概念：</p>
+<ul>
+<li>局部空间</li>
+<li>世界空间</li>
+<li>观察空间</li>
+<li>裁剪空间</li>
+<li>屏幕空间</li>
+</ul>
+<h2 id="摄像机">摄像机</h2>
+<p>（待更新...)</p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>OpenGL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Qt中使用Sqlite</title>
     <url>/2021/11/15/Qt-sql/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -1966,6 +1984,29 @@ alt="示例" /></a></p>
       </tags>
   </entry>
   <entry>
+    <title>公会的神奇操作</title>
+    <url>/2020/04/06/magic-clan/</url>
+    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
+<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
+<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
+<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
+，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
+<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
+<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
+<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
+<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
+<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
+<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
+<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>公主连结Re:Dive常用地址</title>
     <url>/2020/03/17/pcr-tool/</url>
     <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
@@ -1988,29 +2029,6 @@ href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
 <p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
 <p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
 <p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公会的神奇操作</title>
-    <url>/2020/04/06/magic-clan/</url>
-    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
-<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
-<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
-<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
-，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
-<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
-<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
-<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
-<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
-<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
-<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
-<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
