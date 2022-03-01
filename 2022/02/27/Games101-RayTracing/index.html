@@ -27,12 +27,16 @@
 <meta property="og:site_name" content="Ushioの鸽子屋">
 <meta property="og:description" content="本章内容 在之前的章节，我们已经学习了光栅化和几何部分，本章将讲述Ray Tracing（光线追踪）。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/03/01/rxtu2D4AbnS7mEp.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/01/qNpUrj1nTOzYWVe.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/02/ZBftj1OyqusUovp.png">
 <meta property="article:published_time" content="2022-02-26T16:51:58.000Z">
-<meta property="article:modified_time" content="2022-02-26T16:51:58.000Z">
+<meta property="article:modified_time" content="2022-03-01T16:51:58.000Z">
 <meta property="article:author" content="Ushio">
 <meta property="article:tag" content="图形学">
 <meta property="article:tag" content="Games101">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/03/01/rxtu2D4AbnS7mEp.png">
 
 <link rel="canonical" href="https://dyhnoah.github.io/2022/02/27/Games101-RayTracing/">
 
@@ -198,6 +202,13 @@
 
               <time title="创建时间：2022-02-27 00:51:58" itemprop="dateCreated datePublished" datetime="2022-02-27T00:51:58+08:00">2022-02-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-02 00:51:58" itemprop="dateModified" datetime="2022-03-02T00:51:58+08:00">2022-03-02</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -214,7 +225,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>280</span>
+              <span>477</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -255,6 +266,19 @@ Tracing（光线追踪）。</p>
 <li>光线从光源传播到眼睛（但物理在路径反转 - 互易性下是不变的）。</li>
 </ul>
 <p>“如果你凝视深渊，深渊也会凝视你。” ——弗里德里希·威廉·尼采（翻译）</p>
+<h3 id="思想">思想</h3>
+<ul>
+<li>从人眼向屏幕的各个像素点发射一条光线，会打到场景中最近的物体（同时也解决了深度缓存问题）</li>
+<li>如何判断该点是否被照亮呢？从该点向光源连接一条线（shadow
+ray），如果这条连线中不存在物体遮挡，则说明光源可以照亮整个点，否则在阴影中</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/01/rxtu2D4AbnS7mEp.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/01/qNpUrj1nTOzYWVe.png" style="zoom:50%;" /></p>
+<h3 id="whitted风格的光线追踪递归">Whitted风格的光线追踪（递归）</h3>
+<p>实际上，一条光线可能经过多次折射、反射到多个点上，最终该像素的值是多个点累加的，折射、反射中存在能量损失。</p>
+<p><img src="https://s2.loli.net/2022/03/02/ZBftj1OyqusUovp.png" style="zoom:50%;" /></p>
+<h2 id="技术实现">技术实现</h2>
+<h3 id="光线与面相交">光线与面相交</h3>
 
     </div>
 
@@ -353,7 +377,7 @@ Tracing（光线追踪）。</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA"><span class="nav-number">2.1.</span> <span class="nav-text">为什么要光线追踪</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%85%89%E7%BA%BF%E7%9A%843%E4%B8%AA%E6%83%B3%E6%B3%95"><span class="nav-number">2.2.</span> <span class="nav-text">关于光线的3个想法</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA"><span class="nav-number">2.1.</span> <span class="nav-text">为什么要光线追踪</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%85%89%E7%BA%BF%E7%9A%843%E4%B8%AA%E6%83%B3%E6%B3%95"><span class="nav-number">2.2.</span> <span class="nav-text">关于光线的3个想法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E6%83%B3"><span class="nav-number">2.3.</span> <span class="nav-text">思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#whitted%E9%A3%8E%E6%A0%BC%E7%9A%84%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA%E9%80%92%E5%BD%92"><span class="nav-number">2.4.</span> <span class="nav-text">Whitted风格的光线追踪（递归）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.</span> <span class="nav-text">技术实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E7%BA%BF%E4%B8%8E%E9%9D%A2%E7%9B%B8%E4%BA%A4"><span class="nav-number">3.1.</span> <span class="nav-text">光线与面相交</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
