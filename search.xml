@@ -61,26 +61,6 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
       </tags>
   </entry>
   <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
     <url>/2022/01/05/Games101-Environment/</url>
     <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用vs2019+vcpkg完成。
@@ -122,6 +102,58 @@ href="https://s2.loli.net/2022/01/09/InE4jimqN53OMKf.png"><img src="https://s2.l
 <p><a
 href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪：Games101
 现代计算机图形学-作业环境配置：vs2019+win_不要熬夜多喝热水的博客-CSDN博客_games101环境</a></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework0</title>
+    <url>/2022/01/31/Games101-Homework0/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>主要讲述Games101的作业0内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>搭建环境，详情可参见下述链接</li>
+</ul>
+<p><a
+href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
+Studio2019 + vcpkg</a></p>
+<ul>
+<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
+(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>根据齐次坐标的定义，P定义为(2, 1,
+1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -324,92 +356,6 @@ Metrics)</strong></p>
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework0</title>
-    <url>/2022/01/31/Games101-Homework0/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>主要讲述Games101的作业0内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>搭建环境，详情可参见下述链接</li>
-</ul>
-<p><a
-href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
-Studio2019 + vcpkg</a></p>
-<ul>
-<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
-(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>根据齐次坐标的定义，P定义为(2, 1,
-1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework1</title>
-    <url>/2022/02/01/Games101-Homework1/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业1内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<p>实现以下三个内容</p>
-<ul>
-<li><strong>Eigen::Matrix4f get_model_matrix(float
-rotation_angle)</strong>:
-逐个元素地构建模型变换矩阵并返回该矩阵。在此函数中，你只需要实现三维中绕
-z 轴旋转的变换矩阵，而不用处理平移与缩放。</li>
-<li><strong>Eigen::Matrix4f get_projection_matrix(float eye_fov, float
-aspect_ratio, float zNear, float zFar)</strong>:
-使用给定的参数逐个元素地构建透视投影矩阵并返回该矩阵</li>
-<li><strong>Eigen::Matrix4f get_rotation(Vector3f axis, float
-angle)</strong>：main.cpp
-中构造一个函数，该函数的作用是得到绕任意过原点的轴的旋转变换矩阵。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>作业1已经给出了<strong>Eigen::Matrix4f
-get_view_matrix(Eigen::Vector3f
-eye_pos)</strong>的实现方法，即<strong>mvp矩阵</strong>中的<strong>v</strong>，我们需要实现的就是<strong>m和p矩阵</strong>。</p>
-<h3 id="model矩阵">Model矩阵</h3>
-<p>作业1只需要实现三维中绕 z 轴旋转的变换矩阵，
-而不用处理平移与缩放，参考下图计算公式即可。</p>
-<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
-<h3 id="projection矩阵">Projection矩阵</h3>
-<p>根据<a
-href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">视图变换的学习笔记</a>可知，公式如下，注意公式里的<strong><em>(l,r,t,b,n,f)</em></strong>都是具体的坐标，有正负符号的。</p>
-<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" />
-<span class="math display">\[
-M_{persp-&gt;ortho}^{(4*4)} = \begin{bmatrix}n &amp; 0 &amp; 0 &amp; 0
-\\0 &amp; n &amp; 0 &amp; 0 \\0 &amp; 0 &amp; n+f &amp; -nf \\0 &amp; 0
-&amp; 1 &amp; 0 \\\end{bmatrix}
-\]</span></p>
-<p><span class="math display">\[
-M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
-\]</span></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_view_matrix</span><span class="params">(Eigen::Vector3f eye_pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f view = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    translate &lt;&lt; <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, -eye_pos[<span class="number">0</span>], <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, -eye_pos[<span class="number">1</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>,</span><br><span class="line">        -eye_pos[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    view = translate * view;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> view;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_model_matrix</span><span class="params">(<span class="keyword">float</span> rotation_angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f model = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    rotation_angle = rotation_angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line"></span><br><span class="line">    translate &lt;&lt; std::<span class="built_in">cos</span>(rotation_angle), -std::<span class="built_in">sin</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        std::<span class="built_in">sin</span>(rotation_angle), std::<span class="built_in">cos</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    model = translate * model;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> model;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_projection_matrix</span><span class="params">(<span class="keyword">float</span> eye_fov, <span class="keyword">float</span> aspect_ratio,</span></span></span><br><span class="line"><span class="params"><span class="function">                                      <span class="keyword">float</span> zNear, <span class="keyword">float</span> zFar)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f projection = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f persp, persp2ortho, scaleOrtho, translateOrtho;</span><br><span class="line">    std::cout &lt;&lt; zNear &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">float</span> r, l, t, b, n, f;</span><br><span class="line">    t = -zNear * std::<span class="built_in">tan</span>(eye_fov / <span class="number">2.0</span> * MY_PI / <span class="number">180.0f</span>);</span><br><span class="line">    r = t * aspect_ratio;</span><br><span class="line">    b = -t, l = -r, n = zNear, f = zFar;</span><br><span class="line"></span><br><span class="line">    translateOrtho &lt;&lt; <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>, -(n + f) / <span class="number">2.0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    scaleOrtho &lt;&lt; <span class="number">2.0</span> / (r - l), <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">2.0</span> / (t - b), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">2.0</span> / (n - f), <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    persp2ortho &lt;&lt; n, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, n, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, n + f, -n * f,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    persp = scaleOrtho * translateOrtho * persp2ortho;</span><br><span class="line">    projection = persp * projection;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> projection;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_rotation</span><span class="params">(Vector3f axis, <span class="keyword">float</span> angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f rotation = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line">    Eigen::Matrix3f normalMat3f = Eigen::Matrix3f::<span class="built_in">Identity</span>(), R, tmpMat;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> angleRadian = angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line">    </span><br><span class="line">    tmpMat &lt;&lt; <span class="number">0</span>, -axis[<span class="number">2</span>], axis[<span class="number">1</span>],</span><br><span class="line">        axis[<span class="number">2</span>], <span class="number">0</span>, -axis[<span class="number">0</span>],</span><br><span class="line">        -axis[<span class="number">1</span>], axis[<span class="number">0</span>], <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    R = std::<span class="built_in">cos</span>(angleRadian) * normalMat3f + (<span class="number">1</span> - std::<span class="built_in">cos</span>(angleRadian)) * axis * axis.<span class="built_in">transpose</span>() </span><br><span class="line">        + std::<span class="built_in">sin</span>(angleRadian) * tmpMat;</span><br><span class="line"></span><br><span class="line">    rotation.<span class="built_in">block</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">3</span>) = R;</span><br><span class="line">    std::cout &lt;&lt; rotation &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> rotation;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="运行结果">运行结果</h2>
-<p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
-<p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101-Homework2</title>
     <url>/2022/02/07/Games101-Homework2/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -475,9 +421,104 @@ buffer)，。</li>
       </tags>
   </entry>
   <entry>
+    <title>Games101-Homework1</title>
+    <url>/2022/02/01/Games101-Homework1/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章主要讲述Games101的作业1内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<p>实现以下三个内容</p>
+<ul>
+<li><strong>Eigen::Matrix4f get_model_matrix(float
+rotation_angle)</strong>:
+逐个元素地构建模型变换矩阵并返回该矩阵。在此函数中，你只需要实现三维中绕
+z 轴旋转的变换矩阵，而不用处理平移与缩放。</li>
+<li><strong>Eigen::Matrix4f get_projection_matrix(float eye_fov, float
+aspect_ratio, float zNear, float zFar)</strong>:
+使用给定的参数逐个元素地构建透视投影矩阵并返回该矩阵</li>
+<li><strong>Eigen::Matrix4f get_rotation(Vector3f axis, float
+angle)</strong>：main.cpp
+中构造一个函数，该函数的作用是得到绕任意过原点的轴的旋转变换矩阵。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>作业1已经给出了<strong>Eigen::Matrix4f
+get_view_matrix(Eigen::Vector3f
+eye_pos)</strong>的实现方法，即<strong>mvp矩阵</strong>中的<strong>v</strong>，我们需要实现的就是<strong>m和p矩阵</strong>。</p>
+<h3 id="model矩阵">Model矩阵</h3>
+<p>作业1只需要实现三维中绕 z 轴旋转的变换矩阵，
+而不用处理平移与缩放，参考下图计算公式即可。</p>
+<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
+<h3 id="projection矩阵">Projection矩阵</h3>
+<p>根据<a
+href="https://dyhnoah.github.io/2022/01/25/Games101-Transformation/">视图变换的学习笔记</a>可知，公式如下，注意公式里的<strong><em>(l,r,t,b,n,f)</em></strong>都是具体的坐标，有正负符号的。</p>
+<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" />
+<span class="math display">\[
+M_{persp-&gt;ortho}^{(4*4)} = \begin{bmatrix}n &amp; 0 &amp; 0 &amp; 0
+\\0 &amp; n &amp; 0 &amp; 0 \\0 &amp; 0 &amp; n+f &amp; -nf \\0 &amp; 0
+&amp; 1 &amp; 0 \\\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
+\]</span></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_view_matrix</span><span class="params">(Eigen::Vector3f eye_pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f view = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    translate &lt;&lt; <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, -eye_pos[<span class="number">0</span>], <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, -eye_pos[<span class="number">1</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>,</span><br><span class="line">        -eye_pos[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    view = translate * view;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> view;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_model_matrix</span><span class="params">(<span class="keyword">float</span> rotation_angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f model = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f translate;</span><br><span class="line">    rotation_angle = rotation_angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line"></span><br><span class="line">    translate &lt;&lt; std::<span class="built_in">cos</span>(rotation_angle), -std::<span class="built_in">sin</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        std::<span class="built_in">sin</span>(rotation_angle), std::<span class="built_in">cos</span>(rotation_angle), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    model = translate * model;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> model;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_projection_matrix</span><span class="params">(<span class="keyword">float</span> eye_fov, <span class="keyword">float</span> aspect_ratio,</span></span></span><br><span class="line"><span class="params"><span class="function">                                      <span class="keyword">float</span> zNear, <span class="keyword">float</span> zFar)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f projection = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Matrix4f persp, persp2ortho, scaleOrtho, translateOrtho;</span><br><span class="line">    std::cout &lt;&lt; zNear &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">float</span> r, l, t, b, n, f;</span><br><span class="line">    t = -zNear * std::<span class="built_in">tan</span>(eye_fov / <span class="number">2.0</span> * MY_PI / <span class="number">180.0f</span>);</span><br><span class="line">    r = t * aspect_ratio;</span><br><span class="line">    b = -t, l = -r, n = zNear, f = zFar;</span><br><span class="line"></span><br><span class="line">    translateOrtho &lt;&lt; <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">1.0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>, -(n + f) / <span class="number">2.0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    scaleOrtho &lt;&lt; <span class="number">2.0</span> / (r - l), <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">2.0</span> / (t - b), <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">2.0</span> / (n - f), <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">    persp2ortho &lt;&lt; n, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, n, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, n + f, -n * f,</span><br><span class="line">        <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    persp = scaleOrtho * translateOrtho * persp2ortho;</span><br><span class="line">    projection = persp * projection;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> projection;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Eigen::Matrix4f <span class="title">get_rotation</span><span class="params">(Vector3f axis, <span class="keyword">float</span> angle)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Matrix4f rotation = Eigen::Matrix4f::<span class="built_in">Identity</span>();</span><br><span class="line">    Eigen::Matrix3f normalMat3f = Eigen::Matrix3f::<span class="built_in">Identity</span>(), R, tmpMat;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> angleRadian = angle * MY_PI / <span class="number">180.0f</span>;</span><br><span class="line">    </span><br><span class="line">    tmpMat &lt;&lt; <span class="number">0</span>, -axis[<span class="number">2</span>], axis[<span class="number">1</span>],</span><br><span class="line">        axis[<span class="number">2</span>], <span class="number">0</span>, -axis[<span class="number">0</span>],</span><br><span class="line">        -axis[<span class="number">1</span>], axis[<span class="number">0</span>], <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    R = std::<span class="built_in">cos</span>(angleRadian) * normalMat3f + (<span class="number">1</span> - std::<span class="built_in">cos</span>(angleRadian)) * axis * axis.<span class="built_in">transpose</span>() </span><br><span class="line">        + std::<span class="built_in">sin</span>(angleRadian) * tmpMat;</span><br><span class="line"></span><br><span class="line">    rotation.<span class="built_in">block</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">3</span>) = R;</span><br><span class="line">    std::cout &lt;&lt; rotation &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> rotation;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="运行结果">运行结果</h2>
+<p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
+<p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101-Homework3</title>
     <url>/2022/02/27/Games101-Homework3/</url>
-    <content><![CDATA[
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章主要讲述Games101的作业3内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>[10 分] 参数插值: 正确插值颜色、法向量、纹理坐标、位置 (Shading
+Position) 并将它们传递给 fragment_shader_payload.</li>
+<li>[20 分]Blinn-phong 反射模型: 正确实现 phong_fragment_shader 对应的
+反射模型。</li>
+<li>[5 分] Texture mapping: 将 phong_fragment_shader 的代码拷贝到
+texture_fragment_shader, 在此基础上正确实现 Texture Mapping.</li>
+<li>[10 分] Bump mapping 与 Displacement mapping: 正确实现 Bump mapping
+与 Displacement mapping.</li>
+<li>[Bonus 3 分] 尝试更多模型: 找到其他可用的.obj 文件，提交渲染结果并
+把模型保存在 /models 目录下。这些模型也应该包含 Vertex Normal
+信息。</li>
+<li>[Bonus 5 分] 双线性纹理插值: 使用双线性插值进行纹理采样, 在 Texture
+类中实现一个新方法 Vector3f getColorBilinear(float u, float v) 并 通过
+fragment shader
+调用它。为了使双线性插值的效果更加明显，你应该考虑选择更小的纹理图。请同时提交纹理插值与双线性纹理插值的结果，并进行比较。</li>
+</ul>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
+<p>需要修改的函数如下：</p>
+<p>rasterize_triangle(const Triangle&amp; t) in rasterizer.cpp:
+在此处实现与作业 2
+类似的插值算法，实现法向量、颜色、纹理颜色的插值。</p>
+<p>get_projection_matrix() in main.cpp: 将你自己在之前的实验中
+实现的投影矩阵填到此处，此时你可以运行 ./Rasterizer output.png normal
+来观察法向量实现结果。</p>
+<p>phong_fragment_shader() in main.cpp: 实现 Blinn-Phong 模型计 算
+Fragment Color.</p>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t, <span class="keyword">const</span> std::array&lt;Eigen::Vector3f, <span class="number">3</span>&gt;&amp; view_pos) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &lt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index]))</span><br><span class="line">                &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">auto</span> interpolated_color = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.color[<span class="number">0</span>], t.color[<span class="number">1</span>], t.color[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_normal = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.normal[<span class="number">0</span>], t.normal[<span class="number">1</span>], t.normal[<span class="number">2</span>], <span class="number">1</span>).<span class="built_in">normalized</span>();</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_texcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.tex_coords[<span class="number">0</span>], t.tex_coords[<span class="number">1</span>], t.tex_coords[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_shadingcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, view_pos[<span class="number">0</span>], view_pos[<span class="number">1</span>], view_pos[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">                    <span class="comment">// Use: Instead of passing the triangle&#x27;s color directly to the frame buffer, pass the color to the shaders first to get the final color;</span></span><br><span class="line">                    <span class="function">fragment_shader_payload <span class="title">payload</span><span class="params">(interpolated_color, interpolated_normal.normalized(), interpolated_texcoords, texture ? &amp;*texture : <span class="literal">nullptr</span>)</span></span>;</span><br><span class="line">                    payload.view_pos = interpolated_shadingcoords;</span><br><span class="line">                    <span class="keyword">auto</span> pixel_color = <span class="built_in">fragment_shader</span>(payload);</span><br><span class="line">                    <span class="built_in">set_pixel</span>(Eigen::<span class="built_in">Vector2i</span>(x, y), pixel_color);</span><br><span class="line">                    <span class="comment">//std::cout &lt;&lt; z_interpolated &lt;&lt; std::endl;</span></span><br><span class="line">                &#125;              </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Vector3f <span class="title">phong_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color;</span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; light : lights)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> For each light source in the code, calculate what the *ambient*, *diffuse*, and *specular* </span></span><br><span class="line">        <span class="comment">// components are. Then, accumulate that result on the *result_color* object.</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//光的方向，视线方向，衰减因子        </span></span><br><span class="line">        Eigen::Vector3f light_dir = light.position - point;</span><br><span class="line">        Eigen::Vector3f view_dir = eye_pos - point;</span><br><span class="line">        <span class="keyword">float</span> r = light_dir.<span class="built_in">dot</span>(light_dir);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//La-环境光照，Ld-漫反射，Ls-高光</span></span><br><span class="line">        Eigen::Vector3f La = ka.<span class="built_in">cwiseProduct</span>(amb_light_intensity);</span><br><span class="line">        Eigen::Vector3f Ld = kd.<span class="built_in">cwiseProduct</span>(light.intensity / r);<span class="comment">// *MAX(0, normal * light.position);</span></span><br><span class="line">        Eigen::Vector3f Ls = ks.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line"></span><br><span class="line">        result_color += La + Ld + Ls;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果">运行结果</h3>
+<h4 id="blinn-phong">Blinn-Phong</h4>
+<p><img src="https://s2.loli.net/2022/03/04/RSJ7gbYQkNAonEM.png" style="zoom:50%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -751,6 +792,64 @@ ray），如果这条连线中不存在物体遮挡，则说明光源可以照�
       <tags>
         <tag>图形学</tag>
         <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows环境下配置Emacs+LaTeX</title>
+    <url>/2021/11/27/LaTeXConfigure/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
+<span id="more"></span>
+<h2 id="下载过程">下载过程</h2>
+<p>一开始就走了弯路，没注意到无论是Linux还是Windows环境，都需要先准备好LaTeX环境，还以为能通过下Emacs的插件可以直接编译LaTeX</p>
+<h3 id="tex-live下载">Tex Live下载</h3>
+<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group
+(tug.org)</a></p>
+<p>Tex
+Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex
+Live的环境，时间1小时往上</p>
+<p><a
+href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
+<p>另一种是下载iso文件，点击on
+DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
+<p><a
+href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
+<p>可以选择下载带有包管理器的基本版，沒有的东西可以用包管理器装</p>
+<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code>
+出版本号就基本可以确定安装成功了</p>
+<h3 id="emacs插件安装">Emacs插件安装</h3>
+<p>在emacs中输入<code>M-x package-install RET *** RET</code></p>
+<p>***={auctex，yasnippets，yasnippets-snippets}</p>
+<h2 id="tex导出中文">Tex导出中文</h2>
+<p>将以下添加到.emacs.d/init.el文件里面，设置xelatex为默认latex编译器</p>
+<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line"><span class="comment">; LaTex插件</span></span><br><span class="line">(<span class="name">add-to-list</span> &#x27;load-path <span class="string">&quot;~/.emacs.d/elpa&quot;</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">require</span> &#x27;yasnippet)</span><br><span class="line">(<span class="name">yas-global-mode</span> <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">setq</span> TeX-output-view-style (<span class="name">quote</span> ((<span class="string">&quot;^pdf$&quot;</span> <span class="string">&quot;.&quot;</span> <span class="string">&quot;evince %o %(outpage)&quot;</span>))))</span><br><span class="line"></span><br><span class="line">(<span class="name">add-hook</span> &#x27;LaTeX-mode-hook</span><br><span class="line">(<span class="name">lambda</span>()</span><br><span class="line">(<span class="name">add-to-list</span> &#x27;TeX-command-list &#x27;(<span class="string">&quot;XeLaTeX&quot;</span> <span class="string">&quot;%`xelatex%(mode)%&#x27; %t&quot;</span> TeX-run-TeX nil t))</span><br><span class="line">(<span class="name">setq</span> TeX-command-default <span class="string">&quot;XeLaTeX&quot;</span>)))</span><br></pre></td></tr></table></figure>
+<h2 id="编译">编译</h2>
+<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c
+C-l</code> 可以看到是用什么编译的</p>
+<p><code>C-C C-V</code>可以直接打开新建的pdf文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\usepackage&#123;xeCJK, fontspec, xunicode, xltxtra&#125;</span><br><span class="line">\usepackage&#123;amsmath&#125;</span><br><span class="line"></span><br><span class="line">\CTEXsetup[name=&#123;第,节&#125;,number=&#123;\chinese&#123;section&#125;&#125;]&#123;section&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line"></span><br><span class="line">\section&#123;你好中国&#125;</span><br><span class="line">中国在East Asia.</span><br><span class="line"></span><br><span class="line">\subsection&#123;Hello Beijing&#125;</span><br><span class="line">北京是capital of China.</span><br><span class="line"></span><br><span class="line">\subsubsection&#123;Hello Dongcheng District&#125;</span><br><span class="line">\paragraph&#123;Tian&#x27;anmen Square&#125;</span><br><span class="line">is in the center of Beijing</span><br><span class="line">\subparagraph&#123;Chairman Mao&#125;</span><br><span class="line">is in the center of 天安门广场。</span><br><span class="line">\subsection&#123;Hello 山东&#125;</span><br><span class="line">\paragraph&#123;山东大学&#125; is one of the best university in 山东。</span><br><span class="line"></span><br><span class="line">這是繁體中文。</span><br><span class="line"></span><br><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line"> \hline</span><br><span class="line">操作系统&amp; 发行版&amp; 编辑器\\</span><br><span class="line"> \hline</span><br><span class="line">Windows &amp; MikTeX &amp; TexMakerX \\</span><br><span class="line"> \hline</span><br><span class="line">Unix/Linux &amp; teTeX &amp; Kile \\</span><br><span class="line"> \hline</span><br><span class="line">Mac OS &amp; MacTeX &amp; TeXShop \\</span><br><span class="line"> \hline</span><br><span class="line">通用&amp; TeX Live &amp; TeXworks \\</span><br><span class="line"> \hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line"></span><br><span class="line">$$\int_0^1 \frac&#123;1&#125;&#123;e^x&#125; =  \frac&#123;e-1&#125;&#123;e&#125;$$</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<p><a
+href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
+<h2 id="总结">总结</h2>
+<ul>
+<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c
+C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
+。使用<code>C-c C-l</code> 提示 ‘pdflatex’
+不是内部或外部命令，也不是可运行的程序或批处理文件</li>
+<li>pdflatex 和 xelatex 都是 texlive 的一部分</li>
+</ul>
+]]></content>
+      <categories>
+        <category>LaTeX</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -1114,6 +1213,136 @@ class="math inline">\(\frac{dp}{du}=c2*[h(v+1)-h(v)]\)</span></li>
       <tags>
         <tag>图形学</tag>
         <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DPDK学习</title>
+    <url>/2021/07/01/LearnDPDK/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。</p>
+<span id="more"></span>
+<h2 id="dpdk介绍">DPDK介绍</h2>
+<blockquote>
+<p>DPDK全称Intel Data Plane Development
+Kit，是intel提供的数据平面开发工具集，为Intel
+architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
+<p>DPDK不同于Linux系统以通用性设计为目的，而是专注于网络应用中数据包的高性能处理。具体体现在DPDK应用程序是运行在用户空间上利用自身提供的数据平面库来收发数据包，绕过了Linux内核协议栈对数据包处理过程。它不是一个用户可以直接建立应用程序的完整产品，不包含需要与控制层（包括内核和协议堆栈）进行交互的工具。</p>
+<p>相比原生 Linux（Native Linux），采用Intel
+DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel
+x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
+</blockquote>
+<figure>
+<img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png"
+alt="DPDK工作图" />
+<figcaption aria-hidden="true">DPDK工作图</figcaption>
+</figure>
+<p>简单说，DPDK可以接管你的操作系统，在处理数据包的时候可以绕过内核，大大提高传输速率。</p>
+<h2 id="dpdk开发环境搭建">DPDK开发环境搭建</h2>
+<h3 id="选择长期支持的版本lts">选择长期支持的版本LTS</h3>
+<p>DPDK的下载官网如下：</p>
+<p>https://core.dpdk.org/download/</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png"
+alt="DPDK版本图" />
+<figcaption aria-hidden="true">DPDK版本图</figcaption>
+</figure>
+<p>我的开发环境是Ubuntu18.04 64位，选择的是DPDK 19.11.8(LTS)版本。</p>
+<h3 id="其余的软件环境">其余的软件环境</h3>
+<p>从下面的文档可以查看不同版本的System
+Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
+<p>http://core.dpdk.org/doc/archives/</p>
+<h3 id="虚拟机配置">虚拟机配置</h3>
+<ul>
+<li><p>核心：4个</p></li>
+<li><p>内存：4G，感觉可以再分大些</p></li>
+<li><p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p></li>
+</ul>
+<h2 id="dpdk安装">DPDK安装</h2>
+<h3 id="下载源代码">下载源代码</h3>
+<p>https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</p>
+<h3 id="设置环境变量">设置环境变量</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">64位系统：</span><br><span class="line">export RTE_SDK=`pwd`</span><br><span class="line">export RTE_TARGET=x86_64-native-linuxapp-gcc</span><br><span class="line"></span><br><span class="line">32位系统：</span><br><span class="line">export RTE_SDK=`pwd` </span><br><span class="line">export RTE_TARGET=i686-default-linuxapp-gcc</span><br></pre></td></tr></table></figure>
+<h3 id="利用setup.sh进行配置">利用setup.sh进行配置</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd dpdk-stable-19.11.8/usertools</span><br><span class="line">source ./dpdk-setup.sh</span><br></pre></td></tr></table></figure>
+<h4 id="编辑dpdk">编辑DPDK</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png"
+alt="编译DPDK" />
+<figcaption aria-hidden="true">编译DPDK</figcaption>
+</figure>
+<p>编译完后提示没有指定安装路径，我们只是编译而不是install就不用理会。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png"
+alt="编译后提示" />
+<figcaption aria-hidden="true">编译后提示</figcaption>
+</figure>
+<h4 id="插入igb-uio模块">插入IGB UIO模块</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png"
+alt="插入IGB UIO模块" />
+<figcaption aria-hidden="true">插入IGB UIO模块</figcaption>
+</figure>
+<h4 id="设置大页内存">设置大页内存</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png"
+alt="设置大页内存" />
+<figcaption aria-hidden="true">设置大页内存</figcaption>
+</figure>
+<p>默认设置的是2M的大页内存，这里输入1024，表示申请2G的大页内存。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png"
+alt="大页内存" />
+<figcaption aria-hidden="true">大页内存</figcaption>
+</figure>
+<p>查看配置的大页内存</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png"
+alt="查看大页内存" />
+<figcaption aria-hidden="true">查看大页内存</figcaption>
+</figure>
+<figure>
+<img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png"
+alt="大页内存" />
+<figcaption aria-hidden="true">大页内存</figcaption>
+</figure>
+<h4 id="查看网卡信息">查看网卡信息</h4>
+<p>记得通过ifconfig xxx down指令将网卡关闭。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png"
+alt="查看网卡信息" />
+<figcaption aria-hidden="true">查看网卡信息</figcaption>
+</figure>
+<figure>
+<img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png"
+alt="网卡信息" />
+<figcaption aria-hidden="true">网卡信息</figcaption>
+</figure>
+<h4 id="绑定网卡">绑定网卡</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png"
+alt="绑定网卡" />
+<figcaption aria-hidden="true">绑定网卡</figcaption>
+</figure>
+<p>输入pci的地址，0000开始到'前的全输入。</p>
+<h4 id="运行testpmd测试程序">运行testpmd测试程序</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png"
+alt="测试程序" />
+<figcaption aria-hidden="true">测试程序</figcaption>
+</figure>
+<p>输入0xf代表程序运行在0~3核心。</p>
+<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" /></p>
+<p>输入start开始抓包</p>
+<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" /></p>
+<p>stop停止抓包</p>
+<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" /></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>DPDK</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1607,194 +1836,6 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
       </tags>
   </entry>
   <entry>
-    <title>Windows环境下配置Emacs+LaTeX</title>
-    <url>/2021/11/27/LaTeXConfigure/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
-<span id="more"></span>
-<h2 id="下载过程">下载过程</h2>
-<p>一开始就走了弯路，没注意到无论是Linux还是Windows环境，都需要先准备好LaTeX环境，还以为能通过下Emacs的插件可以直接编译LaTeX</p>
-<h3 id="tex-live下载">Tex Live下载</h3>
-<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group
-(tug.org)</a></p>
-<p>Tex
-Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex
-Live的环境，时间1小时往上</p>
-<p><a
-href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
-<p>另一种是下载iso文件，点击on
-DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
-<p><a
-href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
-<p>可以选择下载带有包管理器的基本版，沒有的东西可以用包管理器装</p>
-<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code>
-出版本号就基本可以确定安装成功了</p>
-<h3 id="emacs插件安装">Emacs插件安装</h3>
-<p>在emacs中输入<code>M-x package-install RET *** RET</code></p>
-<p>***={auctex，yasnippets，yasnippets-snippets}</p>
-<h2 id="tex导出中文">Tex导出中文</h2>
-<p>将以下添加到.emacs.d/init.el文件里面，设置xelatex为默认latex编译器</p>
-<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line"><span class="comment">; LaTex插件</span></span><br><span class="line">(<span class="name">add-to-list</span> &#x27;load-path <span class="string">&quot;~/.emacs.d/elpa&quot;</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">require</span> &#x27;yasnippet)</span><br><span class="line">(<span class="name">yas-global-mode</span> <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">setq</span> TeX-output-view-style (<span class="name">quote</span> ((<span class="string">&quot;^pdf$&quot;</span> <span class="string">&quot;.&quot;</span> <span class="string">&quot;evince %o %(outpage)&quot;</span>))))</span><br><span class="line"></span><br><span class="line">(<span class="name">add-hook</span> &#x27;LaTeX-mode-hook</span><br><span class="line">(<span class="name">lambda</span>()</span><br><span class="line">(<span class="name">add-to-list</span> &#x27;TeX-command-list &#x27;(<span class="string">&quot;XeLaTeX&quot;</span> <span class="string">&quot;%`xelatex%(mode)%&#x27; %t&quot;</span> TeX-run-TeX nil t))</span><br><span class="line">(<span class="name">setq</span> TeX-command-default <span class="string">&quot;XeLaTeX&quot;</span>)))</span><br></pre></td></tr></table></figure>
-<h2 id="编译">编译</h2>
-<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c
-C-l</code> 可以看到是用什么编译的</p>
-<p><code>C-C C-V</code>可以直接打开新建的pdf文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\usepackage&#123;xeCJK, fontspec, xunicode, xltxtra&#125;</span><br><span class="line">\usepackage&#123;amsmath&#125;</span><br><span class="line"></span><br><span class="line">\CTEXsetup[name=&#123;第,节&#125;,number=&#123;\chinese&#123;section&#125;&#125;]&#123;section&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line"></span><br><span class="line">\section&#123;你好中国&#125;</span><br><span class="line">中国在East Asia.</span><br><span class="line"></span><br><span class="line">\subsection&#123;Hello Beijing&#125;</span><br><span class="line">北京是capital of China.</span><br><span class="line"></span><br><span class="line">\subsubsection&#123;Hello Dongcheng District&#125;</span><br><span class="line">\paragraph&#123;Tian&#x27;anmen Square&#125;</span><br><span class="line">is in the center of Beijing</span><br><span class="line">\subparagraph&#123;Chairman Mao&#125;</span><br><span class="line">is in the center of 天安门广场。</span><br><span class="line">\subsection&#123;Hello 山东&#125;</span><br><span class="line">\paragraph&#123;山东大学&#125; is one of the best university in 山东。</span><br><span class="line"></span><br><span class="line">這是繁體中文。</span><br><span class="line"></span><br><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line"> \hline</span><br><span class="line">操作系统&amp; 发行版&amp; 编辑器\\</span><br><span class="line"> \hline</span><br><span class="line">Windows &amp; MikTeX &amp; TexMakerX \\</span><br><span class="line"> \hline</span><br><span class="line">Unix/Linux &amp; teTeX &amp; Kile \\</span><br><span class="line"> \hline</span><br><span class="line">Mac OS &amp; MacTeX &amp; TeXShop \\</span><br><span class="line"> \hline</span><br><span class="line">通用&amp; TeX Live &amp; TeXworks \\</span><br><span class="line"> \hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line"></span><br><span class="line">$$\int_0^1 \frac&#123;1&#125;&#123;e^x&#125; =  \frac&#123;e-1&#125;&#123;e&#125;$$</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<p><a
-href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
-<h2 id="总结">总结</h2>
-<ul>
-<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c
-C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
-。使用<code>C-c C-l</code> 提示 ‘pdflatex’
-不是内部或外部命令，也不是可运行的程序或批处理文件</li>
-<li>pdflatex 和 xelatex 都是 texlive 的一部分</li>
-</ul>
-]]></content>
-      <categories>
-        <category>LaTeX</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DPDK学习</title>
-    <url>/2021/07/01/LearnDPDK/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。</p>
-<span id="more"></span>
-<h2 id="dpdk介绍">DPDK介绍</h2>
-<blockquote>
-<p>DPDK全称Intel Data Plane Development
-Kit，是intel提供的数据平面开发工具集，为Intel
-architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
-<p>DPDK不同于Linux系统以通用性设计为目的，而是专注于网络应用中数据包的高性能处理。具体体现在DPDK应用程序是运行在用户空间上利用自身提供的数据平面库来收发数据包，绕过了Linux内核协议栈对数据包处理过程。它不是一个用户可以直接建立应用程序的完整产品，不包含需要与控制层（包括内核和协议堆栈）进行交互的工具。</p>
-<p>相比原生 Linux（Native Linux），采用Intel
-DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel
-x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
-</blockquote>
-<figure>
-<img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png"
-alt="DPDK工作图" />
-<figcaption aria-hidden="true">DPDK工作图</figcaption>
-</figure>
-<p>简单说，DPDK可以接管你的操作系统，在处理数据包的时候可以绕过内核，大大提高传输速率。</p>
-<h2 id="dpdk开发环境搭建">DPDK开发环境搭建</h2>
-<h3 id="选择长期支持的版本lts">选择长期支持的版本LTS</h3>
-<p>DPDK的下载官网如下：</p>
-<p>https://core.dpdk.org/download/</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png"
-alt="DPDK版本图" />
-<figcaption aria-hidden="true">DPDK版本图</figcaption>
-</figure>
-<p>我的开发环境是Ubuntu18.04 64位，选择的是DPDK 19.11.8(LTS)版本。</p>
-<h3 id="其余的软件环境">其余的软件环境</h3>
-<p>从下面的文档可以查看不同版本的System
-Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
-<p>http://core.dpdk.org/doc/archives/</p>
-<h3 id="虚拟机配置">虚拟机配置</h3>
-<ul>
-<li><p>核心：4个</p></li>
-<li><p>内存：4G，感觉可以再分大些</p></li>
-<li><p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p></li>
-</ul>
-<h2 id="dpdk安装">DPDK安装</h2>
-<h3 id="下载源代码">下载源代码</h3>
-<p>https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</p>
-<h3 id="设置环境变量">设置环境变量</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">64位系统：</span><br><span class="line">export RTE_SDK=`pwd`</span><br><span class="line">export RTE_TARGET=x86_64-native-linuxapp-gcc</span><br><span class="line"></span><br><span class="line">32位系统：</span><br><span class="line">export RTE_SDK=`pwd` </span><br><span class="line">export RTE_TARGET=i686-default-linuxapp-gcc</span><br></pre></td></tr></table></figure>
-<h3 id="利用setup.sh进行配置">利用setup.sh进行配置</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd dpdk-stable-19.11.8/usertools</span><br><span class="line">source ./dpdk-setup.sh</span><br></pre></td></tr></table></figure>
-<h4 id="编辑dpdk">编辑DPDK</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png"
-alt="编译DPDK" />
-<figcaption aria-hidden="true">编译DPDK</figcaption>
-</figure>
-<p>编译完后提示没有指定安装路径，我们只是编译而不是install就不用理会。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png"
-alt="编译后提示" />
-<figcaption aria-hidden="true">编译后提示</figcaption>
-</figure>
-<h4 id="插入igb-uio模块">插入IGB UIO模块</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png"
-alt="插入IGB UIO模块" />
-<figcaption aria-hidden="true">插入IGB UIO模块</figcaption>
-</figure>
-<h4 id="设置大页内存">设置大页内存</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png"
-alt="设置大页内存" />
-<figcaption aria-hidden="true">设置大页内存</figcaption>
-</figure>
-<p>默认设置的是2M的大页内存，这里输入1024，表示申请2G的大页内存。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
-<p>查看配置的大页内存</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png"
-alt="查看大页内存" />
-<figcaption aria-hidden="true">查看大页内存</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
-<h4 id="查看网卡信息">查看网卡信息</h4>
-<p>记得通过ifconfig xxx down指令将网卡关闭。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png"
-alt="查看网卡信息" />
-<figcaption aria-hidden="true">查看网卡信息</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png"
-alt="网卡信息" />
-<figcaption aria-hidden="true">网卡信息</figcaption>
-</figure>
-<h4 id="绑定网卡">绑定网卡</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png"
-alt="绑定网卡" />
-<figcaption aria-hidden="true">绑定网卡</figcaption>
-</figure>
-<p>输入pci的地址，0000开始到'前的全输入。</p>
-<h4 id="运行testpmd测试程序">运行testpmd测试程序</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png"
-alt="测试程序" />
-<figcaption aria-hidden="true">测试程序</figcaption>
-</figure>
-<p>输入0xf代表程序运行在0~3核心。</p>
-<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" /></p>
-<p>输入start开始抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" /></p>
-<p>stop停止抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" /></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>DPDK</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LearnOpenGL学习入门</title>
     <url>/2021/07/22/LearnOpenGL-1/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -1997,6 +2038,29 @@ alt="示例" /></a></p>
       </tags>
   </entry>
   <entry>
+    <title>公会的神奇操作</title>
+    <url>/2020/04/06/magic-clan/</url>
+    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
+<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
+<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
+<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
+，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
+<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
+<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
+<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
+<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
+<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
+<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
+<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>公主连结Re:Dive常用地址</title>
     <url>/2020/03/17/pcr-tool/</url>
     <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
@@ -2019,29 +2083,6 @@ href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
 <p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
 <p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
 <p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公会的神奇操作</title>
-    <url>/2020/04/06/magic-clan/</url>
-    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
-<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
-<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
-<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
-，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
-<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
-<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
-<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
-<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
-<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
-<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
-<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
