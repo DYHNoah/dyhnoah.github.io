@@ -61,6 +61,26 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
       </tags>
   </entry>
   <entry>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
     <url>/2022/01/05/Games101-Environment/</url>
     <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用vs2019+vcpkg完成。
@@ -109,26 +129,6 @@ href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪
       <tags>
         <tag>图形学</tag>
         <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
       </tags>
   </entry>
   <entry>
@@ -356,75 +356,10 @@ Metrics)</strong></p>
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework2</title>
-    <url>/2022/02/07/Games101-Homework2/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业2内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
-<li>[20 分] 正确实现三角形栅格化算法。</li>
-<li>[10 分] 正确测试点是否在三角形内。</li>
-<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
-<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
-到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
-来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
-并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
-一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
-list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
-</ul>
-<h2 id="基础部分">基础部分</h2>
-<h3 id="实现">实现</h3>
-<p>需要修改的函数如下：</p>
-<ul>
-<li>rasterize_triangle(): 执行三角形栅格化算法</li>
-<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
-数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
-</ul>
-<p>rasterize_triangle()：</p>
-<ul>
-<li>创建三角形的 2 维 bounding box。</li>
-<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
-心的屏幕空间坐标来检查中心点是否在三角形内。</li>
-<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
-与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
-<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
-buffer)，。</li>
-</ul>
-<p>static bool insideTriangle()：</p>
-<ul>
-<li>作该点与三角形三个顶点的向量</li>
-<li>按某个方向依次两两向量叉乘</li>
-<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
-</ul>
-<h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果">运行结果</h3>
-<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
-<p><img src="https://s2.loli.net/2022/02/10/PwvzIoj5rauiYeK.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
-<h2 id="提高部分">提高部分</h2>
-<h3 id="实现-1">实现</h3>
-<h3 id="代码-1">代码</h3>
-<h3 id="运行结果-1">运行结果</h3>
-<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
-<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101-Homework1</title>
     <url>/2022/02/01/Games101-Homework1/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业1内容。</p>
+<p>本章主要讲述Games101的作业1，涉及MVP矩阵变换内容。</p>
 <span id="more"></span>
 <h2 id="作业内容">作业内容</h2>
 <p>实现以下三个内容</p>
@@ -475,10 +410,75 @@ M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
       </tags>
   </entry>
   <entry>
+    <title>Games101-Homework2</title>
+    <url>/2022/02/07/Games101-Homework2/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章主要讲述Games101的作业2，主要涉及光栅化内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
+<li>[20 分] 正确实现三角形栅格化算法。</li>
+<li>[10 分] 正确测试点是否在三角形内。</li>
+<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
+<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
+到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
+来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
+并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
+一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
+list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
+</ul>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
+<p>需要修改的函数如下：</p>
+<ul>
+<li>rasterize_triangle(): 执行三角形栅格化算法</li>
+<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
+数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
+</ul>
+<p>rasterize_triangle()：</p>
+<ul>
+<li>创建三角形的 2 维 bounding box。</li>
+<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
+心的屏幕空间坐标来检查中心点是否在三角形内。</li>
+<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
+与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
+<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
+buffer)，。</li>
+</ul>
+<p>static bool insideTriangle()：</p>
+<ul>
+<li>作该点与三角形三个顶点的向量</li>
+<li>按某个方向依次两两向量叉乘</li>
+<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
+</ul>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果">运行结果</h3>
+<p><img src="https://s2.loli.net/2022/03/04/uVildn8RgGcHDFL.png" style="zoom:50%;" /></p>
+<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
+<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
+<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
+<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101-Homework3</title>
     <url>/2022/02/27/Games101-Homework3/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业3内容。</p>
+<p>本章主要讲述Games101的作业3，主要涉及着色内容。</p>
 <span id="more"></span>
 <h2 id="作业内容">作业内容</h2>
 <ul>
@@ -501,24 +501,59 @@ fragment shader
 <h2 id="基础部分">基础部分</h2>
 <h3 id="实现">实现</h3>
 <p>需要修改的函数如下：</p>
-<p>rasterize_triangle(const Triangle&amp; t) in rasterizer.cpp:
-在此处实现与作业 2
-类似的插值算法，实现法向量、颜色、纹理颜色的插值。</p>
-<p>get_projection_matrix() in main.cpp: 将你自己在之前的实验中
-实现的投影矩阵填到此处，此时你可以运行 ./Rasterizer output.png normal
-来观察法向量实现结果。</p>
-<p>phong_fragment_shader() in main.cpp: 实现 Blinn-Phong 模型计 算
-Fragment Color.</p>
+<ul>
+<li><p><strong>rasterize_triangle(const Triangle&amp; t)</strong> in
+rasterizer.cpp: 在此处实现与作业 2
+类似的插值算法，实现法向量、颜色、纹理颜色的插值。</p></li>
+<li><p><strong>get_projection_matrix()</strong> in main.cpp:
+将你自己在之前的实验中实现的投影矩阵填到此处，此时你可以运行
+./Rasterizer output.png normal 来观察法向量实现结果。</p></li>
+<li><p><strong>phong_fragment_shader()</strong> in main.cpp: 实现
+Blinn-Phong 模型计算 Fragment
+Color，使用下述公式即可，注意公式中light_dir和view_dir都是单位向量</p></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/05/p7BvMNnfjehtFQJ.png" style="zoom: 67%;" /></p>
+<ul>
+<li><strong>texture_fragment_shader()</strong> in main.cpp:
+在<strong>实现 Blinn-Phong 的基础上</strong>，将纹理颜色视为公式中的
+kd，实现 Texture Shading Fragment Shader.</li>
+<li><strong>bump_fragment_shader()</strong> in main.cpp: 在<strong>实现
+Blinn-Phong 的基础上</strong>，仔细阅读该函数中的注释，实现 Bump
+mapping.</li>
+<li><strong>displacement_fragment_shader()</strong> in main.cpp: 在实现
+Bump mapping 的基础上，实现 displacement mapping.</li>
+</ul>
 <h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t, <span class="keyword">const</span> std::array&lt;Eigen::Vector3f, <span class="number">3</span>&gt;&amp; view_pos) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &lt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index]))</span><br><span class="line">                &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">auto</span> interpolated_color = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.color[<span class="number">0</span>], t.color[<span class="number">1</span>], t.color[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_normal = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.normal[<span class="number">0</span>], t.normal[<span class="number">1</span>], t.normal[<span class="number">2</span>], <span class="number">1</span>).<span class="built_in">normalized</span>();</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_texcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.tex_coords[<span class="number">0</span>], t.tex_coords[<span class="number">1</span>], t.tex_coords[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_shadingcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, view_pos[<span class="number">0</span>], view_pos[<span class="number">1</span>], view_pos[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">                    <span class="comment">// Use: Instead of passing the triangle&#x27;s color directly to the frame buffer, pass the color to the shaders first to get the final color;</span></span><br><span class="line">                    <span class="function">fragment_shader_payload <span class="title">payload</span><span class="params">(interpolated_color, interpolated_normal.normalized(), interpolated_texcoords, texture ? &amp;*texture : <span class="literal">nullptr</span>)</span></span>;</span><br><span class="line">                    payload.view_pos = interpolated_shadingcoords;</span><br><span class="line">                    <span class="keyword">auto</span> pixel_color = <span class="built_in">fragment_shader</span>(payload);</span><br><span class="line">                    <span class="built_in">set_pixel</span>(Eigen::<span class="built_in">Vector2i</span>(x, y), pixel_color);</span><br><span class="line">                    <span class="comment">//std::cout &lt;&lt; z_interpolated &lt;&lt; std::endl;</span></span><br><span class="line">                &#125;              </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Vector3f <span class="title">phong_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color;</span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; light : lights)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> For each light source in the code, calculate what the *ambient*, *diffuse*, and *specular* </span></span><br><span class="line">        <span class="comment">// components are. Then, accumulate that result on the *result_color* object.</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//光的方向，视线方向，衰减因子        </span></span><br><span class="line">        Eigen::Vector3f light_dir = light.position - point;</span><br><span class="line">        Eigen::Vector3f view_dir = eye_pos - point;</span><br><span class="line">        <span class="keyword">float</span> r = light_dir.<span class="built_in">dot</span>(light_dir);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//La-环境光照，Ld-漫反射，Ls-高光</span></span><br><span class="line">        Eigen::Vector3f La = ka.<span class="built_in">cwiseProduct</span>(amb_light_intensity);</span><br><span class="line">        Eigen::Vector3f Ld = kd.<span class="built_in">cwiseProduct</span>(light.intensity / r);<span class="comment">// *MAX(0, normal * light.position);</span></span><br><span class="line">        Eigen::Vector3f Ls = ks.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line"></span><br><span class="line">        result_color += La + Ld + Ls;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t, <span class="keyword">const</span> std::array&lt;Eigen::Vector3f, <span class="number">3</span>&gt;&amp; view_pos) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &lt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index]))</span><br><span class="line">                &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">auto</span> interpolated_color = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.color[<span class="number">0</span>], t.color[<span class="number">1</span>], t.color[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_normal = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.normal[<span class="number">0</span>], t.normal[<span class="number">1</span>], t.normal[<span class="number">2</span>], <span class="number">1</span>).<span class="built_in">normalized</span>();</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_texcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.tex_coords[<span class="number">0</span>], t.tex_coords[<span class="number">1</span>], t.tex_coords[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_shadingcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, view_pos[<span class="number">0</span>], view_pos[<span class="number">1</span>], view_pos[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">                    <span class="comment">// Use: Instead of passing the triangle&#x27;s color directly to the frame buffer, pass the color to the shaders first to get the final color;</span></span><br><span class="line">                    <span class="function">fragment_shader_payload <span class="title">payload</span><span class="params">(interpolated_color, interpolated_normal.normalized(), interpolated_texcoords, texture ? &amp;*texture : <span class="literal">nullptr</span>)</span></span>;</span><br><span class="line">                    payload.view_pos = interpolated_shadingcoords;</span><br><span class="line">                    <span class="keyword">auto</span> pixel_color = <span class="built_in">fragment_shader</span>(payload);</span><br><span class="line">                    <span class="built_in">set_pixel</span>(Eigen::<span class="built_in">Vector2i</span>(x, y), pixel_color);</span><br><span class="line">                &#125;              </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Blinn-Phong</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">phong_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color;</span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; light : lights)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> For each light source in the code, calculate what the *ambient*, *diffuse*, and *specular* </span></span><br><span class="line">        <span class="comment">// components are. Then, accumulate that result on the *result_color* object.</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//光的方向，视线方向，半程向量，衰减因子        </span></span><br><span class="line">        Eigen::Vector3f light_dir = (light.position - point);</span><br><span class="line">        Eigen::Vector3f view_dir = eye_pos - point;</span><br><span class="line">        Eigen::Vector3f half_dir = (view_dir + light_dir).<span class="built_in">normalized</span>();</span><br><span class="line">        <span class="keyword">float</span> r = light_dir.<span class="built_in">dot</span>(light_dir);</span><br><span class="line"></span><br><span class="line">        light_dir = light_dir.<span class="built_in">normalized</span>();</span><br><span class="line">        view_dir = view_dir.<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//La-环境光照，Ld-漫反射，Ls-高光</span></span><br><span class="line">        Eigen::Vector3f La = ka.<span class="built_in">cwiseProduct</span>(amb_light_intensity);</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ld = kd.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ld *= std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(light_dir));</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ls = ks.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ls *= <span class="built_in">pow</span>(std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(half_dir)), p);</span><br><span class="line"></span><br><span class="line">        result_color += La + Ld + Ls;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//bump</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">bump_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color; </span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> kh = <span class="number">0.2</span>, kn = <span class="number">0.1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Implement bump mapping here</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> x = normal.<span class="built_in">x</span>(), y = normal.<span class="built_in">y</span>(), z = normal.<span class="built_in">z</span>();</span><br><span class="line">    Eigen::Vector3f t = Eigen::<span class="built_in">Vector3f</span>(x * y / <span class="built_in">sqrt</span>(x * x + z * z), <span class="built_in">sqrt</span>(x * x + z * z), z * y / <span class="built_in">sqrt</span>(x * x + z * z));</span><br><span class="line">    Eigen::Vector3f b = normal.<span class="built_in">cross</span>(t);</span><br><span class="line">    Eigen::Matrix3f TBN0, TBN;</span><br><span class="line">    TBN0 &lt;&lt; t, b, normal;</span><br><span class="line">    TBN = TBN0.<span class="built_in">transpose</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> u = payload.tex_coords.<span class="built_in">x</span>();</span><br><span class="line">    <span class="keyword">float</span> v = payload.tex_coords.<span class="built_in">y</span>();</span><br><span class="line">    <span class="keyword">float</span> w = payload.texture-&gt;width;</span><br><span class="line">    <span class="keyword">float</span> h = payload.texture-&gt;height;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> dU = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u + <span class="number">1.0f</span> / w, v).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    <span class="keyword">float</span> dV = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u, v + <span class="number">1.0f</span> / h).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ln = Eigen::<span class="built_in">Vector3f</span>(-dU, -dV, <span class="number">1.0f</span>);</span><br><span class="line">    Eigen::Vector3f n = (TBN * ln).<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    result_color = n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="运行结果">运行结果</h3>
+<h4 id="normal">Normal</h4>
+<p><img src="https://s2.loli.net/2022/03/04/RSJ7gbYQkNAonEM.png" style="zoom: 40%;" /></p>
 <h4 id="blinn-phong">Blinn-Phong</h4>
-<p><img src="https://s2.loli.net/2022/03/04/RSJ7gbYQkNAonEM.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/05/fNQHjh8YiX3yuOn.png" style="zoom: 40%;" /></p>
+<h4 id="texture">Texture</h4>
+<p><img src="https://s2.loli.net/2022/03/05/Iy39jULi1GRDbMV.png" style="zoom:40%;" /></p>
+<h4 id="bump">Bump</h4>
+<p><img src="https://s2.loli.net/2022/03/05/DNvWPxKTwMjSuhR.png" style="zoom:40%;" /></p>
 <h2 id="提高部分">提高部分</h2>
 <h3 id="实现-1">实现</h3>
 <h3 id="代码-1">代码</h3>
 <h3 id="运行结果-1">运行结果</h3>
+<h2 id="遇到的问题">遇到的问题</h2>
+<h3 id="blinn-phong-1">Blinn-Phong</h3>
+<ul>
+<li>light_dir和view_dir没有单位化，就会产生下图情况</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/05/27QjNwClLMVnPOt.png" style="zoom:40%;" /></p>
+<ul>
+<li>高光没有使用衰减因子p，会产生下图情况</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/05/uXG7Kt4U8oplAWx.png" style="zoom:40%;" /></p>
+<h3 id="texture-1">Texture</h3>
+<p>运行时报错，原因是纹理坐标u, v计算出现负数，超出[0,
+1]的区间，修改getColor函数如下</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Vector3f <span class="title">getColor</span><span class="params">(<span class="keyword">float</span> u, <span class="keyword">float</span> v)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 坐标限定</span></span><br><span class="line">    <span class="keyword">if</span> (u &lt; <span class="number">0</span>) u = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (u &gt; <span class="number">1</span>) u = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &lt; <span class="number">0</span>) v = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &gt; <span class="number">1</span>) v = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">auto</span> u_img = u * width;</span><br><span class="line">    <span class="keyword">auto</span> v_img = (<span class="number">1</span> - v) * height;</span><br><span class="line">    <span class="keyword">auto</span> color = image_data.at&lt;cv::Vec3b&gt;(v_img, u_img);</span><br><span class="line">    <span class="keyword">return</span> Eigen::<span class="built_in">Vector3f</span>(color[<span class="number">0</span>], color[<span class="number">1</span>], color[<span class="number">2</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -737,6 +772,496 @@ n)，但是对于相互覆盖的物体无法判断，如下图。</p>
 <ul>
 <li>深度缓存复杂度为O(n)</li>
 <li>几乎应用在所有的GPU硬件中</li>
+</ul>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Lecture3-4（Transformation）学习笔记</title>
+    <url>/2022/01/25/Games101-Transformation/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<ul>
+<li>变换</li>
+<li>为什么要学习“变换”</li>
+<li>2D变换：旋转、缩放、切变</li>
+<li>齐次坐标</li>
+<li>3D变换</li>
+<li>MVP变换（模型、视图、投影变换）</li>
+</ul>
+<span id="more"></span>
+<h2 id="前情提要">前情提要</h2>
+<ul>
+<li><p>向量 基本运算：加法、乘法。</p></li>
+<li><p>点乘 通过点乘结果的正负用来判断前后关系。</p></li>
+<li><p>叉乘
+通过叉乘结果的朝向，可以用来判断左右关系，比如判断点是否在图形内。</p></li>
+<li><p>矩阵计算</p></li>
+</ul>
+<p>本章节将开启Transformation（变换）的内容，以上是变换内容的基础。</p>
+<h2 id="为什么要变换">为什么要变换</h2>
+<p>在动画制作和展示中，不可避免的要涉及到视角、各种模型的变换，还有将3维空间视图转化为2维空间的变换。</p>
+<p><img src="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png" style="zoom: 33%;" /></p>
+<h2 id="d变换">2D变换</h2>
+<ul>
+<li><p>将变换与矩阵联系起来</p></li>
+<li><p>旋转、缩放、切变</p></li>
+</ul>
+<h3 id="缩放">缩放</h3>
+<p>对于原来的x，y坐标，我们对于x缩小至0.5倍，y不变的一个不均匀缩放，使其左乘缩放矩阵即可。</p>
+<p><img src="https://s2.loli.net/2022/01/26/yIYPX27m4ckHFJd.png" style="zoom: 33%;" /></p>
+<h3 id="镜像">镜像</h3>
+<p>对图像以y轴做镜像变换，使其x坐标相反即可。</p>
+<p><img src="https://s2.loli.net/2022/01/26/yeWZCvQIOum5UzS.png" style="zoom:33%;" /></p>
+<h3 id="切变">切变</h3>
+<p>y轴坐标不变，x轴移动a方向距离，如果图像y轴坐标为1，切变变换的矩阵如下。</p>
+<p><img src="https://s2.loli.net/2022/01/26/WecD4di7vZuQnTz.png" style="zoom:33%;" /></p>
+<h3 id="旋转">旋转</h3>
+<p>一般情况下，我们默认旋转是围绕原点逆时针旋转θ角度。对于下图的旋转，我们可以考虑2个特殊的点，即原四边形<strong>右下</strong>和<strong>左上</strong>的2个点。
+假设正方形长为1，两点坐标分别为<strong>(1, 0)</strong>、<strong>(0,
+1)</strong>，在旋转θ角后，两点坐标变换为<strong>(cos θ, sin
+θ)</strong>、<strong>(-sin θ, cos
+θ)</strong>，由此可以联立方程解得如下。 <span class="math display">\[
+\begin{bmatrix}
+cos\theta \\
+sin\theta \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+0 \\
+\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{bmatrix}
+-sin\theta \\
+cos\theta \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+0 \\
+1 \\
+\end{bmatrix}
+\]</span></p>
+<p><img src="https://s2.loli.net/2022/01/26/xoKwb36AUQIFu8H.png" style="zoom:33%;" /></p>
+<h3 id="线性变换矩阵">线性变换（矩阵）</h3>
+<p>以上的变换都可以转换成如下的线性变换，通过矩阵乘法改变坐标。 <span
+class="math display">\[
+\begin{bmatrix}
+x&#39; \\
+y&#39; \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{split}
+x&#39; = ax + by \\
+y&#39; = cx + dy \\
+x&#39; = M x
+\end{split}
+\]</span></p>
+<h2 id="齐次坐标">齐次坐标</h2>
+<h3 id="为什么引入齐次坐标">为什么引入齐次坐标</h3>
+<p><img src="https://s2.loli.net/2022/01/27/UKuHVL3vhB6Z2Y9.png" style="zoom:33%;" /></p>
+<p>因为平移变换比较特殊，对于如上的坐标平移，我们虽然能够直接写出 <span
+class="math display">\[
+\begin{split}
+x&#39; = x + t_x \\
+y&#39; = y + t_y \\
+\end{split}
+\]</span>
+但是，我们无法将其写成如上的二维矩阵乘法形式，我们只能写成如下形式，因此平移操作并不属于我们如上定义的线性变换。
+我们考虑如何将平移变换加入线性变换，能将各种变换统一起来，因此，我们引入齐次坐标的概念。
+<span class="math display">\[
+\begin{bmatrix}
+x&#39; \\
+y&#39; \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d \\
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+\end{bmatrix}
++
+\begin{bmatrix}
+t_x \\
+t_y \\
+\end{bmatrix}
+\]</span></p>
+<h3 id="仿射变换线性变换-平移">仿射变换（线性变换 + 平移）</h3>
+<p>对于n的维度，我们可以在表示的时候<strong>增加一个维度</strong>。</p>
+<ul>
+<li><p><span class="math display">\[
+2维点 = (x, y, 1)^T
+\]</span></p></li>
+<li><p><span class="math display">\[
+2维向量 = (x, y, 0)^T
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{pmatrix}
+x \\
+y \\
+w \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+x/w \\
+y/w \\
+1 \\
+\end{pmatrix}
+, (w \neq 0)
+\]</span></p></li>
+</ul>
+<p>因此可以得到如下（2维坐标）</p>
+<ul>
+<li>向量 + 向量= 向量</li>
+<li>点 - 点 = 向量</li>
+<li>点 + 向量 = 点</li>
+<li>点 + 点 = 两点的中点</li>
+</ul>
+<p>因此在2维空间下，线性变换可以表示如下：</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="分解放射变换">分解放射变换</h2>
+<h3 id="仿射变换顺序">仿射变换顺序</h3>
+<ul>
+<li>矩阵乘法不满足交换律，不能随意改变乘法的顺序。</li>
+<li>同时因为是左乘变换矩阵，我们可以先将左边的变换矩阵结合起来，将左边变成一个变换矩阵。</li>
+</ul>
+<p><span class="math display">\[
+A_n(...A_2(A_1(x))) = A_n···A_2·A_1·
+\begin{pmatrix}
+x \\
+y \\
+1 \\
+\end{pmatrix}
+\]</span></p>
+<ul>
+<li>同时，仿射变换是<strong>先线性变换，再平移变换</strong>。</li>
+</ul>
+<h3 id="绕非原点旋转">绕非原点旋转</h3>
+<p>由于旋转默认是以原点为中心的，因此如果我们想绕非原点进行旋转，可以拆分成以下3步：</p>
+<ul>
+<li>将旋转中心平移至原点，物体也进行相同的平移变换。</li>
+<li>物体绕原点旋转。</li>
+<li>物体平移回去。</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/27/SzPGmcsuYfeBQwl.png" style="zoom: 50%;" /></p>
+<h3 id="旋转的逆矩阵">旋转的逆矩阵</h3>
+<p>绕原点逆时针旋转θ角度，可以理解为顺时针旋转-θ角度，可以得到以下推导，旋转矩阵是<strong>正交矩阵</strong>。
+<span class="math display">\[
+R_{-\theta} =
+\begin{pmatrix}
+cos\theta &amp; sin\theta \\
+-sin\theta &amp; cos\theta\\
+\end{pmatrix}
+=
+R^T_\theta
+\]</span></p>
+<p><span class="math display">\[
+R_{-\theta} = R^{T}_{\theta} = R^{-1}_{\theta}
+\]</span></p>
+<h2 id="d变换-1">3D变换</h2>
+<h3 id="缩放和平移">缩放和平移</h3>
+<p>顺序仍然是<strong>先线性变换，再平移</strong>。</p>
+<p><img src="https://s2.loli.net/2022/01/28/OfMpCecxQ5ZlvtU.png" style="zoom: 50%;" /></p>
+<h3 id="旋转-1">旋转</h3>
+<p>先从简单的例子开始，以<strong>绕x轴旋转为例</strong>，旋转过程中x轴的坐标保持不变，可以看作yOz平面上的旋转。
+但同时也有细微区别，比如在<strong>绕y轴旋转的时候</strong>，<span
+class="math inline">\(\alpha\)</span>要改成<span
+class="math inline">\(-\alpha\)</span>，因为我们可以xyz坐标系后面补全，<strong>xyzxyzxyz...</strong>一直保持xyz的顺序循环下去，因此是<span
+class="math inline">\(\begin{cases}xy=z\\yz=x\\zx=y\end{cases}\)</span>，绕着y轴正方向逆时针旋转的时候，此时<span
+class="math inline">\(xz=-y\)</span>，所以相当于为了满足坐标系的规则，我们代入2D旋转的角度值是<span
+class="math inline">\(-\alpha\)</span></p>
+<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
+<h3 id="罗德里格斯旋转公式">罗德里格斯旋转公式</h3>
+<p>定义绕x轴y轴z轴分别旋转α、β、γ的角度。 <span class="math display">\[
+R_{xyz}(\alpha, \beta, \gamma) = R_x(\alpha,)R_y(\beta)R_z(\gamma)
+\]</span></p>
+<p><img src="https://s2.loli.net/2022/01/28/mAsKIMWbnqHiCeo.png" style="zoom: 33%;" /></p>
+<p>罗德里格旋转公式是计算三维空间中，一个向量绕旋转轴旋转给定角度以后得到的新向量的计算公式。这个公式使用原向量，旋转轴及它们叉积作为标架表示出旋转以后的向量。可以改写为矩阵形式，被广泛应用于空间解析几何和计算机图形学领域，成为刚体运动的基本计算公式。<span
+class="math inline">\(n\)</span>表示旋转轴，<span
+class="math inline">\(I\)</span>表示单位矩阵。 <span
+class="math display">\[
+\boldsymbol{R}(\boldsymbol{n},\alpha) = cos(\alpha)\boldsymbol{I} +
+(1-cos(\alpha))\boldsymbol{nn}^T + sin(\alpha)
+\begin{pmatrix}
+0 &amp; -n_z &amp; n_y \\
+n_z &amp; 0 &amp; -n_x \\
+-n_y &amp; n_x &amp; 0 \\
+\end{pmatrix}
+\]</span></p>
+<h2 id="视图变换viewcamera-transformation">视图变换（View/Camera
+Transformation）</h2>
+<h3 id="视角or相机变换">视角or相机变换</h3>
+<h4 id="定义相机">定义相机</h4>
+<ul>
+<li>相机的位置</li>
+<li>相机朝向的方向</li>
+<li>相机上方的方向</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/28/bwi8sPWnOd15BTC.png" style="zoom: 40%;" /></p>
+<p>为了方便计算，我们可以<strong>将相机放在原点，相机朝向z轴的负方向，相机上方的方向是y轴正方向</strong>。同时，我们在移动相机或者视角的时候，当作<strong>相机位置和朝向始终不动，而是物体在移动</strong>。</p>
+<h4 id="通过m_view变换将相机放到标准位置上">通过<span
+class="math inline">\(M_{view}\)</span>变换将相机放到标准位置上</h4>
+<p>基本思想：</p>
+<ul>
+<li>将<span
+class="math inline">\(\vec{e}\)</span>（相机中心点）移动到原点</li>
+<li>将<span
+class="math inline">\(\vec{g}\)</span>旋转到<strong>z轴的负方向</strong></li>
+<li>将<span
+class="math inline">\(\vec{t}\)</span>旋转到<strong>y轴的正方向</strong></li>
+<li>此时<span class="math inline">\((\vec{g} *
+\vec{t})\)</span>和x轴的正方向一样</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/29/Es8SbcUlQGaq5Ae.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/01/29/jxWdO9bIvNfhzao.png" style="zoom:50%;" />
+<span class="math display">\[
+\begin{align*}
+M_{view} &amp; = R_{view}*T_{view} \\
+T_{view} &amp;=
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; -x_{\vec{e}} \\
+0 &amp; 1 &amp; 0 &amp; -y_{\vec{e}} \\
+0 &amp; 0 &amp; 1 &amp; -z_{\vec{e}} \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix}
+\end{align*}
+\]</span> 以上的步骤虽然明确，但是我们很难写出这样的<span
+class="math inline">\(R_{view}\)</span>矩阵来表示从<span
+class="math inline">\(\vec{g}\)</span>、<span
+class="math inline">\(\vec{t}\)</span>等轴旋转到z轴负方向和y轴正方向的操作。
+因此我们考虑反过来表示，我们将z轴负方向和y轴正方向旋转到<span
+class="math inline">\(\vec{g}\)</span>、<span
+class="math inline">\(\vec{t}\)</span>等轴，再利用之前<strong>旋转的变换矩阵是正交矩阵</strong>，<span
+class="math inline">\(R_{-\theta} = R^{T}_{\theta} =
+R^{-1}_{\theta}\)</span>，从而可以求出<span
+class="math inline">\(R_{view}\)</span>，于是我们考虑将x轴旋转到<span
+class="math inline">\((\vec{g} * \vec{t})\)</span>，y轴旋转到<span
+class="math inline">\(\vec{t}\)</span>，z轴旋转到<span
+class="math inline">\(-\vec{g}\)</span>，同时为了保证相对运动不变，其它所有物体都需要跟着做这个变换。
+<span class="math display">\[
+\begin{align*}
+R^{-1}_{view} &amp; =
+\begin{bmatrix}
+x_{\vec{g}*\vec{t}} &amp; x_{\vec{t}} &amp; x_{-\vec{g}} &amp; 0 \\
+y_{\vec{g}*\vec{t}} &amp; y_{\vec{t}} &amp; y_{-\vec{g}} &amp; 0 \\
+z_{\vec{g}*\vec{t}} &amp; z_{\vec{t}} &amp; z_{-\vec{g}} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix} \\
+\Rightarrow
+R_{view} &amp; =
+\begin{bmatrix}
+x_{\vec{g}*\vec{t}} &amp; y_{\vec{g}*\vec{t}} &amp; z_{\vec{g}*\vec{t}}
+&amp; 0 \\
+x_{\vec{t}} &amp; y_{\vec{t}} &amp; z_{\vec{t}} &amp; 0 \\
+x_{-\vec{g}} &amp; y_{-\vec{g}} &amp; z_{-\vec{g}} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix} \\
+\end{align*}
+\]</span></p>
+<h3 id="总结">总结</h3>
+<ul>
+<li>物体要与相机一同移动</li>
+<li>保证相机在原点，up为y轴正方向，朝向z轴负方向</li>
+</ul>
+<h2 id="投影变换">投影变换</h2>
+<h3 id="正交投影">正交投影</h3>
+<p><strong>正交投影</strong>是<strong>将相机放在无限远的位置</strong>上，打出来的是平行光，相同的物体不论距离，呈现的大小一样。
+如下图所示，左下角是该物体原本的位置和形状，我们需要通过正交投影使其落在<span
+class="math inline">\([-1,
+1]^2\)</span>里面，首先<strong>先将物体的中心移动到原点</strong>，<strong>平移矩阵</strong>为<span
+class="math inline">\(\begin{bmatrix}1 &amp; 0 &amp; 0 &amp;
+-\frac{r+l}{2} \\ 0 &amp; 1 &amp; 0 &amp; -\frac{t+b}{2} \\ 0 &amp; 0
+&amp; 1 &amp; -\frac{n+f}{2} \\ 0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix}\)</span>，<strong>缩放矩阵</strong>为<span
+class="math inline">\(\begin{bmatrix}\frac{2}{r-l} &amp; 0 &amp; 0 &amp;
+0 \\ 0 &amp; \frac{2}{t-b} &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp;
+\frac{2}{n-f} &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{bmatrix}\)</span></p>
+<p><strong>注意：之前我理解这个变换的一个误区，我一直以为缩放变换必须是等比例缩放，但实际上x轴和y轴坐标变换的比例不一定相同，只是通过缩放使其落在<span
+class="math inline">\([-1,
+1]^2\)</span>的区间里面，所以物体一定会被拉伸（长宽比会变换），并且在之后的视口变换会再一次被拉伸。</strong></p>
+<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" /></p>
+<h3 id="透视投影">透视投影</h3>
+<h4 id="特点">特点</h4>
+<ul>
+<li><strong>近大远小</strong></li>
+<li>原本的平行线不再平行，而是会相交于一点</li>
+<li>更符合人眼观察到的图像规律</li>
+</ul>
+<h4 id="步骤">步骤</h4>
+<ul>
+<li>先从<strong>截头锥体</strong>变成<strong>长方体</strong>(<span
+class="math inline">\(M_{persp-&gt;ortho}\)</span>)，感性上理解有些像是<strong>将远平面f挤压到与近平面n一样大</strong>。</li>
+<li>再做<strong>正交投影</strong>(<span
+class="math inline">\(M_{ortho}\)</span>)</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/29/l8Rs6ujITvExWOF.png" style="zoom:50%;" /></p>
+<h4 id="如何求得m_persp-ortho矩阵">如何求得<span
+class="math inline">\(M_{persp-&gt;ortho}\)</span>矩阵</h4>
+<p>远平面坐标是z，近平面坐标是n（<strong>注意这里n和f可以为负，并且大多数情况是负数，因为相机朝向z轴负方向</strong>），首先假设点远平面坐标是(x,
+y, z)，变换后的近平面坐标是(x', y',
+z')，可以根据相似三角形的比例关系得到如下比例关系和矩阵变换<strong>（由齐次坐标系的特点，x、y、z、w同乘以z，还是表示同样的点）</strong>：</p>
+<p><img src="https://s2.loli.net/2022/01/29/wWUJMuztb9f7LPD.png" style="zoom: 50%;" />
+<span class="math display">\[
+\begin{cases}
+y&#39;=\frac{n}{z}y \\
+x&#39; = \frac{n}{z} x
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+\begin{bmatrix}
+x \\ y \\ z \\ 1
+\end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+nx/z \\ ny/z \\ unknown \\ 1
+\end{bmatrix}
+==
+\begin{bmatrix}
+nx \\ ny \\ unknown \\ z
+\end{bmatrix}
+\]</span></p>
+<p>为了使<span
+class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>矩阵对于任意的x,
+y都满足该变换，可得<span
+class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>的第1、2、4行如下：
+<span class="math display">\[
+M_{persp-&gt;ortho}^{(4*4)} =
+\begin{bmatrix}
+n &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; n &amp; 0 &amp; 0 \\
+? &amp; ? &amp; ? &amp; ? \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+\end{bmatrix}
+\]</span> 为了求第<span
+class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>的第3行，我们可以观察这个通过<span
+class="math inline">\(M_{persp-&gt;ortho}\)</span>的变换，有以下特点：</p>
+<ul>
+<li><strong>近平面上的点的坐标不会改变</strong></li>
+<li><strong>远平面上的点的z轴坐标不会改变</strong></li>
+<li><strong>中间平面的点的z轴坐标会改变</strong></li>
+</ul>
+<p>将近平面上的点的坐标带入，即<span
+class="math inline">\(z=n\)</span>，可得<span
+class="math inline">\(\begin{bmatrix} x \\ y \\ n \\ 1\end{bmatrix}
+\Rightarrow \begin{bmatrix} x \\ y \\ n \\ 1\end{bmatrix} ==
+\begin{bmatrix} nx \\ ny \\ n^2 \\ n\end{bmatrix}\)</span> 因此<span
+class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>第3行必定为<span
+class="math inline">\(\begin{bmatrix}0 &amp; 0 &amp; A &amp;
+B\end{bmatrix}\)</span>的形式，因为对近平面上的任一点均满足上述等式，<span
+class="math inline">\(\begin{bmatrix}0 &amp; 0 &amp; A &amp;
+B\end{bmatrix}\begin{bmatrix} x \\ y \\ n \\ 1\end{bmatrix} =
+n^2\)</span></p>
+<p>将远平面上的点的坐标带入，即<span
+class="math inline">\(z=f\)</span>，可得<span
+class="math inline">\(\begin{bmatrix} 0 \\ 0 \\ f \\ 1\end{bmatrix}
+\Rightarrow \begin{bmatrix} 0 \\ 0 \\ f \\ 1\end{bmatrix} ==
+\begin{bmatrix} 0 \\ 0 \\ f^2 \\
+f\end{bmatrix}\)</span>，再带入可得<span
+class="math inline">\(\begin{bmatrix}0 &amp; 0 &amp; A &amp;
+B\end{bmatrix}\begin{bmatrix} 0 \\ 0 \\ f \\ 1\end{bmatrix} =
+f^2\)</span></p>
+<p>由以上两次带入可得 <span class="math display">\[
+\begin{cases}
+An+B=n^2 \\
+Af+ B=f^2
+\end{cases}
+\]</span> 解得 <span class="math display">\[
+\begin{cases}
+A=n+f \\
+B=-nf
+\end{cases}
+\]</span> 因此 <span class="math display">\[
+M_{persp-&gt;ortho}^{(4*4)} =
+\begin{bmatrix}
+n &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; n &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; n+f &amp; -nf \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+\end{bmatrix}
+\]</span> <strong>透视投影</strong>的矩阵变换为<span
+class="math inline">\(M_{persp} = M_{ortho} *
+M_{persp-&gt;ortho}\)</span></p>
+<h4 id="透视投影近平面常用到的数据">透视投影近平面常用到的数据</h4>
+<p>对于近平面，我们知道它与原点距离为<span
+class="math inline">\(|n|\)</span>，其余分别为<span
+class="math inline">\(l,r,b,t\)</span>(left, right, bottom,
+top)，通过以下数据可以求得。</p>
+<ul>
+<li>垂直可视角<span class="math inline">\(fov
+Y\)</span>（从相机位置向平面上边和下边分别作垂线，两条垂线的夹角）</li>
+<li>长宽比<span
+class="math inline">\(aspect\)</span>（近平面的长和宽的比）</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/29/2weijsXBDYKr153.png" style="zoom: 50%;" /></p>
+<p><img src="https://s2.loli.net/2022/01/29/ECBvZWDAftoPh78.png" style="zoom:50%;" /></p>
+<h3 id="正交投影-vs-透视投影">正交投影 vs 透视投影</h3>
+<p><strong>正交投影</strong>是<strong>将相机放在无限远的位置</strong>上，打出来的是平行光，相同的物体不论距离，呈现的大小一样。
+<strong>透视投影</strong>是<strong>将相机放在一个点</strong>上，符合<strong>近大远小</strong>的特点。</p>
+<p><img src="https://s2.loli.net/2022/01/28/hiJpX4sA9CfORcZ.png" style="zoom: 50%;" /></p>
+<h3 id="思考题">思考题</h3>
+<p>对于中间平面的点，再经过“挤压变换”后，z轴的坐标是会更<strong>靠近</strong>近平面还是<strong>远离</strong>近平面？</p>
+<p>其实带入点<span class="math inline">\((x, y, z, 1), (n &lt; z &lt;
+f)\)</span>，得 <span class="math display">\[
+M_{persp-&gt;ortho}^{(4*4)} *
+\begin{bmatrix}
+x \\ y \\ z \\ 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+nx \\ ny \\ (n+f)z-nf \\ z
+\end{bmatrix}
+==
+\begin{bmatrix}
+nx/z \\ ny/z \\ n+f-\frac{nf}{z} \\ 1
+\end{bmatrix}
+\]</span> 将“挤压变换”后得到的z轴坐标与原本的z作差，得 <span
+class="math display">\[
+\begin{align*}
+n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
+&amp; =\frac{(z-n)(f-z)}{z} &gt; 0
+\end{align*}
+\]</span>
+因此，经过“挤压变换”后，z轴的坐标是会<strong>远离近平面，靠近远平面</strong>。</p>
+<h2 id="mvp变换">MVP变换</h2>
+<ul>
+<li><strong>M</strong>odel Transformation（放置物体）</li>
+<li><strong>V</strong>iew Transformation（放置相机）</li>
+<li><strong>P</strong>rojection Transformation</li>
+</ul>
+<h3 id="projection-transformation">Projection Transformation</h3>
+<ul>
+<li>正交投影（从长方体变成<span class="math inline">\([-1,
+1]^3\)</span>）</li>
+<li>透视投影（从截头锥体变成<span class="math inline">\([-1,
+1]^3\)</span>）</li>
 </ul>
 ]]></content>
       <categories>
@@ -1346,493 +1871,43 @@ alt="测试程序" />
       </tags>
   </entry>
   <entry>
-    <title>Games101-Lecture3-4（Transformation）学习笔记</title>
-    <url>/2022/01/25/Games101-Transformation/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<ul>
-<li>变换</li>
-<li>为什么要学习“变换”</li>
-<li>2D变换：旋转、缩放、切变</li>
-<li>齐次坐标</li>
-<li>3D变换</li>
-<li>MVP变换（模型、视图、投影变换）</li>
-</ul>
+    <title>Qt中使用Sqlite</title>
+    <url>/2021/11/15/Qt-sql/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
 <span id="more"></span>
-<h2 id="前情提要">前情提要</h2>
+<h2 id="使用">使用</h2>
+<h3 id="头文件准备">头文件准备</h3>
+<p>首先在.pro文件里加入</p>
+<blockquote>
+<p>QT += sql</p>
+</blockquote>
+<p>然后在.h文件里加入</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="库函数调用">库函数调用</h3>
 <ul>
-<li><p>向量 基本运算：加法、乘法。</p></li>
-<li><p>点乘 通过点乘结果的正负用来判断前后关系。</p></li>
-<li><p>叉乘
-通过叉乘结果的朝向，可以用来判断左右关系，比如判断点是否在图形内。</p></li>
-<li><p>矩阵计算</p></li>
+<li><p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p></li>
+<li><p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>QSqlQuery
+sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
+<p>可以直接用.exec(const QString&amp;
+query)执行query里面的sql语句内容</p>
+<p>也可以使用.prepare(const QString&amp; query),
+.exec()预先输入query里的sql语句，再加以执行</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p></li>
 </ul>
-<p>本章节将开启Transformation（变换）的内容，以上是变换内容的基础。</p>
-<h2 id="为什么要变换">为什么要变换</h2>
-<p>在动画制作和展示中，不可避免的要涉及到视角、各种模型的变换，还有将3维空间视图转化为2维空间的变换。</p>
-<p><img src="https://s2.loli.net/2022/01/26/oHltb16xNR4XdA5.png" style="zoom: 33%;" /></p>
-<h2 id="d变换">2D变换</h2>
-<ul>
-<li><p>将变换与矩阵联系起来</p></li>
-<li><p>旋转、缩放、切变</p></li>
-</ul>
-<h3 id="缩放">缩放</h3>
-<p>对于原来的x，y坐标，我们对于x缩小至0.5倍，y不变的一个不均匀缩放，使其左乘缩放矩阵即可。</p>
-<p><img src="https://s2.loli.net/2022/01/26/yIYPX27m4ckHFJd.png" style="zoom: 33%;" /></p>
-<h3 id="镜像">镜像</h3>
-<p>对图像以y轴做镜像变换，使其x坐标相反即可。</p>
-<p><img src="https://s2.loli.net/2022/01/26/yeWZCvQIOum5UzS.png" style="zoom:33%;" /></p>
-<h3 id="切变">切变</h3>
-<p>y轴坐标不变，x轴移动a方向距离，如果图像y轴坐标为1，切变变换的矩阵如下。</p>
-<p><img src="https://s2.loli.net/2022/01/26/WecD4di7vZuQnTz.png" style="zoom:33%;" /></p>
-<h3 id="旋转">旋转</h3>
-<p>一般情况下，我们默认旋转是围绕原点逆时针旋转θ角度。对于下图的旋转，我们可以考虑2个特殊的点，即原四边形<strong>右下</strong>和<strong>左上</strong>的2个点。
-假设正方形长为1，两点坐标分别为<strong>(1, 0)</strong>、<strong>(0,
-1)</strong>，在旋转θ角后，两点坐标变换为<strong>(cos θ, sin
-θ)</strong>、<strong>(-sin θ, cos
-θ)</strong>，由此可以联立方程解得如下。 <span class="math display">\[
-\begin{bmatrix}
-cos\theta \\
-sin\theta \\
-\end{bmatrix}
-=
-\begin{bmatrix}
-a &amp; b \\
-c &amp; d \\
-\end{bmatrix}
-\begin{bmatrix}
-1 \\
-0 \\
-\end{bmatrix}
-\]</span></p>
-<p><span class="math display">\[
-\begin{bmatrix}
--sin\theta \\
-cos\theta \\
-\end{bmatrix}
-=
-\begin{bmatrix}
-a &amp; b \\
-c &amp; d \\
-\end{bmatrix}
-\begin{bmatrix}
-0 \\
-1 \\
-\end{bmatrix}
-\]</span></p>
-<p><img src="https://s2.loli.net/2022/01/26/xoKwb36AUQIFu8H.png" style="zoom:33%;" /></p>
-<h3 id="线性变换矩阵">线性变换（矩阵）</h3>
-<p>以上的变换都可以转换成如下的线性变换，通过矩阵乘法改变坐标。 <span
-class="math display">\[
-\begin{bmatrix}
-x&#39; \\
-y&#39; \\
-\end{bmatrix}
-=
-\begin{bmatrix}
-a &amp; b \\
-c &amp; d \\
-\end{bmatrix}
-\begin{bmatrix}
-x \\
-y \\
-\end{bmatrix}
-\]</span></p>
-<p><span class="math display">\[
-\begin{split}
-x&#39; = ax + by \\
-y&#39; = cx + dy \\
-x&#39; = M x
-\end{split}
-\]</span></p>
-<h2 id="齐次坐标">齐次坐标</h2>
-<h3 id="为什么引入齐次坐标">为什么引入齐次坐标</h3>
-<p><img src="https://s2.loli.net/2022/01/27/UKuHVL3vhB6Z2Y9.png" style="zoom:33%;" /></p>
-<p>因为平移变换比较特殊，对于如上的坐标平移，我们虽然能够直接写出 <span
-class="math display">\[
-\begin{split}
-x&#39; = x + t_x \\
-y&#39; = y + t_y \\
-\end{split}
-\]</span>
-但是，我们无法将其写成如上的二维矩阵乘法形式，我们只能写成如下形式，因此平移操作并不属于我们如上定义的线性变换。
-我们考虑如何将平移变换加入线性变换，能将各种变换统一起来，因此，我们引入齐次坐标的概念。
-<span class="math display">\[
-\begin{bmatrix}
-x&#39; \\
-y&#39; \\
-\end{bmatrix}
-=
-\begin{bmatrix}
-a &amp; b \\
-c &amp; d \\
-\end{bmatrix}
-\begin{bmatrix}
-x \\
-y \\
-\end{bmatrix}
-+
-\begin{bmatrix}
-t_x \\
-t_y \\
-\end{bmatrix}
-\]</span></p>
-<h3 id="仿射变换线性变换-平移">仿射变换（线性变换 + 平移）</h3>
-<p>对于n的维度，我们可以在表示的时候<strong>增加一个维度</strong>。</p>
-<ul>
-<li><p><span class="math display">\[
-2维点 = (x, y, 1)^T
-\]</span></p></li>
-<li><p><span class="math display">\[
-2维向量 = (x, y, 0)^T
-\]</span></p></li>
-<li><p><span class="math display">\[
-\begin{pmatrix}
-x \\
-y \\
-w \\
-\end{pmatrix}
-=
-\begin{pmatrix}
-x/w \\
-y/w \\
-1 \\
-\end{pmatrix}
-, (w \neq 0)
-\]</span></p></li>
-</ul>
-<p>因此可以得到如下（2维坐标）</p>
-<ul>
-<li>向量 + 向量= 向量</li>
-<li>点 - 点 = 向量</li>
-<li>点 + 向量 = 点</li>
-<li>点 + 点 = 两点的中点</li>
-</ul>
-<p>因此在2维空间下，线性变换可以表示如下：</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="分解放射变换">分解放射变换</h2>
-<h3 id="仿射变换顺序">仿射变换顺序</h3>
-<ul>
-<li>矩阵乘法不满足交换律，不能随意改变乘法的顺序。</li>
-<li>同时因为是左乘变换矩阵，我们可以先将左边的变换矩阵结合起来，将左边变成一个变换矩阵。</li>
-</ul>
-<p><span class="math display">\[
-A_n(...A_2(A_1(x))) = A_n···A_2·A_1·
-\begin{pmatrix}
-x \\
-y \\
-1 \\
-\end{pmatrix}
-\]</span></p>
-<ul>
-<li>同时，仿射变换是<strong>先线性变换，再平移变换</strong>。</li>
-</ul>
-<h3 id="绕非原点旋转">绕非原点旋转</h3>
-<p>由于旋转默认是以原点为中心的，因此如果我们想绕非原点进行旋转，可以拆分成以下3步：</p>
-<ul>
-<li>将旋转中心平移至原点，物体也进行相同的平移变换。</li>
-<li>物体绕原点旋转。</li>
-<li>物体平移回去。</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/01/27/SzPGmcsuYfeBQwl.png" style="zoom: 50%;" /></p>
-<h3 id="旋转的逆矩阵">旋转的逆矩阵</h3>
-<p>绕原点逆时针旋转θ角度，可以理解为顺时针旋转-θ角度，可以得到以下推导，旋转矩阵是<strong>正交矩阵</strong>。
-<span class="math display">\[
-R_{-\theta} =
-\begin{pmatrix}
-cos\theta &amp; sin\theta \\
--sin\theta &amp; cos\theta\\
-\end{pmatrix}
-=
-R^T_\theta
-\]</span></p>
-<p><span class="math display">\[
-R_{-\theta} = R^{T}_{\theta} = R^{-1}_{\theta}
-\]</span></p>
-<h2 id="d变换-1">3D变换</h2>
-<h3 id="缩放和平移">缩放和平移</h3>
-<p>顺序仍然是<strong>先线性变换，再平移</strong>。</p>
-<p><img src="https://s2.loli.net/2022/01/28/OfMpCecxQ5ZlvtU.png" style="zoom: 50%;" /></p>
-<h3 id="旋转-1">旋转</h3>
-<p>先从简单的例子开始，以<strong>绕x轴旋转为例</strong>，旋转过程中x轴的坐标保持不变，可以看作yOz平面上的旋转。
-但同时也有细微区别，比如在<strong>绕y轴旋转的时候</strong>，<span
-class="math inline">\(\alpha\)</span>要改成<span
-class="math inline">\(-\alpha\)</span>，因为我们可以xyz坐标系后面补全，<strong>xyzxyzxyz...</strong>一直保持xyz的顺序循环下去，因此是<span
-class="math inline">\(\begin{cases}xy=z\\yz=x\\zx=y\end{cases}\)</span>，绕着y轴正方向逆时针旋转的时候，此时<span
-class="math inline">\(xz=-y\)</span>，所以相当于为了满足坐标系的规则，我们代入2D旋转的角度值是<span
-class="math inline">\(-\alpha\)</span></p>
-<p><img src="https://s2.loli.net/2022/01/28/c312XWj9qoAD6zy.png" style="zoom: 45%;" /></p>
-<h3 id="罗德里格斯旋转公式">罗德里格斯旋转公式</h3>
-<p>定义绕x轴y轴z轴分别旋转α、β、γ的角度。 <span class="math display">\[
-R_{xyz}(\alpha, \beta, \gamma) = R_x(\alpha,)R_y(\beta)R_z(\gamma)
-\]</span></p>
-<p><img src="https://s2.loli.net/2022/01/28/mAsKIMWbnqHiCeo.png" style="zoom: 33%;" /></p>
-<p>罗德里格旋转公式是计算三维空间中，一个向量绕旋转轴旋转给定角度以后得到的新向量的计算公式。这个公式使用原向量，旋转轴及它们叉积作为标架表示出旋转以后的向量。可以改写为矩阵形式，被广泛应用于空间解析几何和计算机图形学领域，成为刚体运动的基本计算公式。<span
-class="math inline">\(n\)</span>表示旋转轴，<span
-class="math inline">\(I\)</span>表示单位矩阵。 <span
-class="math display">\[
-\boldsymbol{R}(\boldsymbol{n},\alpha) = cos(\alpha)\boldsymbol{I} +
-(1-cos(\alpha))\boldsymbol{nn}^T + sin(\alpha)
-\begin{pmatrix}
-0 &amp; -n_z &amp; n_y \\
-n_z &amp; 0 &amp; -n_x \\
--n_y &amp; n_x &amp; 0 \\
-\end{pmatrix}
-\]</span></p>
-<h2 id="视图变换viewcamera-transformation">视图变换（View/Camera
-Transformation）</h2>
-<h3 id="视角or相机变换">视角or相机变换</h3>
-<h4 id="定义相机">定义相机</h4>
-<ul>
-<li>相机的位置</li>
-<li>相机朝向的方向</li>
-<li>相机上方的方向</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/01/28/bwi8sPWnOd15BTC.png" style="zoom: 40%;" /></p>
-<p>为了方便计算，我们可以<strong>将相机放在原点，相机朝向z轴的负方向，相机上方的方向是y轴正方向</strong>。同时，我们在移动相机或者视角的时候，当作<strong>相机位置和朝向始终不动，而是物体在移动</strong>。</p>
-<h4 id="通过m_view变换将相机放到标准位置上">通过<span
-class="math inline">\(M_{view}\)</span>变换将相机放到标准位置上</h4>
-<p>基本思想：</p>
-<ul>
-<li>将<span
-class="math inline">\(\vec{e}\)</span>（相机中心点）移动到原点</li>
-<li>将<span
-class="math inline">\(\vec{g}\)</span>旋转到<strong>z轴的负方向</strong></li>
-<li>将<span
-class="math inline">\(\vec{t}\)</span>旋转到<strong>y轴的正方向</strong></li>
-<li>此时<span class="math inline">\((\vec{g} *
-\vec{t})\)</span>和x轴的正方向一样</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/01/29/Es8SbcUlQGaq5Ae.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/01/29/jxWdO9bIvNfhzao.png" style="zoom:50%;" />
-<span class="math display">\[
-\begin{align*}
-M_{view} &amp; = R_{view}*T_{view} \\
-T_{view} &amp;=
-\begin{bmatrix}
-1 &amp; 0 &amp; 0 &amp; -x_{\vec{e}} \\
-0 &amp; 1 &amp; 0 &amp; -y_{\vec{e}} \\
-0 &amp; 0 &amp; 1 &amp; -z_{\vec{e}} \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-\end{bmatrix}
-\end{align*}
-\]</span> 以上的步骤虽然明确，但是我们很难写出这样的<span
-class="math inline">\(R_{view}\)</span>矩阵来表示从<span
-class="math inline">\(\vec{g}\)</span>、<span
-class="math inline">\(\vec{t}\)</span>等轴旋转到z轴负方向和y轴正方向的操作。
-因此我们考虑反过来表示，我们将z轴负方向和y轴正方向旋转到<span
-class="math inline">\(\vec{g}\)</span>、<span
-class="math inline">\(\vec{t}\)</span>等轴，再利用之前<strong>旋转的变换矩阵是正交矩阵</strong>，<span
-class="math inline">\(R_{-\theta} = R^{T}_{\theta} =
-R^{-1}_{\theta}\)</span>，从而可以求出<span
-class="math inline">\(R_{view}\)</span>，于是我们考虑将x轴旋转到<span
-class="math inline">\((\vec{g} * \vec{t})\)</span>，y轴旋转到<span
-class="math inline">\(\vec{t}\)</span>，z轴旋转到<span
-class="math inline">\(-\vec{g}\)</span>，同时为了保证相对运动不变，其它所有物体都需要跟着做这个变换。
-<span class="math display">\[
-\begin{align*}
-R^{-1}_{view} &amp; =
-\begin{bmatrix}
-x_{\vec{g}*\vec{t}} &amp; x_{\vec{t}} &amp; x_{-\vec{g}} &amp; 0 \\
-y_{\vec{g}*\vec{t}} &amp; y_{\vec{t}} &amp; y_{-\vec{g}} &amp; 0 \\
-z_{\vec{g}*\vec{t}} &amp; z_{\vec{t}} &amp; z_{-\vec{g}} &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-\end{bmatrix} \\
-\Rightarrow
-R_{view} &amp; =
-\begin{bmatrix}
-x_{\vec{g}*\vec{t}} &amp; y_{\vec{g}*\vec{t}} &amp; z_{\vec{g}*\vec{t}}
-&amp; 0 \\
-x_{\vec{t}} &amp; y_{\vec{t}} &amp; z_{\vec{t}} &amp; 0 \\
-x_{-\vec{g}} &amp; y_{-\vec{g}} &amp; z_{-\vec{g}} &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-\end{bmatrix} \\
-\end{align*}
-\]</span></p>
-<h3 id="总结">总结</h3>
-<ul>
-<li>物体要与相机一同移动</li>
-<li>保证相机在原点，up为y轴正方向，朝向z轴负方向</li>
-</ul>
-<h2 id="投影变换">投影变换</h2>
-<h3 id="正交投影">正交投影</h3>
-<p><strong>正交投影</strong>是<strong>将相机放在无限远的位置</strong>上，打出来的是平行光，相同的物体不论距离，呈现的大小一样。
-如下图所示，左下角是该物体原本的位置和形状，我们需要通过正交投影使其落在<span
-class="math inline">\([-1,
-1]^2\)</span>里面，首先<strong>先将物体的中心移动到原点</strong>，<strong>平移矩阵</strong>为<span
-class="math inline">\(\begin{bmatrix}1 &amp; 0 &amp; 0 &amp;
--\frac{r+l}{2} \\ 0 &amp; 1 &amp; 0 &amp; -\frac{t+b}{2} \\ 0 &amp; 0
-&amp; 1 &amp; -\frac{n+f}{2} \\ 0 &amp; 0 &amp; 0 &amp; 1 \\
-\end{bmatrix}\)</span>，<strong>缩放矩阵</strong>为<span
-class="math inline">\(\begin{bmatrix}\frac{2}{r-l} &amp; 0 &amp; 0 &amp;
-0 \\ 0 &amp; \frac{2}{t-b} &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp;
-\frac{2}{n-f} &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\
-\end{bmatrix}\)</span></p>
-<p><strong>注意：之前我理解这个变换的一个误区，我一直以为缩放变换必须是等比例缩放，但实际上x轴和y轴坐标变换的比例不一定相同，只是通过缩放使其落在<span
-class="math inline">\([-1,
-1]^2\)</span>的区间里面，所以物体一定会被拉伸（长宽比会变换），并且在之后的视口变换会再一次被拉伸。</strong></p>
-<p><img src="https://s2.loli.net/2022/01/28/VK4JWHdz5wUogh9.png" style="zoom: 40%;" /></p>
-<h3 id="透视投影">透视投影</h3>
-<h4 id="特点">特点</h4>
-<ul>
-<li><strong>近大远小</strong></li>
-<li>原本的平行线不再平行，而是会相交于一点</li>
-<li>更符合人眼观察到的图像规律</li>
-</ul>
-<h4 id="步骤">步骤</h4>
-<ul>
-<li>先从<strong>截头锥体</strong>变成<strong>长方体</strong>(<span
-class="math inline">\(M_{persp-&gt;ortho}\)</span>)，感性上理解有些像是<strong>将远平面f挤压到与近平面n一样大</strong>。</li>
-<li>再做<strong>正交投影</strong>(<span
-class="math inline">\(M_{ortho}\)</span>)</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/01/29/l8Rs6ujITvExWOF.png" style="zoom:50%;" /></p>
-<h4 id="如何求得m_persp-ortho矩阵">如何求得<span
-class="math inline">\(M_{persp-&gt;ortho}\)</span>矩阵</h4>
-<p>远平面坐标是z，近平面坐标是n（<strong>注意这里n和f可以为负，并且大多数情况是负数，因为相机朝向z轴负方向</strong>），首先假设点远平面坐标是(x,
-y, z)，变换后的近平面坐标是(x', y',
-z')，可以根据相似三角形的比例关系得到如下比例关系和矩阵变换<strong>（由齐次坐标系的特点，x、y、z、w同乘以z，还是表示同样的点）</strong>：</p>
-<p><img src="https://s2.loli.net/2022/01/29/wWUJMuztb9f7LPD.png" style="zoom: 50%;" />
-<span class="math display">\[
-\begin{cases}
-y&#39;=\frac{n}{z}y \\
-x&#39; = \frac{n}{z} x
-\end{cases}
-\]</span></p>
-<p><span class="math display">\[
-\begin{bmatrix}
-x \\ y \\ z \\ 1
-\end{bmatrix}
-\Rightarrow
-\begin{bmatrix}
-nx/z \\ ny/z \\ unknown \\ 1
-\end{bmatrix}
-==
-\begin{bmatrix}
-nx \\ ny \\ unknown \\ z
-\end{bmatrix}
-\]</span></p>
-<p>为了使<span
-class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>矩阵对于任意的x,
-y都满足该变换，可得<span
-class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>的第1、2、4行如下：
-<span class="math display">\[
-M_{persp-&gt;ortho}^{(4*4)} =
-\begin{bmatrix}
-n &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; n &amp; 0 &amp; 0 \\
-? &amp; ? &amp; ? &amp; ? \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-\end{bmatrix}
-\]</span> 为了求第<span
-class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>的第3行，我们可以观察这个通过<span
-class="math inline">\(M_{persp-&gt;ortho}\)</span>的变换，有以下特点：</p>
-<ul>
-<li><strong>近平面上的点的坐标不会改变</strong></li>
-<li><strong>远平面上的点的z轴坐标不会改变</strong></li>
-<li><strong>中间平面的点的z轴坐标会改变</strong></li>
-</ul>
-<p>将近平面上的点的坐标带入，即<span
-class="math inline">\(z=n\)</span>，可得<span
-class="math inline">\(\begin{bmatrix} x \\ y \\ n \\ 1\end{bmatrix}
-\Rightarrow \begin{bmatrix} x \\ y \\ n \\ 1\end{bmatrix} ==
-\begin{bmatrix} nx \\ ny \\ n^2 \\ n\end{bmatrix}\)</span> 因此<span
-class="math inline">\(M_{persp-&gt;ortho}^{(4*4)}\)</span>第3行必定为<span
-class="math inline">\(\begin{bmatrix}0 &amp; 0 &amp; A &amp;
-B\end{bmatrix}\)</span>的形式，因为对近平面上的任一点均满足上述等式，<span
-class="math inline">\(\begin{bmatrix}0 &amp; 0 &amp; A &amp;
-B\end{bmatrix}\begin{bmatrix} x \\ y \\ n \\ 1\end{bmatrix} =
-n^2\)</span></p>
-<p>将远平面上的点的坐标带入，即<span
-class="math inline">\(z=f\)</span>，可得<span
-class="math inline">\(\begin{bmatrix} 0 \\ 0 \\ f \\ 1\end{bmatrix}
-\Rightarrow \begin{bmatrix} 0 \\ 0 \\ f \\ 1\end{bmatrix} ==
-\begin{bmatrix} 0 \\ 0 \\ f^2 \\
-f\end{bmatrix}\)</span>，再带入可得<span
-class="math inline">\(\begin{bmatrix}0 &amp; 0 &amp; A &amp;
-B\end{bmatrix}\begin{bmatrix} 0 \\ 0 \\ f \\ 1\end{bmatrix} =
-f^2\)</span></p>
-<p>由以上两次带入可得 <span class="math display">\[
-\begin{cases}
-An+B=n^2 \\
-Af+ B=f^2
-\end{cases}
-\]</span> 解得 <span class="math display">\[
-\begin{cases}
-A=n+f \\
-B=-nf
-\end{cases}
-\]</span> 因此 <span class="math display">\[
-M_{persp-&gt;ortho}^{(4*4)} =
-\begin{bmatrix}
-n &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; n &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; n+f &amp; -nf \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-\end{bmatrix}
-\]</span> <strong>透视投影</strong>的矩阵变换为<span
-class="math inline">\(M_{persp} = M_{ortho} *
-M_{persp-&gt;ortho}\)</span></p>
-<h4 id="透视投影近平面常用到的数据">透视投影近平面常用到的数据</h4>
-<p>对于近平面，我们知道它与原点距离为<span
-class="math inline">\(|n|\)</span>，其余分别为<span
-class="math inline">\(l,r,b,t\)</span>(left, right, bottom,
-top)，通过以下数据可以求得。</p>
-<ul>
-<li>垂直可视角<span class="math inline">\(fov
-Y\)</span>（从相机位置向平面上边和下边分别作垂线，两条垂线的夹角）</li>
-<li>长宽比<span
-class="math inline">\(aspect\)</span>（近平面的长和宽的比）</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/01/29/2weijsXBDYKr153.png" style="zoom: 50%;" /></p>
-<p><img src="https://s2.loli.net/2022/01/29/ECBvZWDAftoPh78.png" style="zoom:50%;" /></p>
-<h3 id="正交投影-vs-透视投影">正交投影 vs 透视投影</h3>
-<p><strong>正交投影</strong>是<strong>将相机放在无限远的位置</strong>上，打出来的是平行光，相同的物体不论距离，呈现的大小一样。
-<strong>透视投影</strong>是<strong>将相机放在一个点</strong>上，符合<strong>近大远小</strong>的特点。</p>
-<p><img src="https://s2.loli.net/2022/01/28/hiJpX4sA9CfORcZ.png" style="zoom: 50%;" /></p>
-<h3 id="思考题">思考题</h3>
-<p>对于中间平面的点，再经过“挤压变换”后，z轴的坐标是会更<strong>靠近</strong>近平面还是<strong>远离</strong>近平面？</p>
-<p>其实带入点<span class="math inline">\((x, y, z, 1), (n &lt; z &lt;
-f)\)</span>，得 <span class="math display">\[
-M_{persp-&gt;ortho}^{(4*4)} *
-\begin{bmatrix}
-x \\ y \\ z \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-nx \\ ny \\ (n+f)z-nf \\ z
-\end{bmatrix}
-==
-\begin{bmatrix}
-nx/z \\ ny/z \\ n+f-\frac{nf}{z} \\ 1
-\end{bmatrix}
-\]</span> 将“挤压变换”后得到的z轴坐标与原本的z作差，得 <span
-class="math display">\[
-\begin{align*}
-n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
-&amp; =\frac{(z-n)(f-z)}{z} &gt; 0
-\end{align*}
-\]</span>
-因此，经过“挤压变换”后，z轴的坐标是会<strong>远离近平面，靠近远平面</strong>。</p>
-<h2 id="mvp变换">MVP变换</h2>
-<ul>
-<li><strong>M</strong>odel Transformation（放置物体）</li>
-<li><strong>V</strong>iew Transformation（放置相机）</li>
-<li><strong>P</strong>rojection Transformation</li>
-</ul>
-<h3 id="projection-transformation">Projection Transformation</h3>
-<ul>
-<li>正交投影（从长方体变成<span class="math inline">\([-1,
-1]^3\)</span>）</li>
-<li>透视投影（从截头锥体变成<span class="math inline">\([-1,
-1]^3\)</span>）</li>
-</ul>
+<h2 id="ubuntu小工具">Ubuntu小工具</h2>
+<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu
+sqlite可视化工具<strong>Sqlite Browser</strong></p>
 ]]></content>
       <categories>
-        <category>图形学</category>
+        <category>Qt</category>
       </categories>
       <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
+        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
@@ -1916,46 +1991,6 @@ alt="图形渲染管线流程" />
       <tags>
         <tag>图形学</tag>
         <tag>OpenGL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Qt中使用Sqlite</title>
-    <url>/2021/11/15/Qt-sql/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
-<span id="more"></span>
-<h2 id="使用">使用</h2>
-<h3 id="头文件准备">头文件准备</h3>
-<p>首先在.pro文件里加入</p>
-<blockquote>
-<p>QT += sql</p>
-</blockquote>
-<p>然后在.h文件里加入</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="库函数调用">库函数调用</h3>
-<ul>
-<li><p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p></li>
-<li><p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure></li>
-<li><p>QSqlQuery
-sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
-<p>可以直接用.exec(const QString&amp;
-query)执行query里面的sql语句内容</p>
-<p>也可以使用.prepare(const QString&amp; query),
-.exec()预先输入query里的sql语句，再加以执行</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
-<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p></li>
-</ul>
-<h2 id="ubuntu小工具">Ubuntu小工具</h2>
-<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu
-sqlite可视化工具<strong>Sqlite Browser</strong></p>
-]]></content>
-      <categories>
-        <category>Qt</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
