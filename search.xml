@@ -1,6 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C++结构体对齐补齐</title>
+    <url>/2022/03/09/CPP-Memory-Alignment/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章主要讲述在C++中，结构体存储数据内存对齐补齐的机制。</p>
+<span id="more"></span>
+<h2 id="前情提要">前情提要</h2>
+<p>最近写Pni-CT相关的网络通信时，发现在传输过程中，数据存在补零的现象，在多次调试后才发现原来不是因为网络通信导致数据补零，而是结构体存储数据本身的机制导致的。</p>
+<h2 id="结构体的好处">结构体的好处</h2>
+<p>需要使用结构这种聚合数据类型来处理基本数据类型难以处理的场景。</p>
+<h2 id="为什么要内存对齐">为什么要内存对齐？</h2>
+<ul>
+<li><p>平台原因：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。</p></li>
+<li><p>性能原因：数据结构(尤其是栈)应该尽可能地在自然边界上对齐。因为为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问。</p></li>
+</ul>
+<h2 id="pragma-pack">#pragma pack</h2>
+<p>默认是#pragma pack(8)，支持1，2，4，8，16。</p>
+<p>例如：#pragma pack(3)会警告。</p>
+<p><img src="https://s2.loli.net/2022/03/09/49f8OiYlDz1mXId.png" style="zoom: 50%;" /></p>
+<h2 id="对齐补齐三原则">对齐补齐三原则</h2>
+<h3 id="原则一数据成员对齐规则">原则一：数据成员对齐规则</h3>
+<ul>
+<li><p>struct或union的数据成员，第一个数据成员放在offset为0的地方</p></li>
+<li><p>以后每个数据成员的对齐必须按照:#pragma
+pack(N)指定的N和这个数据成员自身长度，比较小的那个进行。</p></li>
+</ul>
+<h3
+id="原则二struct或union整体对齐规则">原则二：struct或union整体对齐规则</h3>
+<p>在数据成员完成各自对齐之后，struct或union本身也要对齐。对齐将按照#pragma
+pack(N)指定的N和struct或union最大数据成员长度中，比较小的那个进行。</p>
+<h3
+id="原则三struct或union成员对齐原则">原则三：struct或union成员对齐原则</h3>
+<p>如果一个struct或union里有struct或union成员，则结构体成员要从其内部最大元素大小的整数倍地址开始存储。</p>
+<h2 id="示例">示例</h2>
+<h3 id="环境">环境</h3>
+<p>Windows、g++、Emacs（编辑器）</p>
+<p>gcc version 11.2.0 (Rev2, Built by MSYS2 project)</p>
+<p>int 4字节 char 1字节 float 4字节 double 8字节</p>
+<h3 id="按1对齐">按1对齐</h3>
+<h4 id="代码">代码</h4>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//按1对齐</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(1)</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">A</span>&#123;</span></span><br><span class="line">	  <span class="keyword">int</span> a;  </span><br><span class="line">	  <span class="keyword">char</span> b; </span><br><span class="line">	  <span class="keyword">short</span> c;</span><br><span class="line">	  <span class="keyword">char</span> d; </span><br><span class="line">    &#125;;</span><br><span class="line">    A test;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;sizeof(A):\t&quot;</span>&lt;&lt;<span class="built_in"><span class="keyword">sizeof</span></span>(A) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt;(<span class="keyword">int</span>*)&amp;test.a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.b &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.c &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.d &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="输出结果">输出结果</h4>
+<p><img src="https://s2.loli.net/2022/03/09/2J1eiTLmzbVSNvg.png" style="zoom: 67%;" /></p>
+<h4 id="分析">分析</h4>
+<p>结构体A遵循原则一和二。 原则一，成员对齐。 成员a，4字节，#pragma
+pack(1)，4&gt;1，按1对齐，offset为0，存放区间[0,3];
+成员b，1字节，1=1，按1对齐，offset = 4，存放区间[4]；
+成员c，2字节，2&gt;1,按1对齐，offset = 5，存放区间[5,6];
+成员d，1字节，1=1，按1对齐，offset = 6，存放区间[7]；
+原则二，struct整体对齐。 整体存放在[0，7]中，共八字节；对齐
+pack(1)，8是1的倍数，就是八字节。</p>
+<p><img src="https://s2.loli.net/2022/03/09/qW26MY8gxOe4Cvu.png" style="zoom:67%;" /></p>
+<h3 id="按2对齐">按2对齐</h3>
+<h4 id="代码-1">代码</h4>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//按2对齐</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(2)</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">B</span>&#123;</span></span><br><span class="line">	  <span class="keyword">int</span> a;  </span><br><span class="line">	  <span class="keyword">char</span> b; </span><br><span class="line">  	  <span class="keyword">short</span> c;</span><br><span class="line">	  <span class="keyword">char</span> d; </span><br><span class="line">    &#125;;</span><br><span class="line">    B test;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;sizeof(B):\t&quot;</span>&lt;&lt;<span class="built_in"><span class="keyword">sizeof</span></span>(B) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt;(<span class="keyword">int</span>*)&amp;test.a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.b &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.c &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.d &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="运行结果">运行结果</h4>
+<p><img src="https://s2.loli.net/2022/03/09/5QGUNTpmFbIefMj.png" style="zoom:67%;" /></p>
+<h4 id="分析-1">分析</h4>
+<p>结构体B遵循原则一和二。 原则一，成员对齐。 成员a，4字节，#pragma
+pack(2)，4&gt;2，按2对齐，offset为0，存放区间[0,3];
+成员b，1字节，1&lt;2，按1对齐，offset = 4，存放区间[4]；
+成员c，2字节，2=2，按2对齐，offset =
+5，此时的offset应该被对齐数2整除，由5变6，存放区间[6,7];
+成员d，1字节，1&lt;2，按1对齐，offset = 8，存放区间[8]；
+原则二，struct整体对齐。 整体存放在[0，8]中，共9个字节；对齐
+pack(2)，应该被2整除，就是10个字节。</p>
+<p><img src="https://s2.loli.net/2022/03/09/3MucaUqjYD7vTpm.png" style="zoom:67%;" /></p>
+<h3 id="按4对齐">按4对齐</h3>
+<h4 id="代码-2">代码</h4>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//按4对齐</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(4)</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">C</span>&#123;</span></span><br><span class="line">	  <span class="keyword">int</span> a;  </span><br><span class="line">	  <span class="keyword">char</span> b; </span><br><span class="line">	  <span class="keyword">short</span> c;</span><br><span class="line">	  <span class="keyword">char</span> d; </span><br><span class="line">    &#125;;</span><br><span class="line">    C test;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;sizeof(C):\t&quot;</span>&lt;&lt;<span class="built_in"><span class="keyword">sizeof</span></span>(C) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt;(<span class="keyword">int</span>*)&amp;test.a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.b &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.c &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.d &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="运行结果-1">运行结果</h4>
+<p><img src="https://s2.loli.net/2022/03/09/oGRxKMdysDnz6fQ.png" style="zoom:67%;" /></p>
+<h4 id="分析-2">分析</h4>
+<p>结构体C遵循原则一和二。 原则一，成员对齐。 成员a，4字节，#pragma
+pack(4)，4=4，按4对齐，offset为0，存放区间[0,3];
+成员b，1字节，1&lt;4，按1对齐，offset = 4，存放区间[4]；
+成员c，2字节，2&lt;4，按2对齐，offset =
+5，此时的offset应该被对齐数2整除，由5变6，存放区间[6,7];
+成员d，1字节，1&lt;4，按1对齐，offset = 8，存放区间[8]；
+原则二，struct整体对齐。 整体存放在[0，8]中，共9个字节；对齐
+pack(4)，应该被4整除，就是12个字节。</p>
+<p><img src="https://s2.loli.net/2022/03/09/gP5y6Na1oEAIkBv.png" style="zoom:67%;" /></p>
+<h3 id="按8对齐">按8对齐</h3>
+<h4 id="代码-3">代码</h4>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//按8对齐</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(8)</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">D</span>&#123;</span></span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">2</span>];</span><br><span class="line">	<span class="keyword">short</span> b[<span class="number">3</span>];</span><br><span class="line">	<span class="keyword">double</span> c;</span><br><span class="line">    &#125;;</span><br><span class="line">    D test;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;sizeof(D):\t&quot;</span>&lt;&lt;<span class="built_in"><span class="keyword">sizeof</span></span>(D) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt;(<span class="keyword">int</span>*)&amp;test.a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.b &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.c &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="运行结果-2">运行结果</h4>
+<p><img src="https://s2.loli.net/2022/03/09/HQiaOU5VnPfLxX9.png" style="zoom:67%;" /></p>
+<h4 id="分析-3">分析</h4>
+<p>结构体D遵循原则一和二。 成员a，单体4字节，4&lt;8，按4对齐，offset =
+0，存放区间[0,7]; 成员b，单体2字节，2&lt;8，按2对齐，offset =
+8，存储区间[8,13]; 成员c，8字节，8 = 8，按8对齐，offset =
+14，此时的offset应该被对齐数8整除，由14变16，存储区间[16, 23];
+原则二，struct整体对齐。 整体存放在[0，23]中，共24个字节；对齐
+pack(8)，可以被8整除，就是24个字节。</p>
+<p><img src="https://s2.loli.net/2022/03/09/R6Am7wjFi1KNMkv.png" style="zoom:67%;" /></p>
+<h3 id="嵌套结构体按4对齐">嵌套结构体按4对齐</h3>
+<h4 id="代码-4">代码</h4>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//嵌套结构体，按4对齐。</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(4)</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">E</span></span></span><br><span class="line"><span class="class">    &#123;</span></span><br><span class="line">	  <span class="keyword">char</span> g[<span class="number">2</span>];     </span><br><span class="line">	  <span class="keyword">short</span> h;     </span><br><span class="line">	  <span class="class"><span class="keyword">struct</span> <span class="title">F</span></span></span><br><span class="line"><span class="class">	  &#123;</span></span><br><span class="line">	      <span class="keyword">int</span> a;    </span><br><span class="line">	      <span class="keyword">double</span> b;  </span><br><span class="line">	      <span class="keyword">float</span> c;  </span><br><span class="line">	  &#125;;</span><br><span class="line">	  F f;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    E test;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;sizeof(E):\t&quot;</span> &lt;&lt; <span class="built_in"><span class="keyword">sizeof</span></span>(E) &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//cout &lt;&lt;(int*)&amp;test.a &lt;&lt; &quot;, &quot; &lt;&lt; (int*)&amp;test.b &lt;&lt; &quot;, &quot; &lt;&lt; (int*)&amp;test.c &lt;&lt; endl;</span></span><br><span class="line">    cout &lt;&lt; (<span class="keyword">int</span>*)&amp;test.g &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.h  &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt;(<span class="keyword">int</span>*)&amp;test.f.a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.f.b &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.f.c &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="运行结果-3">运行结果</h4>
+<p><img src="https://s2.loli.net/2022/03/09/fkR2gGIKXNDhQpy.png" style="zoom:67%;" /></p>
+<h4 id="分析-4">分析</h4>
+<p>嵌套结构，顺序计算。</p>
+<ul>
+<li>原则一、二 成员g单体1字节，#pragma pack(4)，4&gt;1，按1对齐，offset
+= 0，存放区间[0,1]; 成员h二字节，2&lt;4，按2对齐，offset =
+2，存放区间[2,3];</li>
+<li>此时，应用原则三
+offset=4，结构体内部最大元素为double(8字节)，offset应该被8整除，所以offset变为8，但是原则一，#pragma
+pack(4)，4&lt;8，所以还是从4开始存放接下来的struct F(f)</li>
+<li>结构体F，遵循原则一和二 成员a，4字节，#pragma
+pack(4)，4=4，按4对齐，offset = 4，存放区间[4,7];
+成员b，8字节，8&gt;4，按4对齐，offset = 8，存储区间[8,15];
+成员c，4字节，4=4，按4对齐，offset = 16，存储区间[16,19];</li>
+<li>原则二，struct整体对齐。 整体存放在[0，19]中，共20个字节；对齐
+pack(4)，可以被4整除，就是20个字节。</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/09/ka6yoSXlB1zbihm.png" style="zoom:67%;" /></p>
+<h3 id="嵌套结构体按8对齐">嵌套结构体按8对齐</h3>
+<h4 id="代码-5">代码</h4>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(8)</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">G</span></span></span><br><span class="line"><span class="class">    &#123;</span></span><br><span class="line">	  <span class="keyword">int</span> a;		</span><br><span class="line">	  <span class="keyword">char</span> b[<span class="number">3</span>];	</span><br><span class="line">	  <span class="keyword">short</span> c[<span class="number">3</span>];	</span><br><span class="line">	  <span class="keyword">double</span> d[<span class="number">2</span>];</span><br><span class="line">		</span><br><span class="line">	  <span class="class"><span class="keyword">struct</span> <span class="title">H</span>	</span></span><br><span class="line"><span class="class">	  &#123;</span></span><br><span class="line">	      <span class="keyword">int</span> e;	</span><br><span class="line">	      <span class="keyword">float</span> f;</span><br><span class="line">	      <span class="keyword">double</span> g;</span><br><span class="line">	  &#125;;</span><br><span class="line">	  H h;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    G test;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;sizeof(G):\t&quot;</span> &lt;&lt; <span class="built_in"><span class="keyword">sizeof</span></span>(G) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; (<span class="keyword">int</span>*)&amp;test.a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.b  &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt;(<span class="keyword">int</span>*)&amp;test.c &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.d &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.h.e &lt;&lt;  <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.h.f &lt;&lt;  <span class="string">&quot;, &quot;</span> &lt;&lt; (<span class="keyword">int</span>*)&amp;test.h.g &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="运行结果-4">运行结果</h4>
+<p><img src="https://s2.loli.net/2022/03/09/1GhCykQLpfz4PHq.png" style="zoom:67%;" /></p>
+<h4 id="分析-5">分析</h4>
+<p>嵌套结构，顺序计算。</p>
+<ul>
+<li>原则一、二。 成员a四字节，#pragma
+pack(8)，4&lt;8，按4对齐，offset为0，存放区间[0,3];
+成员b单体一字节，1&lt;8，按1对齐，offset = 4，存放区间[4,6];
+成员c单体二字节，2&lt;8，按2对齐，offset =
+7，此时的offset应该被对齐数2整除，由7变8，存放区间[8,13];
+成员d单体八字节，8=8，按8对齐，offset =
+14，此时的offset应该被对齐数8整除，由14变16，存放区间[16,31];</li>
+<li>原则三：offset =
+32，最大成员为double，32%8==0,那么H的成员从32开始存。
+成员e四字节，4&lt;8，按4对齐，offset = 32，存放区间[32,35];
+成员f四字节，4&lt;8，按4对齐，offset = 36，存放区间[36,39];
+成员g八字节，8=8，按8对齐，offset = 40，存放区间[40,47];</li>
+<li>原则二：struct整体对齐。 整体存放在[0，47]中，共48个字节；对齐
+pack(8)，可以被8整除，就是48个字节。</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/09/9t7geWkowlFZUcT.png" style="zoom: 67%;" /></p>
+<h2 id="总结">总结</h2>
+<ul>
+<li><code>#Pragma
+Pack(N)；</code>只影响的是数据在内存中的排列方式。</li>
+<li>cpu可以访问任何pack的数据，只是效率有高低之分。</li>
+<li>最好把大小相似的数据元素（如整型、浮点型）放到开头；把奇数大小的数据（如字符串、缓冲区）放到后面。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>台服6月水瓶座会战</title>
     <url>/2020/07/05/Clan-Aquarius/</url>
     <content><![CDATA[<p>本文主要讲述台服2020年6月水瓶座公会战情况。 <span id="more"></span></p>
@@ -15,26 +171,6 @@
 <h3 id="感受">感受</h3>
 <p>本期比上期更难出刀，个人感觉比较稳定的春黑轴只有4王，物理刀丢1，2又比较亏，而本期auto刀更是少之又少。
 这两期让很多人打得挺累的，观察了下，前排更难打，但前排和中排的差距在拉大。这期我们出的春黑刀应该没上期多，有些人也不想出，但最后排名是231，反而还进步了。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
@@ -71,6 +207,26 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
 </blockquote>
 <p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
 <p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
@@ -122,38 +278,6 @@ href="https://s2.loli.net/2022/01/09/InE4jimqN53OMKf.png"><img src="https://s2.l
 <p><a
 href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪：Games101
 现代计算机图形学-作业环境配置：vs2019+win_不要熬夜多喝热水的博客-CSDN博客_games101环境</a></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework0</title>
-    <url>/2022/01/31/Games101-Homework0/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>主要讲述Games101的作业0内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>搭建环境，详情可参见下述链接</li>
-</ul>
-<p><a
-href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
-Studio2019 + vcpkg</a></p>
-<ul>
-<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
-(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>根据齐次坐标的定义，P定义为(2, 1,
-1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -356,6 +480,38 @@ Metrics)</strong></p>
       </tags>
   </entry>
   <entry>
+    <title>Games101-Homework0</title>
+    <url>/2022/01/31/Games101-Homework0/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>主要讲述Games101的作业0内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>搭建环境，详情可参见下述链接</li>
+</ul>
+<p><a
+href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
+Studio2019 + vcpkg</a></p>
+<ul>
+<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
+(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>根据齐次坐标的定义，P定义为(2, 1,
+1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101-Homework1</title>
     <url>/2022/02/01/Games101-Homework1/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -410,236 +566,61 @@ M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework3</title>
-    <url>/2022/02/27/Games101-Homework3/</url>
+    <title>Games101-Homework2</title>
+    <url>/2022/02/07/Games101-Homework2/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章讲述Games101的作业3，主要涉及着色部分。</p>
+<p>本章主要讲述Games101的作业2，涉及光栅化内容。</p>
 <span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
+<li>[20 分] 正确实现三角形栅格化算法。</li>
+<li>[10 分] 正确测试点是否在三角形内。</li>
+<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
+<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
+到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
+来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
+并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
+一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
+list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
+</ul>
 <h2 id="基础部分">基础部分</h2>
 <h3 id="实现">实现</h3>
+<p>需要修改的函数如下：</p>
 <ul>
-<li>[10 分] 参数插值: 正确插值颜色、法向量、纹理坐标、位置 (Shading
-Position) 并将它们传递给 fragment_shader_payload.</li>
-<li>[20 分]Blinn-phong 反射模型: 正确实现 phong_fragment_shader
-对应的反射模型。</li>
-<li>[5 分] Texture mapping: 将 phong_fragment_shader 的代码拷贝到
-texture_fragment_shader, 在此基础上正确实现 Texture
-Mapping，使用下述公式即可，注意公式中light_dir和view_dir都是单位向量。</li>
+<li>rasterize_triangle(): 执行三角形栅格化算法</li>
+<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
+数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/03/05/p7BvMNnfjehtFQJ.png" style="zoom: 67%;" /></p>
+<p>rasterize_triangle()：</p>
 <ul>
-<li>[10 分] Bump mapping 与 Displacement mapping: 正确实现 Bump mapping
-与 Displacement mapping.</li>
+<li>创建三角形的 2 维 bounding box。</li>
+<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
+心的屏幕空间坐标来检查中心点是否在三角形内。</li>
+<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
+与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
+<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
+buffer)，。</li>
 </ul>
-<h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t, <span class="keyword">const</span> std::array&lt;Eigen::Vector3f, <span class="number">3</span>&gt;&amp; view_pos) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &lt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index]))</span><br><span class="line">                &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">auto</span> interpolated_color = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.color[<span class="number">0</span>], t.color[<span class="number">1</span>], t.color[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_normal = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.normal[<span class="number">0</span>], t.normal[<span class="number">1</span>], t.normal[<span class="number">2</span>], <span class="number">1</span>).<span class="built_in">normalized</span>();</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_texcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.tex_coords[<span class="number">0</span>], t.tex_coords[<span class="number">1</span>], t.tex_coords[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_shadingcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, view_pos[<span class="number">0</span>], view_pos[<span class="number">1</span>], view_pos[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">                    <span class="comment">// Use: Instead of passing the triangle&#x27;s color directly to the frame buffer, pass the color to the shaders first to get the final color;</span></span><br><span class="line">                    <span class="function">fragment_shader_payload <span class="title">payload</span><span class="params">(interpolated_color, interpolated_normal.normalized(), interpolated_texcoords, texture ? &amp;*texture : <span class="literal">nullptr</span>)</span></span>;</span><br><span class="line">                    payload.view_pos = interpolated_shadingcoords;</span><br><span class="line">                    <span class="keyword">auto</span> pixel_color = <span class="built_in">fragment_shader</span>(payload);</span><br><span class="line">                    <span class="built_in">set_pixel</span>(Eigen::<span class="built_in">Vector2i</span>(x, y), pixel_color);</span><br><span class="line">                &#125;              </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Blinn-Phong</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">phong_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color;</span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; light : lights)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> For each light source in the code, calculate what the *ambient*, *diffuse*, and *specular* </span></span><br><span class="line">        <span class="comment">// components are. Then, accumulate that result on the *result_color* object.</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//光的方向，视线方向，半程向量，衰减因子        </span></span><br><span class="line">        Eigen::Vector3f light_dir = (light.position - point);</span><br><span class="line">        Eigen::Vector3f view_dir = eye_pos - point;</span><br><span class="line">        Eigen::Vector3f half_dir = (view_dir + light_dir).<span class="built_in">normalized</span>();</span><br><span class="line">        <span class="keyword">float</span> r = light_dir.<span class="built_in">dot</span>(light_dir);</span><br><span class="line"></span><br><span class="line">        light_dir = light_dir.<span class="built_in">normalized</span>();</span><br><span class="line">        view_dir = view_dir.<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//La-环境光照，Ld-漫反射，Ls-高光</span></span><br><span class="line">        Eigen::Vector3f La = ka.<span class="built_in">cwiseProduct</span>(amb_light_intensity);</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ld = kd.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ld *= std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(light_dir));</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ls = ks.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ls *= <span class="built_in">pow</span>(std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(half_dir)), p);</span><br><span class="line"></span><br><span class="line">        result_color += La + Ld + Ls;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//bump</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">bump_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color; </span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> kh = <span class="number">0.2</span>, kn = <span class="number">0.1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Implement bump mapping here</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> x = normal.<span class="built_in">x</span>(), y = normal.<span class="built_in">y</span>(), z = normal.<span class="built_in">z</span>();</span><br><span class="line">    Eigen::Vector3f t = Eigen::<span class="built_in">Vector3f</span>(x * y / <span class="built_in">sqrt</span>(x * x + z * z), <span class="built_in">sqrt</span>(x * x + z * z), z * y / <span class="built_in">sqrt</span>(x * x + z * z));</span><br><span class="line">    Eigen::Vector3f b = normal.<span class="built_in">cross</span>(t);</span><br><span class="line">    Eigen::Matrix3f TBN0, TBN;</span><br><span class="line">    TBN0 &lt;&lt; t, b, normal;</span><br><span class="line">    TBN = TBN0.<span class="built_in">transpose</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> u = payload.tex_coords.<span class="built_in">x</span>();</span><br><span class="line">    <span class="keyword">float</span> v = payload.tex_coords.<span class="built_in">y</span>();</span><br><span class="line">    <span class="keyword">float</span> w = payload.texture-&gt;width;</span><br><span class="line">    <span class="keyword">float</span> h = payload.texture-&gt;height;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> dU = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u + <span class="number">1.0f</span> / w, v).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    <span class="keyword">float</span> dV = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u, v + <span class="number">1.0f</span> / h).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ln = Eigen::<span class="built_in">Vector3f</span>(-dU, -dV, <span class="number">1.0f</span>);</span><br><span class="line">    Eigen::Vector3f n = (TBN * ln).<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    result_color = n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Displacement</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">displacement_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color; </span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> kh = <span class="number">0.2</span>, kn = <span class="number">0.1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">float</span> x = normal.<span class="built_in">x</span>(), y = normal.<span class="built_in">y</span>(), z = normal.<span class="built_in">z</span>();</span><br><span class="line">    Eigen::Vector3f t = Eigen::<span class="built_in">Vector3f</span>(x * y / <span class="built_in">sqrt</span>(x * x + z * z), <span class="built_in">sqrt</span>(x * x + z * z), z * y / <span class="built_in">sqrt</span>(x * x + z * z));</span><br><span class="line">    Eigen::Vector3f b = normal.<span class="built_in">cross</span>(t);</span><br><span class="line">    Eigen::Matrix3f TBN0, TBN;</span><br><span class="line">    TBN0 &lt;&lt; t, b, normal;</span><br><span class="line">    TBN = TBN0.<span class="built_in">transpose</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> u = payload.tex_coords.<span class="built_in">x</span>();</span><br><span class="line">    <span class="keyword">float</span> v = payload.tex_coords.<span class="built_in">y</span>();</span><br><span class="line">    <span class="keyword">float</span> w = payload.texture-&gt;width;</span><br><span class="line">    <span class="keyword">float</span> h = payload.texture-&gt;height;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> dU = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u + <span class="number">1.0f</span> / w, v).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    <span class="keyword">float</span> dV = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u, v + <span class="number">1.0f</span> / h).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f ln = Eigen::<span class="built_in">Vector3f</span>(-dU, -dV, <span class="number">1.0f</span>);</span><br><span class="line">    point += (kn * normal * payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    normal = (TBN * ln).<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; light : lights)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//光的方向，视线方向，半程向量，衰减因子        </span></span><br><span class="line">        Eigen::Vector3f light_dir = light.position - point;</span><br><span class="line">        Eigen::Vector3f view_dir = eye_pos - point;</span><br><span class="line">        Eigen::Vector3f half_dir = (view_dir + light_dir).<span class="built_in">normalized</span>();</span><br><span class="line">        <span class="keyword">float</span> r = light_dir.<span class="built_in">dot</span>(light_dir);</span><br><span class="line"></span><br><span class="line">        light_dir = light_dir.<span class="built_in">normalized</span>();</span><br><span class="line">        view_dir = view_dir.<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//La-环境光照，Ld-漫反射，Ls-高光</span></span><br><span class="line">        Eigen::Vector3f La = ka.<span class="built_in">cwiseProduct</span>(amb_light_intensity);</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ld = kd.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ld *= std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(light_dir));</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ls = ks.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ls *= <span class="built_in">pow</span>(std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(half_dir)), p);</span><br><span class="line"></span><br><span class="line">        result_color += La + Ld + Ls;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果">运行结果</h3>
-<h4 id="normal">Normal</h4>
-<p><img src="https://s2.loli.net/2022/03/04/RSJ7gbYQkNAonEM.png" style="zoom: 40%;" /></p>
-<h4 id="blinn-phong">Blinn-Phong</h4>
-<p><img src="https://s2.loli.net/2022/03/05/fNQHjh8YiX3yuOn.png" style="zoom: 40%;" /></p>
-<h4 id="texture">Texture</h4>
-<p><img src="https://s2.loli.net/2022/03/05/Iy39jULi1GRDbMV.png" style="zoom:40%;" /></p>
-<h4 id="bump">Bump</h4>
-<p><img src="https://s2.loli.net/2022/03/05/DNvWPxKTwMjSuhR.png" style="zoom:40%;" /></p>
-<h4 id="displacement">Displacement</h4>
-<p><img src="https://s2.loli.net/2022/03/05/wRY7NAk4G5vVf8i.png" style="zoom:40%;" /></p>
-<h2 id="提高部分">提高部分</h2>
-<h3 id="实现-1">实现</h3>
+<p>static bool insideTriangle()：</p>
 <ul>
-<li>[Bonus 3 分] 尝试更多模型: 找到其他可用的.obj 文件，提交渲染结果并
-把模型保存在 /models 目录下。这些模型也应该包含 Vertex Normal
-信息。</li>
-<li>[Bonus 5 分] 双线性纹理插值: 使用双线性插值进行纹理采样, 在 Texture
-类中实现一个新方法 Vector3f getColorBilinear(float u, float v) 并 通过
-fragment shader
-调用它。为了使双线性插值的效果更加明显，你应该考虑选择更小的纹理图。请同时提交纹理插值与双线性纹理插值的结果，并进行比较。</li>
-</ul>
-<h3 id="代码-1">代码</h3>
-<h3 id="运行结果-1">运行结果</h3>
-<h2 id="遇到的问题">遇到的问题</h2>
-<h3 id="blinn-phong-1">Blinn-Phong</h3>
-<ul>
-<li>light_dir和view_dir没有单位化，就会产生下图情况</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/03/05/27QjNwClLMVnPOt.png" style="zoom:40%;" /></p>
-<ul>
-<li>高光没有使用衰减因子p，会产生下图情况</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/03/05/uXG7Kt4U8oplAWx.png" style="zoom:40%;" /></p>
-<h3 id="texture-1">Texture</h3>
-<p>运行时报错，原因是纹理坐标u, v计算出现负数，超出[0,
-1]的区间，修改getColor函数如下</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Vector3f <span class="title">getColor</span><span class="params">(<span class="keyword">float</span> u, <span class="keyword">float</span> v)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 坐标限定</span></span><br><span class="line">    <span class="keyword">if</span> (u &lt; <span class="number">0</span>) u = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (u &gt; <span class="number">1</span>) u = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &lt; <span class="number">0</span>) v = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &gt; <span class="number">1</span>) v = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">auto</span> u_img = u * width;</span><br><span class="line">    <span class="keyword">auto</span> v_img = (<span class="number">1</span> - v) * height;</span><br><span class="line">    <span class="keyword">auto</span> color = image_data.at&lt;cv::Vec3b&gt;(v_img, u_img);</span><br><span class="line">    <span class="keyword">return</span> Eigen::<span class="built_in">Vector3f</span>(color[<span class="number">0</span>], color[<span class="number">1</span>], color[<span class="number">2</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework4</title>
-    <url>/2022/03/05/Games101-Homework4/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章讲述Games101的作业4，主要涉及几何的贝塞尔曲线部分。</p>
-<span id="more"></span>
-<h2 id="基础部分">基础部分</h2>
-<h3 id="实现">实现</h3>
-<ul>
-<li>[20 分] De Casteljau 算法： 对于给定的控制点，你的代码能够产生正确的
-Bézier 曲线，比较简单，直接利用递归计算点即可。</li>
+<li>作该点与三角形三个顶点的向量</li>
+<li>按某个方向依次两两向量叉乘</li>
+<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
 </ul>
 <h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">cv::Point2f <span class="title">recursive_bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, <span class="keyword">float</span> t)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Implement de Casteljau&#x27;s algorithm</span></span><br><span class="line">    <span class="keyword">if</span> (control_points.<span class="built_in">size</span>() == <span class="number">1</span>)  <span class="keyword">return</span> control_points[<span class="number">0</span>];</span><br><span class="line">    </span><br><span class="line">    std::vector&lt;cv::Point2f&gt; new_points;   </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; control_points.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//t比例下的贝塞尔点</span></span><br><span class="line">        <span class="keyword">auto</span> point = (<span class="number">1.0f</span> - t) * control_points[i - <span class="number">1</span>] + t * control_points[i];</span><br><span class="line">        new_points.<span class="built_in">emplace_back</span>(point);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">recursive_bezier</span>(new_points, t);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, cv::Mat &amp;window)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Iterate through all t = 0 to t = 1 with small steps, and call de Casteljau&#x27;s </span></span><br><span class="line">    <span class="comment">// recursive Bezier algorithm.</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">double</span> t = <span class="number">0.0</span>; t &lt;= <span class="number">1.0</span>; t += <span class="number">0.001</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">auto</span> point = <span class="built_in">recursive_bezier</span>(control_points, t);</span><br><span class="line">        window.at&lt;cv::Vec3b&gt;(point.y, point.x)[<span class="number">1</span>] = <span class="number">255</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="运行结果">运行结果</h3>
-<p><img src="https://s2.loli.net/2022/03/05/fgLu6YMHqbsZKm8.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/03/05/OIo3SK7wA9Dkn2j.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/04/uVildn8RgGcHDFL.png" style="zoom:50%;" /></p>
+<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
+<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
 <h2 id="提高部分">提高部分</h2>
 <h3 id="实现-1">实现</h3>
-<ul>
-<li>[5 分] 奖励分数： 实现对 Bézier
-曲线的反走样。(对于一个曲线上的点，不只把它对应于一个像素，你需要根据到像素中心的距离来考虑与它相邻的像素的颜色。)</li>
-</ul>
 <h3 id="代码-1">代码</h3>
 <h3 id="运行结果-1">运行结果</h3>
-<h2 id="遇到的问题">遇到的问题</h2>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Lecture13-16（Ray Tracing）学习笔记</title>
-    <url>/2022/02/27/Games101-RayTracing/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>在之前的章节，我们已经学习了光栅化和几何部分，本章将讲述Ray
-Tracing（光线追踪）。</p>
-<span id="more"></span>
-<h2 id="前言">前言</h2>
-<h3 id="为什么要光线追踪">为什么要光线追踪</h3>
-<p>光栅化不能很好地处理全局的效果：</p>
-<ul>
-<li>软阴影</li>
-<li>对于类似打磨比较光滑的金属、毛玻璃，有反射的高光，也有本身的粗糙性，光线会在场景中多次反射，光栅化的效果不是很好</li>
-</ul>
-<p>光线追踪是<strong>准确</strong>的算法，但是<strong>非常慢</strong>：</p>
-<ul>
-<li>光栅化是<strong>实时</strong>的，光线追踪是<strong>离线</strong>的</li>
-</ul>
-<h3 id="关于光线的3个想法">关于光线的3个想法</h3>
-<ul>
-<li>光以直线传播（虽然这是错误的）</li>
-<li>光线交叉时不会相互“碰撞”（尽管这仍然是错误的）</li>
-<li>光线从光源传播到眼睛（但物理在路径反转 - 互易性下是不变的）。</li>
-</ul>
-<p>“如果你凝视深渊，深渊也会凝视你。” ——弗里德里希·威廉·尼采（翻译）</p>
-<h3 id="思想">思想</h3>
-<ul>
-<li>从人眼向屏幕的各个像素点发射一条光线，会打到场景中最近的物体（同时也解决了深度缓存问题）</li>
-<li>如何判断该点是否被照亮呢？从该点向光源连接一条线（shadow
-ray），如果这条连线中不存在物体遮挡，则说明光源可以照亮整个点，否则在阴影中</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/03/01/rxtu2D4AbnS7mEp.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/03/01/qNpUrj1nTOzYWVe.png" style="zoom:50%;" /></p>
-<h3 id="whitted风格的光线追踪递归">Whitted风格的光线追踪（递归）</h3>
-<p>实际上，一条光线可能经过多次折射、反射到多个点上，最终该像素的值是多个点累加的，折射、反射中存在能量损失。</p>
-<p><img src="https://s2.loli.net/2022/03/02/ZBftj1OyqusUovp.png" style="zoom:50%;" /></p>
-<h2 id="技术实现">技术实现</h2>
-<h3 id="光线与面求交点">光线与面求交点</h3>
-<p>光线的定义：光源+一个方向向量，如下公式，从o开始，往d方向走了t的时间</p>
-<p><span class="math inline">\(r(t) = o+td,
-0&lt;t&lt;\infty\)</span></p>
-<h3 id="光线与球求交点">光线与球求交点</h3>
-<p>光线：<span class="math inline">\(r(t) = o+td,
-0&lt;t&lt;\infty\)</span></p>
-<p>球：<span class="math inline">\(p:(p-c)^2-R^2=0\)</span></p>
-<p>同时满足上述两个式子的点即为交点，即解</p>
-<p><span class="math inline">\((o+td-c)^2-R^2=0\)</span></p>
-<h3 id="光线与隐式表面求交点">光线与隐式表面求交点</h3>
-<p>光线：<span class="math inline">\(r(t) = o+td,
-0&lt;t&lt;\infty\)</span></p>
-<p>隐式表面：<span class="math inline">\(p:f(p)=0\)</span></p>
-<p>替换光线的方程：<span class="math inline">\(f(o+td) = 0\)</span></p>
-<p>解的要求：实数（有物理意义）、正数（时间为正）</p>
-<h3 id="光线与三角网格求交点">光线与三角网格求交点</h3>
-<p><img src="https://s2.loli.net/2022/03/06/SuMdRq3DsB6YHg4.png" style="zoom:50%;" /></p>
-<h4 id="作用">作用</h4>
-<ul>
-<li>渲染：可视性、阴影、亮度</li>
-<li>几何：是否在物体内，光线与物体有奇数个交点则光线在物体内，偶数个则在物体外（要求物体封闭没有洞）</li>
-</ul>
-<h4 id="思路">思路</h4>
-<ul>
-<li><p>光线与每个三角形求交点</p></li>
-<li><p>简单，但是很慢（考虑加速？）</p></li>
-<li><p>光线与三角形有0个或者1个交点</p></li>
-</ul>
-<h3 id="光线与三角形求交点">光线与三角形求交点</h3>
-<h4 id="思路-1">思路</h4>
-<p>因为三角形在一个表面内，因此可以转换成如下两步判断：</p>
-<ul>
-<li>光线与平面是否相交</li>
-<li>交点是否在三角形内</li>
-</ul>
-<p>平面可以由一个方向N和一个点p'定义，<span
-class="math inline">\(p:(p-p&#39;)*N=0\)</span>，N为法线。</p>
-<p><img src="https://s2.loli.net/2022/03/06/pzOMmDslS3nNVLa.png" style="zoom:50%;" /></p>
-<p>代入<span class="math inline">\(p=r(t)\)</span>得，<span
-class="math inline">\((p-p&#39;)*N=(o+td-p&#39;)*N=0\)</span></p>
-<h4 id="möller-trumbore算法">Möller Trumbore算法</h4>
-<p>利用三角形的重心求解，联立可得</p>
-<p><span
-class="math inline">\(\vec{O}+t\vec{D}=(1-b_1-b_2)\vec{P_0}+b_1\vec{P_1}+b_2\vec{P_2}\)</span></p>
-<p>再利用三维空间坐标求解即可。</p>
-<h3 id="加速光线与三角形求交点">加速光线与三角形求交点</h3>
-<h4 id="包围盒">包围盒</h4>
-<p>用一个包围盒将物体围住（包围盒不限形状），用简单的体积绑定复杂的对象</p>
-<ul>
-<li>对象完全被包含在盒中</li>
-<li>如果光线没有击中包围盒，光线必然不会击中对象</li>
-<li>所以首先测试包围盒，然后测试对象是否击中物体</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/03/06/9muiWt1cygzTAsJ.png" style="zoom:50%;" /></p>
-<p>包围盒包含3个对面（上下、左右、前后），长方体就是3个对面形成的集合。</p>
-<p>通常我们使用<strong>Axis-Aligned Bounding Box (AABB)</strong>
-（轴对齐包围盒），包围盒的每个面都与x轴或者y轴或者z轴平行。</p>
-<h4 id="光线与包围盒求交点">光线与包围盒求交点</h4>
-<p>可以转换成光线与3个对面求交，知道光线进入的时间<span
-class="math inline">\(t_{min}\)</span>和离开的时间<span
-class="math inline">\(t_{max}\)</span>，对于3组<span
-class="math inline">\(t_{min}\)</span>和<span
-class="math inline">\(t_{max}\)</span>，它们的交集即为光线在包围盒内的时间区间。</p>
-<ul>
-<li>光线只有在进入所有成对的平面时才进入包围盒</li>
-<li>只要光线离开任何一对平面，光线就会离开包围盒</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/03/06/yUnkmps5dX6RQD3.png" style="zoom:50%;" /></p>
-<ul>
-<li>对于3D包围盒，<span class="math inline">\(t_{enter} = max(t_{min}),
-t_{exit} = min(t_{max})\)</span></li>
-<li>如果<span
-class="math inline">\(t_{enter}&lt;t_{exit}\)</span>，光线会在包围盒里呆一段时间。</li>
-<li>如果<span
-class="math inline">\(t_{exit}&lt;0\)</span>，包围盒在光线背面，没有交点</li>
-<li>如果<span class="math inline">\(t_{enter}&lt;0,
-t_{exit}\geq0\)</span>，光源在包围盒内，有交点</li>
-<li>总之，光线与包围盒有交点，当且仅当<span
-class="math inline">\(t_{enter}&lt;t_{exit}\)</span> &amp;&amp; <span
-class="math inline">\(t_{exit}\geq0\)</span></li>
-</ul>
-<h4 id="为什么包围盒选择轴对齐">为什么包围盒选择轴对齐</h4>
-<p>可以简化计算过程，如下图所示。</p>
-<p><img src="https://s2.loli.net/2022/03/06/TWG8aP1IVY5cny9.png" style="zoom: 50%;" /></p>
+<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
+<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -859,6 +840,259 @@ n)，但是对于相互覆盖的物体无法判断，如下图。</p>
 <li>深度缓存复杂度为O(n)</li>
 <li>几乎应用在所有的GPU硬件中</li>
 </ul>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework3</title>
+    <url>/2022/02/27/Games101-Homework3/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章讲述Games101的作业3，主要涉及着色部分。</p>
+<span id="more"></span>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
+<ul>
+<li>[10 分] 参数插值: 正确插值颜色、法向量、纹理坐标、位置 (Shading
+Position) 并将它们传递给 fragment_shader_payload.</li>
+<li>[20 分]Blinn-phong 反射模型: 正确实现 phong_fragment_shader
+对应的反射模型。</li>
+<li>[5 分] Texture mapping: 将 phong_fragment_shader 的代码拷贝到
+texture_fragment_shader, 在此基础上正确实现 Texture
+Mapping，使用下述公式即可，注意公式中light_dir和view_dir都是单位向量。</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/05/p7BvMNnfjehtFQJ.png" style="zoom: 67%;" /></p>
+<ul>
+<li>[10 分] Bump mapping 与 Displacement mapping: 正确实现 Bump mapping
+与 Displacement mapping.</li>
+</ul>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t, <span class="keyword">const</span> std::array&lt;Eigen::Vector3f, <span class="number">3</span>&gt;&amp; view_pos) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x + <span class="number">0.5</span>, y + <span class="number">0.5</span>, t.v);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &lt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index]))</span><br><span class="line">                &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">auto</span> interpolated_color = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.color[<span class="number">0</span>], t.color[<span class="number">1</span>], t.color[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_normal = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.normal[<span class="number">0</span>], t.normal[<span class="number">1</span>], t.normal[<span class="number">2</span>], <span class="number">1</span>).<span class="built_in">normalized</span>();</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_texcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, t.tex_coords[<span class="number">0</span>], t.tex_coords[<span class="number">1</span>], t.tex_coords[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">auto</span> interpolated_shadingcoords = <span class="built_in">interpolate</span>(alpha, beta, gamma, view_pos[<span class="number">0</span>], view_pos[<span class="number">1</span>], view_pos[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">                    <span class="comment">// Use: Instead of passing the triangle&#x27;s color directly to the frame buffer, pass the color to the shaders first to get the final color;</span></span><br><span class="line">                    <span class="function">fragment_shader_payload <span class="title">payload</span><span class="params">(interpolated_color, interpolated_normal.normalized(), interpolated_texcoords, texture ? &amp;*texture : <span class="literal">nullptr</span>)</span></span>;</span><br><span class="line">                    payload.view_pos = interpolated_shadingcoords;</span><br><span class="line">                    <span class="keyword">auto</span> pixel_color = <span class="built_in">fragment_shader</span>(payload);</span><br><span class="line">                    <span class="built_in">set_pixel</span>(Eigen::<span class="built_in">Vector2i</span>(x, y), pixel_color);</span><br><span class="line">                &#125;              </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Blinn-Phong</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">phong_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color;</span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; light : lights)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> For each light source in the code, calculate what the *ambient*, *diffuse*, and *specular* </span></span><br><span class="line">        <span class="comment">// components are. Then, accumulate that result on the *result_color* object.</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//光的方向，视线方向，半程向量，衰减因子        </span></span><br><span class="line">        Eigen::Vector3f light_dir = (light.position - point);</span><br><span class="line">        Eigen::Vector3f view_dir = eye_pos - point;</span><br><span class="line">        Eigen::Vector3f half_dir = (view_dir + light_dir).<span class="built_in">normalized</span>();</span><br><span class="line">        <span class="keyword">float</span> r = light_dir.<span class="built_in">dot</span>(light_dir);</span><br><span class="line"></span><br><span class="line">        light_dir = light_dir.<span class="built_in">normalized</span>();</span><br><span class="line">        view_dir = view_dir.<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//La-环境光照，Ld-漫反射，Ls-高光</span></span><br><span class="line">        Eigen::Vector3f La = ka.<span class="built_in">cwiseProduct</span>(amb_light_intensity);</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ld = kd.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ld *= std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(light_dir));</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ls = ks.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ls *= <span class="built_in">pow</span>(std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(half_dir)), p);</span><br><span class="line"></span><br><span class="line">        result_color += La + Ld + Ls;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//bump</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">bump_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color; </span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> kh = <span class="number">0.2</span>, kn = <span class="number">0.1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Implement bump mapping here</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> x = normal.<span class="built_in">x</span>(), y = normal.<span class="built_in">y</span>(), z = normal.<span class="built_in">z</span>();</span><br><span class="line">    Eigen::Vector3f t = Eigen::<span class="built_in">Vector3f</span>(x * y / <span class="built_in">sqrt</span>(x * x + z * z), <span class="built_in">sqrt</span>(x * x + z * z), z * y / <span class="built_in">sqrt</span>(x * x + z * z));</span><br><span class="line">    Eigen::Vector3f b = normal.<span class="built_in">cross</span>(t);</span><br><span class="line">    Eigen::Matrix3f TBN0, TBN;</span><br><span class="line">    TBN0 &lt;&lt; t, b, normal;</span><br><span class="line">    TBN = TBN0.<span class="built_in">transpose</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> u = payload.tex_coords.<span class="built_in">x</span>();</span><br><span class="line">    <span class="keyword">float</span> v = payload.tex_coords.<span class="built_in">y</span>();</span><br><span class="line">    <span class="keyword">float</span> w = payload.texture-&gt;width;</span><br><span class="line">    <span class="keyword">float</span> h = payload.texture-&gt;height;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> dU = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u + <span class="number">1.0f</span> / w, v).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    <span class="keyword">float</span> dV = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u, v + <span class="number">1.0f</span> / h).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ln = Eigen::<span class="built_in">Vector3f</span>(-dU, -dV, <span class="number">1.0f</span>);</span><br><span class="line">    Eigen::Vector3f n = (TBN * ln).<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    result_color = n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Displacement</span></span><br><span class="line"><span class="function">Eigen::Vector3f <span class="title">displacement_fragment_shader</span><span class="params">(<span class="keyword">const</span> fragment_shader_payload&amp; payload)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    Eigen::Vector3f ka = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.005</span>, <span class="number">0.005</span>, <span class="number">0.005</span>);</span><br><span class="line">    Eigen::Vector3f kd = payload.color;</span><br><span class="line">    Eigen::Vector3f ks = Eigen::<span class="built_in">Vector3f</span>(<span class="number">0.7937</span>, <span class="number">0.7937</span>, <span class="number">0.7937</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> l1 = light&#123;&#123;<span class="number">20</span>, <span class="number">20</span>, <span class="number">20</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line">    <span class="keyword">auto</span> l2 = light&#123;&#123;<span class="number">-20</span>, <span class="number">20</span>, <span class="number">0</span>&#125;, &#123;<span class="number">500</span>, <span class="number">500</span>, <span class="number">500</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;light&gt; lights = &#123;l1, l2&#125;;</span><br><span class="line">    Eigen::Vector3f amb_light_intensity&#123;<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>&#125;;</span><br><span class="line">    Eigen::Vector3f eye_pos&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">10</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> p = <span class="number">150</span>;</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f color = payload.color; </span><br><span class="line">    Eigen::Vector3f point = payload.view_pos;</span><br><span class="line">    Eigen::Vector3f normal = payload.normal;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> kh = <span class="number">0.2</span>, kn = <span class="number">0.1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">float</span> x = normal.<span class="built_in">x</span>(), y = normal.<span class="built_in">y</span>(), z = normal.<span class="built_in">z</span>();</span><br><span class="line">    Eigen::Vector3f t = Eigen::<span class="built_in">Vector3f</span>(x * y / <span class="built_in">sqrt</span>(x * x + z * z), <span class="built_in">sqrt</span>(x * x + z * z), z * y / <span class="built_in">sqrt</span>(x * x + z * z));</span><br><span class="line">    Eigen::Vector3f b = normal.<span class="built_in">cross</span>(t);</span><br><span class="line">    Eigen::Matrix3f TBN0, TBN;</span><br><span class="line">    TBN0 &lt;&lt; t, b, normal;</span><br><span class="line">    TBN = TBN0.<span class="built_in">transpose</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> u = payload.tex_coords.<span class="built_in">x</span>();</span><br><span class="line">    <span class="keyword">float</span> v = payload.tex_coords.<span class="built_in">y</span>();</span><br><span class="line">    <span class="keyword">float</span> w = payload.texture-&gt;width;</span><br><span class="line">    <span class="keyword">float</span> h = payload.texture-&gt;height;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">float</span> dU = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u + <span class="number">1.0f</span> / w, v).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    <span class="keyword">float</span> dV = kh * kn * (payload.texture-&gt;<span class="built_in">getColor</span>(u, v + <span class="number">1.0f</span> / h).<span class="built_in">norm</span>() - payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f ln = Eigen::<span class="built_in">Vector3f</span>(-dU, -dV, <span class="number">1.0f</span>);</span><br><span class="line">    point += (kn * normal * payload.texture-&gt;<span class="built_in">getColor</span>(u, v).<span class="built_in">norm</span>());</span><br><span class="line">    normal = (TBN * ln).<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">    Eigen::Vector3f result_color = &#123;<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; light : lights)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//光的方向，视线方向，半程向量，衰减因子        </span></span><br><span class="line">        Eigen::Vector3f light_dir = light.position - point;</span><br><span class="line">        Eigen::Vector3f view_dir = eye_pos - point;</span><br><span class="line">        Eigen::Vector3f half_dir = (view_dir + light_dir).<span class="built_in">normalized</span>();</span><br><span class="line">        <span class="keyword">float</span> r = light_dir.<span class="built_in">dot</span>(light_dir);</span><br><span class="line"></span><br><span class="line">        light_dir = light_dir.<span class="built_in">normalized</span>();</span><br><span class="line">        view_dir = view_dir.<span class="built_in">normalized</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//La-环境光照，Ld-漫反射，Ls-高光</span></span><br><span class="line">        Eigen::Vector3f La = ka.<span class="built_in">cwiseProduct</span>(amb_light_intensity);</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ld = kd.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ld *= std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(light_dir));</span><br><span class="line"></span><br><span class="line">        Eigen::Vector3f Ls = ks.<span class="built_in">cwiseProduct</span>(light.intensity / r);</span><br><span class="line">        Ls *= <span class="built_in">pow</span>(std::<span class="built_in">max</span>(<span class="number">0.0f</span>, normal.<span class="built_in">dot</span>(half_dir)), p);</span><br><span class="line"></span><br><span class="line">        result_color += La + Ld + Ls;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result_color * <span class="number">255.f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果">运行结果</h3>
+<h4 id="normal">Normal</h4>
+<p><img src="https://s2.loli.net/2022/03/04/RSJ7gbYQkNAonEM.png" style="zoom: 40%;" /></p>
+<h4 id="blinn-phong">Blinn-Phong</h4>
+<p><img src="https://s2.loli.net/2022/03/05/fNQHjh8YiX3yuOn.png" style="zoom: 40%;" /></p>
+<h4 id="texture">Texture</h4>
+<p><img src="https://s2.loli.net/2022/03/05/Iy39jULi1GRDbMV.png" style="zoom:40%;" /></p>
+<h4 id="bump">Bump</h4>
+<p><img src="https://s2.loli.net/2022/03/05/DNvWPxKTwMjSuhR.png" style="zoom:40%;" /></p>
+<h4 id="displacement">Displacement</h4>
+<p><img src="https://s2.loli.net/2022/03/05/wRY7NAk4G5vVf8i.png" style="zoom:40%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<ul>
+<li>[Bonus 3 分] 尝试更多模型: 找到其他可用的.obj 文件，提交渲染结果并
+把模型保存在 /models 目录下。这些模型也应该包含 Vertex Normal
+信息。</li>
+<li>[Bonus 5 分] 双线性纹理插值: 使用双线性插值进行纹理采样, 在 Texture
+类中实现一个新方法 Vector3f getColorBilinear(float u, float v) 并 通过
+fragment shader
+调用它。为了使双线性插值的效果更加明显，你应该考虑选择更小的纹理图。请同时提交纹理插值与双线性纹理插值的结果，并进行比较。</li>
+</ul>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
+<h2 id="遇到的问题">遇到的问题</h2>
+<h3 id="blinn-phong-1">Blinn-Phong</h3>
+<ul>
+<li>light_dir和view_dir没有单位化，就会产生下图情况</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/05/27QjNwClLMVnPOt.png" style="zoom:40%;" /></p>
+<ul>
+<li>高光没有使用衰减因子p，会产生下图情况</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/05/uXG7Kt4U8oplAWx.png" style="zoom:40%;" /></p>
+<h3 id="texture-1">Texture</h3>
+<p>运行时报错，原因是纹理坐标u, v计算出现负数，超出[0,
+1]的区间，修改getColor函数如下</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Vector3f <span class="title">getColor</span><span class="params">(<span class="keyword">float</span> u, <span class="keyword">float</span> v)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 坐标限定</span></span><br><span class="line">    <span class="keyword">if</span> (u &lt; <span class="number">0</span>) u = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (u &gt; <span class="number">1</span>) u = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &lt; <span class="number">0</span>) v = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &gt; <span class="number">1</span>) v = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">auto</span> u_img = u * width;</span><br><span class="line">    <span class="keyword">auto</span> v_img = (<span class="number">1</span> - v) * height;</span><br><span class="line">    <span class="keyword">auto</span> color = image_data.at&lt;cv::Vec3b&gt;(v_img, u_img);</span><br><span class="line">    <span class="keyword">return</span> Eigen::<span class="built_in">Vector3f</span>(color[<span class="number">0</span>], color[<span class="number">1</span>], color[<span class="number">2</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Lecture13-16（Ray Tracing）学习笔记</title>
+    <url>/2022/02/27/Games101-RayTracing/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>在之前的章节，我们已经学习了光栅化和几何部分，本章将讲述Ray
+Tracing（光线追踪）。</p>
+<span id="more"></span>
+<h2 id="前言">前言</h2>
+<h3 id="为什么要光线追踪">为什么要光线追踪</h3>
+<p>光栅化不能很好地处理全局的效果：</p>
+<ul>
+<li>软阴影</li>
+<li>对于类似打磨比较光滑的金属、毛玻璃，有反射的高光，也有本身的粗糙性，光线会在场景中多次反射，光栅化的效果不是很好</li>
+</ul>
+<p>光线追踪是<strong>准确</strong>的算法，但是<strong>非常慢</strong>：</p>
+<ul>
+<li>光栅化是<strong>实时</strong>的，光线追踪是<strong>离线</strong>的</li>
+</ul>
+<h3 id="关于光线的3个想法">关于光线的3个想法</h3>
+<ul>
+<li>光以直线传播（虽然这是错误的）</li>
+<li>光线交叉时不会相互“碰撞”（尽管这仍然是错误的）</li>
+<li>光线从光源传播到眼睛（但物理在路径反转 - 互易性下是不变的）。</li>
+</ul>
+<p>“如果你凝视深渊，深渊也会凝视你。” ——弗里德里希·威廉·尼采（翻译）</p>
+<h3 id="思想">思想</h3>
+<ul>
+<li>从人眼向屏幕的各个像素点发射一条光线，会打到场景中最近的物体（同时也解决了深度缓存问题）</li>
+<li>如何判断该点是否被照亮呢？从该点向光源连接一条线（shadow
+ray），如果这条连线中不存在物体遮挡，则说明光源可以照亮整个点，否则在阴影中</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/01/rxtu2D4AbnS7mEp.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/01/qNpUrj1nTOzYWVe.png" style="zoom:50%;" /></p>
+<h3 id="whitted风格的光线追踪递归">Whitted风格的光线追踪（递归）</h3>
+<p>实际上，一条光线可能经过多次折射、反射到多个点上，最终该像素的值是多个点累加的，折射、反射中存在能量损失。</p>
+<p><img src="https://s2.loli.net/2022/03/02/ZBftj1OyqusUovp.png" style="zoom:50%;" /></p>
+<h2 id="技术实现">技术实现</h2>
+<h3 id="光线与面求交点">光线与面求交点</h3>
+<p>光线的定义：光源+一个方向向量，如下公式，从o开始，往d方向走了t的时间</p>
+<p><span class="math inline">\(r(t) = o+td,
+0&lt;t&lt;\infty\)</span></p>
+<h3 id="光线与球求交点">光线与球求交点</h3>
+<p>光线：<span class="math inline">\(r(t) = o+td,
+0&lt;t&lt;\infty\)</span></p>
+<p>球：<span class="math inline">\(p:(p-c)^2-R^2=0\)</span></p>
+<p>同时满足上述两个式子的点即为交点，即解</p>
+<p><span class="math inline">\((o+td-c)^2-R^2=0\)</span></p>
+<h3 id="光线与隐式表面求交点">光线与隐式表面求交点</h3>
+<p>光线：<span class="math inline">\(r(t) = o+td,
+0&lt;t&lt;\infty\)</span></p>
+<p>隐式表面：<span class="math inline">\(p:f(p)=0\)</span></p>
+<p>替换光线的方程：<span class="math inline">\(f(o+td) = 0\)</span></p>
+<p>解的要求：实数（有物理意义）、正数（时间为正）</p>
+<h3 id="光线与三角网格求交点">光线与三角网格求交点</h3>
+<p><img src="https://s2.loli.net/2022/03/06/SuMdRq3DsB6YHg4.png" style="zoom:50%;" /></p>
+<h4 id="作用">作用</h4>
+<ul>
+<li>渲染：可视性、阴影、亮度</li>
+<li>几何：是否在物体内，光线与物体有奇数个交点则光线在物体内，偶数个则在物体外（要求物体封闭没有洞）</li>
+</ul>
+<h4 id="思路">思路</h4>
+<ul>
+<li><p>光线与每个三角形求交点</p></li>
+<li><p>简单，但是很慢（考虑加速？）</p></li>
+<li><p>光线与三角形有0个或者1个交点</p></li>
+</ul>
+<h3 id="光线与三角形求交点">光线与三角形求交点</h3>
+<h4 id="思路-1">思路</h4>
+<p>因为三角形在一个表面内，因此可以转换成如下两步判断：</p>
+<ul>
+<li>光线与平面是否相交</li>
+<li>交点是否在三角形内</li>
+</ul>
+<p>平面可以由一个方向N和一个点p'定义，<span
+class="math inline">\(p:(p-p&#39;)*N=0\)</span>，N为法线。</p>
+<p><img src="https://s2.loli.net/2022/03/06/pzOMmDslS3nNVLa.png" style="zoom:50%;" /></p>
+<p>代入<span class="math inline">\(p=r(t)\)</span>得，<span
+class="math inline">\((p-p&#39;)*N=(o+td-p&#39;)*N=0\)</span></p>
+<h4 id="möller-trumbore算法">Möller Trumbore算法</h4>
+<p>利用三角形的重心求解，联立可得</p>
+<p><span
+class="math inline">\(\vec{O}+t\vec{D}=(1-b_1-b_2)\vec{P_0}+b_1\vec{P_1}+b_2\vec{P_2}\)</span></p>
+<p>再利用三维空间坐标求解即可。</p>
+<h3 id="加速光线与三角形求交点">加速光线与三角形求交点</h3>
+<h4 id="包围盒">包围盒</h4>
+<p>用一个包围盒将物体围住（包围盒不限形状），用简单的体积绑定复杂的对象</p>
+<ul>
+<li>对象完全被包含在盒中</li>
+<li>如果光线没有击中包围盒，光线必然不会击中对象</li>
+<li>所以首先测试包围盒，然后测试对象是否击中物体</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/06/9muiWt1cygzTAsJ.png" style="zoom:50%;" /></p>
+<p>包围盒包含3个对面（上下、左右、前后），长方体就是3个对面形成的集合。</p>
+<p>通常我们使用<strong>Axis-Aligned Bounding Box (AABB)</strong>
+（轴对齐包围盒），包围盒的每个面都与x轴或者y轴或者z轴平行。</p>
+<h4 id="光线与包围盒求交点">光线与包围盒求交点</h4>
+<p>可以转换成光线与3个对面求交，知道光线进入的时间<span
+class="math inline">\(t_{min}\)</span>和离开的时间<span
+class="math inline">\(t_{max}\)</span>，对于3组<span
+class="math inline">\(t_{min}\)</span>和<span
+class="math inline">\(t_{max}\)</span>，它们的交集即为光线在包围盒内的时间区间。</p>
+<ul>
+<li>光线只有在进入所有成对的平面时才进入包围盒</li>
+<li>只要光线离开任何一对平面，光线就会离开包围盒</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/06/yUnkmps5dX6RQD3.png" style="zoom:50%;" /></p>
+<ul>
+<li>对于3D包围盒，<span class="math inline">\(t_{enter} = max(t_{min}),
+t_{exit} = min(t_{max})\)</span></li>
+<li>如果<span
+class="math inline">\(t_{enter}&lt;t_{exit}\)</span>，光线会在包围盒里呆一段时间。</li>
+<li>如果<span
+class="math inline">\(t_{exit}&lt;0\)</span>，包围盒在光线背面，没有交点</li>
+<li>如果<span class="math inline">\(t_{enter}&lt;0,
+t_{exit}\geq0\)</span>，光源在包围盒内，有交点</li>
+<li>总之，光线与包围盒有交点，当且仅当<span
+class="math inline">\(t_{enter}&lt;t_{exit}\)</span> &amp;&amp; <span
+class="math inline">\(t_{exit}\geq0\)</span></li>
+</ul>
+<h4 id="为什么包围盒选择轴对齐">为什么包围盒选择轴对齐</h4>
+<p>可以简化计算过程，如下图所示。</p>
+<p><img src="https://s2.loli.net/2022/03/06/TWG8aP1IVY5cny9.png" style="zoom: 50%;" /></p>
+<h2 id="使用aabb加速光线追踪">使用AABB加速光线追踪</h2>
+<ul>
+<li>规则的网格</li>
+<li>空间划分</li>
+</ul>
+<h3 id="统一的空间划分网格">统一的空间划分（网格）</h3>
+<p>在光线追踪之前，进行的预操作</p>
+<ul>
+<li>找到物体的包围盒</li>
+<li>创建网格</li>
+<li>标记可能有物体的格子（下图有误，右上角第二个格子也要涂黑）</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/06/drhCUS3RJysqOXf.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework4</title>
+    <url>/2022/03/05/Games101-Homework4/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章讲述Games101的作业4，主要涉及几何的贝塞尔曲线部分。</p>
+<span id="more"></span>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
+<ul>
+<li>[20 分] De Casteljau 算法： 对于给定的控制点，你的代码能够产生正确的
+Bézier 曲线，比较简单，直接利用递归计算点即可。</li>
+</ul>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">cv::Point2f <span class="title">recursive_bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, <span class="keyword">float</span> t)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Implement de Casteljau&#x27;s algorithm</span></span><br><span class="line">    <span class="keyword">if</span> (control_points.<span class="built_in">size</span>() == <span class="number">1</span>)  <span class="keyword">return</span> control_points[<span class="number">0</span>];</span><br><span class="line">    </span><br><span class="line">    std::vector&lt;cv::Point2f&gt; new_points;   </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; control_points.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//t比例下的贝塞尔点</span></span><br><span class="line">        <span class="keyword">auto</span> point = (<span class="number">1.0f</span> - t) * control_points[i - <span class="number">1</span>] + t * control_points[i];</span><br><span class="line">        new_points.<span class="built_in">emplace_back</span>(point);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">recursive_bezier</span>(new_points, t);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, cv::Mat &amp;window)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Iterate through all t = 0 to t = 1 with small steps, and call de Casteljau&#x27;s </span></span><br><span class="line">    <span class="comment">// recursive Bezier algorithm.</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">double</span> t = <span class="number">0.0</span>; t &lt;= <span class="number">1.0</span>; t += <span class="number">0.001</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">auto</span> point = <span class="built_in">recursive_bezier</span>(control_points, t);</span><br><span class="line">        window.at&lt;cv::Vec3b&gt;(point.y, point.x)[<span class="number">1</span>] = <span class="number">255</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果">运行结果</h3>
+<p><img src="https://s2.loli.net/2022/03/05/fgLu6YMHqbsZKm8.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/05/OIo3SK7wA9Dkn2j.png" style="zoom:50%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<ul>
+<li>[5 分] 奖励分数： 实现对 Bézier
+曲线的反走样。(对于一个曲线上的点，不只把它对应于一个像素，你需要根据到像素中心的距离来考虑与它相邻的像素的颜色。)</li>
+</ul>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
+<h2 id="遇到的问题">遇到的问题</h2>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1287,201 +1521,6 @@ C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
       </categories>
       <tags>
         <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DPDK学习</title>
-    <url>/2021/07/01/LearnDPDK/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。</p>
-<span id="more"></span>
-<h2 id="dpdk介绍">DPDK介绍</h2>
-<blockquote>
-<p>DPDK全称Intel Data Plane Development
-Kit，是intel提供的数据平面开发工具集，为Intel
-architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
-<p>DPDK不同于Linux系统以通用性设计为目的，而是专注于网络应用中数据包的高性能处理。具体体现在DPDK应用程序是运行在用户空间上利用自身提供的数据平面库来收发数据包，绕过了Linux内核协议栈对数据包处理过程。它不是一个用户可以直接建立应用程序的完整产品，不包含需要与控制层（包括内核和协议堆栈）进行交互的工具。</p>
-<p>相比原生 Linux（Native Linux），采用Intel
-DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel
-x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
-</blockquote>
-<figure>
-<img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png"
-alt="DPDK工作图" />
-<figcaption aria-hidden="true">DPDK工作图</figcaption>
-</figure>
-<p>简单说，DPDK可以接管你的操作系统，在处理数据包的时候可以绕过内核，大大提高传输速率。</p>
-<h2 id="dpdk开发环境搭建">DPDK开发环境搭建</h2>
-<h3 id="选择长期支持的版本lts">选择长期支持的版本LTS</h3>
-<p>DPDK的下载官网如下：</p>
-<p>https://core.dpdk.org/download/</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png"
-alt="DPDK版本图" />
-<figcaption aria-hidden="true">DPDK版本图</figcaption>
-</figure>
-<p>我的开发环境是Ubuntu18.04 64位，选择的是DPDK 19.11.8(LTS)版本。</p>
-<h3 id="其余的软件环境">其余的软件环境</h3>
-<p>从下面的文档可以查看不同版本的System
-Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
-<p>http://core.dpdk.org/doc/archives/</p>
-<h3 id="虚拟机配置">虚拟机配置</h3>
-<ul>
-<li><p>核心：4个</p></li>
-<li><p>内存：4G，感觉可以再分大些</p></li>
-<li><p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p></li>
-</ul>
-<h2 id="dpdk安装">DPDK安装</h2>
-<h3 id="下载源代码">下载源代码</h3>
-<p>https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</p>
-<h3 id="设置环境变量">设置环境变量</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">64位系统：</span><br><span class="line">export RTE_SDK=`pwd`</span><br><span class="line">export RTE_TARGET=x86_64-native-linuxapp-gcc</span><br><span class="line"></span><br><span class="line">32位系统：</span><br><span class="line">export RTE_SDK=`pwd` </span><br><span class="line">export RTE_TARGET=i686-default-linuxapp-gcc</span><br></pre></td></tr></table></figure>
-<h3 id="利用setup.sh进行配置">利用setup.sh进行配置</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd dpdk-stable-19.11.8/usertools</span><br><span class="line">source ./dpdk-setup.sh</span><br></pre></td></tr></table></figure>
-<h4 id="编辑dpdk">编辑DPDK</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png"
-alt="编译DPDK" />
-<figcaption aria-hidden="true">编译DPDK</figcaption>
-</figure>
-<p>编译完后提示没有指定安装路径，我们只是编译而不是install就不用理会。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png"
-alt="编译后提示" />
-<figcaption aria-hidden="true">编译后提示</figcaption>
-</figure>
-<h4 id="插入igb-uio模块">插入IGB UIO模块</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png"
-alt="插入IGB UIO模块" />
-<figcaption aria-hidden="true">插入IGB UIO模块</figcaption>
-</figure>
-<h4 id="设置大页内存">设置大页内存</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png"
-alt="设置大页内存" />
-<figcaption aria-hidden="true">设置大页内存</figcaption>
-</figure>
-<p>默认设置的是2M的大页内存，这里输入1024，表示申请2G的大页内存。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
-<p>查看配置的大页内存</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png"
-alt="查看大页内存" />
-<figcaption aria-hidden="true">查看大页内存</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png"
-alt="大页内存" />
-<figcaption aria-hidden="true">大页内存</figcaption>
-</figure>
-<h4 id="查看网卡信息">查看网卡信息</h4>
-<p>记得通过ifconfig xxx down指令将网卡关闭。</p>
-<figure>
-<img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png"
-alt="查看网卡信息" />
-<figcaption aria-hidden="true">查看网卡信息</figcaption>
-</figure>
-<figure>
-<img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png"
-alt="网卡信息" />
-<figcaption aria-hidden="true">网卡信息</figcaption>
-</figure>
-<h4 id="绑定网卡">绑定网卡</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png"
-alt="绑定网卡" />
-<figcaption aria-hidden="true">绑定网卡</figcaption>
-</figure>
-<p>输入pci的地址，0000开始到'前的全输入。</p>
-<h4 id="运行testpmd测试程序">运行testpmd测试程序</h4>
-<figure>
-<img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png"
-alt="测试程序" />
-<figcaption aria-hidden="true">测试程序</figcaption>
-</figure>
-<p>输入0xf代表程序运行在0~3核心。</p>
-<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" /></p>
-<p>输入start开始抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" /></p>
-<p>stop停止抓包</p>
-<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" /></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>DPDK</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework2</title>
-    <url>/2022/02/07/Games101-Homework2/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章主要讲述Games101的作业2，涉及光栅化内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>[5 分] 正确地提交所有必须的文件，且代码能够编译运行。</li>
-<li>[20 分] 正确实现三角形栅格化算法。</li>
-<li>[10 分] 正确测试点是否在三角形内。</li>
-<li>[10 分] 正确实现 z-buffer 算法, 将三角形按顺序画在屏幕上。</li>
-<li>[提高项 5 分] 用 super-sampling 处理 Anti-aliasing : 你可能会注意
-到，当我们放大图像时，图像边缘会有锯齿感。我们可以用 super-sampling
-来解决这个问题，即对每个像素进行 2 * 2 采样，并比较前后的结果 (这里
-并不需要考虑像素与像素间的样本复用)。需要注意的点有，对于像素内的每
-一个样本都需要维护它自己的深度值，即每一个像素都需要维护一个 sample
-list。最后，如果你实现正确的话，你得到的三角形不应该有不正常的黑边。</li>
-</ul>
-<h2 id="基础部分">基础部分</h2>
-<h3 id="实现">实现</h3>
-<p>需要修改的函数如下：</p>
-<ul>
-<li>rasterize_triangle(): 执行三角形栅格化算法</li>
-<li>static bool insideTriangle(): 测试点是否在三角形内。你可以修改此函
-数的定义，这意味着，你可以按照自己的方式更新返回类型或函数参数。</li>
-</ul>
-<p>rasterize_triangle()：</p>
-<ul>
-<li>创建三角形的 2 维 bounding box。</li>
-<li>遍历此 bounding box 内的所有像素（使用其整数索引）。然后，使用像素中
-心的屏幕空间坐标来检查中心点是否在三角形内。</li>
-<li>如果在内部，则将其位置处的插值深度值 (interpolated depth value)
-与深度 缓冲区 (depth buffer) 中的相应值进行比较。</li>
-<li>如果当前点更靠近相机，请设置像素颜色并更新深度缓冲区 (depth
-buffer)，。</li>
-</ul>
-<p>static bool insideTriangle()：</p>
-<ul>
-<li>作该点与三角形三个顶点的向量</li>
-<li>按某个方向依次两两向量叉乘</li>
-<li>判断上述3个叉乘结果是否同方向，若同方向说明点在三角形内，反之则在三角形外</li>
-</ul>
-<h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Screen space rasterization</span></span><br><span class="line"><span class="keyword">void</span> rst::rasterizer::<span class="built_in">rasterize_triangle</span>(<span class="keyword">const</span> Triangle&amp; t) &#123;</span><br><span class="line">    <span class="keyword">auto</span> v = t.<span class="built_in">toVector4</span>();</span><br><span class="line">    <span class="keyword">int</span> x_max, x_min, y_max, y_min;</span><br><span class="line">    x_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    x_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">x</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">x</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">x</span>())));</span><br><span class="line">    y_min = <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MIN</span>(<span class="built_in">floor</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">floor</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    y_max = <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">0</span>].<span class="built_in">y</span>()), <span class="built_in">MAX</span>(<span class="built_in">ceil</span>(v[<span class="number">1</span>].<span class="built_in">y</span>()), <span class="built_in">ceil</span>(v[<span class="number">2</span>].<span class="built_in">y</span>())));</span><br><span class="line">    <span class="comment">// TODO : Find out the bounding box of current triangle.</span></span><br><span class="line">    <span class="comment">// iterate through the pixel and find if the current pixel is inside the triangle</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = x_min; x &lt;= x_max; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = y_min; y &lt;= y_max; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">insideTriangle</span>(x+<span class="number">0.5</span>, y+<span class="number">0.5</span>, t.v)) &#123;</span><br><span class="line">                <span class="comment">// If so, use the following code to get the interpolated z value.</span></span><br><span class="line">                <span class="keyword">auto</span> [alpha, beta, gamma] = <span class="built_in">computeBarycentric2D</span>(x, y, t.v);</span><br><span class="line">                <span class="keyword">float</span> w_reciprocal = <span class="number">1.0</span> / (alpha / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma / v[<span class="number">2</span>].<span class="built_in">w</span>());</span><br><span class="line">                <span class="keyword">float</span> z_interpolated = alpha * v[<span class="number">0</span>].<span class="built_in">z</span>() / v[<span class="number">0</span>].<span class="built_in">w</span>() + beta * v[<span class="number">1</span>].<span class="built_in">z</span>() / v[<span class="number">1</span>].<span class="built_in">w</span>() + gamma * v[<span class="number">2</span>].<span class="built_in">z</span>() / v[<span class="number">2</span>].<span class="built_in">w</span>();</span><br><span class="line">                z_interpolated *= w_reciprocal;</span><br><span class="line">                <span class="comment">// TODO : set the current pixel (use the set_pixel function) to the color of the triangle (use getColor function) if it should be painted.</span></span><br><span class="line">                <span class="keyword">auto</span> index = <span class="built_in">get_index</span>(x, y);</span><br><span class="line">                <span class="keyword">if</span> (z_interpolated &gt; depth_buf[index] || std::<span class="built_in">isinf</span>(depth_buf[index])) &#123;</span><br><span class="line">                    depth_buf[index] = z_interpolated;</span><br><span class="line">                    <span class="built_in">set_pixel</span>(<span class="built_in">Vector3f</span>(x, y, z_interpolated), t.<span class="built_in">getColor</span>());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">insideTriangle</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">const</span> Vector3f* _v)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="comment">// TODO : Implement this function to check if the point (x, y) is inside the triangle represented by _v[0], _v[1], _v[2]</span></span><br><span class="line">    Vector3f l1 = <span class="built_in">Vector3f</span>(_v[<span class="number">0</span>].<span class="built_in">x</span>() - x, _v[<span class="number">0</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l2 = <span class="built_in">Vector3f</span>(_v[<span class="number">1</span>].<span class="built_in">x</span>() - x, _v[<span class="number">1</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line">    Vector3f l3 = <span class="built_in">Vector3f</span>(_v[<span class="number">2</span>].<span class="built_in">x</span>() - x, _v[<span class="number">2</span>].<span class="built_in">y</span>() - y, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> flag = (l1.<span class="built_in">cross</span>(l2).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l2.<span class="built_in">cross</span>(l3).<span class="built_in">z</span>() &gt; <span class="number">0</span>) + (l3.<span class="built_in">cross</span>(l1).<span class="built_in">z</span>() &gt; <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> flag == <span class="number">3</span> || flag == <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果">运行结果</h3>
-<p><img src="https://s2.loli.net/2022/03/04/uVildn8RgGcHDFL.png" style="zoom:50%;" /></p>
-<p>放大图像后，很明显能感受到图像边缘有锯齿感。</p>
-<p><img src="https://s2.loli.net/2022/02/10/yKNvXitePJ4G7qI.png" style="zoom:50%;" /></p>
-<h2 id="提高部分">提高部分</h2>
-<h3 id="实现-1">实现</h3>
-<h3 id="代码-1">代码</h3>
-<h3 id="运行结果-1">运行结果</h3>
-<p>不维护像素内每个样本的深度信息，有不正常的黑边显示。</p>
-<p><img src="https://s2.loli.net/2022/02/10/vAVIloQT2gsDeWa.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
       </tags>
   </entry>
   <entry>
@@ -1975,6 +2014,136 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
       </tags>
   </entry>
   <entry>
+    <title>DPDK学习</title>
+    <url>/2021/07/01/LearnDPDK/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。</p>
+<span id="more"></span>
+<h2 id="dpdk介绍">DPDK介绍</h2>
+<blockquote>
+<p>DPDK全称Intel Data Plane Development
+Kit，是intel提供的数据平面开发工具集，为Intel
+architecture（IA）处理器架构下用户空间高效的数据包处理提供库函数和驱动的支持。通俗地说，就是一个用来进行包数据处理加速的软件库。</p>
+<p>DPDK不同于Linux系统以通用性设计为目的，而是专注于网络应用中数据包的高性能处理。具体体现在DPDK应用程序是运行在用户空间上利用自身提供的数据平面库来收发数据包，绕过了Linux内核协议栈对数据包处理过程。它不是一个用户可以直接建立应用程序的完整产品，不包含需要与控制层（包括内核和协议堆栈）进行交互的工具。</p>
+<p>相比原生 Linux（Native Linux），采用Intel
+DPDK技术后能够大幅提升IPV4的转发性能，可以让用户在迁移包处理应用时（从基于NPU的硬件迁移到基于Intel
+x86的平台上），获得更好的成本和性能优势。同时可以采用统一的平台部署不同的服务，如应用处理，控制处理和包处理服务。</p>
+</blockquote>
+<figure>
+<img src="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png"
+alt="DPDK工作图" />
+<figcaption aria-hidden="true">DPDK工作图</figcaption>
+</figure>
+<p>简单说，DPDK可以接管你的操作系统，在处理数据包的时候可以绕过内核，大大提高传输速率。</p>
+<h2 id="dpdk开发环境搭建">DPDK开发环境搭建</h2>
+<h3 id="选择长期支持的版本lts">选择长期支持的版本LTS</h3>
+<p>DPDK的下载官网如下：</p>
+<p>https://core.dpdk.org/download/</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/bHNYfdmISoBzynA.png"
+alt="DPDK版本图" />
+<figcaption aria-hidden="true">DPDK版本图</figcaption>
+</figure>
+<p>我的开发环境是Ubuntu18.04 64位，选择的是DPDK 19.11.8(LTS)版本。</p>
+<h3 id="其余的软件环境">其余的软件环境</h3>
+<p>从下面的文档可以查看不同版本的System
+Requirements章节，安装需要的软件环境，如gcc、glibc、python、numactl-devel、pcap。</p>
+<p>http://core.dpdk.org/doc/archives/</p>
+<h3 id="虚拟机配置">虚拟机配置</h3>
+<ul>
+<li><p>核心：4个</p></li>
+<li><p>内存：4G，感觉可以再分大些</p></li>
+<li><p>虚拟网卡：需要支持DPDK，我选的是vmnet3，建议至少两个网卡，一收一发、</p></li>
+</ul>
+<h2 id="dpdk安装">DPDK安装</h2>
+<h3 id="下载源代码">下载源代码</h3>
+<p>https://fast.dpdk.org/rel/dpdk-19.11.8.tar.xz</p>
+<h3 id="设置环境变量">设置环境变量</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">64位系统：</span><br><span class="line">export RTE_SDK=`pwd`</span><br><span class="line">export RTE_TARGET=x86_64-native-linuxapp-gcc</span><br><span class="line"></span><br><span class="line">32位系统：</span><br><span class="line">export RTE_SDK=`pwd` </span><br><span class="line">export RTE_TARGET=i686-default-linuxapp-gcc</span><br></pre></td></tr></table></figure>
+<h3 id="利用setup.sh进行配置">利用setup.sh进行配置</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd dpdk-stable-19.11.8/usertools</span><br><span class="line">source ./dpdk-setup.sh</span><br></pre></td></tr></table></figure>
+<h4 id="编辑dpdk">编辑DPDK</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/PugmdL2Fheq17Mb.png"
+alt="编译DPDK" />
+<figcaption aria-hidden="true">编译DPDK</figcaption>
+</figure>
+<p>编译完后提示没有指定安装路径，我们只是编译而不是install就不用理会。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/VAREe3u41OTh6UH.png"
+alt="编译后提示" />
+<figcaption aria-hidden="true">编译后提示</figcaption>
+</figure>
+<h4 id="插入igb-uio模块">插入IGB UIO模块</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/c9z4wmBo1djQ3fk.png"
+alt="插入IGB UIO模块" />
+<figcaption aria-hidden="true">插入IGB UIO模块</figcaption>
+</figure>
+<h4 id="设置大页内存">设置大页内存</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/2IsxezLuDfXpW4m.png"
+alt="设置大页内存" />
+<figcaption aria-hidden="true">设置大页内存</figcaption>
+</figure>
+<p>默认设置的是2M的大页内存，这里输入1024，表示申请2G的大页内存。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/uYtG6ps7CJdkKgH.png"
+alt="大页内存" />
+<figcaption aria-hidden="true">大页内存</figcaption>
+</figure>
+<p>查看配置的大页内存</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/exwIHjUlZdcmDQv.png"
+alt="查看大页内存" />
+<figcaption aria-hidden="true">查看大页内存</figcaption>
+</figure>
+<figure>
+<img src="https://i.loli.net/2021/07/01/cXtNQy89A4ELiK5.png"
+alt="大页内存" />
+<figcaption aria-hidden="true">大页内存</figcaption>
+</figure>
+<h4 id="查看网卡信息">查看网卡信息</h4>
+<p>记得通过ifconfig xxx down指令将网卡关闭。</p>
+<figure>
+<img src="https://i.loli.net/2021/07/01/kr6LG4xJmWvNHUd.png"
+alt="查看网卡信息" />
+<figcaption aria-hidden="true">查看网卡信息</figcaption>
+</figure>
+<figure>
+<img src="https://i.loli.net/2021/07/01/ZU3dFmlsLXecj2n.png"
+alt="网卡信息" />
+<figcaption aria-hidden="true">网卡信息</figcaption>
+</figure>
+<h4 id="绑定网卡">绑定网卡</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/SgXCkWZd3Dp1xTy.png"
+alt="绑定网卡" />
+<figcaption aria-hidden="true">绑定网卡</figcaption>
+</figure>
+<p>输入pci的地址，0000开始到'前的全输入。</p>
+<h4 id="运行testpmd测试程序">运行testpmd测试程序</h4>
+<figure>
+<img src="https://i.loli.net/2021/07/01/q2ZIQKzya7AMduL.png"
+alt="测试程序" />
+<figcaption aria-hidden="true">测试程序</figcaption>
+</figure>
+<p>输入0xf代表程序运行在0~3核心。</p>
+<p><img src="https://i.loli.net/2021/07/01/2Ljr7qgv9FS15Ns.png" /></p>
+<p>输入start开始抓包</p>
+<p><img src="https://i.loli.net/2021/07/01/WQih6zOrMbtp3u2.png" /></p>
+<p>stop停止抓包</p>
+<p><img src="https://i.loli.net/2021/07/01/pCqY3vhoWDPxMnR.png" /></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>DPDK</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LearnOpenGL学习入门</title>
     <url>/2021/07/22/LearnOpenGL-1/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -2177,29 +2346,6 @@ alt="示例" /></a></p>
       </tags>
   </entry>
   <entry>
-    <title>公会的神奇操作</title>
-    <url>/2020/04/06/magic-clan/</url>
-    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
-<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
-<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
-<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
-，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
-<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
-<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
-<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
-<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
-<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
-<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
-<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>公主连结Re:Dive常用地址</title>
     <url>/2020/03/17/pcr-tool/</url>
     <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
@@ -2222,6 +2368,29 @@ href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
 <p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
 <p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
 <p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公会的神奇操作</title>
+    <url>/2020/04/06/magic-clan/</url>
+    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
+<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
+<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
+<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
+，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
+<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
+<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
+<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
+<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
+<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
+<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
+<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
