@@ -244,26 +244,6 @@ burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸�
       </tags>
   </entry>
   <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
     <url>/2022/01/05/Games101-Environment/</url>
     <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用vs2019+vcpkg完成。
@@ -312,6 +292,26 @@ href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪
       <tags>
         <tag>图形学</tag>
         <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
       </tags>
   </entry>
   <entry>
@@ -507,6 +507,38 @@ Metrics)</strong></p>
       </tags>
   </entry>
   <entry>
+    <title>Games101-Homework0</title>
+    <url>/2022/01/31/Games101-Homework0/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>主要讲述Games101的作业0内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>搭建环境，详情可参见下述链接</li>
+</ul>
+<p><a
+href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
+Studio2019 + vcpkg</a></p>
+<ul>
+<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
+(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>根据齐次坐标的定义，P定义为(2, 1,
+1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101-Homework1</title>
     <url>/2022/02/01/Games101-Homework1/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -551,38 +583,6 @@ M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
 <h2 id="运行结果">运行结果</h2>
 <p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
 <p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework0</title>
-    <url>/2022/01/31/Games101-Homework0/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>主要讲述Games101的作业0内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>搭建环境，详情可参见下述链接</li>
-</ul>
-<p><a
-href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
-Studio2019 + vcpkg</a></p>
-<ul>
-<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
-(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>根据齐次坐标的定义，P定义为(2, 1,
-1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1130,369 +1130,6 @@ n)，但是对于相互覆盖的物体无法判断，如下图。</p>
       </tags>
   </entry>
   <entry>
-    <title>Games101-Lecture7-9（Shading）学习笔记</title>
-    <url>/2022/02/09/Games101-Shading/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>在之前的章节，我们已经学习了视图变换、投影变换，将物体投影到<span
-class="math inline">\([-1,1]^{3}\)</span>的区间上，再进行光栅化，本章将讲述Shading（着色）部分。</p>
-<span id="more"></span>
-<h2 id="blinn-phong模型经验模型">Blinn-Phong模型（经验模型）</h2>
-<ul>
-<li>Specular highlights（高光）</li>
-<li>Diffuse reflection（漫反射）</li>
-<li>Ambient lighting（环境照明）</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/10/aP5BKiZHOTXqNDG.png" style="zoom: 40%;" /></p>
-<p>计算在特定阴影点（shading
-point）反射到相机的光，输入包括以下内容，以下向量都看作是单位向量，注重方向</p>
-<ul>
-<li>观察方向，<span class="math inline">\(\vec{v}\)</span></li>
-<li>法线方向，<span class="math inline">\(\vec{n}\)</span></li>
-<li>光照方向，<span
-class="math inline">\(\vec{l}\)</span>（对每束光）</li>
-<li>表面参数等（颜色、亮度）</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/10/zZwpSmqj1GWgiY4.png" style="zoom:50%;" /></p>
-<p>着色具有局部性，我们只管当前光线打到该位置的着色，而<strong>不考虑阴影</strong>等因素。</p>
-<h3 id="漫反射">漫反射</h3>
-<p>当光线打到物体的某一个点的时候，光线会均匀地反射到各个不同的方向。</p>
-<ul>
-<li>光均匀地向各个方向散射</li>
-<li>表面颜色是相同的所有观看方向</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/11/MrdSlADj7n5kpUP.png" style="zoom:50%;" /></p>
-<p>相同的光线以不同的角度打到相同的物体上，呈现的效果不一样。</p>
-<ul>
-<li>Lambert余弦定律：接收到的能量与光线方向、法线方向间的夹角的余弦成正比</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/22/LXNzbif6RI8vKHt.png" style="zoom:50%;" /></p>
-<h3 id="光线衰减">光线衰减</h3>
-<p><img src="https://s2.loli.net/2022/02/22/pzrKc7lRdCqbZkV.png" style="zoom: 33%;" /></p>
-<ul>
-<li>点光源不断往四面八方辐射能量</li>
-<li>在某一个时间，能量集中在某一个球壳上</li>
-<li>能量守恒，每个球壳上的能量是一样的</li>
-<li>同时，外侧的球壳表面积更大，相同能量下，外侧球壳上某一个点的能量更少</li>
-<li>定义点光源单位距离<strong>1</strong>的位置的光强度是<span
-class="math inline">\(I\)</span>，距离为<strong>r</strong>的位置的光强度是<span
-class="math inline">\(I/r^2\)</span></li>
-</ul>
-<h3 id="lambert漫反射">Lambert漫反射</h3>
-<p><img src="https://s2.loli.net/2022/02/22/1TKWfnRs8eI7DMX.png" style="zoom:50%;" />
-<span class="math display">\[
-L_{d} = k_{d}*(I/r^2)*max(0,\vec{n}·\vec{l})
-\]</span></p>
-<ul>
-<li><p><span
-class="math inline">\(k_d\)</span>表示物体材质的漫反射系数，表示物体吸收光的能力，1表示完全不吸收能量，0表示表面是黑的，所有能量都被吸收了，没有光线漫反射</p></li>
-<li><p><span class="math inline">\(r\)</span>表示光源与shading
-point的距离</p></li>
-<li><p><span
-class="math inline">\(\vec{n}·\vec{l}\)</span>表示光线方向与法线方向夹角的余弦，为了防止出现光源从下方达到上方（这里考虑漫反射，不考虑折射），所以不考虑负数的情况</p></li>
-<li><p>这个公式意味着，不管我们从哪个角度观察shading
-point，得到的漫反射能量完全一样，这也符合生活现象，漫反射与观察方向没有关系</p></li>
-</ul>
-<h4 id="k_d系数渐变的漫反射情况"><span
-class="math inline">\(k_d\)</span>系数渐变的漫反射情况</h4>
-<p><img src="https://s2.loli.net/2022/02/23/xVOm7tjln2STs1Q.png" style="zoom:50%;" /></p>
-<h3 id="镜面光照">镜面光照</h3>
-<ul>
-<li>高光，平面比较光滑</li>
-<li>观察方向接近镜面反射方向，会显示出高光，即下图<span
-class="math inline">\(\vec{v}\)</span>和<span
-class="math inline">\(\vec{R}\)</span>足够接近</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/24/stBMJEzdCr27o9c.png" style="zoom:50%;" /></p>
-<ul>
-<li>在Blinn-Phong中，观察方向和镜面反射方向接近 =
-法线方向和半程向量方向接近，如下图，半程向量为<span
-class="math inline">\(\vec{h}\)</span>，<span
-class="math inline">\(\vec{h}\)</span>和<span
-class="math inline">\(\vec{n}\)</span>接近反映了上图的<span
-class="math inline">\(\vec{v}\)</span>和<span
-class="math inline">\(\vec{R}\)</span>接近，通过<strong>向量的点乘</strong>可以判断是否接近</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/24/mVBcqirw4aW3j8Q.png" style="zoom:50%;" /></p>
-<ul>
-<li>增大p使反射波形变窄，因为观察方向和镜面方向夹角很小时，能看到高光，因此是一开始变换就很大，我们可以给它加上幂函数，改变原本的余弦函数形状，p用来控制高光的大小</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/25/idgrfnzQEsThlHX.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/02/25/w2sQeYuJaItXMoy.png" style="zoom: 50%;" /></p>
-<h3 id="环境光照">环境光照</h3>
-<ul>
-<li><p>光线通过多次弹射打到空间四面八方的各个点上</p></li>
-<li><p>来自环境的光永远都是相同的，是一个常数</p></li>
-<li><p>与观测的远近、方向无关</p></li>
-<li><p>保证没有地方完全是黑的</p></li>
-<li><p>如下公式，<span
-class="math inline">\(L_{a}\)</span>是反射的环境光，<span
-class="math inline">\(k_{a}\)</span>是环境系数，</p></li>
-</ul>
-<p><span class="math display">\[
-L_{a} = k_{a}*I_{a}
-\]</span></p>
-<h3 id="blinn-phong反射模型">Blinn-Phong反射模型</h3>
-<p><img src="https://s2.loli.net/2022/02/25/iKU6tNFSMxRLGjD.png" style="zoom:50%;" /></p>
-<h2 id="着色频率">着色频率</h2>
-<p>3种不同着色频率结果如下：</p>
-<p><img src="https://s2.loli.net/2022/02/25/wl6GKUfTejqvyF2.png" style="zoom:50%;" /></p>
-<h3 id="平面着色">平面着色</h3>
-<ul>
-<li>每个三角形是一个平面，将每个三角形的法线求出来，三角形两边做一个叉积可以求出三角形法线，再进行着色，每个三角形使用一个着色结果</li>
-<li>三角形面是平的，意味着只有一个法向量</li>
-<li>不适合光滑的表面</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/25/ItY4yve7LNhWroD.png" style="zoom:50%;" /></p>
-<h3 id="gouraud着色">Gouraud着色</h3>
-<ul>
-<li>在任意一个顶点上求出它的法线，借此每个顶点进行着色，三角形三个顶点都有颜色后，三角形内部通过插值的方法计算颜色</li>
-<li>从三角形的顶点插入颜色</li>
-<li>每个顶点都有一个法线向量</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/25/DK78gnfvsRb3aJo.png" style="zoom:50%;" /></p>
-<h3 id="phong着色">Phong着色</h3>
-<ul>
-<li>三角形每个顶点求出各自法线后，通过插值的方法求出三角形内部各个点的法线，再对每个像素进行着色</li>
-<li>在每个三角形上插入法线向量</li>
-<li>计算每个像素的完整着色模型</li>
-<li>不是 Blinn-Phong 反射模型</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/25/VcSQCOFdTIL1YEt.png" style="zoom:50%;" /></p>
-<h3 id="着色模型对比">着色模型对比</h3>
-<p>当模型已经足够复杂，有足够多的面的时候，逐像素着色效果不一定比后两者差，还可以减小开销。</p>
-<p><img src="https://s2.loli.net/2022/02/25/qjab4XhiwfQyWTI.png" style="zoom:50%;" /></p>
-<h3 id="计算每个顶点的法线向量">计算每个顶点的法线向量</h3>
-<ul>
-<li>最好的方法是从底层几何体中获取顶点法线，即已经知道通过三角形表示什么几何体，然后根据这个几何体计算出顶点的法线</li>
-<li>否则必须从三角形面推断顶点法线，一个简单的方案，平均周围面法线：任何一个顶点，会被很多面共用，于是我们通过求相邻面的法线的平均作为该顶点的法线，如下公式，面积大的三角形给更大的加权，通过加权平均进行改进</li>
-</ul>
-<p><span class="math display">\[
-N_{v} = \frac{\Sigma_{i}N_{i}}{||\Sigma_iN_i||}
-\]</span></p>
-<p><img src="https://s2.loli.net/2022/02/25/WZNHnrFk7pAYCjS.png" style="zoom:50%;" /></p>
-<h3 id="计算每个像素的法线向量">计算每个像素的法线向量</h3>
-<ul>
-<li>通过重心坐标计算（稍后会讲），如下图，已知最左和最右两个顶点的法线，计算中间每个像素的法线向量</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/25/RpWeYHElDofxs1k.png" style="zoom:50%;" /></p>
-<h2 id="图形管线实时渲染管线">图形管线（实时渲染管线）</h2>
-<h3 id="流程">流程</h3>
-<p>与之前在LearnOpenGL学的差不多，流程如下图：</p>
-<p><img src="https://s2.loli.net/2022/02/25/RW7VFu8KQbtNhjf.png" style="zoom:50%;" /></p>
-<h3 id="shader编程">Shader编程</h3>
-<ul>
-<li>程序顶点和片元处理阶段，vertex shader和fragment shader</li>
-<li>描述对单个顶点（或片元）的操作</li>
-<li>着色器功能每个片元执行一次</li>
-<li>输出当前片元屏幕样本位置的表面颜色。</li>
-<li>此着色器执行纹理查找以获取此时表面的材质颜色，然后执行漫反射光照计算。</li>
-</ul>
-<h2 id="纹理映射">纹理映射</h2>
-<ul>
-<li>定义任何一个点的基本属性</li>
-<li>任何一个三维物体的表面都是二维的</li>
-<li>可以多次重复使用</li>
-</ul>
-<h2
-id="如何在三角形内部进行任意属性的插值重心坐标">如何在三角形内部进行任意属性的插值（重心坐标）</h2>
-<h3 id="为什么要在三角形内部做插值">为什么要在三角形内部做插值</h3>
-<ul>
-<li>在顶点指定值</li>
-<li>获得跨三角形内部平滑过渡的值</li>
-</ul>
-<h3 id="在三角形内部插值什么内容">在三角形内部插值什么内容</h3>
-<ul>
-<li>纹理坐标、颜色、法线向量</li>
-</ul>
-<h3 id="怎么做插值">怎么做插值</h3>
-<ul>
-<li>通过<strong>重心坐标（Barycentric coordinates）</strong></li>
-</ul>
-<h3 id="重心坐标">重心坐标</h3>
-<h4 id="定义">定义</h4>
-<p>重心坐标是定义在一个三角形上的，每个三角形有各自的重心坐标。</p>
-<p>三角形内部的任意一个点(x,y)，都可以被3个顶点的线性组合表示，即下图式子，其中α、β、γ均为非负数。</p>
-<p><img src="https://s2.loli.net/2022/02/25/4nt6gcBksWN2wl7.png" style="zoom:50%;" /></p>
-<h4 id="计算重心坐标几何面积比">计算重心坐标——几何面积比</h4>
-<p>将该点与三个顶点各自相连，每个顶点各自对应的三角形占总三角形面积的比例即为系数。</p>
-<p>物体的质心的重心坐标是<span
-class="math inline">\((\frac{1}{3},\frac{1}{3},\frac{1}{3})\)</span>，它将三角形分成等面积的三份。</p>
-<p><img src="https://s2.loli.net/2022/02/25/aI9NvoA3JjFgOlU.png" style="zoom:50%;" /></p>
-<h4 id="其它插值">其它插值</h4>
-<p>通过重心坐标的方法，我们可以应用到颜色、纹理、法线、深度等插值上。</p>
-<p>但是存在一个问题，重心坐标不能应用在<strong>投影</strong>，比如将物体从三维空间投影到二维空间，物体的形状和大小可能会发生改变，因此不能保证重心坐标不变。</p>
-<p>因此，如果想插值一个三维空间中的属性，应该取三维空间中的坐标做插值，而不能取投影之后的三角形做插值。</p>
-<p><img src="https://s2.loli.net/2022/02/25/rSFRNkY4DW2ZxQ1.png" style="zoom:50%;" /></p>
-<h2 id="应用纹理">应用纹理</h2>
-<h3 id="流程-1">流程</h3>
-<p><img src="https://s2.loli.net/2022/02/25/e3ZGMJ26uWKBElF.png" style="zoom:50%;" /></p>
-<h3 id="纹理放大">纹理放大</h3>
-<p>当纹理的分辨率不够，我们将其放大观看时，会出现像素对应的纹理坐标不为整数。</p>
-<h4 id="nearest四舍五入">Nearest（四舍五入）</h4>
-<p>直接取得到的纹理坐标最近的纹理坐标，如下图，取红点右上角的黑点作为纹理坐标。</p>
-<p><img src="https://s2.loli.net/2022/02/25/FdPe4f9ZmL5r3jM.png" style="zoom:50%;" /></p>
-<h4 id="bilinear双线性插值">Bilinear（双线性插值）</h4>
-<p>先取计算出的纹理坐标相邻近的四块，我们记<span
-class="math inline">\(lerp(x,v_0,v_1)=v_0+x(v_1-v_0)\)</span>表示为线性插值（一维）。</p>
-<p>记该点与左边的距离为s，该点与下边的距离为t，通过<span
-class="math inline">\(lerp(s,u_{00},u_{10})\)</span>和<span
-class="math inline">\(lerp(s,u_{01},u_{11})\)</span>进行插值，得到<span
-class="math inline">\(u_0\)</span>和<span
-class="math inline">\(u_1\)</span>，再利用t对<span
-class="math inline">\(u_0\)</span>和<span
-class="math inline">\(u_1\)</span>进行插值，<span
-class="math inline">\(f(x,y)=lerp(t,u_0,u_1)\)</span>，即可得到最终的颜色。</p>
-<p>通过双线性插值，可以得到平滑的过渡。</p>
-<p><img src="https://s2.loli.net/2022/02/25/7XR1VkFYhu4Jf3T.png" style="zoom:50%;" /></p>
-<h4 id="bicubic">Bicubic</h4>
-<p>思想与双线性插值类似，但它取的不止4个，而是周围的16个，每次用4个做3次的插值，不是线性的插值。</p>
-<h4 id="效果对比">效果对比</h4>
-<p><img src="https://s2.loli.net/2022/02/25/tXfFAelJjgB25KE.png" style="zoom:50%;" /></p>
-<h3 id="纹理缩小">纹理缩小</h3>
-<p>当纹理的分辨率过大，像素对应的纹理太大也是问题，如下图所示。</p>
-<p>原图如左边，上方的像素点对应的实际纹理区域很大，如果我们直接用像素点对应的纹理坐标的颜色，会产生如右图的现象，远处出现摩尔纹，近处出现锯齿。</p>
-<p><img src="https://s2.loli.net/2022/02/25/Hymh9adipNoPkvV.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/02/25/24GFgZtezBUAQTs.png" style="zoom:50%;" /></p>
-<h4 id="超采样">超采样</h4>
-<ul>
-<li><p>一个像素点有很多纹理坐标，对这些纹理坐标进行超采样</p></li>
-<li><p>质量高，但成本高</p></li>
-<li><p>当高度缩小时，像素足迹中有许多纹素</p></li>
-<li><p>以像素为单位的信号频率太大</p></li>
-<li><p>需要更高的采样频率</p></li>
-</ul>
-<h4 id="mipmap">Mipmap</h4>
-<p>特点：</p>
-<ul>
-<li>不采样，但是能够立刻得到一个区域的纹理平均值</li>
-<li>快、不准确、正方形的范围查询</li>
-</ul>
-<p>给一张图，用这张图来生成更多的图，如下图所示，每一张图的边长都是前一张图的<span
-class="math inline">\(\frac{1}{2}\)</span>，因此后一张图的存储空间都是前一张图的<span
-class="math inline">\(\frac{1}{4}\)</span>，通过级数求和，<span
-class="math inline">\(1+\frac{1}{4}+\frac{1}{16}+...++\frac{1}{4^{n-1}}=\frac{4}{3}\)</span>，因此额外的存储空间是原来的<span
-class="math inline">\(\frac{1}{3}\)</span></p>
-<p><img src="https://s2.loli.net/2022/02/26/BytxS8rQnZqY719.png" style="zoom:50%;" /></p>
-<p>接下来考虑计算像素对应的纹理区域大小。</p>
-<p>对于当前像素点，我们除了计算它的纹理坐标外，我们还要计算它相邻点（右边和上面）的纹理坐标，通过它和相邻点的纹理坐标计算，可以得出该像素点的区域大小。</p>
-<p>通过求得的L查询该像素点处于第几层的Mipmap，<span
-class="math inline">\(D=log_{2}L\)</span>，四舍五入。</p>
-<p>近处使用低层的Mipmap，远处使用高层的Mipmap。</p>
-<p><img src="https://s2.loli.net/2022/02/26/mEN7av3gzGpTOIw.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/02/26/G9E7jSbLmRqQnp2.png" style="zoom:50%;" /></p>
-<p>使用Mipmap存在一个问题，相邻的一块区域，如果出现一个在第1层，一个在第2层，可能会产生撕裂感，我们希望得到类似1.8层（某个非整数）的数值，为了解决这个问题，我们沿用之前的方法，使用线性插值。</p>
-<p>如下图，2次查询各自层上通过双线性插值得到的结果，再通过1次线性插值，可得到最终结果，即三线性插值。</p>
-<p><img src="https://s2.loli.net/2022/02/26/UJtPduaTo1rvYEM.png" style="zoom:50%;" /></p>
-<h4 id="各向异性过滤anisotropic-filtering">各向异性过滤（Anisotropic
-Filtering）</h4>
-<ul>
-<li>可以解决矩形（非正方形）的纹理区域覆盖</li>
-<li>额外的开销是原本的3倍</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/26/utyxD7okcIPQ1Ur.png" style="zoom:50%;" /></p>
-<h4 id="ewa-过滤">EWA 过滤</h4>
-<ul>
-<li>使用多个查找</li>
-<li>加权平均</li>
-<li>Mipmap 层次结构仍然有帮助</li>
-<li>可以处理不规则的足迹</li>
-</ul>
-<h2 id="凹凸贴图">凹凸贴图</h2>
-<p>添加表面细节而不添加更多三角形</p>
-<ul>
-<li>每个像素扰动表面法线（仅用于着色计算）</li>
-<li>由纹理定义的每个纹素的“高度偏移”</li>
-<li>通过凹凸贴图，改变相对高度，改变法线</li>
-</ul>
-<h3 id="如何改变法线">如何改变法线</h3>
-<h4 id="二维">二维</h4>
-<ul>
-<li>如下图所示，原本该点p的法线是n(p) = (0, 1)</li>
-<li>引入凹凸贴图后，点p的变化量<span class="math inline">\(dp =
-c*[h(p+1)-h(p)]\)</span>，c是常数，表示凹凸贴图的影响，因此点p的切线可以表示为(1,
-dp)</li>
-<li>法线与切线垂直，因此可以得到法线为<span class="math inline">\(n(p) =
-(-dp, 1).normalized()\)</span></li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/26/UQRlHAxFWYndjPL.png" style="zoom:50%;" /></p>
-<h4 id="三维">三维</h4>
-<ul>
-<li>原本该点p的法线是n(p) = (0, 0, 1)</li>
-<li>p点切线<span class="math inline">\(\frac{dp}{du}=c1 *
-[h(u+1)-h(u)]\)</span>和<span
-class="math inline">\(\frac{dp}{du}=c2*[h(v+1)-h(v)]\)</span></li>
-<li>法线为<span class="math inline">\(n(p) = (-\frac{dp}{du},
--\frac{dp}{dv}, 1).normalized()\)</span></li>
-</ul>
-<h4 id="注意">注意</h4>
-<p>这些是在局部坐标中的，之后还需要重新计算到世界坐标中。</p>
-<h2 id="位移贴图一种更高级的方法">位移贴图——一种更高级的方法</h2>
-<ul>
-<li>与凹凸贴图一样的输入，一样的纹理</li>
-<li>与凹凸贴图不一样，它会做位置的移动，实际上移动了顶点的位置</li>
-<li>如下图所示，凹凸贴图下图形本身凹凸位置的阴影不够真实，影子也不够真实，是欺骗人视觉的效果，而非真实的点坐标</li>
-<li>要求模型的三角形足够细、多</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/26/Qh4lMEcbwZdJym2.png" style="zoom:50%;" /></p>
-<h2 id="shadow-mapping">Shadow Mapping</h2>
-<p>一种图像空间算法</p>
-<ul>
-<li>在阴影计算期间不了解场景的几何形状</li>
-<li>必须处理混叠伪影</li>
-</ul>
-<p>关键思想：</p>
-<ul>
-<li>不在阴影中的点必须被光线和相机都看到</li>
-</ul>
-<h3 id="流程-2">流程</h3>
-<ul>
-<li>从光源看向场景，相当于把摄像机放在光源，对准场景，做一遍光栅化</li>
-<li>但是我们不对其做着色，而是记录看到的<strong>点的深度</strong></li>
-<li>将摄像机放在眼睛位置，真正地看向场景，记录看到的点的深度</li>
-<li>可以将看到的点投影回之前摄像机放在光源的虚拟成像上，如果我们从光源看这个点，它应该出现在图像的哪个位置上。从摄像机看这个点，这个点投影回光源，就知道它在之前深度图的哪个像素上。我们之前记录了该点的深度，此时可以计算该点到光源的深度，如果两个深度一致，说明该点是可以被光源看到的。该点是可见
-的，可以被摄像机看到，也可以被光源看到。（如图3橙色线段所示）</li>
-<li>如果两者深度不一样，说明该点是之前光源看不到的点，说明该点在阴影中。（如图4红色线段所示）</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/Y83ibz1IdRS24QU.png" style="zoom:50%;" />
-<img src="https://s2.loli.net/2022/02/27/yJHruYAZNT5Bjwz.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/oNEJMqenVyHPzTh.png" style="zoom:50%;" /></p>
-<h3 id="可视化shadow-mapping过程">可视化Shadow Mapping过程</h3>
-<ul>
-<li>如下图所示，一个较为复杂带有阴影的场景，点光源在左上角</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/wR8oujWpKafhZVX.png" style="zoom:50%;" /></p>
-<ul>
-<li>将摄像机放在光源位置，记录深度值</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/NfJR7MTehG2pXmj.png" style="zoom:50%;" /></p>
-<ul>
-<li>将摄像机摆在实际位置，绿色是阴影贴图上距离（光，shadow point）≈
-深度的地方，非绿色是阴影应该在的地方</li>
-<li>但下图，球的上半区域存在灰色，可能是由于浮点判断误差引起的</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/p9uGgBRfLJ6hO7k.png" style="zoom:50%;" /></p>
-<h3 id="存在的问题">存在的问题</h3>
-<ul>
-<li>硬阴影（仅限点光源）</li>
-<li>质量取决于阴影贴图分辨率（基于图像的技术的一般问题）</li>
-<li>涉及浮点深度值的相等比较意味着规模、偏差、容差问题</li>
-</ul>
-<p>硬阴影与软阴影：</p>
-<ul>
-<li>硬阴影是非0即1，没有过渡</li>
-<li>软阴影有过渡，阴影是逐渐消失的</li>
-<li>点光源不会产生软阴影，产生软阴影说明光源存在一定的大小</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/02/27/wzecB6UEJIZNqb3.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101-Lecture3-4（Transformation）学习笔记</title>
     <url>/2022/01/25/Games101-Transformation/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -1983,61 +1620,366 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
       </tags>
   </entry>
   <entry>
-    <title>Windows环境下配置Emacs+LaTeX</title>
-    <url>/2021/11/27/LaTeXConfigure/</url>
-    <content><![CDATA[<h2 id="背景">背景</h2>
-<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
+    <title>Games101-Lecture7-9（Shading）学习笔记</title>
+    <url>/2022/02/09/Games101-Shading/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>在之前的章节，我们已经学习了视图变换、投影变换，将物体投影到<span
+class="math inline">\([-1,1]^{3}\)</span>的区间上，再进行光栅化，本章将讲述Shading（着色）部分。</p>
 <span id="more"></span>
-<h2 id="下载过程">下载过程</h2>
-<p>一开始就走了弯路，没注意到无论是Linux还是Windows环境，都需要先准备好LaTeX环境，还以为能通过下Emacs的插件可以直接编译LaTeX</p>
-<h3 id="tex-live下载">Tex Live下载</h3>
-<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group
-(tug.org)</a></p>
-<p>Tex
-Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex
-Live的环境，时间1小时往上</p>
-<p><a
-href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
-<p>另一种是下载iso文件，点击on
-DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
-<p><a
-href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
-<p>可以选择下载带有包管理器的基本版，沒有的东西可以用包管理器装</p>
-<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code>
-出版本号就基本可以确定安装成功了</p>
-<h3 id="emacs插件安装">Emacs插件安装</h3>
-<p>在emacs中输入<code>M-x package-install RET *** RET</code></p>
-<p>***={auctex，yasnippets，yasnippets-snippets}</p>
-<h2 id="tex导出中文">Tex导出中文</h2>
-<p>将以下添加到.emacs.d/init.el文件里面，设置xelatex为默认latex编译器</p>
-<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line"><span class="comment">; LaTex插件</span></span><br><span class="line">(<span class="name">add-to-list</span> &#x27;load-path <span class="string">&quot;~/.emacs.d/elpa&quot;</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">require</span> &#x27;yasnippet)</span><br><span class="line">(<span class="name">yas-global-mode</span> <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">setq</span> TeX-output-view-style (<span class="name">quote</span> ((<span class="string">&quot;^pdf$&quot;</span> <span class="string">&quot;.&quot;</span> <span class="string">&quot;evince %o %(outpage)&quot;</span>))))</span><br><span class="line"></span><br><span class="line">(<span class="name">add-hook</span> &#x27;LaTeX-mode-hook</span><br><span class="line">(<span class="name">lambda</span>()</span><br><span class="line">(<span class="name">add-to-list</span> &#x27;TeX-command-list &#x27;(<span class="string">&quot;XeLaTeX&quot;</span> <span class="string">&quot;%`xelatex%(mode)%&#x27; %t&quot;</span> TeX-run-TeX nil t))</span><br><span class="line">(<span class="name">setq</span> TeX-command-default <span class="string">&quot;XeLaTeX&quot;</span>)))</span><br></pre></td></tr></table></figure>
-<h2 id="编译">编译</h2>
-<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c
-C-l</code> 可以看到是用什么编译的</p>
-<p><code>C-C C-V</code>可以直接打开新建的pdf文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\usepackage&#123;xeCJK, fontspec, xunicode, xltxtra&#125;</span><br><span class="line">\usepackage&#123;amsmath&#125;</span><br><span class="line"></span><br><span class="line">\CTEXsetup[name=&#123;第,节&#125;,number=&#123;\chinese&#123;section&#125;&#125;]&#123;section&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line"></span><br><span class="line">\section&#123;你好中国&#125;</span><br><span class="line">中国在East Asia.</span><br><span class="line"></span><br><span class="line">\subsection&#123;Hello Beijing&#125;</span><br><span class="line">北京是capital of China.</span><br><span class="line"></span><br><span class="line">\subsubsection&#123;Hello Dongcheng District&#125;</span><br><span class="line">\paragraph&#123;Tian&#x27;anmen Square&#125;</span><br><span class="line">is in the center of Beijing</span><br><span class="line">\subparagraph&#123;Chairman Mao&#125;</span><br><span class="line">is in the center of 天安门广场。</span><br><span class="line">\subsection&#123;Hello 山东&#125;</span><br><span class="line">\paragraph&#123;山东大学&#125; is one of the best university in 山东。</span><br><span class="line"></span><br><span class="line">這是繁體中文。</span><br><span class="line"></span><br><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line"> \hline</span><br><span class="line">操作系统&amp; 发行版&amp; 编辑器\\</span><br><span class="line"> \hline</span><br><span class="line">Windows &amp; MikTeX &amp; TexMakerX \\</span><br><span class="line"> \hline</span><br><span class="line">Unix/Linux &amp; teTeX &amp; Kile \\</span><br><span class="line"> \hline</span><br><span class="line">Mac OS &amp; MacTeX &amp; TeXShop \\</span><br><span class="line"> \hline</span><br><span class="line">通用&amp; TeX Live &amp; TeXworks \\</span><br><span class="line"> \hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line"></span><br><span class="line">$$\int_0^1 \frac&#123;1&#125;&#123;e^x&#125; =  \frac&#123;e-1&#125;&#123;e&#125;$$</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<p><a
-href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
-<h2 id="总结">总结</h2>
+<h2 id="blinn-phong模型经验模型">Blinn-Phong模型（经验模型）</h2>
 <ul>
-<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c
-C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
-。使用<code>C-c C-l</code> 提示 ‘pdflatex’
-不是内部或外部命令，也不是可运行的程序或批处理文件</li>
-<li>pdflatex 和 xelatex 都是 texlive 的一部分</li>
+<li>Specular highlights（高光）</li>
+<li>Diffuse reflection（漫反射）</li>
+<li>Ambient lighting（环境照明）</li>
 </ul>
+<p><img src="https://s2.loli.net/2022/02/10/aP5BKiZHOTXqNDG.png" style="zoom: 40%;" /></p>
+<p>计算在特定阴影点（shading
+point）反射到相机的光，输入包括以下内容，以下向量都看作是单位向量，注重方向</p>
+<ul>
+<li>观察方向，<span class="math inline">\(\vec{v}\)</span></li>
+<li>法线方向，<span class="math inline">\(\vec{n}\)</span></li>
+<li>光照方向，<span
+class="math inline">\(\vec{l}\)</span>（对每束光）</li>
+<li>表面参数等（颜色、亮度）</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/10/zZwpSmqj1GWgiY4.png" style="zoom:50%;" /></p>
+<p>着色具有局部性，我们只管当前光线打到该位置的着色，而<strong>不考虑阴影</strong>等因素。</p>
+<h3 id="漫反射">漫反射</h3>
+<p>当光线打到物体的某一个点的时候，光线会均匀地反射到各个不同的方向。</p>
+<ul>
+<li>光均匀地向各个方向散射</li>
+<li>表面颜色是相同的所有观看方向</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/11/MrdSlADj7n5kpUP.png" style="zoom:50%;" /></p>
+<p>相同的光线以不同的角度打到相同的物体上，呈现的效果不一样。</p>
+<ul>
+<li>Lambert余弦定律：接收到的能量与光线方向、法线方向间的夹角的余弦成正比</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/22/LXNzbif6RI8vKHt.png" style="zoom:50%;" /></p>
+<h3 id="光线衰减">光线衰减</h3>
+<p><img src="https://s2.loli.net/2022/02/22/pzrKc7lRdCqbZkV.png" style="zoom: 33%;" /></p>
+<ul>
+<li>点光源不断往四面八方辐射能量</li>
+<li>在某一个时间，能量集中在某一个球壳上</li>
+<li>能量守恒，每个球壳上的能量是一样的</li>
+<li>同时，外侧的球壳表面积更大，相同能量下，外侧球壳上某一个点的能量更少</li>
+<li>定义点光源单位距离<strong>1</strong>的位置的光强度是<span
+class="math inline">\(I\)</span>，距离为<strong>r</strong>的位置的光强度是<span
+class="math inline">\(I/r^2\)</span></li>
+</ul>
+<h3 id="lambert漫反射">Lambert漫反射</h3>
+<p><img src="https://s2.loli.net/2022/02/22/1TKWfnRs8eI7DMX.png" style="zoom:50%;" />
+<span class="math display">\[
+L_{d} = k_{d}*(I/r^2)*max(0,\vec{n}·\vec{l})
+\]</span></p>
+<ul>
+<li><p><span
+class="math inline">\(k_d\)</span>表示物体材质的漫反射系数，表示物体吸收光的能力，1表示完全不吸收能量，0表示表面是黑的，所有能量都被吸收了，没有光线漫反射</p></li>
+<li><p><span class="math inline">\(r\)</span>表示光源与shading
+point的距离</p></li>
+<li><p><span
+class="math inline">\(\vec{n}·\vec{l}\)</span>表示光线方向与法线方向夹角的余弦，为了防止出现光源从下方达到上方（这里考虑漫反射，不考虑折射），所以不考虑负数的情况</p></li>
+<li><p>这个公式意味着，不管我们从哪个角度观察shading
+point，得到的漫反射能量完全一样，这也符合生活现象，漫反射与观察方向没有关系</p></li>
+</ul>
+<h4 id="k_d系数渐变的漫反射情况"><span
+class="math inline">\(k_d\)</span>系数渐变的漫反射情况</h4>
+<p><img src="https://s2.loli.net/2022/02/23/xVOm7tjln2STs1Q.png" style="zoom:50%;" /></p>
+<h3 id="镜面光照">镜面光照</h3>
+<ul>
+<li>高光，平面比较光滑</li>
+<li>观察方向接近镜面反射方向，会显示出高光，即下图<span
+class="math inline">\(\vec{v}\)</span>和<span
+class="math inline">\(\vec{R}\)</span>足够接近</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/24/stBMJEzdCr27o9c.png" style="zoom:50%;" /></p>
+<ul>
+<li>在Blinn-Phong中，观察方向和镜面反射方向接近 =
+法线方向和半程向量方向接近，如下图，半程向量为<span
+class="math inline">\(\vec{h}\)</span>，<span
+class="math inline">\(\vec{h}\)</span>和<span
+class="math inline">\(\vec{n}\)</span>接近反映了上图的<span
+class="math inline">\(\vec{v}\)</span>和<span
+class="math inline">\(\vec{R}\)</span>接近，通过<strong>向量的点乘</strong>可以判断是否接近</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/24/mVBcqirw4aW3j8Q.png" style="zoom:50%;" /></p>
+<ul>
+<li>增大p使反射波形变窄，因为观察方向和镜面方向夹角很小时，能看到高光，因此是一开始变换就很大，我们可以给它加上幂函数，改变原本的余弦函数形状，p用来控制高光的大小</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/idgrfnzQEsThlHX.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/25/w2sQeYuJaItXMoy.png" style="zoom: 50%;" /></p>
+<h3 id="环境光照">环境光照</h3>
+<ul>
+<li><p>光线通过多次弹射打到空间四面八方的各个点上</p></li>
+<li><p>来自环境的光永远都是相同的，是一个常数</p></li>
+<li><p>与观测的远近、方向无关</p></li>
+<li><p>保证没有地方完全是黑的</p></li>
+<li><p>如下公式，<span
+class="math inline">\(L_{a}\)</span>是反射的环境光，<span
+class="math inline">\(k_{a}\)</span>是环境系数，</p></li>
+</ul>
+<p><span class="math display">\[
+L_{a} = k_{a}*I_{a}
+\]</span></p>
+<h3 id="blinn-phong反射模型">Blinn-Phong反射模型</h3>
+<p><img src="https://s2.loli.net/2022/02/25/iKU6tNFSMxRLGjD.png" style="zoom:50%;" /></p>
+<h2 id="着色频率">着色频率</h2>
+<p>3种不同着色频率结果如下：</p>
+<p><img src="https://s2.loli.net/2022/02/25/wl6GKUfTejqvyF2.png" style="zoom:50%;" /></p>
+<h3 id="平面着色">平面着色</h3>
+<ul>
+<li>每个三角形是一个平面，将每个三角形的法线求出来，三角形两边做一个叉积可以求出三角形法线，再进行着色，每个三角形使用一个着色结果</li>
+<li>三角形面是平的，意味着只有一个法向量</li>
+<li>不适合光滑的表面</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/ItY4yve7LNhWroD.png" style="zoom:50%;" /></p>
+<h3 id="gouraud着色">Gouraud着色</h3>
+<ul>
+<li>在任意一个顶点上求出它的法线，借此每个顶点进行着色，三角形三个顶点都有颜色后，三角形内部通过插值的方法计算颜色</li>
+<li>从三角形的顶点插入颜色</li>
+<li>每个顶点都有一个法线向量</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/DK78gnfvsRb3aJo.png" style="zoom:50%;" /></p>
+<h3 id="phong着色">Phong着色</h3>
+<ul>
+<li>三角形每个顶点求出各自法线后，通过插值的方法求出三角形内部各个点的法线，再对每个像素进行着色</li>
+<li>在每个三角形上插入法线向量</li>
+<li>计算每个像素的完整着色模型</li>
+<li>不是 Blinn-Phong 反射模型</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/VcSQCOFdTIL1YEt.png" style="zoom:50%;" /></p>
+<h3 id="着色模型对比">着色模型对比</h3>
+<p>当模型已经足够复杂，有足够多的面的时候，逐像素着色效果不一定比后两者差，还可以减小开销。</p>
+<p><img src="https://s2.loli.net/2022/02/25/qjab4XhiwfQyWTI.png" style="zoom:50%;" /></p>
+<h3 id="计算每个顶点的法线向量">计算每个顶点的法线向量</h3>
+<ul>
+<li>最好的方法是从底层几何体中获取顶点法线，即已经知道通过三角形表示什么几何体，然后根据这个几何体计算出顶点的法线</li>
+<li>否则必须从三角形面推断顶点法线，一个简单的方案，平均周围面法线：任何一个顶点，会被很多面共用，于是我们通过求相邻面的法线的平均作为该顶点的法线，如下公式，面积大的三角形给更大的加权，通过加权平均进行改进</li>
+</ul>
+<p><span class="math display">\[
+N_{v} = \frac{\Sigma_{i}N_{i}}{||\Sigma_iN_i||}
+\]</span></p>
+<p><img src="https://s2.loli.net/2022/02/25/WZNHnrFk7pAYCjS.png" style="zoom:50%;" /></p>
+<h3 id="计算每个像素的法线向量">计算每个像素的法线向量</h3>
+<ul>
+<li>通过重心坐标计算（稍后会讲），如下图，已知最左和最右两个顶点的法线，计算中间每个像素的法线向量</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/25/RpWeYHElDofxs1k.png" style="zoom:50%;" /></p>
+<h2 id="图形管线实时渲染管线">图形管线（实时渲染管线）</h2>
+<h3 id="流程">流程</h3>
+<p>与之前在LearnOpenGL学的差不多，流程如下图：</p>
+<p><img src="https://s2.loli.net/2022/02/25/RW7VFu8KQbtNhjf.png" style="zoom:50%;" /></p>
+<h3 id="shader编程">Shader编程</h3>
+<ul>
+<li>程序顶点和片元处理阶段，vertex shader和fragment shader</li>
+<li>描述对单个顶点（或片元）的操作</li>
+<li>着色器功能每个片元执行一次</li>
+<li>输出当前片元屏幕样本位置的表面颜色。</li>
+<li>此着色器执行纹理查找以获取此时表面的材质颜色，然后执行漫反射光照计算。</li>
+</ul>
+<h2 id="纹理映射">纹理映射</h2>
+<ul>
+<li>定义任何一个点的基本属性</li>
+<li>任何一个三维物体的表面都是二维的</li>
+<li>可以多次重复使用</li>
+</ul>
+<h2
+id="如何在三角形内部进行任意属性的插值重心坐标">如何在三角形内部进行任意属性的插值（重心坐标）</h2>
+<h3 id="为什么要在三角形内部做插值">为什么要在三角形内部做插值</h3>
+<ul>
+<li>在顶点指定值</li>
+<li>获得跨三角形内部平滑过渡的值</li>
+</ul>
+<h3 id="在三角形内部插值什么内容">在三角形内部插值什么内容</h3>
+<ul>
+<li>纹理坐标、颜色、法线向量</li>
+</ul>
+<h3 id="怎么做插值">怎么做插值</h3>
+<ul>
+<li>通过<strong>重心坐标（Barycentric coordinates）</strong></li>
+</ul>
+<h3 id="重心坐标">重心坐标</h3>
+<h4 id="定义">定义</h4>
+<p>重心坐标是定义在一个三角形上的，每个三角形有各自的重心坐标。</p>
+<p>三角形内部的任意一个点(x,y)，都可以被3个顶点的线性组合表示，即下图式子，其中α、β、γ均为非负数。</p>
+<p><img src="https://s2.loli.net/2022/02/25/4nt6gcBksWN2wl7.png" style="zoom:50%;" /></p>
+<h4 id="计算重心坐标几何面积比">计算重心坐标——几何面积比</h4>
+<p>将该点与三个顶点各自相连，每个顶点各自对应的三角形占总三角形面积的比例即为系数。</p>
+<p>物体的质心的重心坐标是<span
+class="math inline">\((\frac{1}{3},\frac{1}{3},\frac{1}{3})\)</span>，它将三角形分成等面积的三份。</p>
+<p><img src="https://s2.loli.net/2022/02/25/aI9NvoA3JjFgOlU.png" style="zoom:50%;" /></p>
+<h4 id="其它插值">其它插值</h4>
+<p>通过重心坐标的方法，我们可以应用到颜色、纹理、法线、深度等插值上。</p>
+<p>但是存在一个问题，重心坐标不能应用在<strong>投影</strong>，比如将物体从三维空间投影到二维空间，物体的形状和大小可能会发生改变，因此不能保证重心坐标不变。</p>
+<p>因此，如果想插值一个三维空间中的属性，应该取三维空间中的坐标做插值，而不能取投影之后的三角形做插值。</p>
+<p><img src="https://s2.loli.net/2022/02/25/rSFRNkY4DW2ZxQ1.png" style="zoom:50%;" /></p>
+<h2 id="应用纹理">应用纹理</h2>
+<h3 id="流程-1">流程</h3>
+<p><img src="https://s2.loli.net/2022/02/25/e3ZGMJ26uWKBElF.png" style="zoom:50%;" /></p>
+<h3 id="纹理放大">纹理放大</h3>
+<p>当纹理的分辨率不够，我们将其放大观看时，会出现像素对应的纹理坐标不为整数。</p>
+<h4 id="nearest四舍五入">Nearest（四舍五入）</h4>
+<p>直接取得到的纹理坐标最近的纹理坐标，如下图，取红点右上角的黑点作为纹理坐标。</p>
+<p><img src="https://s2.loli.net/2022/02/25/FdPe4f9ZmL5r3jM.png" style="zoom:50%;" /></p>
+<h4 id="bilinear双线性插值">Bilinear（双线性插值）</h4>
+<p>先取计算出的纹理坐标相邻近的四块，我们记<span
+class="math inline">\(lerp(x,v_0,v_1)=v_0+x(v_1-v_0)\)</span>表示为线性插值（一维）。</p>
+<p>记该点与左边的距离为s，该点与下边的距离为t，通过<span
+class="math inline">\(lerp(s,u_{00},u_{10})\)</span>和<span
+class="math inline">\(lerp(s,u_{01},u_{11})\)</span>进行插值，得到<span
+class="math inline">\(u_0\)</span>和<span
+class="math inline">\(u_1\)</span>，再利用t对<span
+class="math inline">\(u_0\)</span>和<span
+class="math inline">\(u_1\)</span>进行插值，<span
+class="math inline">\(f(x,y)=lerp(t,u_0,u_1)\)</span>，即可得到最终的颜色。</p>
+<p>通过双线性插值，可以得到平滑的过渡。</p>
+<p><img src="https://s2.loli.net/2022/02/25/7XR1VkFYhu4Jf3T.png" style="zoom:50%;" /></p>
+<h4 id="bicubic">Bicubic</h4>
+<p>思想与双线性插值类似，但它取的不止4个，而是周围的16个，每次用4个做3次的插值，不是线性的插值。</p>
+<h4 id="效果对比">效果对比</h4>
+<p><img src="https://s2.loli.net/2022/02/25/tXfFAelJjgB25KE.png" style="zoom:50%;" /></p>
+<h3 id="纹理缩小">纹理缩小</h3>
+<p>当纹理的分辨率过大，像素对应的纹理太大也是问题，如下图所示。</p>
+<p>原图如左边，上方的像素点对应的实际纹理区域很大，如果我们直接用像素点对应的纹理坐标的颜色，会产生如右图的现象，远处出现摩尔纹，近处出现锯齿。</p>
+<p><img src="https://s2.loli.net/2022/02/25/Hymh9adipNoPkvV.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/25/24GFgZtezBUAQTs.png" style="zoom:50%;" /></p>
+<h4 id="超采样">超采样</h4>
+<ul>
+<li><p>一个像素点有很多纹理坐标，对这些纹理坐标进行超采样</p></li>
+<li><p>质量高，但成本高</p></li>
+<li><p>当高度缩小时，像素足迹中有许多纹素</p></li>
+<li><p>以像素为单位的信号频率太大</p></li>
+<li><p>需要更高的采样频率</p></li>
+</ul>
+<h4 id="mipmap">Mipmap</h4>
+<p>特点：</p>
+<ul>
+<li>不采样，但是能够立刻得到一个区域的纹理平均值</li>
+<li>快、不准确、正方形的范围查询</li>
+</ul>
+<p>给一张图，用这张图来生成更多的图，如下图所示，每一张图的边长都是前一张图的<span
+class="math inline">\(\frac{1}{2}\)</span>，因此后一张图的存储空间都是前一张图的<span
+class="math inline">\(\frac{1}{4}\)</span>，通过级数求和，<span
+class="math inline">\(1+\frac{1}{4}+\frac{1}{16}+...++\frac{1}{4^{n-1}}=\frac{4}{3}\)</span>，因此额外的存储空间是原来的<span
+class="math inline">\(\frac{1}{3}\)</span></p>
+<p><img src="https://s2.loli.net/2022/02/26/BytxS8rQnZqY719.png" style="zoom:50%;" /></p>
+<p>接下来考虑计算像素对应的纹理区域大小。</p>
+<p>对于当前像素点，我们除了计算它的纹理坐标外，我们还要计算它相邻点（右边和上面）的纹理坐标，通过它和相邻点的纹理坐标计算，可以得出该像素点的区域大小。</p>
+<p>通过求得的L查询该像素点处于第几层的Mipmap，<span
+class="math inline">\(D=log_{2}L\)</span>，四舍五入。</p>
+<p>近处使用低层的Mipmap，远处使用高层的Mipmap。</p>
+<p><img src="https://s2.loli.net/2022/02/26/mEN7av3gzGpTOIw.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/26/G9E7jSbLmRqQnp2.png" style="zoom:50%;" /></p>
+<p>使用Mipmap存在一个问题，相邻的一块区域，如果出现一个在第1层，一个在第2层，可能会产生撕裂感，我们希望得到类似1.8层（某个非整数）的数值，为了解决这个问题，我们沿用之前的方法，使用线性插值。</p>
+<p>如下图，2次查询各自层上通过双线性插值得到的结果，再通过1次线性插值，可得到最终结果，即三线性插值。</p>
+<p><img src="https://s2.loli.net/2022/02/26/UJtPduaTo1rvYEM.png" style="zoom:50%;" /></p>
+<h4 id="各向异性过滤anisotropic-filtering">各向异性过滤（Anisotropic
+Filtering）</h4>
+<ul>
+<li>可以解决矩形（非正方形）的纹理区域覆盖</li>
+<li>额外的开销是原本的3倍</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/26/utyxD7okcIPQ1Ur.png" style="zoom:50%;" /></p>
+<h4 id="ewa-过滤">EWA 过滤</h4>
+<ul>
+<li>使用多个查找</li>
+<li>加权平均</li>
+<li>Mipmap 层次结构仍然有帮助</li>
+<li>可以处理不规则的足迹</li>
+</ul>
+<h2 id="凹凸贴图">凹凸贴图</h2>
+<p>添加表面细节而不添加更多三角形</p>
+<ul>
+<li>每个像素扰动表面法线（仅用于着色计算）</li>
+<li>由纹理定义的每个纹素的“高度偏移”</li>
+<li>通过凹凸贴图，改变相对高度，改变法线</li>
+</ul>
+<h3 id="如何改变法线">如何改变法线</h3>
+<h4 id="二维">二维</h4>
+<ul>
+<li>如下图所示，原本该点p的法线是n(p) = (0, 1)</li>
+<li>引入凹凸贴图后，点p的变化量<span class="math inline">\(dp =
+c*[h(p+1)-h(p)]\)</span>，c是常数，表示凹凸贴图的影响，因此点p的切线可以表示为(1,
+dp)</li>
+<li>法线与切线垂直，因此可以得到法线为<span class="math inline">\(n(p) =
+(-dp, 1).normalized()\)</span></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/26/UQRlHAxFWYndjPL.png" style="zoom:50%;" /></p>
+<h4 id="三维">三维</h4>
+<ul>
+<li>原本该点p的法线是n(p) = (0, 0, 1)</li>
+<li>p点切线<span class="math inline">\(\frac{dp}{du}=c1 *
+[h(u+1)-h(u)]\)</span>和<span
+class="math inline">\(\frac{dp}{du}=c2*[h(v+1)-h(v)]\)</span></li>
+<li>法线为<span class="math inline">\(n(p) = (-\frac{dp}{du},
+-\frac{dp}{dv}, 1).normalized()\)</span></li>
+</ul>
+<h4 id="注意">注意</h4>
+<p>这些是在局部坐标中的，之后还需要重新计算到世界坐标中。</p>
+<h2 id="位移贴图一种更高级的方法">位移贴图——一种更高级的方法</h2>
+<ul>
+<li>与凹凸贴图一样的输入，一样的纹理</li>
+<li>与凹凸贴图不一样，它会做位置的移动，实际上移动了顶点的位置</li>
+<li>如下图所示，凹凸贴图下图形本身凹凸位置的阴影不够真实，影子也不够真实，是欺骗人视觉的效果，而非真实的点坐标</li>
+<li>要求模型的三角形足够细、多</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/26/Qh4lMEcbwZdJym2.png" style="zoom:50%;" /></p>
+<h2 id="shadow-mapping">Shadow Mapping</h2>
+<p>一种图像空间算法</p>
+<ul>
+<li>在阴影计算期间不了解场景的几何形状</li>
+<li>必须处理混叠伪影</li>
+</ul>
+<p>关键思想：</p>
+<ul>
+<li>不在阴影中的点必须被光线和相机都看到</li>
+</ul>
+<h3 id="流程-2">流程</h3>
+<ul>
+<li>从光源看向场景，相当于把摄像机放在光源，对准场景，做一遍光栅化</li>
+<li>但是我们不对其做着色，而是记录看到的<strong>点的深度</strong></li>
+<li>将摄像机放在眼睛位置，真正地看向场景，记录看到的点的深度</li>
+<li>可以将看到的点投影回之前摄像机放在光源的虚拟成像上，如果我们从光源看这个点，它应该出现在图像的哪个位置上。从摄像机看这个点，这个点投影回光源，就知道它在之前深度图的哪个像素上。我们之前记录了该点的深度，此时可以计算该点到光源的深度，如果两个深度一致，说明该点是可以被光源看到的。该点是可见
+的，可以被摄像机看到，也可以被光源看到。（如图3橙色线段所示）</li>
+<li>如果两者深度不一样，说明该点是之前光源看不到的点，说明该点在阴影中。（如图4红色线段所示）</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/No9ulyTSOmiHaAq.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/Y83ibz1IdRS24QU.png" style="zoom:50%;" />
+<img src="https://s2.loli.net/2022/02/27/yJHruYAZNT5Bjwz.png" style="zoom:50%;" /><img src="https://s2.loli.net/2022/02/27/oNEJMqenVyHPzTh.png" style="zoom:50%;" /></p>
+<h3 id="可视化shadow-mapping过程">可视化Shadow Mapping过程</h3>
+<ul>
+<li>如下图所示，一个较为复杂带有阴影的场景，点光源在左上角</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/wR8oujWpKafhZVX.png" style="zoom:50%;" /></p>
+<ul>
+<li>将摄像机放在光源位置，记录深度值</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/NfJR7MTehG2pXmj.png" style="zoom:50%;" /></p>
+<ul>
+<li>将摄像机摆在实际位置，绿色是阴影贴图上距离（光，shadow point）≈
+深度的地方，非绿色是阴影应该在的地方</li>
+<li>但下图，球的上半区域存在灰色，可能是由于浮点判断误差引起的</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/p9uGgBRfLJ6hO7k.png" style="zoom:50%;" /></p>
+<h3 id="存在的问题">存在的问题</h3>
+<ul>
+<li>硬阴影（仅限点光源）</li>
+<li>质量取决于阴影贴图分辨率（基于图像的技术的一般问题）</li>
+<li>涉及浮点深度值的相等比较意味着规模、偏差、容差问题</li>
+</ul>
+<p>硬阴影与软阴影：</p>
+<ul>
+<li>硬阴影是非0即1，没有过渡</li>
+<li>软阴影有过渡，阴影是逐渐消失的</li>
+<li>点光源不会产生软阴影，产生软阴影说明光源存在一定的大小</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/02/27/wzecB6UEJIZNqb3.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
-        <category>LaTeX</category>
+        <category>图形学</category>
       </categories>
       <tags>
-        <tag>LaTeX</tag>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
       </tags>
   </entry>
   <entry>
@@ -2171,6 +2113,64 @@ alt="测试程序" />
       </tags>
   </entry>
   <entry>
+    <title>Windows环境下配置Emacs+LaTeX</title>
+    <url>/2021/11/27/LaTeXConfigure/</url>
+    <content><![CDATA[<h2 id="背景">背景</h2>
+<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
+<span id="more"></span>
+<h2 id="下载过程">下载过程</h2>
+<p>一开始就走了弯路，没注意到无论是Linux还是Windows环境，都需要先准备好LaTeX环境，还以为能通过下Emacs的插件可以直接编译LaTeX</p>
+<h3 id="tex-live下载">Tex Live下载</h3>
+<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group
+(tug.org)</a></p>
+<p>Tex
+Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex
+Live的环境，时间1小时往上</p>
+<p><a
+href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
+<p>另一种是下载iso文件，点击on
+DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
+<p><a
+href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
+<p>可以选择下载带有包管理器的基本版，沒有的东西可以用包管理器装</p>
+<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code>
+出版本号就基本可以确定安装成功了</p>
+<h3 id="emacs插件安装">Emacs插件安装</h3>
+<p>在emacs中输入<code>M-x package-install RET *** RET</code></p>
+<p>***={auctex，yasnippets，yasnippets-snippets}</p>
+<h2 id="tex导出中文">Tex导出中文</h2>
+<p>将以下添加到.emacs.d/init.el文件里面，设置xelatex为默认latex编译器</p>
+<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line"><span class="comment">; LaTex插件</span></span><br><span class="line">(<span class="name">add-to-list</span> &#x27;load-path <span class="string">&quot;~/.emacs.d/elpa&quot;</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">require</span> &#x27;yasnippet)</span><br><span class="line">(<span class="name">yas-global-mode</span> <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">setq</span> TeX-output-view-style (<span class="name">quote</span> ((<span class="string">&quot;^pdf$&quot;</span> <span class="string">&quot;.&quot;</span> <span class="string">&quot;evince %o %(outpage)&quot;</span>))))</span><br><span class="line"></span><br><span class="line">(<span class="name">add-hook</span> &#x27;LaTeX-mode-hook</span><br><span class="line">(<span class="name">lambda</span>()</span><br><span class="line">(<span class="name">add-to-list</span> &#x27;TeX-command-list &#x27;(<span class="string">&quot;XeLaTeX&quot;</span> <span class="string">&quot;%`xelatex%(mode)%&#x27; %t&quot;</span> TeX-run-TeX nil t))</span><br><span class="line">(<span class="name">setq</span> TeX-command-default <span class="string">&quot;XeLaTeX&quot;</span>)))</span><br></pre></td></tr></table></figure>
+<h2 id="编译">编译</h2>
+<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c
+C-l</code> 可以看到是用什么编译的</p>
+<p><code>C-C C-V</code>可以直接打开新建的pdf文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\usepackage&#123;xeCJK, fontspec, xunicode, xltxtra&#125;</span><br><span class="line">\usepackage&#123;amsmath&#125;</span><br><span class="line"></span><br><span class="line">\CTEXsetup[name=&#123;第,节&#125;,number=&#123;\chinese&#123;section&#125;&#125;]&#123;section&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line"></span><br><span class="line">\section&#123;你好中国&#125;</span><br><span class="line">中国在East Asia.</span><br><span class="line"></span><br><span class="line">\subsection&#123;Hello Beijing&#125;</span><br><span class="line">北京是capital of China.</span><br><span class="line"></span><br><span class="line">\subsubsection&#123;Hello Dongcheng District&#125;</span><br><span class="line">\paragraph&#123;Tian&#x27;anmen Square&#125;</span><br><span class="line">is in the center of Beijing</span><br><span class="line">\subparagraph&#123;Chairman Mao&#125;</span><br><span class="line">is in the center of 天安门广场。</span><br><span class="line">\subsection&#123;Hello 山东&#125;</span><br><span class="line">\paragraph&#123;山东大学&#125; is one of the best university in 山东。</span><br><span class="line"></span><br><span class="line">這是繁體中文。</span><br><span class="line"></span><br><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line"> \hline</span><br><span class="line">操作系统&amp; 发行版&amp; 编辑器\\</span><br><span class="line"> \hline</span><br><span class="line">Windows &amp; MikTeX &amp; TexMakerX \\</span><br><span class="line"> \hline</span><br><span class="line">Unix/Linux &amp; teTeX &amp; Kile \\</span><br><span class="line"> \hline</span><br><span class="line">Mac OS &amp; MacTeX &amp; TeXShop \\</span><br><span class="line"> \hline</span><br><span class="line">通用&amp; TeX Live &amp; TeXworks \\</span><br><span class="line"> \hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line"></span><br><span class="line">$$\int_0^1 \frac&#123;1&#125;&#123;e^x&#125; =  \frac&#123;e-1&#125;&#123;e&#125;$$</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<p><a
+href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
+<h2 id="总结">总结</h2>
+<ul>
+<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c
+C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
+。使用<code>C-c C-l</code> 提示 ‘pdflatex’
+不是内部或外部命令，也不是可运行的程序或批处理文件</li>
+<li>pdflatex 和 xelatex 都是 texlive 的一部分</li>
+</ul>
+]]></content>
+      <categories>
+        <category>LaTeX</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LearnOpenGL学习入门</title>
     <url>/2021/07/22/LearnOpenGL-1/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -2294,96 +2294,6 @@ sqlite可视化工具<strong>Sqlite Browser</strong></p>
       </tags>
   </entry>
   <entry>
-    <title>公会的神奇操作</title>
-    <url>/2020/04/06/magic-clan/</url>
-    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
-<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
-<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
-<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
-，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
-<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
-<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
-<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
-<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
-<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
-<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
-<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode 391 完美矩形</title>
-    <url>/2021/11/16/leetcode-391/</url>
-    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
-<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
-完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
-<h2 id="题目大意">题目大意</h2>
-<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
-表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
-(ai, bi) 。</p>
-<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
-false 。</p>
-<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
-src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
-alt="示例" /></a></p>
-<blockquote>
-<p><strong>输入：</strong> rectangles =
-[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
-<strong>输出：</strong> true <strong>解释：</strong> 5
-个矩形一起可以精确地覆盖一个矩形区域。</p>
-</blockquote>
-<h2 id="解题思路">解题思路</h2>
-<p>感觉与其说是算法题，还不如说是找规律…</p>
-<p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
-<p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
-<p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公主连结Re:Dive常用地址</title>
-    <url>/2020/03/17/pcr-tool/</url>
-    <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
-<span id="more"></span>
-<h3 id="日常向">日常向</h3>
-<p><a
-href="https://pcredivewiki.tw/">兰德索尔图书馆</a>：各个功能都比较实用，推荐其中的<a
-href="https://pcredivewiki.tw/Armory">装备库</a>功能，平时看活动预测、角色站位以及其余小工具都比较方便。</p>
-<h3 id="jjc向">JJC向</h3>
-<p><a
-href="https://bbs.nga.cn/read.php?tid=14878762">初音笔记（iOS）</a>和<a
-href="https://bbs.nga.cn/read.php?tid=20499613">静流笔记（Android）</a>：我只用过前者，不过后者应该是差不多的，这个可以用来查询角色的技能、属性、伤害、循环以及推图、露娜塔、公会战的Boss信息。</p>
-<p><a
-href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
-<h3 id="社交推荐">社交推荐</h3>
-<p>NGA和贴吧。
-可以去nga找找当期活动的sp和vh打法，贴吧看看热闹，毕竟这游戏的jjc和公会战都离不开别的玩家，在jjc里py或者找工会还是需要多留心注意的。</p>
-<h3 id="b站up主推荐">B站up主推荐</h3>
-<p><a href="https://space.bilibili.com/9135820/">盐取shiotori</a></p>
-<p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
-<p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
-<p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LeetCode 138 复制带随机指针的链表</title>
     <url>/2021/11/14/leetcode-138/</url>
     <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
@@ -2424,6 +2334,65 @@ alt="新链表图" /></a></p>
       </categories>
       <tags>
         <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode 391 完美矩形</title>
+    <url>/2021/11/16/leetcode-391/</url>
+    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
+<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
+完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
+<h2 id="题目大意">题目大意</h2>
+<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
+表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
+(ai, bi) 。</p>
+<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
+false 。</p>
+<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
+src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
+alt="示例" /></a></p>
+<blockquote>
+<p><strong>输入：</strong> rectangles =
+[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
+<strong>输出：</strong> true <strong>解释：</strong> 5
+个矩形一起可以精确地覆盖一个矩形区域。</p>
+</blockquote>
+<h2 id="解题思路">解题思路</h2>
+<p>感觉与其说是算法题，还不如说是找规律…</p>
+<p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
+<p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
+<p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公会的神奇操作</title>
+    <url>/2020/04/06/magic-clan/</url>
+    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
+<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
+<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
+<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
+，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
+<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
+<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
+<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
+<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
+<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
+<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
+<p>今天才了解到，公会里居然有已经结婚有儿子的老哥...感觉pcr的大学生、社畜偏多啊...估计还是因为上线5分钟就能解决适合大家吧。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
       </tags>
   </entry>
   <entry>
@@ -2482,6 +2451,37 @@ title="POJ-2965链接">POJ-2965链接</a></p>
         <tag>算法</tag>
         <tag>POJ</tag>
         <tag>搜索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公主连结Re:Dive常用地址</title>
+    <url>/2020/03/17/pcr-tool/</url>
+    <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
+<span id="more"></span>
+<h3 id="日常向">日常向</h3>
+<p><a
+href="https://pcredivewiki.tw/">兰德索尔图书馆</a>：各个功能都比较实用，推荐其中的<a
+href="https://pcredivewiki.tw/Armory">装备库</a>功能，平时看活动预测、角色站位以及其余小工具都比较方便。</p>
+<h3 id="jjc向">JJC向</h3>
+<p><a
+href="https://bbs.nga.cn/read.php?tid=14878762">初音笔记（iOS）</a>和<a
+href="https://bbs.nga.cn/read.php?tid=20499613">静流笔记（Android）</a>：我只用过前者，不过后者应该是差不多的，这个可以用来查询角色的技能、属性、伤害、循环以及推图、露娜塔、公会战的Boss信息。</p>
+<p><a
+href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
+<h3 id="社交推荐">社交推荐</h3>
+<p>NGA和贴吧。
+可以去nga找找当期活动的sp和vh打法，贴吧看看热闹，毕竟这游戏的jjc和公会战都离不开别的玩家，在jjc里py或者找工会还是需要多留心注意的。</p>
+<h3 id="b站up主推荐">B站up主推荐</h3>
+<p><a href="https://space.bilibili.com/9135820/">盐取shiotori</a></p>
+<p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
+<p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
+<p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
       </tags>
   </entry>
 </search>
