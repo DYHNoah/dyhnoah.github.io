@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.jpg">
+  <link rel="mask-icon" href="/images/avatar.jpg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dyhnoah.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本章内容 本章为LeetCode-2203. 得到要求路径的最小带权子图的题解。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode-6032 得到要求路径的最小带权子图">
+<meta property="og:url" content="https://dyhnoah.github.io/2022/03/15/LeetCode-6032/index.html">
+<meta property="og:site_name" content="Ushioの鸽子屋">
+<meta property="og:description" content="本章内容 本章为LeetCode-2203. 得到要求路径的最小带权子图的题解。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/03/15/hvoGLHwReg153pS.png">
+<meta property="article:published_time" content="2022-03-15T11:19:51.000Z">
+<meta property="article:modified_time" content="2022-03-15T11:19:51.000Z">
+<meta property="article:author" content="Ushio">
+<meta property="article:tag" content="LeetCode">
+<meta property="article:tag" content="算法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/03/15/hvoGLHwReg153pS.png">
+
+
+<link rel="canonical" href="https://dyhnoah.github.io/2022/03/15/LeetCode-6032/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2022/03/15/LeetCode-6032/","path":"2022/03/15/LeetCode-6032/","title":"LeetCode-6032 得到要求路径的最小带权子图"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>LeetCode-6032 得到要求路径的最小带权子图 | Ushioの鸽子屋</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ushioの鸽子屋</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">咕咕咕</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-messageboard"><a href="/messageboard/" rel="section"><i class="fa fa-comments fa-fw"></i>留言板</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%86%85%E5%AE%B9"><span class="nav-number">2.</span> <span class="nav-text">题目内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="nav-number">3.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ushio"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Ushio</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/DYHNoah" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DYHNoah" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:dyhnoah@foxmail.com" title="E-Mail → mailto:dyhnoah@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2022/03/15/LeetCode-6032/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ushio">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ushioの鸽子屋">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LeetCode-6032 得到要求路径的最小带权子图 | Ushioの鸽子屋">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LeetCode-6032 得到要求路径的最小带权子图
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-03-15 19:19:51" itemprop="dateCreated datePublished" datetime="2022-03-15T19:19:51+08:00">2022-03-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/03/15/LeetCode-6032/" class="post-meta-item twikoo_visitors" data-flag-title="LeetCode-6032 得到要求路径的最小带权子图" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="twikoo_visitors"></span>
+    </span>
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="本章内容">本章内容</h2>
+<p>本章为<a
+target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/minimum-weighted-subgraph-with-the-required-paths/">LeetCode-2203.
+得到要求路径的最小带权子图</a>的题解。</p>
+<span id="more"></span>
+<h2 id="题目内容">题目内容</h2>
+<p>给你一个整数 n ，它表示一个 <strong>带权有向图</strong>
+的节点数，节点编号为 <code>0</code> 到 <code>n - 1</code> 。</p>
+<p>同时给你一个二维整数数组 <code>edges</code> ，其中 <span
+class="math inline">\(edges[i] = [from_i, to_i, weight_i]\)</span>
+，表示从 <span class="math inline">\(from_i\)</span> 到 <span
+class="math inline">\(to_i\)</span> 有一条边权为 <span
+class="math inline">\(weight_i\)</span> 的 <strong>有向</strong>
+边。</p>
+<p>最后，给你三个 <strong>互不相同</strong> 的整数<code>src1</code>
+，<code>src2</code> 和 <code>dest</code> ，表示图中三个不同的点。</p>
+<p>请你从图中选出一个 <strong>边权和最小</strong> 的子图，使得从 src1 和
+src2 出发，在这个子图中，都 <strong>可以</strong> 到达 <code>dest</code>
+。如果这样的子图不存在，请返回 <code>-1</code> 。</p>
+<p><strong>子图</strong>
+中的点和边都应该属于原图的一部分。子图的边权和定义为它所包含的所有边的权值之和。</p>
+<p><img src="https://s2.loli.net/2022/03/15/hvoGLHwReg153pS.png" style="zoom:33%;" /></p>
+<blockquote>
+<p><strong>输入</strong>：n = 6, edges = [[0,2,2], [0,5,6], [1,0,3],
+[1,4,5], [2,1,1], [2,3,3], [2,3,4], [3,4,2], [4,5,1]], src1 = 0, src2 =
+1, dest = 5 <strong>输出</strong>：9</p>
+<p><strong>解释</strong>：</p>
+<p>上图为输入的图。</p>
+<p>蓝色边为最优子图之一。</p>
+<p>注意，子图 [[1,0,3], [0,5,6]]
+也能得到最优解，但无法在满足所有限制的前提下，得到更优解。</p>
+</blockquote>
+<h2 id="解题思路">解题思路</h2>
+<p>做LeetCode比赛的时候遇到这题，刚看见的时候感觉应该不难，但因为没有时间就没能深入思考。</p>
+<p>实际上本题不难，用的也是图论中比较经典的思想，枚举中间点，通过枚举中间点<span
+class="math inline">\(i\)</span>，计算src1到<span
+class="math inline">\(i\)</span>的距离 + src2到<span
+class="math inline">\(i\)</span>的距离 + <span
+class="math inline">\(i\)</span>到dest的距离，求出最小的<span
+class="math inline">\(i\)</span>，上述的枚举包含所有的情况，因此直接计算即可。</p>
+<p>求src1到<span
+class="math inline">\(i\)</span>的距离可以使用Dijkstra算法，求<span
+class="math inline">\(i\)</span>到dest的距离可以通过将边反向，求dest到各个点的距离来实现。</p>
+<p>关于Dijkstra算法，本题如果不使用堆优化，会产生超时，因此顺带可以熟悉STL的使用。</p>
+<p>STL使用 <code>priority_queue</code>
+作为堆，默认是大根堆，因此为了得到最短路，可以将路径取相反数，放进大根堆。同时在Dijkstra算法中，用堆优化的时候，堆内的元素包含<strong>距离</strong>和<strong>顶点</strong>，因此使用
+<code>pair</code> 记录距离和顶点。将 <code>pair</code> 放进
+<code>priority_queue</code>
+时，默认的排序方式是先排第一个，再排第二个。</p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 100000+20</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">long</span> <span class="keyword">long</span>, <span class="keyword">int</span>&gt; pp;</span><br><span class="line">vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; v1, v2, w1, w2;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> dis1[MAXN], dis2[MAXN], dis3[MAXN], now = <span class="number">-1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">getDis</span><span class="params">(<span class="keyword">int</span> o, <span class="keyword">int</span> n, <span class="keyword">long</span> <span class="keyword">long</span> *dis, <span class="keyword">int</span> *vis, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; v, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; w)</span>  </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)  dis[i] = <span class="number">-1</span>;</span><br><span class="line">        priority_queue&lt;pp&gt; q;</span><br><span class="line">        q.<span class="built_in">push</span>(<span class="built_in">pp</span>(<span class="number">0</span>, o));</span><br><span class="line">        <span class="keyword">while</span> (!q.<span class="built_in">empty</span>())  &#123;</span><br><span class="line">	        pp p = q.<span class="built_in">top</span>();  q.<span class="built_in">pop</span>();</span><br><span class="line">	        <span class="keyword">int</span> sn = p.second;</span><br><span class="line">	        <span class="keyword">long</span> <span class="keyword">long</span> val = -p.first;</span><br><span class="line">	        <span class="keyword">if</span> (dis[sn] &gt;= <span class="number">0</span>)  <span class="keyword">continue</span>;</span><br><span class="line">	        dis[sn] = val;</span><br><span class="line">	        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; v[sn].<span class="built_in">size</span>(); i++)</span><br><span class="line">	            q.<span class="built_in">push</span>(<span class="built_in">pp</span>(-val - w[sn][i], v[sn][i]));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">minimumWeight</span><span class="params">(<span class="keyword">int</span> n, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; edges, <span class="keyword">int</span> src1, <span class="keyword">int</span> src2, <span class="keyword">int</span> dest)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">int</span> vis[MAXN];</span><br><span class="line">            v1 = v2 = w1 = w2 = vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;(n);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">auto</span> &amp;edge : edges)  &#123;</span><br><span class="line">                v1[edge[<span class="number">0</span>]].<span class="built_in">push_back</span>(edge[<span class="number">1</span>]); w1[edge[<span class="number">0</span>]].<span class="built_in">push_back</span>(edge[<span class="number">2</span>]);</span><br><span class="line">                v2[edge[<span class="number">1</span>]].<span class="built_in">push_back</span>(edge[<span class="number">0</span>]); w2[edge[<span class="number">1</span>]].<span class="built_in">push_back</span>(edge[<span class="number">2</span>]);	    </span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="built_in">getDis</span>(src1, n, dis1, vis, v1, w1);</span><br><span class="line">            <span class="built_in">getDis</span>(src2, n, dis2, vis, v1, w1);</span><br><span class="line">            <span class="built_in">getDis</span>(dest, n, dis3, vis, v2, w2);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)  &#123;</span><br><span class="line">                <span class="keyword">if</span> (dis1[i] == <span class="number">-1</span> || dis2[i] == <span class="number">-1</span> || dis3[i] == <span class="number">-1</span>)  <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span> (now == <span class="number">-1</span>)   now = dis1[i] + dis2[i] + dis3[i];</span><br><span class="line">                <span class="keyword">if</span> (dis1[i] + dis2[i] + dis3[i] &lt; now)   </span><br><span class="line">                    now = dis1[i] + dis2[i] + dis3[i];</span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">return</span> now;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Ushio
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://dyhnoah.github.io/2022/03/15/LeetCode-6032/" title="LeetCode-6032 得到要求路径的最小带权子图">https://dyhnoah.github.io/2022/03/15/LeetCode-6032/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/03/11/Twikoo-Config/" rel="prev" title="在Hexo-Next8主题下配置Twikoo评论">
+                  <i class="fa fa-chevron-left"></i> 在Hexo-Next8主题下配置Twikoo评论
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/03/15/Hexo-Word-Case/" rel="next" title="Hexo-Word-Case">
+                  Hexo-Word-Case <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments"><div id="twikoo-comments"></div></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ushio</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">71k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:05</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":true,"envId":"hello-cloudbase-2go38lhz3b8945e4","el":"#twikoo-comments"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.twikoo.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
+      { condition: window.twikoo }
+    ))
+    .then(() => {
+      twikoo.init(CONFIG.twikoo);
+    });
+});
+</script>
+<style>
+.post-block, .comments {
+  overflow: visible;
+}
+.tk-owo-emotion {
+  display: inline-block;
+}
+</style>
+
+</body>
+</html>
