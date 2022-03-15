@@ -54,6 +54,14 @@
 <meta property="og:image" content="https://s2.loli.net/2022/03/15/xaVNwkO4cPUJTdn.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/15/hOn1fLyIUYd7mqp.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/15/YX4sjwJbMSGdmvk.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/HBv1cm5saVubxZz.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/pZFo1SVM3sPtJHC.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/7N4rIpvJ1LTXiQO.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/R1XJ6WgGYboAejI.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/Eg9s5l6TtjpohWb.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/wBjVUD4zPSgaNcy.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/Q4O6yblcF8YuaD7.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/16/YxqjT8e2NfUzIov.png">
 <meta property="article:published_time" content="2022-02-26T16:51:58.000Z">
 <meta property="article:modified_time" content="2022-03-14T16:51:58.000Z">
 <meta property="article:author" content="Ushio">
@@ -182,10 +190,10 @@
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA"><span class="nav-number">2.1.</span> <span class="nav-text">为什么要光线追踪</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%85%89%E7%BA%BF%E7%9A%843%E4%B8%AA%E6%83%B3%E6%B3%95"><span class="nav-number">2.2.</span> <span class="nav-text">关于光线的3个想法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E6%83%B3"><span class="nav-number">2.3.</span> <span class="nav-text">思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#whitted%E9%A3%8E%E6%A0%BC%E7%9A%84%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA%E9%80%92%E5%BD%92"><span class="nav-number">2.4.</span> <span class="nav-text">Whitted风格的光线追踪（递归）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.</span> <span class="nav-text">技术实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E7%BA%BF%E4%B8%8E%E9%9D%A2%E6%B1%82%E4%BA%A4%E7%82%B9"><span class="nav-number">3.1.</span> <span class="nav-text">光线与面求交点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E7%BA%BF%E4%B8%8E%E7%90%83%E6%B1%82%E4%BA%A4%E7%82%B9"><span class="nav-number">3.2.</span> <span class="nav-text">光线与球求交点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E7%BA%BF%E4%B8%8E%E9%9A%90%E5%BC%8F%E8%A1%A8%E9%9D%A2%E6%B1%82%E4%BA%A4%E7%82%B9"><span class="nav-number">3.3.</span> <span class="nav-text">光线与隐式表面求交点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E7%BA%BF%E4%B8%8E%E4%B8%89%E8%A7%92%E7%BD%91%E6%A0%BC%E6%B1%82%E4%BA%A4%E7%82%B9"><span class="nav-number">3.4.</span> <span class="nav-text">光线与三角网格求交点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8"><span class="nav-number">3.4.1.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">3.4.2.</span> <span class="nav-text">思路</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%89%E7%BA%BF%E4%B8%8E%E4%B8%89%E8%A7%92%E5%BD%A2%E6%B1%82%E4%BA%A4%E7%82%B9"><span class="nav-number">3.5.</span> <span class="nav-text">光线与三角形求交点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="nav-number">3.5.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#m%C3%B6ller-trumbore%E7%AE%97%E6%B3%95"><span class="nav-number">3.5.2.</span> <span class="nav-text">Möller Trumbore算法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A0%E9%80%9F%E5%85%89%E7%BA%BF%E4%B8%8E%E4%B8%89%E8%A7%92%E5%BD%A2%E6%B1%82%E4%BA%A4%E7%82%B9"><span class="nav-number">3.6.</span> <span class="nav-text">加速光线与三角形求交点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8C%85%E5%9B%B4%E7%9B%92"><span class="nav-number">3.6.1.</span> <span class="nav-text">包围盒</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%89%E7%BA%BF%E4%B8%8E%E5%8C%85%E5%9B%B4%E7%9B%92%E6%B1%82%E4%BA%A4%E7%82%B9"><span class="nav-number">3.6.2.</span> <span class="nav-text">光线与包围盒求交点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%85%E5%9B%B4%E7%9B%92%E9%80%89%E6%8B%A9%E8%BD%B4%E5%AF%B9%E9%BD%90"><span class="nav-number">3.6.3.</span> <span class="nav-text">为什么包围盒选择轴对齐</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8aabb%E5%8A%A0%E9%80%9F%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AAwhitted%E9%A3%8E%E6%A0%BC%E7%9A%84%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA"><span class="nav-number">4.</span> <span class="nav-text">使用AABB加速光线追踪（Whitted风格的光线追踪）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9F%E4%B8%80%E7%9A%84%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86%E7%BD%91%E6%A0%BC"><span class="nav-number">4.1.</span> <span class="nav-text">统一的空间划分（网格）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86"><span class="nav-number">4.2.</span> <span class="nav-text">空间划分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86%E7%A4%BA%E4%BE%8B"><span class="nav-number">4.2.1.</span> <span class="nav-text">空间划分示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#kd-tree%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-number">4.2.2.</span> <span class="nav-text">KD-Tree预处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#kd-tree%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">4.2.3.</span> <span class="nav-text">KD-Tree的数据结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%81%8D%E5%8E%86%E4%B8%80%E4%B8%AAkd-tree"><span class="nav-number">4.2.4.</span> <span class="nav-text">遍历一个KD-Tree</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%88%92%E5%88%86%E5%92%8Cbounding-volume-hierarchy-bvh"><span class="nav-number">4.3.</span> <span class="nav-text">对象划分和Bounding
 Volume Hierarchy （BVH）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E5%BB%BAbvhs"><span class="nav-number">4.3.1.</span> <span class="nav-text">构建BVHs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bvh%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">4.3.2.</span> <span class="nav-text">BVH的数据结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%88%92%E5%88%86"><span class="nav-number">4.4.</span> <span class="nav-text">空间划分与对象划分</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%90%E5%B0%84%E5%BA%A6%E9%87%8F%E5%AD%A6basic-radiometry"><span class="nav-number">5.</span> <span class="nav-text">辐射度量学（Basic radiometry）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80-1"><span class="nav-number">5.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#radiant-energy-and-flux-power"><span class="nav-number">5.2.</span> <span class="nav-text">Radiant Energy and Flux
 (Power)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#radiant-intensity"><span class="nav-number">5.3.</span> <span class="nav-text">Radiant Intensity</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#angles-and-solid-angles"><span class="nav-number">5.3.1.</span> <span class="nav-text">Angles and Solid Angles</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#differential-solid-angles%E5%BE%AE%E5%88%86%E7%AB%8B%E4%BD%93%E8%A7%92"><span class="nav-number">5.3.2.</span> <span class="nav-text">Differential Solid
-Angles（微分立体角）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#isotropic-point-source"><span class="nav-number">5.4.</span> <span class="nav-text">Isotropic Point Source</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#irradiance"><span class="nav-number">5.5.</span> <span class="nav-text">Irradiance</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#irradiance-falloff"><span class="nav-number">5.5.1.</span> <span class="nav-text">Irradiance Falloff</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#radiance"><span class="nav-number">5.6.</span> <span class="nav-text">Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83"><span class="nav-number">5.7.</span> <span class="nav-text">比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#incident-radiance"><span class="nav-number">5.8.</span> <span class="nav-text">Incident Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#exiting-radiance"><span class="nav-number">5.9.</span> <span class="nav-text">Exiting Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#irradiance%E5%92%8Cradiance"><span class="nav-number">5.10.</span> <span class="nav-text">Irradiance和Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bidirectional-reflectance-distribution-function-brdf%E5%92%8Cthe-reflection-equation%E5%8F%8D%E5%B0%84%E6%96%B9%E7%A8%8B"><span class="nav-number">5.11.</span> <span class="nav-text">Bidirectional
-Reflectance Distribution Function (BRDF)和The Reflection
-Equation（反射方程）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-rendering-equation%E6%B8%B2%E6%9F%93%E6%96%B9%E7%A8%8B"><span class="nav-number">5.12.</span> <span class="nav-text">The Rendering
-Equation（渲染方程）</span></a></li></ol></li></ol></div>
+Angles（微分立体角）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#isotropic-point-source"><span class="nav-number">5.4.</span> <span class="nav-text">Isotropic Point Source</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#irradiance"><span class="nav-number">5.5.</span> <span class="nav-text">Irradiance</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#irradiance-falloff"><span class="nav-number">5.5.1.</span> <span class="nav-text">Irradiance Falloff</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#radiance"><span class="nav-number">5.6.</span> <span class="nav-text">Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83"><span class="nav-number">5.7.</span> <span class="nav-text">比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#incident-radiance"><span class="nav-number">5.8.</span> <span class="nav-text">Incident Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#exiting-radiance"><span class="nav-number">5.9.</span> <span class="nav-text">Exiting Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#irradiance%E5%92%8Cradiance"><span class="nav-number">5.10.</span> <span class="nav-text">Irradiance和Radiance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bidirectional-reflectance-distribution-function-brdf%E5%92%8Creflection-equation%E5%8F%8D%E5%B0%84%E6%96%B9%E7%A8%8B"><span class="nav-number">5.11.</span> <span class="nav-text">Bidirectional
+Reflectance Distribution Function (BRDF)和Reflection
+Equation（反射方程）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rendering-equation%E6%B8%B2%E6%9F%93%E6%96%B9%E7%A8%8B"><span class="nav-number">5.12.</span> <span class="nav-text">Rendering Equation（渲染方程）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reflection-equation-%E5%92%8C-rendering-equation"><span class="nav-number">5.13.</span> <span class="nav-text">Reflection Equation
+和 Rendering Equation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#reflection-equation"><span class="nav-number">5.13.1.</span> <span class="nav-text">Reflection Equation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rendering-equation"><span class="nav-number">5.13.2.</span> <span class="nav-text">Rendering Equation</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -324,7 +332,7 @@ Equation（渲染方程）</span></a></li></ol></li></ol></div>
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.1k</span>
+      <span>4.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -616,8 +624,8 @@ class="math inline">\(E&#39;=\frac{\Phi}{4\pi{r^2}}\)</span></p>
 <p>Radiance：在某个dA的微表面上，从某个方向收到的所有能量。</p>
 <p><img src="https://s2.loli.net/2022/03/15/gt2pEbO4WGfeUzm.png" style="zoom:40%;" /></p>
 <h3
-id="bidirectional-reflectance-distribution-function-brdf和the-reflection-equation反射方程">Bidirectional
-Reflectance Distribution Function (BRDF)和The Reflection
+id="bidirectional-reflectance-distribution-function-brdf和reflection-equation反射方程">Bidirectional
+Reflectance Distribution Function (BRDF)和Reflection
 Equation（反射方程）</h3>
 <p>dA的微表面接收到的Irradiance可以计算出来，接着会辐射到各个方向都有，BRDF的定义就是如何对其在不同方向上的分配。</p>
 <p>BRDF
@@ -625,13 +633,39 @@ Equation（反射方程）</h3>
 <p>同时，入射光线不一定只来自光源，可能是光源打到别的物体上的反射造成的，是一个递归问题。</p>
 <p><img src="https://s2.loli.net/2022/03/15/LhAqzcJr65pfWvs.png" style="zoom:40%;" /></p>
 <p><img src="https://s2.loli.net/2022/03/15/xaVNwkO4cPUJTdn.png" style="zoom:40%;" /></p>
-<h3 id="the-rendering-equation渲染方程">The Rendering
-Equation（渲染方程）</h3>
-<p>The Reflection Equation如下</p>
+<h3 id="rendering-equation渲染方程">Rendering Equation（渲染方程）</h3>
+<p>Reflection Equation如下</p>
 <p><img src="https://s2.loli.net/2022/03/15/hOn1fLyIUYd7mqp.png" style="zoom:50%;" /></p>
-<p>The Rendering
+<p>Rendering
 Equation如下，物体往某个方向出射的光包含两部分：自己产生发射的、其它入射的Radiance经过BRDF产生的。</p>
 <p><img src="https://s2.loli.net/2022/03/15/YX4sjwJbMSGdmvk.png" style="zoom:50%;" /></p>
+<h3 id="reflection-equation-和-rendering-equation">Reflection Equation
+和 Rendering Equation</h3>
+<h4 id="reflection-equation">Reflection Equation</h4>
+<p>反射方程如下，包含自身的发出的光 + 从光源打到该点经由 BRDF
+在特定角度的光。</p>
+<p><img src="https://s2.loli.net/2022/03/16/HBv1cm5saVubxZz.png" style="zoom:40%;" /></p>
+<p>如下图所示，如果有多个点光源，我们则需要将点光源打到该点产生的反射进行累加。</p>
+<p><img src="https://s2.loli.net/2022/03/16/pZFo1SVM3sPtJHC.png" style="zoom:40%;" /></p>
+<p>如下图所示，如果存在面光源，面光源可以看作是点光源的集合，我们则需要对面光源求积分。</p>
+<p><img src="https://s2.loli.net/2022/03/16/7N4rIpvJ1LTXiQO.png" style="zoom:40%;" /></p>
+<h4 id="rendering-equation">Rendering Equation</h4>
+<p>如果是由其它物体反射或者发出的光线，我们可以同样视其为光源，同时对于本渲染方程的求解可以看作是一个递归问题。</p>
+<p><img src="https://s2.loli.net/2022/03/16/R1XJ6WgGYboAejI.png" style="zoom:40%;" /></p>
+<p>Rendering Equation可以通过数学简写，写成下图的积分方程形式。</p>
+<p><img src="https://s2.loli.net/2022/03/16/Eg9s5l6TtjpohWb.png" style="zoom:40%;" /></p>
+<p>最终可写成下图数学形式，再通过类似泰勒展开的形式，将<span
+class="math inline">\((I-K)^{-1}\)</span>展开成<span
+class="math inline">\((I+K+K^2+K^3+...)\)</span>，进而可以得到图3，相当于我们可以把最终看到的能量，直接看到光源的结果
++ 光源辐射的能量经过1次反射后的结果 + 光源辐射的能量经过2次反射后的结果
++ ... + 光源辐射的能量经过多次反射后的结果。</p>
+<p><img src="https://s2.loli.net/2022/03/16/wBjVUD4zPSgaNcy.png" style="zoom:40%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/16/Q4O6yblcF8YuaD7.png" style="zoom:50%;" /></p>
+<p>因此，对于全局光照的理解，全局光照 ≠
+间接光照，而是等于<strong>直接光照和间接光照的集合</strong>。</p>
+<p>之前学习的光栅化操作，等于0次反射（光源本身）和1次反射（直接光照），即下图的<span
+class="math inline">\(E+KE\)</span>部分。</p>
+<p><img src="https://s2.loli.net/2022/03/16/YxqjT8e2NfUzIov.png" style="zoom:40%;" /></p>
 
     </div>
 
@@ -706,7 +740,7 @@ Equation如下，物体往某个方向出射的光包含两部分：自己产生
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">71k</span>
+    <span title="站点总字数">72k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
