@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>台服6月水瓶座会战</title>
+    <url>/2020/07/05/Clan-Aquarius/</url>
+    <content><![CDATA[<p>本文主要讲述台服2020年6月水瓶座公会战情况。 <span id="more"></span></p>
+<h3 id="本期情况">本期情况</h3>
+<p>上期春黑刀的第一个月，会内没有排刀，只是要求合刀避免尾刀，最后277名，本期也秉承着上期的摸鱼精神，保700随缘300。</p>
+<p>这个月sonet骚操作不断，克总专武提前到来，cgss的池子却没了，本应该接在fes池后面的水电复刻直接变成了优尼。动画播放完送的5000钻也没给（bcr和日服都给了），vh2和宝珠翻倍都没来，每日送的400体力又是错开的。</p>
+<h3 id="出刀">出刀</h3>
+<h4 id="春黑刀工具人">春黑刀工具人</h4>
+<p>镜子、七七香、黄骑、中二、露娜、水电、驴、狐狸、吉塔、妹法、水黑。
+#### 物理队 吉塔、春猫、春妈、克、511、生菜 ### 法队 圣伊、mcw、nnk</p>
+<p>本期1、2王比较费力不讨好，一刀轴不稳，同时需要的配置又高，所以本期容易卡在这里。4王一刀轴很稳，比较抢手，3王和5王的都容易挂树，但出物理刀也更容易刷伤。</p>
+<h3 id="感受">感受</h3>
+<p>本期比上期更难出刀，个人感觉比较稳定的春黑轴只有4王，物理刀丢1，2又比较亏，而本期auto刀更是少之又少。
+这两期让很多人打得挺累的，观察了下，前排更难打，但前排和中排的差距在拉大。这期我们出的春黑刀应该没上期多，有些人也不想出，但最后排名是231，反而还进步了。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C++结构体对齐补齐</title>
     <url>/2022/03/09/CPP-Memory-Alignment/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -184,6 +208,42 @@ Pack(N)；</code>只影响的是数据在内存中的排列方式。</li>
       </tags>
   </entry>
   <entry>
+    <title>台服5月摩羯座会战</title>
+    <url>/2020/06/09/Clan-Capricorn/</url>
+    <content><![CDATA[<p>本文主要讲述台服2020年5月魔羯座公会战情况。 <span id="more"></span></p>
+<h2 id="本期情况">本期情况</h2>
+<p>台服本期是摩羯座，属于春黑第一个月，终于自己体会到了春黑刀的恶心之处。</p>
+<p>首先讲本期我所在的公会情况吧，上期由于冲300最后220，当时大家都打得挺累的，所以本期的计划是随缘300，会内不进行排刀，也不要求必出春黑刀，当然追梦随意，最后这期体感上大家比上期更休闲，最后排名270。</p>
+<h2 id="出刀">出刀</h2>
+<p>对于100-300的会来说，我个人感觉，本期最好出两春黑刀，一刀物理，然后垃圾刀全丢五王应该是没问题的。本期5个boss都有春黑一刀的作业，从一阶段到三阶段用上的春黑工具人有：镜子、充电宝、黄骑、露娜、水黑、春田、中二、水电、nnk、mcw、春女仆、圣千、莫妮卡。</p>
+<p>春黑来了后，300会就能一天打进三阶段了，第一天建议早出刀，晚出刀面对三阶段没有作业还是挺难受的。而本期我比较偷懒，3王的春黑轴比较简单，所以这期我出335或者235，3来一刀春黑，2或者3可能填一刀物理，5再来一个不能一刀的春黑刀。</p>
+<p>春黑的常见三件套，露娜、黄骑、中二，我个人没有露娜，所以没法出两刀这样的春黑刀。</p>
+<h2 id="感受">感受</h2>
+<p>简单说下打完第一期春黑刀后我对于春黑的感受吧。</p>
+<p>利：1个月能拿相当于过去2.5个月的战队币，对于战队币比较缺的玩家来说合适，一刀一个boss，可能不会因为大尾巴卡住，或者说卡住的情况会变少。</p>
+<p>弊：<strong>凹暴击</strong>，如果春黑开始暴击不够，后续的伤害也叠不起来；<strong>费时长</strong>，有些春黑刀需要打很久，new
+year
+burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸色；<strong>伤害上下差距拉大</strong>，春黑之前的法队和物理队作业伤害差距不会太大，可能有个200w，但春黑来后都是一刀一个boss，如果你不出春黑刀，你就会被拉开，强行逼着你春黑刀。</p>
+<p>总的来说，通过观察日服春黑诞生至今的会战，可以毫不夸张地说，春黑是pcr里面设计得非常失败的角色，春黑的核心在于频繁地释放ub，ub效果如下：</p>
+<blockquote>
+<p>對敵方單體造成 56671 【60.0 + 60.0<em>技能等級 + 4.8
+</em>atk】的魔法傷害。</p>
+<p>技能說明補正：攻擊 * 0.1125。</p>
+<p>提升自身1550 【10.0 + 10.0*技能等級】的魔法攻擊力。</p>
+<p>持續：【18.0】 秒。</p>
+</blockquote>
+<p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
+<p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+        <tag>公会战</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101作业环境配置（Windows）：Visual Studio2019 + vcpkg</title>
     <url>/2022/01/05/Games101-Environment/</url>
     <content><![CDATA[<p>本文主要讲述在Windows下配置Games101的环境，利用VS2019+vcpkg完成。
@@ -235,56 +295,16 @@ href="https://blog.csdn.net/weixin_39548859/article/details/107170535">闫令琪
       </tags>
   </entry>
   <entry>
-    <title>台服5月摩羯座会战</title>
-    <url>/2020/06/09/Clan-Capricorn/</url>
-    <content><![CDATA[<p>本文主要讲述台服2020年5月魔羯座公会战情况。 <span id="more"></span></p>
-<h2 id="本期情况">本期情况</h2>
-<p>台服本期是摩羯座，属于春黑第一个月，终于自己体会到了春黑刀的恶心之处。</p>
-<p>首先讲本期我所在的公会情况吧，上期由于冲300最后220，当时大家都打得挺累的，所以本期的计划是随缘300，会内不进行排刀，也不要求必出春黑刀，当然追梦随意，最后这期体感上大家比上期更休闲，最后排名270。</p>
-<h2 id="出刀">出刀</h2>
-<p>对于100-300的会来说，我个人感觉，本期最好出两春黑刀，一刀物理，然后垃圾刀全丢五王应该是没问题的。本期5个boss都有春黑一刀的作业，从一阶段到三阶段用上的春黑工具人有：镜子、充电宝、黄骑、露娜、水黑、春田、中二、水电、nnk、mcw、春女仆、圣千、莫妮卡。</p>
-<p>春黑来了后，300会就能一天打进三阶段了，第一天建议早出刀，晚出刀面对三阶段没有作业还是挺难受的。而本期我比较偷懒，3王的春黑轴比较简单，所以这期我出335或者235，3来一刀春黑，2或者3可能填一刀物理，5再来一个不能一刀的春黑刀。</p>
-<p>春黑的常见三件套，露娜、黄骑、中二，我个人没有露娜，所以没法出两刀这样的春黑刀。</p>
-<h2 id="感受">感受</h2>
-<p>简单说下打完第一期春黑刀后我对于春黑的感受吧。</p>
-<p>利：1个月能拿相当于过去2.5个月的战队币，对于战队币比较缺的玩家来说合适，一刀一个boss，可能不会因为大尾巴卡住，或者说卡住的情况会变少。</p>
-<p>弊：<strong>凹暴击</strong>，如果春黑开始暴击不够，后续的伤害也叠不起来；<strong>费时长</strong>，有些春黑刀需要打很久，new
-year
-burst要听吐了；<strong>运气成分大</strong>，可能需要看露娜脸色；<strong>伤害上下差距拉大</strong>，春黑之前的法队和物理队作业伤害差距不会太大，可能有个200w，但春黑来后都是一刀一个boss，如果你不出春黑刀，你就会被拉开，强行逼着你春黑刀。</p>
-<p>总的来说，通过观察日服春黑诞生至今的会战，可以毫不夸张地说，春黑是pcr里面设计得非常失败的角色，春黑的核心在于频繁地释放ub，ub效果如下：</p>
-<blockquote>
-<p>對敵方單體造成 56671 【60.0 + 60.0<em>技能等級 + 4.8
-</em>atk】的魔法傷害。</p>
-<p>技能說明補正：攻擊 * 0.1125。</p>
-<p>提升自身1550 【10.0 + 10.0*技能等級】的魔法攻擊力。</p>
-<p>持續：【18.0】 秒。</p>
-</blockquote>
-<p>ub增加的魔攻是可以叠加的，这就造成了春黑刀高额上限伤害，本期已经出现了两刀四王的作业。而后日服为了针对春黑，例如清buff、limit盾、四阶段的高压让3星春黑扛不住，这些针对措施不但把春黑大砍，同时把传统法队几乎砍没了，日服现在流行两物一法，克怜互借，然后出一刀春黑刀或者圣诞yly，其余的法师已经很难上场了。</p>
-<p>春黑刀的核心在于ub后的18s内再次开ub使自己魔攻进行指数级叠加，同时由于boss杀人或者召唤物能获得tp，在目前boss血量不算多的情况下，春黑的表现非常夸张，也许kmr会从这两点进行限制春黑。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>台服6月水瓶座会战</title>
-    <url>/2020/07/05/Clan-Aquarius/</url>
-    <content><![CDATA[<p>本文主要讲述台服2020年6月水瓶座公会战情况。 <span id="more"></span></p>
-<h3 id="本期情况">本期情况</h3>
-<p>上期春黑刀的第一个月，会内没有排刀，只是要求合刀避免尾刀，最后277名，本期也秉承着上期的摸鱼精神，保700随缘300。</p>
-<p>这个月sonet骚操作不断，克总专武提前到来，cgss的池子却没了，本应该接在fes池后面的水电复刻直接变成了优尼。动画播放完送的5000钻也没给（bcr和日服都给了），vh2和宝珠翻倍都没来，每日送的400体力又是错开的。</p>
-<h3 id="出刀">出刀</h3>
-<h4 id="春黑刀工具人">春黑刀工具人</h4>
-<p>镜子、七七香、黄骑、中二、露娜、水电、驴、狐狸、吉塔、妹法、水黑。
-#### 物理队 吉塔、春猫、春妈、克、511、生菜 ### 法队 圣伊、mcw、nnk</p>
-<p>本期1、2王比较费力不讨好，一刀轴不稳，同时需要的配置又高，所以本期容易卡在这里。4王一刀轴很稳，比较抢手，3王和5王的都容易挂树，但出物理刀也更容易刷伤。</p>
-<h3 id="感受">感受</h3>
-<p>本期比上期更难出刀，个人感觉比较稳定的春黑轴只有4王，物理刀丢1，2又比较亏，而本期auto刀更是少之又少。
-这两期让很多人打得挺累的，观察了下，前排更难打，但前排和中排的差距在拉大。这期我们出的春黑刀应该没上期多，有些人也不想出，但最后排名是231，反而还进步了。</p>
+    <title>台服4月人马座会战</title>
+    <url>/2020/04/29/Clan-Sagittarius/</url>
+    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
+<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
+<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
+<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
+<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
+<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
+<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
+<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
 ]]></content>
       <categories>
         <category>公主连结</category>
@@ -487,58 +507,6 @@ Metrics)</strong></p>
       </tags>
   </entry>
   <entry>
-    <title>Games101-Homework0</title>
-    <url>/2022/01/31/Games101-Homework0/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>主要讲述Games101的作业0内容。</p>
-<span id="more"></span>
-<h2 id="作业内容">作业内容</h2>
-<ul>
-<li>搭建环境，详情可参见下述链接</li>
-</ul>
-<p><a
-href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
-Studio2019 + vcpkg</a></p>
-<ul>
-<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
-(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
-</ul>
-<h2 id="具体实现">具体实现</h2>
-<p>根据齐次坐标的定义，P定义为(2, 1,
-1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
-<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>台服4月人马座会战</title>
-    <url>/2020/04/29/Clan-Sagittarius/</url>
-    <content><![CDATA[<p>本文主要吐槽台服2020年4月公会战情况。 <span id="more"></span></p>
-<p>台服这期是人马座，恰逢撞上圣诞伊利亚的fes池，那边还在白嫖，这边的作业就都要求圣伊了，在休闲公会还好，如果是在前排公会是真的难受，第一天进三阶段后就要母五，如果后面白嫖出货就只能白亏母猪石。</p>
-<p>关于本期我所在的公会情况，月初打完会战后遭到新上任会长的背刺，新会长作为内鬼直接解散了会战群和公会然后跑路了，这点我真是活久见...然后老会长又把大部分人拉了回来，把非满级的人另开一个新的1300会，满级的人保700，后面陆陆续续招了一批满级大佬进来，起初的目标就是保700，随缘300，当时的预期是如果排刀处理好尾刀的话，300没问题，毕竟群里有当麻和n0大佬指挥Orz。</p>
-<p>然后关于本期人马座情况，一二阶段挺简单的，把会战常用角色拉起来，物理系的狗拳（可能需要）、病娇、克总、511（多目标）、狼、水狼、tp弓（最近比较少）、吉塔等，法系的nnk（核心）、xcw、mcw、水黑、yly（多目标）、水狐狸、安、妹法等。第二天我们差不多就进到11周了，也就是二三阶段的转折点，这期作业来的比较慢，所以卡了一个下午。然后看到作业，才发现麻烦的事情。</p>
-<p>本期所有的法队优质作业都有圣伊，对我这种等白嫖而且mana不足的人来说很难受，同时我还没有歪到露娜，这个也难顶。而本期的物理作业，前几个王可以用圣克，三王貌似可以用三弓+可可萝，四王需要水猫剑，五王更是需要忍、生菜和万圣兔，其中万圣兔+生菜是追梦刀，上限能达到700。</p>
-<p>这期的四王和五王感觉设计的很不好，四王远比五王难打，而且给的倍数还略低于五王，这期五王我最多出个忍+511的auto刀，上限大概500吧，狼概率暴毙，而我打生菜轴的时候，狼几乎100%暴毙，可能和我的狼没有满配以及我的可可萝是r12有关吧。</p>
-<p>总之，这期会战我基本上就是植物人了，没有露娜、生菜、万圣兔（三个常驻），没有圣克（限定），也来不及练圣伊、忍，所以这次我基本上是244，4王也什么人打，费力不讨好，我就打两刀400w左右的。</p>
-<p>另外再说下会战角色，感觉kmr设计越来越奇怪了，原来平民系的1，2星会战角色现在渐渐只能在一、二阶段登场，之前水猫剑，我记得当时很多人说这就相当于是物理队的水狐狸，不抽也没太大关系，不过现在看来其实还是有必要抽的，毕竟能吸tp而且伤害还不俗，机制独一无二，而说是只能上场这几期的圣克，貌似这个月在日服也能登场了，感觉平衡做的很奇怪。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-        <tag>公会战</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Games101-Homework1</title>
     <url>/2022/02/01/Games101-Homework1/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -583,6 +551,38 @@ M_{persp} = M_{ortho} * M_{persp-&gt;ortho}
 <h2 id="运行结果">运行结果</h2>
 <p>自己将点画在坐标系上，以及摆好相机位置后，看到的三角形应该是朝上方向的，之前由于没有注意n和f的符号，导致得到的是开口朝下的三角形，这是错误的。</p>
 <p><img src="https://s2.loli.net/2022/02/04/HYbDR3sijxwB1ne.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games101-Homework0</title>
+    <url>/2022/01/31/Games101-Homework0/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>主要讲述Games101的作业0内容。</p>
+<span id="more"></span>
+<h2 id="作业内容">作业内容</h2>
+<ul>
+<li>搭建环境，详情可参见下述链接</li>
+</ul>
+<p><a
+href="https://dyhnoah.github.io/2022/01/05/Games101-Environment/">Games101作业环境配置（Windows）：Visual
+Studio2019 + vcpkg</a></p>
+<ul>
+<li>给定一个点 P=(2,1)， 将该点绕原点先逆时针旋转 45°，再平移
+(1,2)，计算出变换后点的坐标（要求用齐次坐标进行计算）。</li>
+</ul>
+<h2 id="具体实现">具体实现</h2>
+<p>根据齐次坐标的定义，P定义为(2, 1,
+1)，分别写出<strong>旋转矩阵rotateMat</strong>和<strong>平移变换矩阵transMat</strong>，然后用p<strong>左乘</strong>rotateMat和transMat即可。</p>
+<p><img src="https://s2.loli.net/2022/01/27/1kP3SlYz5ZHXGUa.png" style="zoom: 50%;" /></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="function">Eigen::Vector3f <span class="title">p</span><span class="params">(<span class="number">2.0f</span>, <span class="number">1.0f</span>, <span class="number">1.0f</span>)</span></span>;</span><br><span class="line">    Eigen::Matrix3f rotateMat, transMat;</span><br><span class="line">    rotateMat &lt;&lt; std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), -std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , std::<span class="built_in">sin</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), std::<span class="built_in">cos</span>(<span class="number">45.0</span> / <span class="number">180.0</span> * <span class="built_in">acos</span>(<span class="number">-1</span>)), <span class="number">0</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>;</span><br><span class="line">    transMat &lt;&lt; <span class="number">1.0f</span>, <span class="number">0</span>, <span class="number">1.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">1.0f</span>, <span class="number">2.0f</span></span><br><span class="line">        , <span class="number">0</span>, <span class="number">0</span>, <span class="number">1.0f</span>;</span><br><span class="line">    p = transMat * rotateMat * p;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;P: &quot;</span> &lt;&lt; p[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; p[<span class="number">1</span>] &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -658,6 +658,41 @@ buffer)，。</li>
       </tags>
   </entry>
   <entry>
+    <title>Games101-Homework4</title>
+    <url>/2022/03/05/Games101-Homework4/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章讲述Games101的作业4，主要涉及几何的贝塞尔曲线部分。</p>
+<span id="more"></span>
+<h2 id="基础部分">基础部分</h2>
+<h3 id="实现">实现</h3>
+<ul>
+<li>[20 分] De Casteljau 算法： 对于给定的控制点，你的代码能够产生正确的
+Bézier 曲线，比较简单，直接利用递归计算点即可。</li>
+</ul>
+<h3 id="代码">代码</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">cv::Point2f <span class="title">recursive_bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, <span class="keyword">float</span> t)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Implement de Casteljau&#x27;s algorithm</span></span><br><span class="line">    <span class="keyword">if</span> (control_points.<span class="built_in">size</span>() == <span class="number">1</span>)  <span class="keyword">return</span> control_points[<span class="number">0</span>];</span><br><span class="line">    </span><br><span class="line">    std::vector&lt;cv::Point2f&gt; new_points;   </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; control_points.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//t比例下的贝塞尔点</span></span><br><span class="line">        <span class="keyword">auto</span> point = (<span class="number">1.0f</span> - t) * control_points[i - <span class="number">1</span>] + t * control_points[i];</span><br><span class="line">        new_points.<span class="built_in">emplace_back</span>(point);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">recursive_bezier</span>(new_points, t);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, cv::Mat &amp;window)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Iterate through all t = 0 to t = 1 with small steps, and call de Casteljau&#x27;s </span></span><br><span class="line">    <span class="comment">// recursive Bezier algorithm.</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">double</span> t = <span class="number">0.0</span>; t &lt;= <span class="number">1.0</span>; t += <span class="number">0.001</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">auto</span> point = <span class="built_in">recursive_bezier</span>(control_points, t);</span><br><span class="line">        window.at&lt;cv::Vec3b&gt;(point.y, point.x)[<span class="number">1</span>] = <span class="number">255</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果">运行结果</h3>
+<p><img src="https://s2.loli.net/2022/03/05/fgLu6YMHqbsZKm8.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/05/OIo3SK7wA9Dkn2j.png" style="zoom:50%;" /></p>
+<h2 id="提高部分">提高部分</h2>
+<h3 id="实现-1">实现</h3>
+<ul>
+<li>[5 分] 奖励分数： 实现对 Bézier
+曲线的反走样。(对于一个曲线上的点，不只把它对应于一个像素，你需要根据到像素中心的距离来考虑与它相邻的像素的颜色。)</li>
+</ul>
+<h3 id="代码-1">代码</h3>
+<h3 id="运行结果-1">运行结果</h3>
+<h2 id="遇到的问题">遇到的问题</h2>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Games101-Homework3</title>
     <url>/2022/02/27/Games101-Homework3/</url>
     <content><![CDATA[<h2 id="本章内容">本章内容</h2>
@@ -722,41 +757,6 @@ fragment shader
 <p>运行时报错，原因是纹理坐标u, v计算出现负数，超出[0,
 1]的区间，修改getColor函数如下</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Eigen::Vector3f <span class="title">getColor</span><span class="params">(<span class="keyword">float</span> u, <span class="keyword">float</span> v)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 坐标限定</span></span><br><span class="line">    <span class="keyword">if</span> (u &lt; <span class="number">0</span>) u = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (u &gt; <span class="number">1</span>) u = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &lt; <span class="number">0</span>) v = <span class="number">0.0f</span>;</span><br><span class="line">    <span class="keyword">if</span> (v &gt; <span class="number">1</span>) v = <span class="number">0.999f</span>;</span><br><span class="line">    <span class="keyword">auto</span> u_img = u * width;</span><br><span class="line">    <span class="keyword">auto</span> v_img = (<span class="number">1</span> - v) * height;</span><br><span class="line">    <span class="keyword">auto</span> color = image_data.at&lt;cv::Vec3b&gt;(v_img, u_img);</span><br><span class="line">    <span class="keyword">return</span> Eigen::<span class="built_in">Vector3f</span>(color[<span class="number">0</span>], color[<span class="number">1</span>], color[<span class="number">2</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>Games101</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games101-Homework4</title>
-    <url>/2022/03/05/Games101-Homework4/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章讲述Games101的作业4，主要涉及几何的贝塞尔曲线部分。</p>
-<span id="more"></span>
-<h2 id="基础部分">基础部分</h2>
-<h3 id="实现">实现</h3>
-<ul>
-<li>[20 分] De Casteljau 算法： 对于给定的控制点，你的代码能够产生正确的
-Bézier 曲线，比较简单，直接利用递归计算点即可。</li>
-</ul>
-<h3 id="代码">代码</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">cv::Point2f <span class="title">recursive_bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, <span class="keyword">float</span> t)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Implement de Casteljau&#x27;s algorithm</span></span><br><span class="line">    <span class="keyword">if</span> (control_points.<span class="built_in">size</span>() == <span class="number">1</span>)  <span class="keyword">return</span> control_points[<span class="number">0</span>];</span><br><span class="line">    </span><br><span class="line">    std::vector&lt;cv::Point2f&gt; new_points;   </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; control_points.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//t比例下的贝塞尔点</span></span><br><span class="line">        <span class="keyword">auto</span> point = (<span class="number">1.0f</span> - t) * control_points[i - <span class="number">1</span>] + t * control_points[i];</span><br><span class="line">        new_points.<span class="built_in">emplace_back</span>(point);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">recursive_bezier</span>(new_points, t);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bezier</span><span class="params">(<span class="keyword">const</span> std::vector&lt;cv::Point2f&gt; &amp;control_points, cv::Mat &amp;window)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Iterate through all t = 0 to t = 1 with small steps, and call de Casteljau&#x27;s </span></span><br><span class="line">    <span class="comment">// recursive Bezier algorithm.</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">double</span> t = <span class="number">0.0</span>; t &lt;= <span class="number">1.0</span>; t += <span class="number">0.001</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">auto</span> point = <span class="built_in">recursive_bezier</span>(control_points, t);</span><br><span class="line">        window.at&lt;cv::Vec3b&gt;(point.y, point.x)[<span class="number">1</span>] = <span class="number">255</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果">运行结果</h3>
-<p><img src="https://s2.loli.net/2022/03/05/fgLu6YMHqbsZKm8.png" style="zoom:50%;" /></p>
-<p><img src="https://s2.loli.net/2022/03/05/OIo3SK7wA9Dkn2j.png" style="zoom:50%;" /></p>
-<h2 id="提高部分">提高部分</h2>
-<h3 id="实现-1">实现</h3>
-<ul>
-<li>[5 分] 奖励分数： 实现对 Bézier
-曲线的反走样。(对于一个曲线上的点，不只把它对应于一个像素，你需要根据到像素中心的距离来考虑与它相邻的像素的颜色。)</li>
-</ul>
-<h3 id="代码-1">代码</h3>
-<h3 id="运行结果-1">运行结果</h3>
-<h2 id="遇到的问题">遇到的问题</h2>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1021,7 +1021,7 @@ ray），如果这条连线中不存在物体遮挡，则说明光源可以照�
 <h3 id="whitted风格的光线追踪递归">Whitted风格的光线追踪（递归）</h3>
 <p>实际上，一条光线可能经过多次折射、反射到多个点上，最终该像素的值是多个点累加的，折射、反射中存在能量损失。</p>
 <p><img src="https://s2.loli.net/2022/03/02/ZBftj1OyqusUovp.png" style="zoom:50%;" /></p>
-<h2 id="技术实现">技术实现</h2>
+<h2 id="光线求交">光线求交</h2>
 <h3 id="光线与面求交点">光线与面求交点</h3>
 <p>光线的定义：光源+一个方向向量，如下公式，从o开始，往d方向走了t的时间</p>
 <p><span class="math inline">\(r(t) = o+td,
@@ -1047,9 +1047,9 @@ ray），如果这条连线中不存在物体遮挡，则说明光源可以照�
 </ul>
 <h4 id="思路">思路</h4>
 <ul>
-<li><p>光线与每个三角形求交点</p></li>
-<li><p>简单，但是很慢（考虑加速？）</p></li>
-<li><p>光线与三角形有0个或者1个交点</p></li>
+<li>光线与每个三角形求交点</li>
+<li>简单，但是很慢（考虑加速？）</li>
+<li>光线与三角形有0个或者1个交点</li>
 </ul>
 <h3 id="光线与三角形求交点">光线与三角形求交点</h3>
 <h4 id="思路-1">思路</h4>
@@ -1304,6 +1304,93 @@ class="math inline">\((I+K+K^2+K^3+...)\)</span>，进而可以得到图3，相�
 <p>之前学习的光栅化操作，等于0次反射（光源本身）和1次反射（直接光照），即下图的<span
 class="math inline">\(E+KE\)</span>部分。</p>
 <p><img src="https://s2.loli.net/2022/03/16/YxqjT8e2NfUzIov.png" style="zoom:40%;" /></p>
+<h2 id="monte-carlo-integration蒙特卡洛积分">Monte Carlo
+Integration（蒙特卡洛积分）</h2>
+<p><img src="https://s2.loli.net/2022/03/16/mW6Pnhf4FwVULe8.png" style="zoom:40%;" /></p>
+<h3 id="why">Why</h3>
+<p>求一个函数的定积分，但解析求解比较复杂</p>
+<h3 id="what-how">What &amp; How</h3>
+<p>通过平均函数值的随机样本来估计函数的积分。相当于在积分域内不断采样，采样的x有对应的y值，将积分的图形视作长方形（长为积分域，宽为y），求得面积，最后把所有长方形面积相加求平均。</p>
+<h3 id="近似方法">近似方法</h3>
+<p><img src="https://s2.loli.net/2022/03/16/VUbpgdafIH3W2Zs.png" style="zoom:40%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/16/fSKbvipwXFO2TdW.png" style="zoom:40%;" />
+<span class="math display">\[
+\int{f(x)} dx = \frac{1}{N}\sum_{i=1}^{N}\frac{f(X_i)}{p(X_i)} \quad ,
+\quad X_i\sim p(x)
+\]</span></p>
+<ul>
+<li>样本越多，方差越小，近似值越高</li>
+<li>在 x 上采样，在 x 上积分</li>
+</ul>
+<h2 id="path-tracing路径追踪">Path Tracing（路径追踪）</h2>
+<h3 id="前言-2">前言</h3>
+<h4 id="whitted-style-ray-tracing">Whitted-Style Ray Tracing:</h4>
+<ul>
+<li>始终执行镜面反射/折射</li>
+<li>停止在漫反射表面弹跳，如果光线打到漫反射的物体，光线就停止了，不再继续走了</li>
+</ul>
+<h4 id="whitted-style-ray-tracing的问题">Whitted-Style Ray
+Tracing的问题</h4>
+<ul>
+<li>对于Glossy材质的镜面反射不够真实</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/16/IRTDZUOAvMGdQ8i.png" style="zoom:40%;" /></p>
+<ul>
+<li>漫反射材质之间没有反射</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/16/ueT5JROYinQsVSF.png" style="zoom:40%;" /></p>
+<h3 id="求解rendering-equation">求解Rendering Equation</h3>
+<p>如下图所示，图的上方是光源，摄像机在左上角，我们想要观测的点在下方中间位置，通过蒙特卡洛积分，求解Rendering
+Equation，因为散发的光呈半球，所以蒙特卡洛积分的<span
+class="math inline">\(p(X_k)=\frac{1}{2\pi}\)</span>（假设均匀采样半球，半球面的表面积为<span
+class="math inline">\(2\pi\)</span>）</p>
+<p><img src="https://s2.loli.net/2022/03/16/UFXPlKcnHj3xasv.png" style="zoom:40%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/16/kMXSQKTho3DCcZa.png" style="zoom:40%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/16/PscmzhBw6oEa5Me.png" style="zoom:50%;" /></p>
+<h3 id="伪代码">伪代码</h3>
+<p><img src="https://s2.loli.net/2022/03/16/WVY1czJBIaULyFS.png" style="zoom:40%;" /></p>
+<h3 id="引入全局光照">引入全局光照</h3>
+<p>如果摄像机打到第一个物体反射的光线没有打到光源，而是打到了第二个物体（面光源），我们该如何计算？</p>
+<p>我们可以进行递归操作，将第一个物体视作摄像机，第二个物体视作第一个物体，递归代入之前的函数中，判断光线从第二个物体反射后是否会打到光源，伪代码如下。</p>
+<p><img src="https://s2.loli.net/2022/03/16/dKO97GFWewmgnEZ.png" style="zoom:50%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/16/Jnmz7BylfAKvoS5.png" style="zoom:40%;" /></p>
+<h4 id="光线的数量会爆炸">光线的数量会爆炸</h4>
+<p>第一个物体反射100个光线，到第二个物体100个光线再变成10000个光线，<span
+class="math inline">\(rays=N^{bounces}\)</span>，为了避免光线数量爆炸，我们可以设置每个着色点只打出一根光线，改写如下，为了降噪，需要打出多条光线进行追踪</p>
+<p><img src="https://s2.loli.net/2022/03/17/r7CkzSxub1PvWjo.png" style="zoom:40%;" /></p>
+<h4 id="递归停止的条件">递归停止的条件</h4>
+<p>在之前的操作中，我们总是在一个着色点上射一条射线，得到着色结果 <span
+class="math inline">\(Lo\)</span><br />
+类似俄罗斯轮盘赌的思想，假设我们手动设置一个概率 P （0 &lt; P &lt;
+1），以概率P，射出一条射线，返回着色结果除以P：<span
+class="math inline">\(Lo/P\)</span>，以概率为
+1-P，不发射光线，得到着色结果 0<br />
+这样，可以得到期望 Lo，<span
+class="math inline">\(E=P*(Lo/P)+(1-P)*0=Lo\)</span></p>
+<p><img src="https://s2.loli.net/2022/03/17/iNB2wrkVdXnOmUL.png" style="zoom:40%;" /></p>
+<h3 id="效率低">效率低</h3>
+<p>我们现在已经有了Path
+Tracing的正确流程，但实际上可能效率并不高，如下图所示，从1至3，打到光源需要的光线数量在依次增加，原因是着色点在均匀地往四面八方打出光线采样，实际上有相当的光线被浪费了。</p>
+<p><img src="https://s2.loli.net/2022/03/17/4Qjxulh3ztHsf1K.png" style="zoom:40%;" /></p>
+<h3 id="采样光源">采样光源</h3>
+<p><img src="https://s2.loli.net/2022/03/17/g14A2POJGIq6uXm.png" style="zoom: 67%;" /></p>
+<p>将光源与着色点相连，可以得到光源上的立体角与着色点上立体角的关系，代入可得（相当于改变积分域）
+<span class="math display">\[
+dw=\frac{dA\cos\theta&#39;}{||x&#39;-x||^2}
+\]</span>
+<img src="https://s2.loli.net/2022/03/17/agnmXV8DcUzHkTp.png" style="zoom:50%;" /></p>
+<p>以前，我们假设光线是由均匀半球采样“意外”拍摄的，现在我们考虑来自两个部分的辐射，如下图所示：</p>
+<ul>
+<li>光源（直接，下图右边区域，无需俄罗斯轮盘赌）
+<ul>
+<li>其他反射物体（间接，下图左边区域，应用俄罗斯轮盘赌）</li>
+</ul></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/17/tiLCFoGOU5Hmvzu.png" style="zoom:40%;" /></p>
+<p>伪代码如下：</p>
+<p><img src="https://s2.loli.net/2022/03/17/SJBMW8qxgUYnmsO.png" style="zoom:40%;" /></p>
+<p>判断采样点与光源的路线上是否被遮挡：</p>
+<p><img src="https://s2.loli.net/2022/03/17/AMI6zBDFvX1kln2.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>图形学</category>
@@ -1674,6 +1761,64 @@ class="math inline">\(\frac{dp}{du}=c2*[h(v+1)-h(v)]\)</span></li>
       <tags>
         <tag>图形学</tag>
         <tag>Games101</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows环境下配置Emacs+LaTeX</title>
+    <url>/2021/11/27/LaTeXConfigure/</url>
+    <content><![CDATA[<h2 id="前情提要">前情提要</h2>
+<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
+<span id="more"></span>
+<h2 id="下载过程">下载过程</h2>
+<p>一开始就走了弯路，没注意到无论是Linux还是Windows环境，都需要先准备好LaTeX环境，还以为能通过下Emacs的插件可以直接编译LaTeX</p>
+<h3 id="tex-live下载">Tex Live下载</h3>
+<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group
+(tug.org)</a></p>
+<p>Tex
+Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex
+Live的环境，时间1小时往上</p>
+<p><a
+href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
+<p>另一种是下载iso文件，点击on
+DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
+<p><a
+href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
+<p>可以选择下载带有包管理器的基本版，沒有的东西可以用包管理器装</p>
+<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code>
+出版本号就基本可以确定安装成功了</p>
+<h3 id="emacs插件安装">Emacs插件安装</h3>
+<p>在emacs中输入<code>M-x package-install RET *** RET</code></p>
+<p>***={auctex，yasnippets，yasnippets-snippets}</p>
+<h2 id="tex导出中文">Tex导出中文</h2>
+<p>将以下添加到.emacs.d/init.el文件里面，设置xelatex为默认latex编译器</p>
+<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line"><span class="comment">; LaTex插件</span></span><br><span class="line">(<span class="name">add-to-list</span> &#x27;load-path <span class="string">&quot;~/.emacs.d/elpa&quot;</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">require</span> &#x27;yasnippet)</span><br><span class="line">(<span class="name">yas-global-mode</span> <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">setq</span> TeX-output-view-style (<span class="name">quote</span> ((<span class="string">&quot;^pdf$&quot;</span> <span class="string">&quot;.&quot;</span> <span class="string">&quot;evince %o %(outpage)&quot;</span>))))</span><br><span class="line"></span><br><span class="line">(<span class="name">add-hook</span> &#x27;LaTeX-mode-hook</span><br><span class="line">(<span class="name">lambda</span>()</span><br><span class="line">(<span class="name">add-to-list</span> &#x27;TeX-command-list &#x27;(<span class="string">&quot;XeLaTeX&quot;</span> <span class="string">&quot;%`xelatex%(mode)%&#x27; %t&quot;</span> TeX-run-TeX nil t))</span><br><span class="line">(<span class="name">setq</span> TeX-command-default <span class="string">&quot;XeLaTeX&quot;</span>)))</span><br></pre></td></tr></table></figure>
+<h2 id="编译">编译</h2>
+<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c
+C-l</code> 可以看到是用什么编译的</p>
+<p><code>C-C C-V</code>可以直接打开新建的pdf文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\usepackage&#123;xeCJK, fontspec, xunicode, xltxtra&#125;</span><br><span class="line">\usepackage&#123;amsmath&#125;</span><br><span class="line"></span><br><span class="line">\CTEXsetup[name=&#123;第,节&#125;,number=&#123;\chinese&#123;section&#125;&#125;]&#123;section&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line"></span><br><span class="line">\section&#123;你好中国&#125;</span><br><span class="line">中国在East Asia.</span><br><span class="line"></span><br><span class="line">\subsection&#123;Hello Beijing&#125;</span><br><span class="line">北京是capital of China.</span><br><span class="line"></span><br><span class="line">\subsubsection&#123;Hello Dongcheng District&#125;</span><br><span class="line">\paragraph&#123;Tian&#x27;anmen Square&#125;</span><br><span class="line">is in the center of Beijing</span><br><span class="line">\subparagraph&#123;Chairman Mao&#125;</span><br><span class="line">is in the center of 天安门广场。</span><br><span class="line">\subsection&#123;Hello 山东&#125;</span><br><span class="line">\paragraph&#123;山东大学&#125; is one of the best university in 山东。</span><br><span class="line"></span><br><span class="line">這是繁體中文。</span><br><span class="line"></span><br><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line"> \hline</span><br><span class="line">操作系统&amp; 发行版&amp; 编辑器\\</span><br><span class="line"> \hline</span><br><span class="line">Windows &amp; MikTeX &amp; TexMakerX \\</span><br><span class="line"> \hline</span><br><span class="line">Unix/Linux &amp; teTeX &amp; Kile \\</span><br><span class="line"> \hline</span><br><span class="line">Mac OS &amp; MacTeX &amp; TeXShop \\</span><br><span class="line"> \hline</span><br><span class="line">通用&amp; TeX Live &amp; TeXworks \\</span><br><span class="line"> \hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line"></span><br><span class="line">$$\int_0^1 \frac&#123;1&#125;&#123;e^x&#125; =  \frac&#123;e-1&#125;&#123;e&#125;$$</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<p><a
+href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
+<p><a
+href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
+<h2 id="总结">总结</h2>
+<ul>
+<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c
+C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
+。使用<code>C-c C-l</code> 提示 ‘pdflatex’
+不是内部或外部命令，也不是可运行的程序或批处理文件</li>
+<li>pdflatex 和 xelatex 都是 texlive 的一部分</li>
+</ul>
+]]></content>
+      <categories>
+        <category>LaTeX</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -2187,61 +2332,556 @@ n+f-\frac{nf}{z} - z &amp; = \frac{nz+fz-nf-z^2}{z} \\
       </tags>
   </entry>
   <entry>
-    <title>Windows环境下配置Emacs+LaTeX</title>
-    <url>/2021/11/27/LaTeXConfigure/</url>
+    <title>LearnOpenGL学习入门</title>
+    <url>/2021/07/22/LearnOpenGL-1/</url>
     <content><![CDATA[<h2 id="前情提要">前情提要</h2>
-<p>由于最近《科技论文写作》需要用到LaTeX来写论文，于是想起了之前折腾很久的Emacs+LaTeX环境，同时很馋beamer的制作，于是花费一天的时间搭建了Emacs+LaTeX环境</p>
+<p>最近趁着暑假学习OpenGL，跟着 <a
+href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
+的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
 <span id="more"></span>
-<h2 id="下载过程">下载过程</h2>
-<p>一开始就走了弯路，没注意到无论是Linux还是Windows环境，都需要先准备好LaTeX环境，还以为能通过下Emacs的插件可以直接编译LaTeX</p>
-<h3 id="tex-live下载">Tex Live下载</h3>
-<p><a href="https://tug.org/texlive/">TeX Live - TeX Users Group
-(tug.org)</a></p>
-<p>Tex
-Live有两种下载方式，一个是直接下载install-tl-windows.exe，相当于一个在线安装程序，在线下载Tex
-Live的环境，时间1小时往上</p>
-<p><a
-href="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png"><img src="https://i.loli.net/2021/11/27/53b1h7nMDz6WqXE.png" alt="下载一" style="zoom:50%;" /></a></p>
-<p>另一种是下载iso文件，点击on
-DVD，找个镜像下载iso文件，打开install-tl-windows.bat，开始安装，安装为本地安装，大概40分钟左右</p>
-<p><a
-href="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png"><img src="https://i.loli.net/2021/11/27/3AhdPyC9IROez26.png" alt="下载2" style="zoom:50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png"><img src="https://i.loli.net/2021/11/27/P5ASsU9VkC1L7ed.png" alt="install" style="zoom:50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png"><img src="https://i.loli.net/2021/11/26/QBAdNC3VJgRc2xP.png" alt="Tex Live Installer" style="zoom:50%;" /></a></p>
-<p>可以选择下载带有包管理器的基本版，沒有的东西可以用包管理器装</p>
-<p>安装完后，重开 cmd 在里面输入<code>pdflatex</code>
-出版本号就基本可以确定安装成功了</p>
-<h3 id="emacs插件安装">Emacs插件安装</h3>
-<p>在emacs中输入<code>M-x package-install RET *** RET</code></p>
-<p>***={auctex，yasnippets，yasnippets-snippets}</p>
-<h2 id="tex导出中文">Tex导出中文</h2>
-<p>将以下添加到.emacs.d/init.el文件里面，设置xelatex为默认latex编译器</p>
-<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line"><span class="comment">; LaTex插件</span></span><br><span class="line">(<span class="name">add-to-list</span> &#x27;load-path <span class="string">&quot;~/.emacs.d/elpa&quot;</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">require</span> &#x27;yasnippet)</span><br><span class="line">(<span class="name">yas-global-mode</span> <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">(<span class="name">setq</span> TeX-output-view-style (<span class="name">quote</span> ((<span class="string">&quot;^pdf$&quot;</span> <span class="string">&quot;.&quot;</span> <span class="string">&quot;evince %o %(outpage)&quot;</span>))))</span><br><span class="line"></span><br><span class="line">(<span class="name">add-hook</span> &#x27;LaTeX-mode-hook</span><br><span class="line">(<span class="name">lambda</span>()</span><br><span class="line">(<span class="name">add-to-list</span> &#x27;TeX-command-list &#x27;(<span class="string">&quot;XeLaTeX&quot;</span> <span class="string">&quot;%`xelatex%(mode)%&#x27; %t&quot;</span> TeX-run-TeX nil t))</span><br><span class="line">(<span class="name">setq</span> TeX-command-default <span class="string">&quot;XeLaTeX&quot;</span>)))</span><br></pre></td></tr></table></figure>
-<h2 id="编译">编译</h2>
-<p><code>C-c C-c</code> 执行就应该默认是用 xelatex 编译了。<code>C-c
-C-l</code> 可以看到是用什么编译的</p>
-<p><code>C-C C-V</code>可以直接打开新建的pdf文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\usepackage&#123;xeCJK, fontspec, xunicode, xltxtra&#125;</span><br><span class="line">\usepackage&#123;amsmath&#125;</span><br><span class="line"></span><br><span class="line">\CTEXsetup[name=&#123;第,节&#125;,number=&#123;\chinese&#123;section&#125;&#125;]&#123;section&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line"></span><br><span class="line">\section&#123;你好中国&#125;</span><br><span class="line">中国在East Asia.</span><br><span class="line"></span><br><span class="line">\subsection&#123;Hello Beijing&#125;</span><br><span class="line">北京是capital of China.</span><br><span class="line"></span><br><span class="line">\subsubsection&#123;Hello Dongcheng District&#125;</span><br><span class="line">\paragraph&#123;Tian&#x27;anmen Square&#125;</span><br><span class="line">is in the center of Beijing</span><br><span class="line">\subparagraph&#123;Chairman Mao&#125;</span><br><span class="line">is in the center of 天安门广场。</span><br><span class="line">\subsection&#123;Hello 山东&#125;</span><br><span class="line">\paragraph&#123;山东大学&#125; is one of the best university in 山东。</span><br><span class="line"></span><br><span class="line">這是繁體中文。</span><br><span class="line"></span><br><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line"> \hline</span><br><span class="line">操作系统&amp; 发行版&amp; 编辑器\\</span><br><span class="line"> \hline</span><br><span class="line">Windows &amp; MikTeX &amp; TexMakerX \\</span><br><span class="line"> \hline</span><br><span class="line">Unix/Linux &amp; teTeX &amp; Kile \\</span><br><span class="line"> \hline</span><br><span class="line">Mac OS &amp; MacTeX &amp; TeXShop \\</span><br><span class="line"> \hline</span><br><span class="line">通用&amp; TeX Live &amp; TeXworks \\</span><br><span class="line"> \hline</span><br><span class="line">\end&#123;tabular&#125;</span><br><span class="line"></span><br><span class="line">$$\int_0^1 \frac&#123;1&#125;&#123;e^x&#125; =  \frac&#123;e-1&#125;&#123;e&#125;$$</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<p><a
-href="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png"><img src="https://i.loli.net/2021/11/27/4wB852JXrEMYV6F.png" alt="hello2.tex" style="zoom: 50%;" /></a></p>
-<p><a
-href="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png"><img src="https://i.loli.net/2021/11/27/lFy9VipSebzxtur.png" alt="hello2.pdf" style="zoom:50%;" /></a></p>
-<h2 id="总结">总结</h2>
+<h2 id="opengl">OpenGL</h2>
+<blockquote>
+<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
+Programming Interface,
+应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
+href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
+<p>OpenGL自身是一个巨大的状态机。</p>
+</blockquote>
+<h2 id="库函数">库函数</h2>
+<p>GLFW：<a
+href="http://www.glfw.org/download.html">http://www.glfw.org/download.html</a></p>
+<p>GLAD：<a
+href="https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions">https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</a></p>
+<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
+Mathematics (GLM) (github.com)</a></p>
+<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
+stb single-file public domain libraries for C/C++ (github.com)</a></p>
+<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
+Studio下设置项目的链接。</p>
+<h2 id="你好三角形">你好，三角形</h2>
+<p>几个比较重要的概念：</p>
 <ul>
-<li>一开始不清楚要搭建LaTeX环境。装了 AUCTeX 在 tex 文件使用 <code>C-c
-C-c</code> 导出 pdf 总提示<code>Latex: problems after [0] pages</code>
-。使用<code>C-c C-l</code> 提示 ‘pdflatex’
-不是内部或外部命令，也不是可运行的程序或批处理文件</li>
-<li>pdflatex 和 xelatex 都是 texlive 的一部分</li>
+<li><p>顶点数组对象（Vertex Array
+Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
+<li><p>顶点缓冲对象（Vertex Buffer
+Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
+<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
+Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
+<li><p>顶点着色器（Vertex
+Shader）：计算顶点的坐标，输出到gl_position。</p></li>
+<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
+</ul>
+<figure>
+<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
+alt="图形渲染管线流程" />
+<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
+</figure>
+<p>图形渲染管线可以被划分为两个主要部分：</p>
+<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
+<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
+<h2 id="着色器">着色器</h2>
+<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
+<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
+<blockquote>
+<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
+</blockquote>
+<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
+<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
+<h2 id="纹理">纹理</h2>
+<p>用stb_image.h头文件进行图像加载。</p>
+<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
+<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
+<h2 id="变换">变换</h2>
+<p>这一章的基础是线性代数。</p>
+<p>GLM是Open<strong>GL</strong>
+<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
+<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
+<h2 id="坐标系统">坐标系统</h2>
+<p>几个概念：</p>
+<ul>
+<li>局部空间</li>
+<li>世界空间</li>
+<li>观察空间</li>
+<li>裁剪空间</li>
+<li>屏幕空间</li>
+</ul>
+<h2 id="摄像机">摄像机</h2>
+<p>（待更新...)</p>
+]]></content>
+      <categories>
+        <category>图形学</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>OpenGL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公会的神奇操作</title>
+    <url>/2020/04/06/Magic-Clan/</url>
+    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
+<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
+<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
+<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
+，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
+<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
+<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
+<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
+<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
+<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
+<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
+<p>今天才了解到，公会里居然有已经结婚有儿子的老哥，感觉pcr的大学生、社畜偏多，估计还是因为上线5分钟就能解决适合大家吧。</p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode-6032 得到要求路径的最小带权子图</title>
+    <url>/2022/03/15/LeetCode-6032/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>本章为<a
+href="https://leetcode-cn.com/problems/minimum-weighted-subgraph-with-the-required-paths/">LeetCode-2203.
+得到要求路径的最小带权子图</a>的题解。</p>
+<span id="more"></span>
+<h2 id="题目内容">题目内容</h2>
+<p>给你一个整数 n ，它表示一个 <strong>带权有向图</strong>
+的节点数，节点编号为 <code>0</code> 到 <code>n - 1</code> 。</p>
+<p>同时给你一个二维整数数组 <code>edges</code> ，其中 <span
+class="math inline">\(edges[i] = [from_i, to_i, weight_i]\)</span>
+，表示从 <span class="math inline">\(from_i\)</span> 到 <span
+class="math inline">\(to_i\)</span> 有一条边权为 <span
+class="math inline">\(weight_i\)</span> 的 <strong>有向</strong>
+边。</p>
+<p>最后，给你三个 <strong>互不相同</strong> 的整数<code>src1</code>
+，<code>src2</code> 和 <code>dest</code> ，表示图中三个不同的点。</p>
+<p>请你从图中选出一个 <strong>边权和最小</strong> 的子图，使得从 src1 和
+src2 出发，在这个子图中，都 <strong>可以</strong> 到达 <code>dest</code>
+。如果这样的子图不存在，请返回 <code>-1</code> 。</p>
+<p><strong>子图</strong>
+中的点和边都应该属于原图的一部分。子图的边权和定义为它所包含的所有边的权值之和。</p>
+<p><img src="https://s2.loli.net/2022/03/15/hvoGLHwReg153pS.png" style="zoom:33%;" /></p>
+<blockquote>
+<p><strong>输入</strong>：n = 6, edges = [[0,2,2], [0,5,6], [1,0,3],
+[1,4,5], [2,1,1], [2,3,3], [2,3,4], [3,4,2], [4,5,1]], src1 = 0, src2 =
+1, dest = 5 <strong>输出</strong>：9</p>
+<p><strong>解释</strong>：</p>
+<p>上图为输入的图。</p>
+<p>蓝色边为最优子图之一。</p>
+<p>注意，子图 [[1,0,3], [0,5,6]]
+也能得到最优解，但无法在满足所有限制的前提下，得到更优解。</p>
+</blockquote>
+<h2 id="解题思路">解题思路</h2>
+<p>做LeetCode比赛的时候遇到这题，刚看见的时候感觉应该不难，但因为没有时间就没能深入思考。</p>
+<p>实际上本题不难，用的也是图论中比较经典的思想，枚举中间点，通过枚举中间点<span
+class="math inline">\(i\)</span>，计算src1到<span
+class="math inline">\(i\)</span>的距离 + src2到<span
+class="math inline">\(i\)</span>的距离 + <span
+class="math inline">\(i\)</span>到dest的距离，求出最小的<span
+class="math inline">\(i\)</span>，上述的枚举包含所有的情况，因此直接计算即可。</p>
+<p>求src1到<span
+class="math inline">\(i\)</span>的距离可以使用Dijkstra算法，求<span
+class="math inline">\(i\)</span>到dest的距离可以通过将边反向，求dest到各个点的距离来实现。</p>
+<p>关于Dijkstra算法，本题如果不使用堆优化，会产生超时，因此顺带可以熟悉STL的使用。</p>
+<p>STL使用 <code>priority_queue</code>
+作为堆，默认是大根堆，因此为了得到最短路，可以将路径取相反数，放进大根堆。同时在Dijkstra算法中，用堆优化的时候，堆内的元素包含<strong>距离</strong>和<strong>顶点</strong>，因此使用
+<code>pair</code> 记录距离和顶点。将 <code>pair</code> 放进
+<code>priority_queue</code>
+时，默认的排序方式是先排第一个，再排第二个。</p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 100000+20</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">long</span> <span class="keyword">long</span>, <span class="keyword">int</span>&gt; pp;</span><br><span class="line">vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; v1, v2, w1, w2;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> dis1[MAXN], dis2[MAXN], dis3[MAXN], now = <span class="number">-1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">getDis</span><span class="params">(<span class="keyword">int</span> o, <span class="keyword">int</span> n, <span class="keyword">long</span> <span class="keyword">long</span> *dis, <span class="keyword">int</span> *vis, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; v, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; w)</span>  </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)  dis[i] = <span class="number">-1</span>;</span><br><span class="line">        priority_queue&lt;pp&gt; q;</span><br><span class="line">        q.<span class="built_in">push</span>(<span class="built_in">pp</span>(<span class="number">0</span>, o));</span><br><span class="line">        <span class="keyword">while</span> (!q.<span class="built_in">empty</span>())  &#123;</span><br><span class="line">	        pp p = q.<span class="built_in">top</span>();  q.<span class="built_in">pop</span>();</span><br><span class="line">	        <span class="keyword">int</span> sn = p.second;</span><br><span class="line">	        <span class="keyword">long</span> <span class="keyword">long</span> val = -p.first;</span><br><span class="line">	        <span class="keyword">if</span> (dis[sn] &gt;= <span class="number">0</span>)  <span class="keyword">continue</span>;</span><br><span class="line">	        dis[sn] = val;</span><br><span class="line">	        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; v[sn].<span class="built_in">size</span>(); i++)</span><br><span class="line">	            q.<span class="built_in">push</span>(<span class="built_in">pp</span>(-val - w[sn][i], v[sn][i]));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">minimumWeight</span><span class="params">(<span class="keyword">int</span> n, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; edges, <span class="keyword">int</span> src1, <span class="keyword">int</span> src2, <span class="keyword">int</span> dest)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> vis[MAXN];</span><br><span class="line">        v1 = v2 = w1 = w2 = vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;(n);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> &amp;edge : edges)  &#123;</span><br><span class="line">            v1[edge[<span class="number">0</span>]].<span class="built_in">push_back</span>(edge[<span class="number">1</span>]); w1[edge[<span class="number">0</span>]].<span class="built_in">push_back</span>(edge[<span class="number">2</span>]);</span><br><span class="line">            v2[edge[<span class="number">1</span>]].<span class="built_in">push_back</span>(edge[<span class="number">0</span>]); w2[edge[<span class="number">1</span>]].<span class="built_in">push_back</span>(edge[<span class="number">2</span>]);	    </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">getDis</span>(src1, n, dis1, vis, v1, w1);</span><br><span class="line">        <span class="built_in">getDis</span>(src2, n, dis2, vis, v1, w1);</span><br><span class="line">        <span class="built_in">getDis</span>(dest, n, dis3, vis, v2, w2);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)  &#123;</span><br><span class="line">            <span class="keyword">if</span> (dis1[i] == <span class="number">-1</span> || dis2[i] == <span class="number">-1</span> || dis3[i] == <span class="number">-1</span>)  <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span> (now == <span class="number">-1</span>)   now = dis1[i] + dis2[i] + dis3[i];</span><br><span class="line">            <span class="keyword">if</span> (dis1[i] + dis2[i] + dis3[i] &lt; now)   </span><br><span class="line">                now = dis1[i] + dis2[i] + dis3[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> now;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Noip算法总结之搜索</title>
+    <url>/2015/11/03/Noip-Summary-Search/</url>
+    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
+<p>最近翻到一篇自己多年前写的Noip搜索算法总结，趁此机会搬运过来。</p>
+<span id="more"></span>
+<h2 id="搜索的技巧">搜索的技巧</h2>
+<p>搜索主要是给出一些条件，在不同则状态之间进行转移，如果状态量少的话，那就可以直接上
+DP 了，但搜索一般是状态量大，且不太好转移。</p>
+<ul>
+<li><p>一般对于小数据，如什么 n ≤ 20
+之类的是可以打暴搜的，而搜索的剪枝通常有两种：可行性剪枝和最优性剪枝。但有的时候，如果对于自己的这个剪枝没有十足的把握，那就不要加上</p></li>
+<li><p>搜索的时候考虑使用位运算，速度可以加快些．对于一些可以转移的状态之间的搜索，我们可以考虑
+hash
+或者是状态压缩下来，进行记忆化，那么对于以后再次搜到这个状态我们就可以直接调用了</p></li>
+</ul>
+<h2 id="搜索的分类">搜索的分类</h2>
+<h3 id="枚举">枚举</h3>
+<p>这恐怕是最暴力的了，一般就是直接从初始状态搜索到结束状态，不加任何的剪枝和优化，复杂度一般为指数级别（n
+≤ 20）</p>
+<h3 id="深度优先搜索dfs">深度优先搜索（DFS）</h3>
+<p>这就相当于是走迷宫的时候一条路直接走到底，除非发现当前这条路非法或者走到终点，由于深搜是栈式的储存方式，所以对空间的消耗比较少，但要注意的是状态量的总数如果达到ｗ级别的话就要注意有爆栈的危险了，Windows
+下是 3w 左右，Linux 是 10w 左右，一般和回溯搭配使用</p>
+<h3 id="广度优先搜索bfs">广度优先搜索（BFS）</h3>
+<p>这就相当于是走迷宫的时候多路同时一起进行，走到终点就停止，对于求最优解且话费均等的情况较好，一般用队列实现。</p>
+<h3 id="dfs和bfs的比较">DFS和BFS的比较</h3>
+<p>深搜的空间开销小，但对于数据可能走到解答树的某种节点上，这个节点的后继状态很多，但最优解却在另一个子树中．
+广搜的空间开销相对于深搜要多很多，但求解的效率貌似要高些，而且不用担心会爆栈，（在对于树的某些操作，注意是否有爆栈的危险，若有的话，最好改成广搜或是手写栈）</p>
+<h3 id="迭代加深-和-ida">迭代加深 和 IDA*</h3>
+<p>这种算法结合了深搜和广搜的优点，时间的表现也很不错。</p>
+<p>搜索仍是DFS，但对于每次的搜索都给它设置一个深度上限，超过当前的深度上限就直接返回。</p>
+<h4 id="bzoj-1085-骑士精神"><a
+href="https://ac.nowcoder.com/acm/problem/20247">BZOJ 1085
+骑士精神</a></h4>
+<p>经典例题：<a href="https://ac.nowcoder.com/acm/problem/20247">BZOJ
+1085 骑士精神</a>：</p>
+<blockquote>
+<p>在一个5×5的棋盘上有12个白色 的骑士和12个黑色的骑士，
+且有一个空位。在任何时候一个骑士都能按照骑士的走法（它可以走到和它横坐标相差为1，纵坐标相差为2或者横坐标相差为2，纵坐标相差为1的格子）移动到
+空位上。 给定一个初始的棋盘，怎样才能经过移动变成如下目标棋盘：
+为了体现出骑士精神，他们必须以最少的步数完成任务。</p>
+<p><img src="https://s2.loli.net/2022/03/12/dHgzIGUJCZFs3ih.png" style="zoom: 80%;" /></p>
+</blockquote>
+<p>迭代加深再加上ｈ(x)
+即乐观估计函数，对于当前的状态我们可以乐观地估计出当前的状态到目标状态所需的最多层数，如果大于我们所设置的上界，就返回。</p>
+<p>基本步骤：</p>
+<ol type="1">
+<li><p>设置一个固定的深度 maxdepth ，通常为 1，即初始的状态。</p></li>
+<li><p>DFS 进行搜索，限制层数
+depth，如果找到答案，则结束，如果没有找到答案则继续下一步。</p></li>
+<li><p>如果 DFS 途中遇到更深的层，则 depth++ ，并重复
+2；如果没有遇到，说明搜索已经结束，没有答案。</p></li>
+</ol>
+<p>（中间可用乐观估价函数进行剪枝）</p>
+<p>经典例题：<a href="https://ac.nowcoder.com/acm/problem/50246">codevs
+1288 埃及分数</a>：</p>
+<blockquote>
+<p>在古埃及，人们使用单位分数的和（形如1/a的，a是自然数）表示一切有理数。</p>
+<p>如：2/3 = 1/2+1/6，但不允许2/3=1/3+1/3，因为加数中有相同的。
+对于一个分数a/b,表示方法有很多种，但是哪种最好呢？</p>
+<p>首先，加数少的比加数多的好，其次，加数个数相同的，最小的分数越大越好。</p>
+<p>如： 19/45 = 1/3 + 1/12 + 1/180 , 19/45 = 1/3 + 1/15 + 1/45 , 19/45 =
+1/3 + 1/18 + 1/30 , 19/45 = 1/4 + 1/6 + 1/180 , 19/45 = 1/5 + 1/6 +
+1/18。</p>
+<p>最好的是最后一种，因为1/18比1/180，1/45，1/30，1/180都大。 给出a,b（0
+&lt; a &lt; b &lt; 1000），编程计算最好的表达方式。</p>
+</blockquote>
+<h3 id="双向广搜">双向广搜</h3>
+<p>这个我还没怎么用过，大概是正着搜一次，再从终点倒着搜一次，直到两者相遇。</p>
+<h3 id="meet-in-the-middle">Meet in the middle</h3>
+<p>主要思想：</p>
+<p>两人分别从Ａ地和Ｂ地出发，向对方的出发点走去。当他们都走了 L/2
+米的时候 ”在中间相遇“，找到了一条长度为 L 米的路径</p>
+<h4 id="两种模型">两种模型</h4>
+<ul>
+<li><p>有向图模型</p></li>
+<li><p>方程模型</p></li>
+</ul>
+<h4 id="经典例题">经典例题</h4>
+<blockquote>
+<p>已知一个n元高次方程：</p>
+<p><span
+class="math inline">\(k_1x_1^{p_1}+k_2x_2^{p_2}+...+k_nx_n^{p_n}=0\)</span></p>
+<p>其中：<span
+class="math inline">\(x_1,x_2,...,x_n\)</span>是未知数，<span
+class="math inline">\(k_1,k_2,...,k_n\)</span>是系数，<span
+class="math inline">\(p_1,p_2,...,p_n\)</span>是指数。且方程中的所有数均为整数。</p>
+<p>假设未知数<span class="math inline">\(1 \leq x_i \leq M,
+i=1,2,...,n\)</span>，求这个方程的整数解的个数。</p>
+</blockquote>
+<h2 id="搜索的优化">搜索的优化</h2>
+<ul>
+<li><p>剪枝（可行性剪枝，最优性剪枝）</p></li>
+<li><p>改变搜索顺序,增加更多限制条件（如 <a
+href="https://ac.nowcoder.com/acm/problem/17397">NOI 2005
+智慧珠游戏</a>，CTSC 2013 复原）</p></li>
+<li><p>记忆化搜索：对于同一状态的多次搜索，可以记忆化，下次就可以直接调用之前搜索过的结果（例：<a
+href="https://www.luogu.com.cn/problem/P3230">HNOI 2013
+比赛</a>）</p></li>
+</ul>
+<h2 id="吐槽">吐槽</h2>
+<p>话说现在 BZOJ 没了真的好不方便啊...</p>
+<p>看着原来的总结笔记，现在差不多全忘光了...</p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>Noip</tag>
+        <tag>搜索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公主连结Re:Dive常用地址</title>
+    <url>/2020/03/17/PCR-Tool/</url>
+    <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
+<span id="more"></span>
+<h3 id="日常向">日常向</h3>
+<p><a
+href="https://pcredivewiki.tw/">兰德索尔图书馆</a>：各个功能都比较实用，推荐其中的<a
+href="https://pcredivewiki.tw/Armory">装备库</a>功能，平时看活动预测、角色站位以及其余小工具都比较方便。</p>
+<h3 id="jjc向">JJC向</h3>
+<p><a
+href="https://bbs.nga.cn/read.php?tid=14878762">初音笔记（iOS）</a>和<a
+href="https://bbs.nga.cn/read.php?tid=20499613">静流笔记（Android）</a>：我只用过前者，不过后者应该是差不多的，这个可以用来查询角色的技能、属性、伤害、循环以及推图、露娜塔、公会战的Boss信息。</p>
+<p><a
+href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
+<h3 id="社交推荐">社交推荐</h3>
+<p>NGA和贴吧。
+可以去nga找找当期活动的sp和vh打法，贴吧看看热闹，毕竟这游戏的jjc和公会战都离不开别的玩家，在jjc里py或者找工会还是需要多留心注意的。</p>
+<h3 id="b站up主推荐">B站up主推荐</h3>
+<p><a href="https://space.bilibili.com/9135820/">盐取shiotori</a></p>
+<p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
+<p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
+<p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
+]]></content>
+      <categories>
+        <category>公主连结</category>
+      </categories>
+      <tags>
+        <tag>pcr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>POJ 1753 Flip Game</title>
+    <url>/2020/05/22/POJ-1753/</url>
+    <content><![CDATA[<p>最近开始写POJ上面的题目，网上搜了份<a
+href="https://blog.csdn.net/a1dark/article/details/11714009">推荐题目</a>开始做。</p>
+<p><a href="http://poj.org/problem?id=1753"
+title="POJ-1753链接">POJ-1753链接</a></p>
+<span id="more"></span>
+<p>大意是4*4的黑白棋，每次可以选择一个棋子将其和上下左右5个棋子翻转（边界情况特殊些），问最少几次能全黑或全白。</p>
+<p>首先分析状态，4*4的棋盘，估计状态不会很多，同时对于一个棋子，翻转奇数次或者偶数次的情况是一样的，要么翻一次，要么不翻。</p>
+<p>所以最多需要翻转的次数是16次，从1次到16次，一共有</p>
+<p><span class="math display">\[
+\dbinom{1}{16}+ \dbinom{2}{16}+...+ \dbinom{15}{16}+ \dbinom{16}{16} =
+2^{16}
+\]</span></p>
+<p>同时，我们可以只用一个数字来记录当前棋盘的状态，每个棋子非黑即白，可以用0、1来表示，棋盘状态可以被一个16位的二进制数代替。</p>
+<p>算法大致思路，首先枚举翻转的次数，从1开始。然后在从棋盘左上角往右下角进行DFS搜索，如果当前棋子要翻转，则把该当前状态二进制数与该棋子对应的二进制位进行异或。到达条件是棋盘是否为0或者2^16-1</p>
+<p>代码如下，其实可以不用定义数组，以及可能可以记录状态减少时间，不过懒得改了。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> goal = (<span class="number">1</span>&lt;&lt;<span class="number">16</span>)<span class="number">-1</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dpos[] = &#123;<span class="number">-4</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> ans = <span class="number">0</span>, num = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">6</span>][<span class="number">6</span>];</span><br><span class="line"><span class="keyword">int</span> vis[<span class="number">5000</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> ch;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">4</span>; j++)</span><br><span class="line">	&#123;</span><br><span class="line">	    <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>, &amp;ch);</span><br><span class="line">	    <span class="keyword">if</span> (ch == <span class="string">&#x27;b&#x27;</span>)   a[i][j] = <span class="number">1</span>, res++;</span><br><span class="line">	    <span class="keyword">else</span> a[i][j] = <span class="number">0</span>;</span><br><span class="line">	    num = (num&lt;&lt;<span class="number">1</span>)+a[i][j];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (res == <span class="number">16</span> || res == <span class="number">0</span>)  ans = <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos, <span class="keyword">int</span> cnt)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> npos, nxt = now;</span><br><span class="line">    <span class="keyword">if</span> (cnt == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">if</span> (now == <span class="number">0</span> || now == goal)</span><br><span class="line">	    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (pos + cnt &gt; <span class="number">17</span> || pos &gt; <span class="number">16</span>)  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">	npos = dpos[i] + pos;</span><br><span class="line">	<span class="keyword">if</span> (pos%<span class="number">4</span>==<span class="number">0</span> &amp;&amp; npos%<span class="number">4</span>==<span class="number">1</span>)  <span class="keyword">continue</span>;</span><br><span class="line">	<span class="keyword">if</span> (pos%<span class="number">4</span>==<span class="number">1</span> &amp;&amp; npos%<span class="number">4</span>==<span class="number">0</span>)  <span class="keyword">continue</span>;</span><br><span class="line">	<span class="keyword">if</span> (npos &gt;= <span class="number">1</span> &amp;&amp; npos &lt;= <span class="number">16</span>)</span><br><span class="line">	    nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-npos));	    </span><br><span class="line">    &#125;</span><br><span class="line">    nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-pos));</span><br><span class="line">    flag = <span class="built_in">search</span>(nxt, pos+<span class="number">1</span>, cnt<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">if</span> (flag == <span class="number">1</span>)</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    flag = <span class="built_in">search</span>(now, pos+<span class="number">1</span>, cnt);</span><br><span class="line">    <span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">work</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cnt;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">-1</span>)</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">void</span>) <span class="built_in">printf</span>(<span class="string">&quot;0\n&quot;</span>);</span><br><span class="line">    ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (cnt = <span class="number">1</span>; cnt &lt;= <span class="number">16</span>; cnt++)</span><br><span class="line">    &#123;</span><br><span class="line">	ans = <span class="built_in">search</span>(num, <span class="number">1</span>, cnt);</span><br><span class="line">	<span class="keyword">if</span> (ans != <span class="number">0</span>)  <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">0</span>)  <span class="built_in">printf</span>(<span class="string">&quot;Impossible\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, cnt);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line">    <span class="built_in">init</span>();</span><br><span class="line">    <span class="built_in">work</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>搜索</tag>
+        <tag>POJ</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>POJ 2965 The Pilots Brothers&#39; refrigerator</title>
+    <url>/2020/05/24/POJ-2965/</url>
+    <content><![CDATA[<p>本文为POJ 2965 The Pilots Brothers'
+refrigerator题解。<span id="more"></span></p>
+<p><a href="http://poj.org/problem?id=2965"
+title="POJ-2965链接">POJ-2965链接</a></p>
+<p>大意冰箱门上有4*4的手柄，手柄有开和关两种状态，每次可以选择一个手柄将其和所在的行列全部翻转，问最少几次能打开。</p>
+<p>题目和POJ 1753很像。</p>
+<p>首先分析状态，4*4的手柄，估计状态不会很多，同时对于一个手柄，翻转奇数次或者偶数次的情况是一样的，要么翻一次，要么不翻。</p>
+<p>所以最多需要翻转的次数是16次，从1次到16次，一共有</p>
+<p><span class="math display">\[
+\dbinom{1}{16}+ \dbinom{2}{16}+...+ \dbinom{15}{16}+ \dbinom{16}{16} =
+2^{16}
+\]</span></p>
+<p>同时，我们可以只用一个数字来记录当前冰箱门的状态，每个手柄非开即关，可以用0、1来表示，冰箱门状态可以被一个16位的二进制数代替。</p>
+<p>算法大致思路，首先枚举翻转的次数，从1开始。然后在从冰箱门左上角往右下角进行DFS搜索，如果当前手柄要翻转，则把该当前状态二进制数与该手柄对应的二进制位进行异或。到达条件是冰箱门是否为0。</p>
+<p>代码如下，其实可以不用定义数组，以及可能可以记录状态减少时间，不过懒得改了。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dpos[] = &#123;<span class="number">-4</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> ans = <span class="number">0</span>, num = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">6</span>][<span class="number">6</span>], as = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> des[<span class="number">20</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> ch;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">4</span>; j++)</span><br><span class="line">	&#123;</span><br><span class="line">	    <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>, &amp;ch);</span><br><span class="line">	    <span class="keyword">if</span> (ch == <span class="string">&#x27;+&#x27;</span>)   a[i][j] = <span class="number">1</span>, res++;</span><br><span class="line">	    <span class="keyword">else</span> a[i][j] = <span class="number">0</span>;</span><br><span class="line">	    num = (num&lt;&lt;<span class="number">1</span>)+a[i][j];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (res == <span class="number">0</span>)  ans = <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos, <span class="keyword">int</span> cnt)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> nxt = now;</span><br><span class="line">    <span class="keyword">int</span> x = (pos<span class="number">-1</span>)/<span class="number">4</span>+<span class="number">1</span>, y = (pos<span class="number">-1</span>)%<span class="number">4</span>+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (cnt == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">		<span class="keyword">if</span> (now == <span class="number">0</span>)</span><br><span class="line">	    	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (pos + cnt &gt; <span class="number">17</span> || pos &gt; <span class="number">16</span>)  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">		<span class="keyword">if</span> (x+i&lt;=<span class="number">4</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x+i<span class="number">-1</span>)*<span class="number">4</span>+y)));</span><br><span class="line">		<span class="keyword">if</span> (x-i&gt;=<span class="number">1</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x-i<span class="number">-1</span>)*<span class="number">4</span>+y)));</span><br><span class="line">		<span class="keyword">if</span> (y+i&lt;=<span class="number">4</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x<span class="number">-1</span>)*<span class="number">4</span>+y+i)));</span><br><span class="line">		<span class="keyword">if</span> (y-i&gt;=<span class="number">1</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x<span class="number">-1</span>)*<span class="number">4</span>+y-i)));</span><br><span class="line">    &#125;</span><br><span class="line">    nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-pos));</span><br><span class="line">    flag = <span class="built_in">search</span>(nxt, pos+<span class="number">1</span>, cnt<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">if</span> (flag == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">		des[++as] = pos;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    flag = <span class="built_in">search</span>(now, pos+<span class="number">1</span>, cnt);</span><br><span class="line">    <span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">work</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cnt;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">-1</span>)</span><br><span class="line">		<span class="keyword">return</span> (<span class="keyword">void</span>) <span class="built_in">printf</span>(<span class="string">&quot;0\n&quot;</span>);</span><br><span class="line">    ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (cnt = <span class="number">1</span>; cnt &lt;= <span class="number">16</span>; cnt++)</span><br><span class="line">    &#123;</span><br><span class="line">		ans = <span class="built_in">search</span>(num, <span class="number">1</span>, cnt);</span><br><span class="line">		<span class="keyword">if</span> (ans != <span class="number">0</span>)  <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">0</span>)  <span class="built_in">printf</span>(<span class="string">&quot;Impossible\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, cnt);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = as; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">		<span class="keyword">int</span> x = (des[i]<span class="number">-1</span>)/<span class="number">4</span>+<span class="number">1</span>, y = (des[i]<span class="number">-1</span>)%<span class="number">4</span>+<span class="number">1</span>;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d %d\n&quot;</span>, x, y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line">    <span class="built_in">init</span>();</span><br><span class="line">    <span class="built_in">work</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>搜索</tag>
+        <tag>POJ</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在Hexo-Next8主题下配置Twikoo评论</title>
+    <url>/2022/03/11/Twikoo-Config/</url>
+    <content><![CDATA[<h2 id="前情提要">前情提要</h2>
+<p>本博客是Hexo + Github搭建的，之前本来使用的是<a
+href="(https://butterfly.js.org/)">Butterfly主题</a>，但是因为对于滚动条和分级标题格式的不喜欢，又换回经典的<a
+href="https://github.com/next-theme/hexo-theme-next">Next主题</a>，同时这次终于把Twikoo也迁移过来了，本文主要讲述Next主题下Twikoo评论的配置问题。</p>
+<span id="more"></span>
+<h2 id="部署twikoo">部署Twikoo</h2>
+<p>可参考<a
+href="https://twikoo.js.org/quick-start.html#%E4%BA%91%E5%87%BD%E6%95%B0%E9%83%A8%E7%BD%B2">官方文档</a>，包含<strong>云函数部署</strong>和<strong>前端部署</strong></p>
+<h3 id="云函数部署">云函数部署</h3>
+<p>参考<a
+href="https://twikoo.js.org/quick-start.html#%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2">一键部署</a></p>
+<h3 id="前端部署">前端部署</h3>
+<p>目前在Next 8才能使用，在Hexo 项目根目录下执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> For NexT version &gt;= 8.0.0 &amp;&amp; &lt; 8.4.0</span></span><br><span class="line">npm install hexo-next-twikoo@1.0.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> For NexT version &gt;= 8.4.0</span></span><br><span class="line">npm install hexo-next-twikoo@1.0.3</span><br></pre></td></tr></table></figure>
+<p>然后在Hexo的Next主题配置文件添加</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">twikoo:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">envId:</span> <span class="string">xxxxxxxxxxxxxxx</span> <span class="comment"># 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）</span></span><br><span class="line">  <span class="comment"># region: ap-guangzhou # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填</span></span><br></pre></td></tr></table></figure>
+<h2 id="常见问题">常见问题</h2>
+<h3 id="next-8主题报错">Next 8主题报错</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: ENOENT: no such file or directory, open &#x27;E:\***\Blog\hexo\node_modules\highlight.js/styles/stackoverflow-dark.css&#x27;</span><br><span class="line">      at Object.openSync (fs.js:458:3)</span><br><span class="line">      at Object.readFileSync (fs.js:360:35)</span><br><span class="line">      at highlightTheme (E:\***\Blog\hexo\themes\hexo-theme-next-8.10.1\scripts\events\lib\utils.js:19:22)</span><br><span class="line">      at module.exports (E:\***\Blog\hexo\themes\hexo-theme-next-8.10.1\scripts\events\lib\highlight.js:20:13)</span><br><span class="line">      at Hexo.&lt;anonymous&gt; (E:\***\Blog\hexo\themes\hexo-theme-next-8.10.1\scripts\events\index.js:13:29)</span><br><span class="line">      at Hexo.tryCatcher (E:\***\Blog\hexo\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">      at Hexo.&lt;anonymous&gt; (E:\***\Blog\hexo\node_modules\bluebird\js\release\method.js:15:34)</span><br><span class="line">      at E:\***\Blog\hexo\node_modules\hexo\lib\extend\filter.js:67:52</span><br><span class="line">      at tryCatcher (E:\***\Blog\hexo\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">      at Object.gotValue (E:\***\Blog\hexo\node_modules\bluebird\js\release\reduce.js:166:18)</span><br><span class="line">      at Object.gotAccum (E:\***\Blog\hexo\node_modules\bluebird\js\release\reduce.js:155:25)</span><br><span class="line">      at Object.tryCatcher (E:\***\Blog\hexo\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">      at Promise._settlePromiseFromHandler (E:\***\Blog\hexo\node_modules\bluebird\js\release\promise.js:547:31)</span><br><span class="line">      at Promise._settlePromise (E:\***\Blog\hexo\node_modules\bluebird\js\release\promise.js:604:18)</span><br><span class="line">      at Promise._settlePromiseCtx (E:\***\Blog\hexo\node_modules\bluebird\js\release\promise.js:641:10)</span><br><span class="line">      at _drainQueueStep (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:97:12)</span><br><span class="line">      at _drainQueue (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:86:9)</span><br><span class="line">      at Async._drainQueues (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:102:5)</span><br><span class="line">      at Immediate.Async.drainQueues [as _onImmediate] (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:15:14)</span><br><span class="line">      at processImmediate (internal/timers.js:456:21) &#123;</span><br><span class="line">    errno: -4058,</span><br><span class="line">    syscall: &#x27;open&#x27;,</span><br><span class="line">    code: &#x27;ENOENT&#x27;,</span><br><span class="line">    path: &#x27;E:\\***\\Blog\\hexo\\node_modules\\highlight.js/styles/stackoverflow-dark.css&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>需下载代码高亮插件 <code>highlight.js</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install highlight.js</span><br></pre></td></tr></table></figure>
+<h3 id="如何获得管理面板的私钥文件">如何获得管理面板的私钥文件</h3>
+<ul>
+<li>进入<a
+href="https://console.cloud.tencent.com/tcb/env/login">环境-登录授权</a>，点击“自定义登录”右边的“私钥下载”，下载私钥文件（注意：下载新的私钥，旧的私钥一小时后就会失效）</li>
+<li>用文本编辑器打开私钥文件，复制全部内容</li>
+<li>点击评论窗口的“小齿轮”图标，粘贴私钥文件内容，并设置管理员密码</li>
+</ul>
+<h3 id="如何修改重置管理员密码">如何修改、重置管理员密码</h3>
+<p>请前往<a
+href="https://console.cloud.tencent.com/tcb/database/collection/config">云开发控制台</a>编辑配置，删除
+<code>config.ADMIN_PASS</code> 配置项，修改
+<code>config.CREDENTIALS</code> 配置项，换成新的私钥，然后前往 Twikoo
+管理面板重新设置密码。</p>
+<h3 id="如何修改头像">如何修改头像</h3>
+<p>请前往 <a
+href="https://cn.gravatar.com/">https://cn.gravatar.com</a>通过邮箱注册并设定头像，评论时，请留下相同的邮箱。</p>
+<p>访客还可以通过输入数字 QQ 邮箱地址，使用 QQ 头像发表评论。</p>
+<h2 id="相关文档">相关文档</h2>
+<ul>
+<li><a
+href="https://blog.zhheo.com/p/2e6bbbd0.html">在Hexo的Butterfly主题使用Twikoo评论配置及更新教程</a></li>
+<li><a href="https://twikoo.js.org/">Twikoo 中文文档</a></li>
+<li><a href="https://www.imaegoo.com/2021/twikoo-lightgallery/">集成
+Twikoo 与 lightGallery 插件，实现评论图片的点击放大</a></li>
 </ul>
 ]]></content>
       <categories>
-        <category>LaTeX</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>LaTeX</tag>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+        <tag>Twikoo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Qt中使用Sqlite</title>
+    <url>/2021/11/15/Qt-SQL/</url>
+    <content><![CDATA[<h2 id="前情提要">前情提要</h2>
+<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
+<span id="more"></span>
+<h2 id="使用">使用</h2>
+<h3 id="头文件准备">头文件准备</h3>
+<p>首先在.pro文件里加入</p>
+<blockquote>
+<p>QT += sql</p>
+</blockquote>
+<p>然后在.h文件里加入</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="库函数调用">库函数调用</h3>
+<ul>
+<li><p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p></li>
+<li><p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>QSqlQuery
+sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
+<p>可以直接用.exec(const QString&amp;
+query)执行query里面的sql语句内容</p>
+<p>也可以使用.prepare(const QString&amp; query),
+.exec()预先输入query里的sql语句，再加以执行</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p></li>
+</ul>
+<h2 id="ubuntu小工具">Ubuntu小工具</h2>
+<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu
+sqlite可视化工具<strong>Sqlite Browser</strong></p>
+]]></content>
+      <categories>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode-391 完美矩形</title>
+    <url>/2021/11/16/LeetCode-391/</url>
+    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
+<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
+完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
+<h2 id="题目大意">题目大意</h2>
+<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
+表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
+(ai, bi) 。</p>
+<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
+false 。</p>
+<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
+src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
+alt="示例" /></a></p>
+<blockquote>
+<p><strong>输入：</strong> rectangles =
+[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
+<strong>输出：</strong> true <strong>解释：</strong> 5
+个矩形一起可以精确地覆盖一个矩形区域。</p>
+</blockquote>
+<h2 id="解题思路">解题思路</h2>
+<p>感觉与其说是算法题，还不如说是找规律…</p>
+<p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
+<p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
+<p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode-138 复制带随机指针的链表</title>
+    <url>/2021/11/14/LeetCode-138/</url>
+    <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
+<p><a
+href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode
+138题目链接</a></p>
+<h2 id="题目大意">题目大意</h2>
+<p>一个链表，定义如下</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    Node* next;</span><br><span class="line">    Node* random;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Node</span>(<span class="keyword">int</span> _val) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        next = <span class="literal">NULL</span>;</span><br><span class="line">        random = <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>除了常规的val值和next指针，还有一个random指针，该指针可以指向链表中的任何节点或空节点。</p>
+<p><a href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img
+src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"
+alt="链表图" /></a></p>
+<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个
+<strong>全新</strong>
+节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
+指针和 random
+指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong>
+。</p>
+<h2 id="题目难点">题目难点</h2>
+<p>如果只是常规地复制链表，很容易就能实现。该题不同之处在于每个节点有一个random指针，它可能指向任意的一个节点，可能指向前面也可能指向后面，在目前还没有初始化的节点，所以对于random指针的处理是本题的关键</p>
+<h2 id="解题思路">解题思路</h2>
+<h3 id="方法一-map">方法一 Map</h3>
+<p>利用C++
+STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
+<h3 id="方法二-在原节点的基础上修改">方法二 在原节点的基础上修改</h3>
+<p>在链表的每个节点后面新建一个节点，新节点和该节点一样，然后旧节点指向新节点，新节点的next等于原先旧节点的next，这样直接在新节点上修改，random指针也很方便。</p>
+<p><a href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img
+src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"
+alt="新链表图" /></a></p>
+<h2 id="代码">代码</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">// Definition for a Node.</span></span><br><span class="line"><span class="comment">class Node &#123;</span></span><br><span class="line"><span class="comment">public:</span></span><br><span class="line"><span class="comment">    int val;</span></span><br><span class="line"><span class="comment">    Node* next;</span></span><br><span class="line"><span class="comment">    Node* random;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    Node(int _val) &#123;</span></span><br><span class="line"><span class="comment">        val = _val;</span></span><br><span class="line"><span class="comment">        next = NULL;</span></span><br><span class="line"><span class="comment">        random = NULL;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">Node* <span class="title">copyRandomList</span><span class="params">(Node* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        Node*p=head,*q;</span><br><span class="line">        <span class="keyword">while</span>(p)&#123;</span><br><span class="line">            q=p-&gt;next;</span><br><span class="line">            p-&gt;next=<span class="keyword">new</span> <span class="built_in">Node</span>(p-&gt;val);</span><br><span class="line">            p-&gt;next-&gt;next=q;</span><br><span class="line">            p=q;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;random)</span><br><span class="line">                p-&gt;next-&gt;random=p-&gt;random-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;next-&gt;next) p=p-&gt;next-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;q=head-&gt;next;</span><br><span class="line">        Node *ret=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(p&amp;&amp;q)&#123;</span><br><span class="line">            p-&gt;next=q-&gt;next;</span><br><span class="line">            p=p-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p)q-&gt;next=p-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">            q=q-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="解题总结">解题总结</h2>
+<p>题目其实不难，方法一可能是比较常见的思路，方法二比较巧妙，在长度为n的链表里每个节点再新建一个节点，使其长度达到2n，这样可以方便地对使用旧节点的数据，也可以修改新节点的值，操作起来比较方便，而且也可以选择性地保留节点。</p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -2372,559 +3012,6 @@ alt="测试程序" />
       <tags>
         <tag>DPDK</tag>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode-391 完美矩形</title>
-    <url>/2021/11/16/LeetCode-391/</url>
-    <content><![CDATA[<p>本文为LeetCode 391 完美矩形的题解。 <span id="more"></span></p>
-<p><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391.
-完美矩形 - 力扣（LeetCode） (leetcode-cn.com)链接</a></p>
-<h2 id="题目大意">题目大意</h2>
-<p>给你一个数组 rectangles ，其中 rectangles[i] = [xi, yi, ai, bi]
-表示一个坐标轴平行的矩形。这个矩形的左下顶点是 (xi, yi) ，右上顶点是
-(ai, bi) 。</p>
-<p>如果所有矩形一起精确覆盖了某个矩形区域，则返回 true ；否则，返回
-false 。</p>
-<p><a href="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"><img
-src="https://i.loli.net/2021/11/16/gP6XD9bKji8fSAy.png"
-alt="示例" /></a></p>
-<blockquote>
-<p><strong>输入：</strong> rectangles =
-[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
-<strong>输出：</strong> true <strong>解释：</strong> 5
-个矩形一起可以精确地覆盖一个矩形区域。</p>
-</blockquote>
-<h2 id="解题思路">解题思路</h2>
-<p>感觉与其说是算法题，还不如说是找规律…</p>
-<p>一开始我还想对输入的矩阵进行排序，利用线段树来进行操作，后面才发现是我想多了…</p>
-<p>考虑矩形的四个顶点，当加入一个矩形的时候，用一个map来记录顶点，如果该顶点已经被加入过，那就消除该顶点在map中的记录，否则加入map进行标记。</p>
-<p>如果所有矩形都精准覆盖了某个矩形区域，那么肯定只会剩下最大范围矩形区域的四个顶点，我们只需要判断最后map是否只剩下4个元素，并且这四个元素分别是最大矩形区域的四个顶点就行，另外我还添加了矩形面积的判断，加强约束。</p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; Point;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a,b)  (a&lt;b? a:b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b)  (a&gt;b? a:b)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isRectangleCover</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; rectangles)</span> </span>&#123;</span><br><span class="line">        map &lt;Point, <span class="keyword">int</span>&gt; cnt;</span><br><span class="line">        <span class="keyword">int</span> minx, miny, maxx, maxy, cntS;</span><br><span class="line">        minx = miny = (<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        maxx = maxy = -(<span class="keyword">int</span>)<span class="number">1e6</span>;</span><br><span class="line">        cntS = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> item : rectangles) &#123;</span><br><span class="line">             <span class="function">Point <span class="title">Point1</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point2</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">1</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point3</span><span class="params">(item[<span class="number">0</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="function">Point <span class="title">Point4</span><span class="params">(item[<span class="number">2</span>], item[<span class="number">3</span>])</span></span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point1) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point1);   <span class="keyword">else</span> cnt[Point1] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point2) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point2);   <span class="keyword">else</span> cnt[Point2] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point3) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point3);  <span class="keyword">else</span> cnt[Point3] = <span class="number">1</span>;</span><br><span class="line">             <span class="keyword">if</span> (cnt.<span class="built_in">find</span>(Point4) != cnt.<span class="built_in">end</span>())  cnt.<span class="built_in">erase</span>(Point4);    <span class="keyword">else</span> cnt[Point4] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">             minx = <span class="built_in">min</span>(item[<span class="number">0</span>], minx);  minx = <span class="built_in">min</span>(item[<span class="number">2</span>], minx);</span><br><span class="line">             maxx = <span class="built_in">max</span>(item[<span class="number">0</span>], maxx);  maxx = <span class="built_in">max</span>(item[<span class="number">2</span>], maxx);</span><br><span class="line">             miny = <span class="built_in">min</span>(item[<span class="number">1</span>], miny);  miny = <span class="built_in">min</span>(item[<span class="number">3</span>], miny);</span><br><span class="line">             maxy = <span class="built_in">max</span>(item[<span class="number">1</span>], maxy);  maxy = <span class="built_in">max</span>(item[<span class="number">3</span>], maxy);</span><br><span class="line">             cntS += (item[<span class="number">3</span>] - item[<span class="number">1</span>]) * (item[<span class="number">2</span>] - item[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt.<span class="built_in">size</span>() == <span class="number">4</span> &amp;&amp; ((maxx-minx) * (maxy-miny) == cntS) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(minx, maxy)) </span><br><span class="line">        &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, miny)) &amp;&amp; cnt.<span class="built_in">count</span>(<span class="built_in">Point</span>(maxx, maxy));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode-138 复制带随机指针的链表</title>
-    <url>/2021/11/14/LeetCode-138/</url>
-    <content><![CDATA[<p>本文为LeetCode 138 复制带随机指针的链表的题解。 <span id="more"></span></p>
-<p><a
-href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">LeetCode
-138题目链接</a></p>
-<h2 id="题目大意">题目大意</h2>
-<p>一个链表，定义如下</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    Node* next;</span><br><span class="line">    Node* random;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Node</span>(<span class="keyword">int</span> _val) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        next = <span class="literal">NULL</span>;</span><br><span class="line">        random = <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>除了常规的val值和next指针，还有一个random指针，该指针可以指向链表中的任何节点或空节点。</p>
-<p><a href="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"><img
-src="https://i.loli.net/2021/11/16/WKbQLS7se2TrXVJ.png"
-alt="链表图" /></a></p>
-<p>要求对该链表进行 <strong>深拷贝</strong>。深拷贝应该正好由 n 个
-<strong>全新</strong>
-节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
-指针和 random
-指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。<strong>复制链表中的指针都不应指向原链表中的节点</strong>
-。</p>
-<h2 id="题目难点">题目难点</h2>
-<p>如果只是常规地复制链表，很容易就能实现。该题不同之处在于每个节点有一个random指针，它可能指向任意的一个节点，可能指向前面也可能指向后面，在目前还没有初始化的节点，所以对于random指针的处理是本题的关键</p>
-<h2 id="解题思路">解题思路</h2>
-<h3 id="方法一-map">方法一 Map</h3>
-<p>利用C++
-STL的Map记录每个节点的random指针，先复制不带有random指针的链表，之后再利用Map重新构成带有random指针的链表。</p>
-<h3 id="方法二-在原节点的基础上修改">方法二 在原节点的基础上修改</h3>
-<p>在链表的每个节点后面新建一个节点，新节点和该节点一样，然后旧节点指向新节点，新节点的next等于原先旧节点的next，这样直接在新节点上修改，random指针也很方便。</p>
-<p><a href="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"><img
-src="https://i.loli.net/2021/11/14/1APBuF2dLIS7WjG.png"
-alt="新链表图" /></a></p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">// Definition for a Node.</span></span><br><span class="line"><span class="comment">class Node &#123;</span></span><br><span class="line"><span class="comment">public:</span></span><br><span class="line"><span class="comment">    int val;</span></span><br><span class="line"><span class="comment">    Node* next;</span></span><br><span class="line"><span class="comment">    Node* random;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    Node(int _val) &#123;</span></span><br><span class="line"><span class="comment">        val = _val;</span></span><br><span class="line"><span class="comment">        next = NULL;</span></span><br><span class="line"><span class="comment">        random = NULL;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">Node* <span class="title">copyRandomList</span><span class="params">(Node* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        Node*p=head,*q;</span><br><span class="line">        <span class="keyword">while</span>(p)&#123;</span><br><span class="line">            q=p-&gt;next;</span><br><span class="line">            p-&gt;next=<span class="keyword">new</span> <span class="built_in">Node</span>(p-&gt;val);</span><br><span class="line">            p-&gt;next-&gt;next=q;</span><br><span class="line">            p=q;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;random)</span><br><span class="line">                p-&gt;next-&gt;random=p-&gt;random-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;next-&gt;next) p=p-&gt;next-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        p=head;q=head-&gt;next;</span><br><span class="line">        Node *ret=head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(p&amp;&amp;q)&#123;</span><br><span class="line">            p-&gt;next=q-&gt;next;</span><br><span class="line">            p=p-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p)q-&gt;next=p-&gt;next;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">            q=q-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="解题总结">解题总结</h2>
-<p>题目其实不难，方法一可能是比较常见的思路，方法二比较巧妙，在长度为n的链表里每个节点再新建一个节点，使其长度达到2n，这样可以方便地对使用旧节点的数据，也可以修改新节点的值，操作起来比较方便，而且也可以选择性地保留节点。</p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>LeetCode</tag>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode-6032 得到要求路径的最小带权子图</title>
-    <url>/2022/03/15/LeetCode-6032/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>本章为<a
-href="https://leetcode-cn.com/problems/minimum-weighted-subgraph-with-the-required-paths/">LeetCode-2203.
-得到要求路径的最小带权子图</a>的题解。</p>
-<span id="more"></span>
-<h2 id="题目内容">题目内容</h2>
-<p>给你一个整数 n ，它表示一个 <strong>带权有向图</strong>
-的节点数，节点编号为 <code>0</code> 到 <code>n - 1</code> 。</p>
-<p>同时给你一个二维整数数组 <code>edges</code> ，其中 <span
-class="math inline">\(edges[i] = [from_i, to_i, weight_i]\)</span>
-，表示从 <span class="math inline">\(from_i\)</span> 到 <span
-class="math inline">\(to_i\)</span> 有一条边权为 <span
-class="math inline">\(weight_i\)</span> 的 <strong>有向</strong>
-边。</p>
-<p>最后，给你三个 <strong>互不相同</strong> 的整数<code>src1</code>
-，<code>src2</code> 和 <code>dest</code> ，表示图中三个不同的点。</p>
-<p>请你从图中选出一个 <strong>边权和最小</strong> 的子图，使得从 src1 和
-src2 出发，在这个子图中，都 <strong>可以</strong> 到达 <code>dest</code>
-。如果这样的子图不存在，请返回 <code>-1</code> 。</p>
-<p><strong>子图</strong>
-中的点和边都应该属于原图的一部分。子图的边权和定义为它所包含的所有边的权值之和。</p>
-<p><img src="https://s2.loli.net/2022/03/15/hvoGLHwReg153pS.png" style="zoom:33%;" /></p>
-<blockquote>
-<p><strong>输入</strong>：n = 6, edges = [[0,2,2], [0,5,6], [1,0,3],
-[1,4,5], [2,1,1], [2,3,3], [2,3,4], [3,4,2], [4,5,1]], src1 = 0, src2 =
-1, dest = 5 <strong>输出</strong>：9</p>
-<p><strong>解释</strong>：</p>
-<p>上图为输入的图。</p>
-<p>蓝色边为最优子图之一。</p>
-<p>注意，子图 [[1,0,3], [0,5,6]]
-也能得到最优解，但无法在满足所有限制的前提下，得到更优解。</p>
-</blockquote>
-<h2 id="解题思路">解题思路</h2>
-<p>做LeetCode比赛的时候遇到这题，刚看见的时候感觉应该不难，但因为没有时间就没能深入思考。</p>
-<p>实际上本题不难，用的也是图论中比较经典的思想，枚举中间点，通过枚举中间点<span
-class="math inline">\(i\)</span>，计算src1到<span
-class="math inline">\(i\)</span>的距离 + src2到<span
-class="math inline">\(i\)</span>的距离 + <span
-class="math inline">\(i\)</span>到dest的距离，求出最小的<span
-class="math inline">\(i\)</span>，上述的枚举包含所有的情况，因此直接计算即可。</p>
-<p>求src1到<span
-class="math inline">\(i\)</span>的距离可以使用Dijkstra算法，求<span
-class="math inline">\(i\)</span>到dest的距离可以通过将边反向，求dest到各个点的距离来实现。</p>
-<p>关于Dijkstra算法，本题如果不使用堆优化，会产生超时，因此顺带可以熟悉STL的使用。</p>
-<p>STL使用 <code>priority_queue</code>
-作为堆，默认是大根堆，因此为了得到最短路，可以将路径取相反数，放进大根堆。同时在Dijkstra算法中，用堆优化的时候，堆内的元素包含<strong>距离</strong>和<strong>顶点</strong>，因此使用
-<code>pair</code> 记录距离和顶点。将 <code>pair</code> 放进
-<code>priority_queue</code>
-时，默认的排序方式是先排第一个，再排第二个。</p>
-<h2 id="代码">代码</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 100000+20</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">long</span> <span class="keyword">long</span>, <span class="keyword">int</span>&gt; pp;</span><br><span class="line">vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; v1, v2, w1, w2;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> dis1[MAXN], dis2[MAXN], dis3[MAXN], now = <span class="number">-1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">getDis</span><span class="params">(<span class="keyword">int</span> o, <span class="keyword">int</span> n, <span class="keyword">long</span> <span class="keyword">long</span> *dis, <span class="keyword">int</span> *vis, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; v, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; w)</span>  </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)  dis[i] = <span class="number">-1</span>;</span><br><span class="line">        priority_queue&lt;pp&gt; q;</span><br><span class="line">        q.<span class="built_in">push</span>(<span class="built_in">pp</span>(<span class="number">0</span>, o));</span><br><span class="line">        <span class="keyword">while</span> (!q.<span class="built_in">empty</span>())  &#123;</span><br><span class="line">	        pp p = q.<span class="built_in">top</span>();  q.<span class="built_in">pop</span>();</span><br><span class="line">	        <span class="keyword">int</span> sn = p.second;</span><br><span class="line">	        <span class="keyword">long</span> <span class="keyword">long</span> val = -p.first;</span><br><span class="line">	        <span class="keyword">if</span> (dis[sn] &gt;= <span class="number">0</span>)  <span class="keyword">continue</span>;</span><br><span class="line">	        dis[sn] = val;</span><br><span class="line">	        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; v[sn].<span class="built_in">size</span>(); i++)</span><br><span class="line">	            q.<span class="built_in">push</span>(<span class="built_in">pp</span>(-val - w[sn][i], v[sn][i]));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">minimumWeight</span><span class="params">(<span class="keyword">int</span> n, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; edges, <span class="keyword">int</span> src1, <span class="keyword">int</span> src2, <span class="keyword">int</span> dest)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> vis[MAXN];</span><br><span class="line">        v1 = v2 = w1 = w2 = vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;(n);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> &amp;edge : edges)  &#123;</span><br><span class="line">            v1[edge[<span class="number">0</span>]].<span class="built_in">push_back</span>(edge[<span class="number">1</span>]); w1[edge[<span class="number">0</span>]].<span class="built_in">push_back</span>(edge[<span class="number">2</span>]);</span><br><span class="line">            v2[edge[<span class="number">1</span>]].<span class="built_in">push_back</span>(edge[<span class="number">0</span>]); w2[edge[<span class="number">1</span>]].<span class="built_in">push_back</span>(edge[<span class="number">2</span>]);	    </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">getDis</span>(src1, n, dis1, vis, v1, w1);</span><br><span class="line">        <span class="built_in">getDis</span>(src2, n, dis2, vis, v1, w1);</span><br><span class="line">        <span class="built_in">getDis</span>(dest, n, dis3, vis, v2, w2);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)  &#123;</span><br><span class="line">            <span class="keyword">if</span> (dis1[i] == <span class="number">-1</span> || dis2[i] == <span class="number">-1</span> || dis3[i] == <span class="number">-1</span>)  <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span> (now == <span class="number">-1</span>)   now = dis1[i] + dis2[i] + dis3[i];</span><br><span class="line">            <span class="keyword">if</span> (dis1[i] + dis2[i] + dis3[i] &lt; now)   </span><br><span class="line">                now = dis1[i] + dis2[i] + dis3[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> now;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LearnOpenGL学习入门</title>
-    <url>/2021/07/22/LearnOpenGL-1/</url>
-    <content><![CDATA[<h2 id="前情提要">前情提要</h2>
-<p>最近趁着暑假学习OpenGL，跟着 <a
-href="https://learnopengl-cn.github.io/">LearnOpenGL</a>
-的教程，目前跟着过完了入门部分，写一些关于OpenGL的总结吧。</p>
-<span id="more"></span>
-<h2 id="opengl">OpenGL</h2>
-<blockquote>
-<p>在开始这段旅程之前我们先了解一下OpenGL到底是什么。一般它被认为是一个API(Application
-Programming Interface,
-应用程序编程接口)，包含了一系列可以操作图形、图像的函数。然而，OpenGL本身并不是一个API，它仅仅是一个由<a
-href="http://www.khronos.org/">Khronos组织</a>制定并维护的规范(Specification)。</p>
-<p>OpenGL自身是一个巨大的状态机。</p>
-</blockquote>
-<h2 id="库函数">库函数</h2>
-<p>GLFW：<a
-href="http://www.glfw.org/download.html">http://www.glfw.org/download.html</a></p>
-<p>GLAD：<a
-href="https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions">https://www.khronos.org/opengl/wiki/Load_OpenGL_Functions</a></p>
-<p>glm：<a href="https://github.com/g-truc/glm/">g-truc/glm: OpenGL
-Mathematics (GLM) (github.com)</a></p>
-<p>stb_image：<a href="https://github.com/nothings/stb">nothings/stb:
-stb single-file public domain libraries for C/C++ (github.com)</a></p>
-<p>构建以上的库函数，放在统一的文件夹下进行管理，再在Visual
-Studio下设置项目的链接。</p>
-<h2 id="你好三角形">你好，三角形</h2>
-<p>几个比较重要的概念：</p>
-<ul>
-<li><p>顶点数组对象（Vertex Array
-Object，VAO）：用来存储物体的顶点属性，比如用数组存储一个正方体的各个点的坐标、颜色、纹理等数据。</p></li>
-<li><p>顶点缓冲对象（Vertex Buffer
-Object，VBO）：通过VBO管理内存，它会在GPU显存中储存大量顶点。使用这些缓冲对象的好处是我们可以一次性的发送一大批数据到显卡上，而不是每个顶点发送一次。</p></li>
-<li><p>索引缓冲对象（Element Buffer Object，EBO或Index Buffer
-Object，IBO）：EBO也是一个缓冲，它专门储存索引，OpenGL调用这些顶点的索引来决定该绘制哪个顶点，用来管理VAO的。</p></li>
-<li><p>顶点着色器（Vertex
-Shader）：计算顶点的坐标，输出到gl_position。</p></li>
-<li><p>片段着色器（Fragment Shader）：计算像素最后的颜色输出。</p></li>
-</ul>
-<figure>
-<img src="https://i.loli.net/2021/07/22/vAhO7HTEdoMx1BS.png"
-alt="图形渲染管线流程" />
-<figcaption aria-hidden="true">图形渲染管线流程</figcaption>
-</figure>
-<p>图形渲染管线可以被划分为两个主要部分：</p>
-<p>1、3D坐标转换为2D坐标，主要在顶点着色器完成</p>
-<p>2、2D坐标转变为实际的有颜色的像素，主要在片段着色器完成。</p>
-<h2 id="着色器">着色器</h2>
-<p>着色器是使用一种叫GLSL的类C语言写成的。GLSL是为图形计算量身定制的，它包含一些针对向量和矩阵操作的有用特性。</p>
-<p>uniform属性是全局的，同时在每个着色器程序对象中都是独一无二的，可以在任一阶段访问，可以在main函数里对其进行修改。</p>
-<blockquote>
-<p>如果你声明了一个uniform却在GLSL代码中没用过，编译器会静默移除这个变量，导致最后编译出的版本中并不会包含它，这可能导致几个非常麻烦的错误，记住这点！</p>
-</blockquote>
-<p>（吐槽一下，着色器后缀啥都行，结果有些IDE对于这些后缀没有代码高亮...而且着色器写错的话，编译时还不会报错，只有当绑定和调用该着色器的时候才会出问题）</p>
-<p>（再次吐槽，编写的时候将vs和fs着色器绑定反了，一点提示都没有...）</p>
-<h2 id="纹理">纹理</h2>
-<p>用stb_image.h头文件进行图像加载。</p>
-<p>glActiveTexture激活纹理单元，可以绑定多个纹理，每个纹理都需要调用glActiveTexture来激活。</p>
-<p>顶点着色器接收纹理坐标的数据，传给片段着色器，然后在片段着色器中处理纹理坐标等相关数据。</p>
-<h2 id="变换">变换</h2>
-<p>这一章的基础是线性代数。</p>
-<p>GLM是Open<strong>GL</strong>
-<strong>M</strong>athematics的缩写，它是一个<strong>只有头文件的</strong>库，使用这个库进行矩阵、向量运算。</p>
-<p>高版本的GLM记得对矩阵初始化，glm::mat4 mat = glm::mat4(1.0f)</p>
-<h2 id="坐标系统">坐标系统</h2>
-<p>几个概念：</p>
-<ul>
-<li>局部空间</li>
-<li>世界空间</li>
-<li>观察空间</li>
-<li>裁剪空间</li>
-<li>屏幕空间</li>
-</ul>
-<h2 id="摄像机">摄像机</h2>
-<p>（待更新...)</p>
-]]></content>
-      <categories>
-        <category>图形学</category>
-      </categories>
-      <tags>
-        <tag>图形学</tag>
-        <tag>OpenGL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公会的神奇操作</title>
-    <url>/2020/04/06/Magic-Clan/</url>
-    <content><![CDATA[<p>在台服遇到了无良跑路的会长，吐槽一下。 <span id="more"></span></p>
-<p>上个月由于一起入坑的xw和老司机都纷纷弃坑，大佬感觉上线也不是很多了，考虑到后面的限定n连太多了，所以还是想多攒些钻，打算3月份找一个能稳700的会，不要停留在之前5个人保2500的会了。然后我在nga和贴吧逛了下，当时在nga看的时候感觉招的会不多，贴吧有专楼，碰巧就看到一个会，要求面试看box和2月份1.2e，加了群给看了box后就通过了，以上为前因。当时本来是觉得自己的box还可以，找一个躺700的公会应该没啥问题，结果进来后才发现好些萌新，虽然大佬也有不少，<del>感觉上当了</del>。</p>
-<p>进会后，大概了解到3月份换了新会长，之前的老会长可能是因为忙不过来就不打算以后管会战了，老会长的头像是上条当麻，以下以当麻进行称呼，新会长的头像是夏哥，在群里聊天中了解到新会长在迪拜打工，而且迪拜有很多尼哥（吐槽一下，想不太明白，在迪拜打工是干啥，还要学阿拉伯语么...）。</p>
-<p>3月份会战开打后，当麻弄了挺多auto和半auto的轴，这个还是挺舒服的，按轴打是真的麻烦，然后第一次到30人的大公会，也算是学到了很多会战的知识，比如合刀、补偿刀之类的，不过鉴于3月份的boss实在是恶心，用2物1法会比较舒服，甚至能出4、5、5的烂分刀，由于补偿刀，一个人一天可能要打6刀，要等好几轮才能解决。会战的时候我也有好几次1点多才下班，群里好像蛮多都喜欢晚上出刀，虽然下班有点晚，不过群里的氛围还是不错的。<del>虽然有个因为出了自闭刀，撞了大佬的刀，然后不能接受就退群会战再没出过刀了</del>
-，<del>还有个会战开打前卖号跑路了，然后联系不上这个人，于是群里用辣个人指代</del>。</p>
-<p>3月会战由于会里还是有一部分萌新，所以满级的人出刀伤害还是要拉满，写这篇文章的时候台服会战奖励还没发，不过预计大概是500-600之间，打完后，会长决定🦈一些人以及建立二会，二会保1300，一会再招些大佬，当时发了如下的公告，本来大家都觉得还不错。</p>
-<p><img src="https://i.loli.net/2020/07/03/1f5upTDSqbdshIU.png" /></p>
-<p>然后4.1，戏剧化的事情发生了，当时我吃完饭没多久发现自己被t了，qq群和公会都没了，当时一开始还以为是我太蔡被会长🦈了，搜了下公会发现公会也没了才感觉不对劲，然后qq上没法加会长，自己还是想要一个说法的，于是就重加回当麻，当麻给的回复是会长不想管了，然后跑了。当时没想到是这个原因，感觉自己跳槽的第一个公会就这样木大了，怪怪的。然后我又去nga和贴吧找工会了，不过感觉没啥特别心仪的，就先没进。</p>
-<p>然后在nga浏览的时候，就看见同公会的人发帖问公会怎么突然没了，对这个会长这样一跑了之确实是无语，如果没时间无法继续当会长的话，可以在群里说下嘛，换个人当会长，实在不行大家好聚好散都行，这样突然把qq群和公会直接解散跑了还是缺少责任心了...不过也有可能是有什么难隐之言。</p>
-<p>不过，更没想到的是，转让出去的qq群，好像是能在30天内收回，当麻又重新收回了群，找到之前会里的人，大部分还是愿意继续留下来，几个人找了下家，然后按照之前的方针，搞两个会，一会招大佬保700，二会保1300，感觉这样挺好的，今天人招满看了下，100w战力左右的人挺多的，<del>这样我80w战力的就能摸鱼了</del>。</p>
-<p>加的的第一个会愚人节搞的这出是真的又节目效果，感觉就是公会战之“炎魔”复刻（参见b吧选举的圣光炎魔），上任会长（当麻）把位置传给了内鬼，然后把公会搞没了...希望这茬过后，公会能久点，以后能安心700摸鱼。</p>
-<p>今天才了解到，公会里居然有已经结婚有儿子的老哥，感觉pcr的大学生、社畜偏多，估计还是因为上线5分钟就能解决适合大家吧。</p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公主连结Re:Dive常用地址</title>
-    <url>/2020/03/17/PCR-Tool/</url>
-    <content><![CDATA[<p>国服的pcr拿到版号了，估计这一个月应该也就快开了，稍微整理下比较常用的地址和一些有趣的up主。</p>
-<span id="more"></span>
-<h3 id="日常向">日常向</h3>
-<p><a
-href="https://pcredivewiki.tw/">兰德索尔图书馆</a>：各个功能都比较实用，推荐其中的<a
-href="https://pcredivewiki.tw/Armory">装备库</a>功能，平时看活动预测、角色站位以及其余小工具都比较方便。</p>
-<h3 id="jjc向">JJC向</h3>
-<p><a
-href="https://bbs.nga.cn/read.php?tid=14878762">初音笔记（iOS）</a>和<a
-href="https://bbs.nga.cn/read.php?tid=20499613">静流笔记（Android）</a>：我只用过前者，不过后者应该是差不多的，这个可以用来查询角色的技能、属性、伤害、循环以及推图、露娜塔、公会战的Boss信息。</p>
-<p><a
-href="https://www.pcrdfans.com/">JJC查询</a>：用来查询JJC作业。</p>
-<h3 id="社交推荐">社交推荐</h3>
-<p>NGA和贴吧。
-可以去nga找找当期活动的sp和vh打法，贴吧看看热闹，毕竟这游戏的jjc和公会战都离不开别的玩家，在jjc里py或者找工会还是需要多留心注意的。</p>
-<h3 id="b站up主推荐">B站up主推荐</h3>
-<p><a href="https://space.bilibili.com/9135820/">盐取shiotori</a></p>
-<p><a href="https://space.bilibili.com/13408444/">抗菌素kj</a></p>
-<p><a href="https://space.bilibili.com/11080524/">熬夜凤梨</a></p>
-<p><a href="https://space.bilibili.com/416622817">步玎Pudding</a></p>
-]]></content>
-      <categories>
-        <category>公主连结</category>
-      </categories>
-      <tags>
-        <tag>pcr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Noip算法总结之搜索</title>
-    <url>/2015/11/03/Noip-Summary-Search/</url>
-    <content><![CDATA[<h2 id="本章内容">本章内容</h2>
-<p>最近翻到一篇自己多年前写的Noip搜索算法总结，趁此机会搬运过来。</p>
-<span id="more"></span>
-<h2 id="搜索的技巧">搜索的技巧</h2>
-<p>搜索主要是给出一些条件，在不同则状态之间进行转移，如果状态量少的话，那就可以直接上
-DP 了，但搜索一般是状态量大，且不太好转移。</p>
-<ul>
-<li><p>一般对于小数据，如什么 n ≤ 20
-之类的是可以打暴搜的，而搜索的剪枝通常有两种：可行性剪枝和最优性剪枝。但有的时候，如果对于自己的这个剪枝没有十足的把握，那就不要加上</p></li>
-<li><p>搜索的时候考虑使用位运算，速度可以加快些．对于一些可以转移的状态之间的搜索，我们可以考虑
-hash
-或者是状态压缩下来，进行记忆化，那么对于以后再次搜到这个状态我们就可以直接调用了</p></li>
-</ul>
-<h2 id="搜索的分类">搜索的分类</h2>
-<h3 id="枚举">枚举</h3>
-<p>这恐怕是最暴力的了，一般就是直接从初始状态搜索到结束状态，不加任何的剪枝和优化，复杂度一般为指数级别（n
-≤ 20）</p>
-<h3 id="深度优先搜索dfs">深度优先搜索（DFS）</h3>
-<p>这就相当于是走迷宫的时候一条路直接走到底，除非发现当前这条路非法或者走到终点，由于深搜是栈式的储存方式，所以对空间的消耗比较少，但要注意的是状态量的总数如果达到ｗ级别的话就要注意有爆栈的危险了，Windows
-下是 3w 左右，Linux 是 10w 左右，一般和回溯搭配使用</p>
-<h3 id="广度优先搜索bfs">广度优先搜索（BFS）</h3>
-<p>这就相当于是走迷宫的时候多路同时一起进行，走到终点就停止，对于求最优解且话费均等的情况较好，一般用队列实现。</p>
-<h3 id="dfs和bfs的比较">DFS和BFS的比较</h3>
-<p>深搜的空间开销小，但对于数据可能走到解答树的某种节点上，这个节点的后继状态很多，但最优解却在另一个子树中．
-广搜的空间开销相对于深搜要多很多，但求解的效率貌似要高些，而且不用担心会爆栈，（在对于树的某些操作，注意是否有爆栈的危险，若有的话，最好改成广搜或是手写栈）</p>
-<h3 id="迭代加深-和-ida">迭代加深 和 IDA*</h3>
-<p>这种算法结合了深搜和广搜的优点，时间的表现也很不错。</p>
-<p>搜索仍是DFS，但对于每次的搜索都给它设置一个深度上限，超过当前的深度上限就直接返回。</p>
-<h4 id="bzoj-1085-骑士精神"><a
-href="https://ac.nowcoder.com/acm/problem/20247">BZOJ 1085
-骑士精神</a></h4>
-<p>经典例题：<a href="https://ac.nowcoder.com/acm/problem/20247">BZOJ
-1085 骑士精神</a>：</p>
-<blockquote>
-<p>在一个5×5的棋盘上有12个白色 的骑士和12个黑色的骑士，
-且有一个空位。在任何时候一个骑士都能按照骑士的走法（它可以走到和它横坐标相差为1，纵坐标相差为2或者横坐标相差为2，纵坐标相差为1的格子）移动到
-空位上。 给定一个初始的棋盘，怎样才能经过移动变成如下目标棋盘：
-为了体现出骑士精神，他们必须以最少的步数完成任务。</p>
-<p><img src="https://s2.loli.net/2022/03/12/dHgzIGUJCZFs3ih.png" style="zoom: 80%;" /></p>
-</blockquote>
-<p>迭代加深再加上ｈ(x)
-即乐观估计函数，对于当前的状态我们可以乐观地估计出当前的状态到目标状态所需的最多层数，如果大于我们所设置的上界，就返回。</p>
-<p>基本步骤：</p>
-<ol type="1">
-<li><p>设置一个固定的深度 maxdepth ，通常为 1，即初始的状态。</p></li>
-<li><p>DFS 进行搜索，限制层数
-depth，如果找到答案，则结束，如果没有找到答案则继续下一步。</p></li>
-<li><p>如果 DFS 途中遇到更深的层，则 depth++ ，并重复
-2；如果没有遇到，说明搜索已经结束，没有答案。</p></li>
-</ol>
-<p>（中间可用乐观估价函数进行剪枝）</p>
-<p>经典例题：<a href="https://ac.nowcoder.com/acm/problem/50246">codevs
-1288 埃及分数</a>：</p>
-<blockquote>
-<p>在古埃及，人们使用单位分数的和（形如1/a的，a是自然数）表示一切有理数。</p>
-<p>如：2/3 = 1/2+1/6，但不允许2/3=1/3+1/3，因为加数中有相同的。
-对于一个分数a/b,表示方法有很多种，但是哪种最好呢？</p>
-<p>首先，加数少的比加数多的好，其次，加数个数相同的，最小的分数越大越好。</p>
-<p>如： 19/45 = 1/3 + 1/12 + 1/180 , 19/45 = 1/3 + 1/15 + 1/45 , 19/45 =
-1/3 + 1/18 + 1/30 , 19/45 = 1/4 + 1/6 + 1/180 , 19/45 = 1/5 + 1/6 +
-1/18。</p>
-<p>最好的是最后一种，因为1/18比1/180，1/45，1/30，1/180都大。 给出a,b（0
-&lt; a &lt; b &lt; 1000），编程计算最好的表达方式。</p>
-</blockquote>
-<h3 id="双向广搜">双向广搜</h3>
-<p>这个我还没怎么用过，大概是正着搜一次，再从终点倒着搜一次，直到两者相遇。</p>
-<h3 id="meet-in-the-middle">Meet in the middle</h3>
-<p>主要思想：</p>
-<p>两人分别从Ａ地和Ｂ地出发，向对方的出发点走去。当他们都走了 L/2
-米的时候 ”在中间相遇“，找到了一条长度为 L 米的路径</p>
-<h4 id="两种模型">两种模型</h4>
-<ul>
-<li><p>有向图模型</p></li>
-<li><p>方程模型</p></li>
-</ul>
-<h4 id="经典例题">经典例题</h4>
-<blockquote>
-<p>已知一个n元高次方程：</p>
-<p><span
-class="math inline">\(k_1x_1^{p_1}+k_2x_2^{p_2}+...+k_nx_n^{p_n}=0\)</span></p>
-<p>其中：<span
-class="math inline">\(x_1,x_2,...,x_n\)</span>是未知数，<span
-class="math inline">\(k_1,k_2,...,k_n\)</span>是系数，<span
-class="math inline">\(p_1,p_2,...,p_n\)</span>是指数。且方程中的所有数均为整数。</p>
-<p>假设未知数<span class="math inline">\(1 \leq x_i \leq M,
-i=1,2,...,n\)</span>，求这个方程的整数解的个数。</p>
-</blockquote>
-<h2 id="搜索的优化">搜索的优化</h2>
-<ul>
-<li><p>剪枝（可行性剪枝，最优性剪枝）</p></li>
-<li><p>改变搜索顺序,增加更多限制条件（如 <a
-href="https://ac.nowcoder.com/acm/problem/17397">NOI 2005
-智慧珠游戏</a>，CTSC 2013 复原）</p></li>
-<li><p>记忆化搜索：对于同一状态的多次搜索，可以记忆化，下次就可以直接调用之前搜索过的结果（例：<a
-href="https://www.luogu.com.cn/problem/P3230">HNOI 2013
-比赛</a>）</p></li>
-</ul>
-<h2 id="吐槽">吐槽</h2>
-<p>话说现在 BZOJ 没了真的好不方便啊...</p>
-<p>看着原来的总结笔记，现在差不多全忘光了...</p>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>Noip</tag>
-        <tag>搜索</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>POJ 1753 Flip Game</title>
-    <url>/2020/05/22/POJ-1753/</url>
-    <content><![CDATA[<p>最近开始写POJ上面的题目，网上搜了份<a
-href="https://blog.csdn.net/a1dark/article/details/11714009">推荐题目</a>开始做。</p>
-<p><a href="http://poj.org/problem?id=1753"
-title="POJ-1753链接">POJ-1753链接</a></p>
-<span id="more"></span>
-<p>大意是4*4的黑白棋，每次可以选择一个棋子将其和上下左右5个棋子翻转（边界情况特殊些），问最少几次能全黑或全白。</p>
-<p>首先分析状态，4*4的棋盘，估计状态不会很多，同时对于一个棋子，翻转奇数次或者偶数次的情况是一样的，要么翻一次，要么不翻。</p>
-<p>所以最多需要翻转的次数是16次，从1次到16次，一共有</p>
-<p><span class="math display">\[
-\dbinom{1}{16}+ \dbinom{2}{16}+...+ \dbinom{15}{16}+ \dbinom{16}{16} =
-2^{16}
-\]</span></p>
-<p>同时，我们可以只用一个数字来记录当前棋盘的状态，每个棋子非黑即白，可以用0、1来表示，棋盘状态可以被一个16位的二进制数代替。</p>
-<p>算法大致思路，首先枚举翻转的次数，从1开始。然后在从棋盘左上角往右下角进行DFS搜索，如果当前棋子要翻转，则把该当前状态二进制数与该棋子对应的二进制位进行异或。到达条件是棋盘是否为0或者2^16-1</p>
-<p>代码如下，其实可以不用定义数组，以及可能可以记录状态减少时间，不过懒得改了。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> goal = (<span class="number">1</span>&lt;&lt;<span class="number">16</span>)<span class="number">-1</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dpos[] = &#123;<span class="number">-4</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> ans = <span class="number">0</span>, num = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">6</span>][<span class="number">6</span>];</span><br><span class="line"><span class="keyword">int</span> vis[<span class="number">5000</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> ch;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">4</span>; j++)</span><br><span class="line">	&#123;</span><br><span class="line">	    <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>, &amp;ch);</span><br><span class="line">	    <span class="keyword">if</span> (ch == <span class="string">&#x27;b&#x27;</span>)   a[i][j] = <span class="number">1</span>, res++;</span><br><span class="line">	    <span class="keyword">else</span> a[i][j] = <span class="number">0</span>;</span><br><span class="line">	    num = (num&lt;&lt;<span class="number">1</span>)+a[i][j];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (res == <span class="number">16</span> || res == <span class="number">0</span>)  ans = <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos, <span class="keyword">int</span> cnt)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> npos, nxt = now;</span><br><span class="line">    <span class="keyword">if</span> (cnt == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">if</span> (now == <span class="number">0</span> || now == goal)</span><br><span class="line">	    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (pos + cnt &gt; <span class="number">17</span> || pos &gt; <span class="number">16</span>)  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">	npos = dpos[i] + pos;</span><br><span class="line">	<span class="keyword">if</span> (pos%<span class="number">4</span>==<span class="number">0</span> &amp;&amp; npos%<span class="number">4</span>==<span class="number">1</span>)  <span class="keyword">continue</span>;</span><br><span class="line">	<span class="keyword">if</span> (pos%<span class="number">4</span>==<span class="number">1</span> &amp;&amp; npos%<span class="number">4</span>==<span class="number">0</span>)  <span class="keyword">continue</span>;</span><br><span class="line">	<span class="keyword">if</span> (npos &gt;= <span class="number">1</span> &amp;&amp; npos &lt;= <span class="number">16</span>)</span><br><span class="line">	    nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-npos));	    </span><br><span class="line">    &#125;</span><br><span class="line">    nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-pos));</span><br><span class="line">    flag = <span class="built_in">search</span>(nxt, pos+<span class="number">1</span>, cnt<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">if</span> (flag == <span class="number">1</span>)</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    flag = <span class="built_in">search</span>(now, pos+<span class="number">1</span>, cnt);</span><br><span class="line">    <span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">work</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cnt;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">-1</span>)</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">void</span>) <span class="built_in">printf</span>(<span class="string">&quot;0\n&quot;</span>);</span><br><span class="line">    ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (cnt = <span class="number">1</span>; cnt &lt;= <span class="number">16</span>; cnt++)</span><br><span class="line">    &#123;</span><br><span class="line">	ans = <span class="built_in">search</span>(num, <span class="number">1</span>, cnt);</span><br><span class="line">	<span class="keyword">if</span> (ans != <span class="number">0</span>)  <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">0</span>)  <span class="built_in">printf</span>(<span class="string">&quot;Impossible\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, cnt);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line">    <span class="built_in">init</span>();</span><br><span class="line">    <span class="built_in">work</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>搜索</tag>
-        <tag>POJ</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在Hexo-Next8主题下配置Twikoo评论</title>
-    <url>/2022/03/11/Twikoo-Config/</url>
-    <content><![CDATA[<h2 id="前情提要">前情提要</h2>
-<p>本博客是Hexo + Github搭建的，之前本来使用的是<a
-href="(https://butterfly.js.org/)">Butterfly主题</a>，但是因为对于滚动条和分级标题格式的不喜欢，又换回经典的<a
-href="https://github.com/next-theme/hexo-theme-next">Next主题</a>，同时这次终于把Twikoo也迁移过来了，本文主要讲述Next主题下Twikoo评论的配置问题。</p>
-<span id="more"></span>
-<h2 id="部署twikoo">部署Twikoo</h2>
-<p>可参考<a
-href="https://twikoo.js.org/quick-start.html#%E4%BA%91%E5%87%BD%E6%95%B0%E9%83%A8%E7%BD%B2">官方文档</a>，包含<strong>云函数部署</strong>和<strong>前端部署</strong></p>
-<h3 id="云函数部署">云函数部署</h3>
-<p>参考<a
-href="https://twikoo.js.org/quick-start.html#%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2">一键部署</a></p>
-<h3 id="前端部署">前端部署</h3>
-<p>目前在Next 8才能使用，在Hexo 项目根目录下执行</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> For NexT version &gt;= 8.0.0 &amp;&amp; &lt; 8.4.0</span></span><br><span class="line">npm install hexo-next-twikoo@1.0.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> For NexT version &gt;= 8.4.0</span></span><br><span class="line">npm install hexo-next-twikoo@1.0.3</span><br></pre></td></tr></table></figure>
-<p>然后在Hexo的Next主题配置文件添加</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">twikoo:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">envId:</span> <span class="string">xxxxxxxxxxxxxxx</span> <span class="comment"># 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）</span></span><br><span class="line">  <span class="comment"># region: ap-guangzhou # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填</span></span><br></pre></td></tr></table></figure>
-<h2 id="常见问题">常见问题</h2>
-<h3 id="next-8主题报错">Next 8主题报错</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: ENOENT: no such file or directory, open &#x27;E:\***\Blog\hexo\node_modules\highlight.js/styles/stackoverflow-dark.css&#x27;</span><br><span class="line">      at Object.openSync (fs.js:458:3)</span><br><span class="line">      at Object.readFileSync (fs.js:360:35)</span><br><span class="line">      at highlightTheme (E:\***\Blog\hexo\themes\hexo-theme-next-8.10.1\scripts\events\lib\utils.js:19:22)</span><br><span class="line">      at module.exports (E:\***\Blog\hexo\themes\hexo-theme-next-8.10.1\scripts\events\lib\highlight.js:20:13)</span><br><span class="line">      at Hexo.&lt;anonymous&gt; (E:\***\Blog\hexo\themes\hexo-theme-next-8.10.1\scripts\events\index.js:13:29)</span><br><span class="line">      at Hexo.tryCatcher (E:\***\Blog\hexo\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">      at Hexo.&lt;anonymous&gt; (E:\***\Blog\hexo\node_modules\bluebird\js\release\method.js:15:34)</span><br><span class="line">      at E:\***\Blog\hexo\node_modules\hexo\lib\extend\filter.js:67:52</span><br><span class="line">      at tryCatcher (E:\***\Blog\hexo\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">      at Object.gotValue (E:\***\Blog\hexo\node_modules\bluebird\js\release\reduce.js:166:18)</span><br><span class="line">      at Object.gotAccum (E:\***\Blog\hexo\node_modules\bluebird\js\release\reduce.js:155:25)</span><br><span class="line">      at Object.tryCatcher (E:\***\Blog\hexo\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">      at Promise._settlePromiseFromHandler (E:\***\Blog\hexo\node_modules\bluebird\js\release\promise.js:547:31)</span><br><span class="line">      at Promise._settlePromise (E:\***\Blog\hexo\node_modules\bluebird\js\release\promise.js:604:18)</span><br><span class="line">      at Promise._settlePromiseCtx (E:\***\Blog\hexo\node_modules\bluebird\js\release\promise.js:641:10)</span><br><span class="line">      at _drainQueueStep (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:97:12)</span><br><span class="line">      at _drainQueue (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:86:9)</span><br><span class="line">      at Async._drainQueues (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:102:5)</span><br><span class="line">      at Immediate.Async.drainQueues [as _onImmediate] (E:\***\Blog\hexo\node_modules\bluebird\js\release\async.js:15:14)</span><br><span class="line">      at processImmediate (internal/timers.js:456:21) &#123;</span><br><span class="line">    errno: -4058,</span><br><span class="line">    syscall: &#x27;open&#x27;,</span><br><span class="line">    code: &#x27;ENOENT&#x27;,</span><br><span class="line">    path: &#x27;E:\\***\\Blog\\hexo\\node_modules\\highlight.js/styles/stackoverflow-dark.css&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>需下载代码高亮插件 <code>highlight.js</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install highlight.js</span><br></pre></td></tr></table></figure>
-<h3 id="如何获得管理面板的私钥文件">如何获得管理面板的私钥文件</h3>
-<ul>
-<li>进入<a
-href="https://console.cloud.tencent.com/tcb/env/login">环境-登录授权</a>，点击“自定义登录”右边的“私钥下载”，下载私钥文件（注意：下载新的私钥，旧的私钥一小时后就会失效）</li>
-<li>用文本编辑器打开私钥文件，复制全部内容</li>
-<li>点击评论窗口的“小齿轮”图标，粘贴私钥文件内容，并设置管理员密码</li>
-</ul>
-<h3 id="如何修改重置管理员密码">如何修改、重置管理员密码</h3>
-<p>请前往<a
-href="https://console.cloud.tencent.com/tcb/database/collection/config">云开发控制台</a>编辑配置，删除
-<code>config.ADMIN_PASS</code> 配置项，修改
-<code>config.CREDENTIALS</code> 配置项，换成新的私钥，然后前往 Twikoo
-管理面板重新设置密码。</p>
-<h3 id="如何修改头像">如何修改头像</h3>
-<p>请前往 <a
-href="https://cn.gravatar.com/">https://cn.gravatar.com</a>通过邮箱注册并设定头像，评论时，请留下相同的邮箱。</p>
-<p>访客还可以通过输入数字 QQ 邮箱地址，使用 QQ 头像发表评论。</p>
-<h2 id="相关文档">相关文档</h2>
-<ul>
-<li><a
-href="https://blog.zhheo.com/p/2e6bbbd0.html">在Hexo的Butterfly主题使用Twikoo评论配置及更新教程</a></li>
-<li><a href="https://twikoo.js.org/">Twikoo 中文文档</a></li>
-<li><a href="https://www.imaegoo.com/2021/twikoo-lightgallery/">集成
-Twikoo 与 lightGallery 插件，实现评论图片的点击放大</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-        <tag>Twikoo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Qt中使用Sqlite</title>
-    <url>/2021/11/15/Qt-SQL/</url>
-    <content><![CDATA[<h2 id="前情提要">前情提要</h2>
-<p>由于最近pni项目需要使用到Sqlite存储数据，学习了下在Qt中如何使用Sqlite</p>
-<span id="more"></span>
-<h2 id="使用">使用</h2>
-<h3 id="头文件准备">头文件准备</h3>
-<p>首先在.pro文件里加入</p>
-<blockquote>
-<p>QT += sql</p>
-</blockquote>
-<p>然后在.h文件里加入</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlDatabase&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlError&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QSqlQuery&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="库函数调用">库函数调用</h3>
-<ul>
-<li><p>QSqlDatabase::addDatabase() ，添加QSQLITE数据库</p></li>
-<li><p>pniDatabase.setDatabaseName()，设置数据库的保存路径+保存名称</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//create/link pni database</span></span><br><span class="line">pniDatabase = QSqlDatabase::<span class="built_in">addDatabase</span>(<span class="string">&quot;QSQLITE&quot;</span>);</span><br><span class="line">QString dbname = QDir::<span class="built_in">currentPath</span>() + <span class="built_in">QString</span>(<span class="string">&quot;/data/&quot;</span>) + <span class="built_in">QString</span>(<span class="string">&quot;pniDataBase.db&quot;</span>);</span><br><span class="line"><span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;dbname:&quot;</span> &lt;&lt; dbname;</span><br><span class="line">pniDatabase.<span class="built_in">setDatabaseName</span>(dbname);</span><br><span class="line"><span class="keyword">if</span> (!pniDatabase.<span class="built_in">open</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;pni Database.open failed.&quot;</span> &lt;&lt; pniDatabase.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Succeed to connect pni Database.&quot;</span>;</span><br></pre></td></tr></table></figure></li>
-<li><p>QSqlQuery
-sql_samples(pniDatabase)，用来执行sql语句，有以下两种方法</p>
-<p>可以直接用.exec(const QString&amp;
-query)执行query里面的sql语句内容</p>
-<p>也可以使用.prepare(const QString&amp; query),
-.exec()预先输入query里的sql语句，再加以执行</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Create Table SamplesInfo</span></span><br><span class="line"><span class="keyword">if</span>(!sql_samples.<span class="built_in">exec</span>(<span class="string">&quot;CREATE TABLE SamplesInfo (&quot;</span></span><br><span class="line">                      <span class="string">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT ,&quot;</span></span><br><span class="line">                          <span class="string">&quot;uuid STRING UNIQUE NOT NULL, path STRING NOT NULL,&quot;</span></span><br><span class="line">                          <span class="string">&quot;name STRING NOT NULL&quot;</span></span><br><span class="line">                      <span class="string">&quot;);&quot;</span>))</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;Error: Failed to create SamplesInfo table.&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;SamplesInfo table created!&quot;</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//插入数据库</span></span><br><span class="line"><span class="function">QSqlQuery <span class="title">sql_samples</span><span class="params">(pniDatabase)</span></span>;</span><br><span class="line">sql_samples.<span class="built_in">prepare</span>(<span class="string">&quot;INSERT INTO SamplesInfo (id, uuid, path, name)&quot;</span></span><br><span class="line">                    <span class="string">&quot;VALUES (:id, :uuid, :path, :name)&quot;</span>);</span><br><span class="line"></span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:uuid&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;sampleInfo.uuid));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:path&quot;</span>, QString::<span class="built_in">fromStdString</span>(Information::<span class="built_in">getInstance</span>()-&gt;PETSavePath));</span><br><span class="line">sql_samples.<span class="built_in">bindValue</span>(<span class="string">&quot;:name&quot;</span>, createSamplesDir);</span><br><span class="line"><span class="keyword">if</span> (!sql_samples.<span class="built_in">exec</span>())</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;failed to insert into SamplesInfo Table&quot;</span> &lt;&lt; sql_samples.<span class="built_in">lastError</span>();</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">qDebug</span>() &lt;&lt; <span class="string">&quot;succeed to insert into SamplesInfo Table&quot;</span>;</span><br></pre></td></tr></table></figure>
-<p>第二种方法可以在后续绑定sql语句里面的数值，使其看起来更优美。</p></li>
-</ul>
-<h2 id="ubuntu小工具">Ubuntu小工具</h2>
-<p>生成的.db数据库文件在Ubuntu不方便直接打开，可以下载Ubuntu
-sqlite可视化工具<strong>Sqlite Browser</strong></p>
-]]></content>
-      <categories>
-        <category>Qt</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>POJ 2965 The Pilots Brothers&#39; refrigerator</title>
-    <url>/2020/05/24/POJ-2965/</url>
-    <content><![CDATA[<p>本文为POJ 2965 The Pilots Brothers'
-refrigerator题解。<span id="more"></span></p>
-<p><a href="http://poj.org/problem?id=2965"
-title="POJ-2965链接">POJ-2965链接</a></p>
-<p>大意冰箱门上有4*4的手柄，手柄有开和关两种状态，每次可以选择一个手柄将其和所在的行列全部翻转，问最少几次能打开。</p>
-<p>题目和POJ 1753很像。</p>
-<p>首先分析状态，4*4的手柄，估计状态不会很多，同时对于一个手柄，翻转奇数次或者偶数次的情况是一样的，要么翻一次，要么不翻。</p>
-<p>所以最多需要翻转的次数是16次，从1次到16次，一共有</p>
-<p><span class="math display">\[
-\dbinom{1}{16}+ \dbinom{2}{16}+...+ \dbinom{15}{16}+ \dbinom{16}{16} =
-2^{16}
-\]</span></p>
-<p>同时，我们可以只用一个数字来记录当前冰箱门的状态，每个手柄非开即关，可以用0、1来表示，冰箱门状态可以被一个16位的二进制数代替。</p>
-<p>算法大致思路，首先枚举翻转的次数，从1开始。然后在从冰箱门左上角往右下角进行DFS搜索，如果当前手柄要翻转，则把该当前状态二进制数与该手柄对应的二进制位进行异或。到达条件是冰箱门是否为0。</p>
-<p>代码如下，其实可以不用定义数组，以及可能可以记录状态减少时间，不过懒得改了。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dpos[] = &#123;<span class="number">-4</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> ans = <span class="number">0</span>, num = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">6</span>][<span class="number">6</span>], as = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> des[<span class="number">20</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> ch;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">4</span>; j++)</span><br><span class="line">	&#123;</span><br><span class="line">	    <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>, &amp;ch);</span><br><span class="line">	    <span class="keyword">if</span> (ch == <span class="string">&#x27;+&#x27;</span>)   a[i][j] = <span class="number">1</span>, res++;</span><br><span class="line">	    <span class="keyword">else</span> a[i][j] = <span class="number">0</span>;</span><br><span class="line">	    num = (num&lt;&lt;<span class="number">1</span>)+a[i][j];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (res == <span class="number">0</span>)  ans = <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span> now, <span class="keyword">int</span> pos, <span class="keyword">int</span> cnt)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> nxt = now;</span><br><span class="line">    <span class="keyword">int</span> x = (pos<span class="number">-1</span>)/<span class="number">4</span>+<span class="number">1</span>, y = (pos<span class="number">-1</span>)%<span class="number">4</span>+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (cnt == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">		<span class="keyword">if</span> (now == <span class="number">0</span>)</span><br><span class="line">	    	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (pos + cnt &gt; <span class="number">17</span> || pos &gt; <span class="number">16</span>)  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">		<span class="keyword">if</span> (x+i&lt;=<span class="number">4</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x+i<span class="number">-1</span>)*<span class="number">4</span>+y)));</span><br><span class="line">		<span class="keyword">if</span> (x-i&gt;=<span class="number">1</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x-i<span class="number">-1</span>)*<span class="number">4</span>+y)));</span><br><span class="line">		<span class="keyword">if</span> (y+i&lt;=<span class="number">4</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x<span class="number">-1</span>)*<span class="number">4</span>+y+i)));</span><br><span class="line">		<span class="keyword">if</span> (y-i&gt;=<span class="number">1</span>)  nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-((x<span class="number">-1</span>)*<span class="number">4</span>+y-i)));</span><br><span class="line">    &#125;</span><br><span class="line">    nxt ^= (<span class="number">1</span>&lt;&lt;(<span class="number">16</span>-pos));</span><br><span class="line">    flag = <span class="built_in">search</span>(nxt, pos+<span class="number">1</span>, cnt<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">if</span> (flag == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">		des[++as] = pos;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    flag = <span class="built_in">search</span>(now, pos+<span class="number">1</span>, cnt);</span><br><span class="line">    <span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">work</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cnt;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">-1</span>)</span><br><span class="line">		<span class="keyword">return</span> (<span class="keyword">void</span>) <span class="built_in">printf</span>(<span class="string">&quot;0\n&quot;</span>);</span><br><span class="line">    ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (cnt = <span class="number">1</span>; cnt &lt;= <span class="number">16</span>; cnt++)</span><br><span class="line">    &#123;</span><br><span class="line">		ans = <span class="built_in">search</span>(num, <span class="number">1</span>, cnt);</span><br><span class="line">		<span class="keyword">if</span> (ans != <span class="number">0</span>)  <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (ans == <span class="number">0</span>)  <span class="built_in">printf</span>(<span class="string">&quot;Impossible\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, cnt);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = as; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">		<span class="keyword">int</span> x = (des[i]<span class="number">-1</span>)/<span class="number">4</span>+<span class="number">1</span>, y = (des[i]<span class="number">-1</span>)%<span class="number">4</span>+<span class="number">1</span>;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d %d\n&quot;</span>, x, y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;a.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line">    <span class="built_in">init</span>();</span><br><span class="line">    <span class="built_in">work</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>搜索</tag>
-        <tag>POJ</tag>
       </tags>
   </entry>
 </search>
