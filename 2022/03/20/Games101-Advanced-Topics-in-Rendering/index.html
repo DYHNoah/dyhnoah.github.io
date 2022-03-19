@@ -20,23 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dyhnoah.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Ushioの鸽子屋">
-<meta property="og:url" content="https://dyhnoah.github.io/tags/LeetCode/index.html">
+    <meta name="description" content="本章内容 上一章已经学习了材质和外观，本章将讲述Advanced Topics in Rendering（高级光线传播和材质）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Games101-Lecture18（Advanced Topics in Rendering）学习笔记">
+<meta property="og:url" content="https://dyhnoah.github.io/2022/03/20/Games101-Advanced-Topics-in-Rendering/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
+<meta property="og:description" content="本章内容 上一章已经学习了材质和外观，本章将讲述Advanced Topics in Rendering（高级光线传播和材质）。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-19T16:34:11.000Z">
+<meta property="article:modified_time" content="2022-03-19T16:34:11.000Z">
 <meta property="article:author" content="Ushio">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://dyhnoah.github.io/tags/LeetCode/">
+<link rel="canonical" href="https://dyhnoah.github.io/2022/03/20/Games101-Advanced-Topics-in-Rendering/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/LeetCode/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2022/03/20/Games101-Advanced-Topics-in-Rendering/","path":"2022/03/20/Games101-Advanced-Topics-in-Rendering/","title":"Games101-Lecture18（Advanced Topics in Rendering）学习笔记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: LeetCode | Ushioの鸽子屋</title>
+<title>Games101-Lecture18（Advanced Topics in Rendering）学习笔记 | Ushioの鸽子屋</title>
   
 
 
@@ -132,7 +136,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -145,6 +149,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#advanced-light-transport%E9%AB%98%E7%BA%A7%E5%85%89%E7%BA%BF%E4%BC%A0%E6%92%AD"><span class="nav-number">2.</span> <span class="nav-text">Advanced Light
+Transport（高级光线传播）</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -209,94 +215,135 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">LeetCode
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2022/03/20/Games101-Advanced-Topics-in-Rendering/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ushio">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ushioの鸽子屋">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Games101-Lecture18（Advanced Topics in Rendering）学习笔记 | Ushioの鸽子屋">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Games101-Lecture18（Advanced Topics in Rendering）学习笔记
         </h1>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-03-20 00:34:11" itemprop="dateCreated datePublished" datetime="2022-03-20T00:34:11+08:00">2022-03-20</time>
+    </span>
+
+  
+    <span id="/2022/03/20/Games101-Advanced-Topics-in-Rendering/" class="post-meta-item twikoo_visitors" data-flag-title="Games101-Lecture18（Advanced Topics in Rendering）学习笔记" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="twikoo_visitors"></span>
+    </span>
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>90</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="本章内容">本章内容</h2>
+<p>上一章已经学习了材质和外观，本章将讲述Advanced Topics in
+Rendering（高级光线传播和材质）。</p>
+<span id="more"></span>
+<h2 id="advanced-light-transport高级光线传播">Advanced Light
+Transport（高级光线传播）</h2>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-03-15T19:19:51+08:00"
-              content="2022-03-15">
-          03-15
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/15/LeetCode-6032/" itemprop="url">
-            <span itemprop="name">LeetCode-6032 得到要求路径的最小带权子图</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          
 
-      
-    </header>
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Ushio
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://dyhnoah.github.io/2022/03/20/Games101-Advanced-Topics-in-Rendering/" title="Games101-Lecture18（Advanced Topics in Rendering）学习笔记">https://dyhnoah.github.io/2022/03/20/Games101-Advanced-Topics-in-Rendering/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/03/19/Codeforces-Round773-Div1-D/" rel="prev" title="Codeforces Round 773 Div.1 D. Two Arrays">
+                  <i class="fa fa-chevron-left"></i> Codeforces Round 773 Div.1 D. Two Arrays
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-11-16T01:11:14+08:00"
-              content="2021-11-16">
-          11-16
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/16/LeetCode-391/" itemprop="url">
-            <span itemprop="name">LeetCode-391 完美矩形</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-11-14T01:13:55+08:00"
-              content="2021-11-14">
-          11-14
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/14/LeetCode-138/" itemprop="url">
-            <span itemprop="name">LeetCode-138 复制带随机指针的链表</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
-
-    </div>
-  </div>
-  
-  
-  
-
+    <div class="comments"><div id="twikoo-comments"></div></div>
 </div>
   </main>
 
