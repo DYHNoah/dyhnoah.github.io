@@ -22,8 +22,8 @@
 
     <meta name="description" content="本章内容 最近在学习侯捷的C++视频，顺带记下笔记。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++学习笔记">
-<meta property="og:url" content="https://dyhnoah.github.io/2022/03/31/CPP-Notes/index.html">
+<meta property="og:title" content="C++面向对象高级编程学习笔记（1）">
+<meta property="og:url" content="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
 <meta property="og:description" content="本章内容 最近在学习侯捷的C++视频，顺带记下笔记。">
 <meta property="og:locale" content="zh_CN">
@@ -31,6 +31,13 @@
 <meta property="og:image" content="https://s2.loli.net/2022/03/31/Rd7ln5Y2o4rfFLk.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/31/w2PMpLcButh5Xdl.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/31/dO1nB9N2P3v4ZUl.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/31/RBkdpEe4ryh8Ln3.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/31/xNTkzK9dmPtVUMY.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/31/Yp9PyzWNreZ8waq.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/31/G5sPorgFXyeDE7n.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/31/WAMxJPvjtFeZoD4.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/31/h4TnUxk1DXcslbG.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/31/cLJeV6GFrl1uYs9.png">
 <meta property="article:published_time" content="2022-03-30T16:52:15.000Z">
 <meta property="article:modified_time" content="2022-03-30T16:52:15.000Z">
 <meta property="article:author" content="Ushio">
@@ -39,14 +46,14 @@
 <meta name="twitter:image" content="https://s2.loli.net/2022/03/31/1jxAiMeGvfW5V3J.png">
 
 
-<link rel="canonical" href="https://dyhnoah.github.io/2022/03/31/CPP-Notes/">
+<link rel="canonical" href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2022/03/31/CPP-Notes/","path":"2022/03/31/CPP-Notes/","title":"C++学习笔记"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/","path":"2022/03/31/CPP-OOP-Notes-1/","title":"C++面向对象高级编程学习笔记（1）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>C++学习笔记 | Ushioの鸽子屋</title>
+<title>C++面向对象高级编程学习笔记（1） | Ushioの鸽子屋</title>
   
 
 
@@ -157,7 +164,9 @@
         <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">本章内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="nav-number">2.</span> <span class="nav-text">参数传递与返回值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="nav-number">2.1.</span> <span class="nav-text">构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E9%87%8F%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0"><span class="nav-number">2.2.</span> <span class="nav-text">常量成员函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92pass-by-value-vs.-pass-by-referenceto-const"><span class="nav-number">2.3.</span> <span class="nav-text">参数传递：pass
 by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC%E4%BC%A0%E9%80%92pass-by-value-vs.-pass-by-referenceto-const"><span class="nav-number">2.4.</span> <span class="nav-text">返回值传递：pass
-by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8B%E5%85%83"><span class="nav-number">2.5.</span> <span class="nav-text">友元</span></a></li></ol></li></ol></div>
+by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8B%E5%85%83"><span class="nav-number">2.5.</span> <span class="nav-text">友元</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD%E4%B8%8E%E4%B8%B4%E6%97%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">3.</span> <span class="nav-text">操作符重载与临时对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E5%87%BD%E6%95%B0%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E5%87%BD%E6%95%B0%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">拷贝函数、拷贝赋值函数、析构函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">拷贝构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E5%87%BD%E6%95%B0"><span class="nav-number">4.2.</span> <span class="nav-text">拷贝赋值函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%88%E5%A0%86%E5%92%8C%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">栈、堆和内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%88"><span class="nav-number">5.1.</span> <span class="nav-text">栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A0%86"><span class="nav-number">5.2.</span> <span class="nav-text">堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#static-local-objects%E7%9A%84%E7%94%9F%E5%91%BD%E6%9C%9F"><span class="nav-number">5.3.</span> <span class="nav-text">static local objects的生命期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#new"><span class="nav-number">5.4.</span> <span class="nav-text">new</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete"><span class="nav-number">5.5.</span> <span class="nav-text">delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E6%89%80%E5%BE%97%E7%9A%84%E5%86%85%E5%AD%98%E5%9D%97memory-block-in-vc"><span class="nav-number">5.6.</span> <span class="nav-text">动态分配所得的内存块（memory
+block）, in VC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E6%89%80%E5%BE%97%E7%9A%84-array"><span class="nav-number">5.7.</span> <span class="nav-text">动态分配所得的 array</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-new-%E4%B8%80%E5%AE%9A%E8%A6%81%E6%90%AD%E9%85%8D-array-delete"><span class="nav-number">5.8.</span> <span class="nav-text">array new 一定要搭配 array
+delete</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -233,7 +242,7 @@ by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2022/03/31/CPP-Notes/">
+    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -246,12 +255,12 @@ by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-
     </span>
     
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="C++学习笔记 | Ushioの鸽子屋">
+      <meta itemprop="name" content="C++面向对象高级编程学习笔记（1） | Ushioの鸽子屋">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          C++学习笔记
+          C++面向对象高级编程学习笔记（1）
         </h1>
 
         <div class="post-meta-container">
@@ -275,7 +284,7 @@ by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-
     </span>
 
   
-    <span id="/2022/03/31/CPP-Notes/" class="post-meta-item twikoo_visitors" data-flag-title="C++学习笔记" title="阅读次数">
+    <span id="/2022/03/31/CPP-OOP-Notes-1/" class="post-meta-item twikoo_visitors" data-flag-title="C++面向对象高级编程学习笔记（1）" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -289,14 +298,14 @@ by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>720</span>
+      <span>2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -336,12 +345,70 @@ reference（引用），<strong>引用</strong>在底层的实现就是指针，
 <h3
 id="返回值传递pass-by-value-vs.-pass-by-referenceto-const">返回值传递：pass
 by value vs. pass by reference(to const)</h3>
-<p>返回值<strong>尽量</strong>使用<strong>引用</strong>，</p>
+<p>返回值<strong>尽量</strong>使用<strong>引用</strong>，非必须。</p>
 <p><img src="https://s2.loli.net/2022/03/31/w2PMpLcButh5Xdl.png" style="zoom:40%;" /></p>
 <h3 id="友元">友元</h3>
 <p>相同 class 的各个 objects 互为
 friends（友元），可以直接使用成员变量。</p>
 <p><img src="https://s2.loli.net/2022/03/31/dO1nB9N2P3v4ZUl.png" style="zoom:40%;" /></p>
+<h2 id="操作符重载与临时对象">操作符重载与临时对象</h2>
+<p>返回值<strong>尽量</strong>使用<strong>引用</strong>，非必须。<br />
+当返回值是局部对象，不应该使用<strong>引用</strong>，因为在离开函数后，这个对象就会被释放。如下图，<code>typename()</code>
+会创建一个 <code>typename</code>
+类型的临时对象，运行至下一行就会被<strong>释放</strong>，这里
+<code>typename</code> 指任意类型。</p>
+<p><img src="https://s2.loli.net/2022/03/31/RBkdpEe4ryh8Ln3.png" style="zoom:40%;" /></p>
+<h2
+id="拷贝函数拷贝赋值函数析构函数">拷贝函数、拷贝赋值函数、析构函数</h2>
+<h3 id="拷贝构造函数">拷贝构造函数</h3>
+<p>如果类里面存在指针成员，必须要重写拷贝构造函数和拷贝赋值函数。<br />
+如果不重写这些函数，C++默认的拷贝构造函数和拷贝赋值函数是<strong>逐字节复制（浅拷贝）</strong>，如下图所示，会出现
+a 和 b 同时指向一个地址，同时 b
+原先指向的地址存在内存泄漏的风险。因此我们需要使用深拷贝。</p>
+<p><img src="https://s2.loli.net/2022/03/31/xNTkzK9dmPtVUMY.png" style="zoom:50%;" /></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="title">MyString::MyString</span><span class="params">(<span class="keyword">const</span> MyString&amp; str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_data = <span class="keyword">new</span> <span class="keyword">char</span>[ <span class="built_in">strlen</span>(str.m_data) + <span class="number">1</span>];</span><br><span class="line">    <span class="built_in">strcpy</span>(m_data, str.m_data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="拷贝赋值函数">拷贝赋值函数</h3>
+<p>如果我们想将 B 拷贝给 A ，拷贝赋值函数的过程：</p>
+<ul>
+<li>先将 A 内的值清空</li>
+<li>在 A 内分配与 B 一样大的空间</li>
+<li>再将 B 赋值给 A</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">inline</span> MyString &amp; MyString::<span class="keyword">operator</span>=(<span class="keyword">const</span> MyString&amp; str)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span> == &amp;str)</span><br><span class="line">		<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">delete</span>[] m_data;</span><br><span class="line">    m_data = <span class="keyword">new</span> <span class="keyword">char</span>[ <span class="built_in">strlen</span>(str.m_data) + <span class="number">1</span>];</span><br><span class="line">    <span class="built_in">strcpy</span>(m_data, str.m_data);</span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="栈堆和内存管理">栈、堆和内存管理</h2>
+<h3 id="栈">栈</h3>
+<p>栈，存在于某作用域的一块内存空间。例如调用函数，函数本身即会形成一个<strong>栈</strong>用来放置它所接收的参数，以及返回地址。<br />
+在函数本体内声明的任何变量，其所使用的内存块都取自上述栈。</p>
+<h3 id="堆">堆</h3>
+<p>或者称为系统堆，是指由操作系统提供的一块全局内存空间，程序可动态分配从其中获得若干区块，从堆上动态分配的内存需要手动释放。</p>
+<h3 id="static-local-objects的生命期">static local objects的生命期</h3>
+<p>其生命在作用域结束后仍然存在，直到整个程序结束。</p>
+<h3 id="new">new</h3>
+<p>new：先分配memory，再调用构造函数。</p>
+<p><img src="https://s2.loli.net/2022/03/31/Yp9PyzWNreZ8waq.png" style="zoom:40%;" /></p>
+<h3 id="delete">delete</h3>
+<p>delete：先调用析构函数，再释放memory。<br />
+如下图，首先调用析构函数，将字符串里面动态分配的内存释放，之后再调用
+<code>operator delete</code> 删除字符串本身（指针）。</p>
+<p><img src="https://s2.loli.net/2022/03/31/G5sPorgFXyeDE7n.png" style="zoom:40%;" /></p>
+<h3
+id="动态分配所得的内存块memory-block-in-vc">动态分配所得的内存块（memory
+block）, in VC</h3>
+<p>如下图，绿色区域是定义的变量大小，灰色区域是 Debug
+模式下分配的大小，青绿色区域是内存补齐的空间，红色区域是cookie，便于系统判断内存块的起始位置。</p>
+<p><img src="https://s2.loli.net/2022/03/31/WAMxJPvjtFeZoD4.png" style="zoom:50%;" /></p>
+<h3 id="动态分配所得的-array">动态分配所得的 array</h3>
+<p>如下图，在 VC 中分配长度为 3 的
+Complex，内存块包含上下的cookie、Debug下的内存块、3个 Complex
+变量的内存、一个 int 来记录数组长度。</p>
+<p><img src="https://s2.loli.net/2022/03/31/h4TnUxk1DXcslbG.png" style="zoom:50%;" /></p>
+<h3 id="array-new-一定要搭配-array-delete">array new 一定要搭配 array
+delete</h3>
+<p>使用 <code>new []</code> 要搭配 <code>delete[]</code>
+使用，如下图，左边可以将 3 个 String 变量都释放，而右边只用了
+<code>delete</code> ，会导致系统只释放第一个 String
+，后面两个不会被释放。</p>
+<p><img src="https://s2.loli.net/2022/03/31/cLJeV6GFrl1uYs9.png" style="zoom:50%;" /></p>
 
     </div>
 
@@ -359,7 +426,7 @@ friends（友元），可以直接使用成员变量。</p>
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://dyhnoah.github.io/2022/03/31/CPP-Notes/" title="C++学习笔记">https://dyhnoah.github.io/2022/03/31/CPP-Notes/</a>
+      <a href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/" title="C++面向对象高级编程学习笔记（1）">https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -412,13 +479,13 @@ friends（友元），可以直接使用成员变量。</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">79k</span>
+    <span title="站点总字数">81k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:12</span>
+    <span title="站点阅读时长">1:13</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
