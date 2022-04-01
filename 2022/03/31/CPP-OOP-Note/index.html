@@ -22,8 +22,8 @@
 
     <meta name="description" content="本章内容 最近在学习侯捷的C++视频，顺带记下笔记。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++面向对象高级编程学习笔记（1）">
-<meta property="og:url" content="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/index.html">
+<meta property="og:title" content="C++面向对象高级编程学习笔记">
+<meta property="og:url" content="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Note/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
 <meta property="og:description" content="本章内容 最近在学习侯捷的C++视频，顺带记下笔记。">
 <meta property="og:locale" content="zh_CN">
@@ -38,6 +38,8 @@
 <meta property="og:image" content="https://s2.loli.net/2022/03/31/WAMxJPvjtFeZoD4.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/31/h4TnUxk1DXcslbG.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/31/cLJeV6GFrl1uYs9.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/01/hYOJtgkxUVpWcm1.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/01/KpOjV6itclezsb1.png">
 <meta property="article:published_time" content="2022-03-30T16:52:15.000Z">
 <meta property="article:modified_time" content="2022-03-30T16:52:15.000Z">
 <meta property="article:author" content="Ushio">
@@ -46,14 +48,14 @@
 <meta name="twitter:image" content="https://s2.loli.net/2022/03/31/1jxAiMeGvfW5V3J.png">
 
 
-<link rel="canonical" href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/">
+<link rel="canonical" href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Note/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/","path":"2022/03/31/CPP-OOP-Notes-1/","title":"C++面向对象高级编程学习笔记（1）"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2022/03/31/CPP-OOP-Note/","path":"2022/03/31/CPP-OOP-Note/","title":"C++面向对象高级编程学习笔记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>C++面向对象高级编程学习笔记（1） | Ushioの鸽子屋</title>
+<title>C++面向对象高级编程学习笔记 | Ushioの鸽子屋</title>
   
 
 
@@ -166,7 +168,10 @@
 by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC%E4%BC%A0%E9%80%92pass-by-value-vs.-pass-by-referenceto-const"><span class="nav-number">2.4.</span> <span class="nav-text">返回值传递：pass
 by value vs. pass by reference(to const)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8B%E5%85%83"><span class="nav-number">2.5.</span> <span class="nav-text">友元</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD%E4%B8%8E%E4%B8%B4%E6%97%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">3.</span> <span class="nav-text">操作符重载与临时对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E5%87%BD%E6%95%B0%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E5%87%BD%E6%95%B0%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">拷贝函数、拷贝赋值函数、析构函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">拷贝构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E5%87%BD%E6%95%B0"><span class="nav-number">4.2.</span> <span class="nav-text">拷贝赋值函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%88%E5%A0%86%E5%92%8C%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">栈、堆和内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%88"><span class="nav-number">5.1.</span> <span class="nav-text">栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A0%86"><span class="nav-number">5.2.</span> <span class="nav-text">堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#static-local-objects%E7%9A%84%E7%94%9F%E5%91%BD%E6%9C%9F"><span class="nav-number">5.3.</span> <span class="nav-text">static local objects的生命期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#new"><span class="nav-number">5.4.</span> <span class="nav-text">new</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete"><span class="nav-number">5.5.</span> <span class="nav-text">delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E6%89%80%E5%BE%97%E7%9A%84%E5%86%85%E5%AD%98%E5%9D%97memory-block-in-vc"><span class="nav-number">5.6.</span> <span class="nav-text">动态分配所得的内存块（memory
 block）, in VC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E6%89%80%E5%BE%97%E7%9A%84-array"><span class="nav-number">5.7.</span> <span class="nav-text">动态分配所得的 array</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-new-%E4%B8%80%E5%AE%9A%E8%A6%81%E6%90%AD%E9%85%8D-array-delete"><span class="nav-number">5.8.</span> <span class="nav-text">array new 一定要搭配 array
-delete</span></a></li></ol></li></ol></div>
+delete</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B1%BB%E6%A8%A1%E6%9D%BF%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E7%AD%89"><span class="nav-number">6.</span> <span class="nav-text">类模板、函数模板等</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#static"><span class="nav-number">6.1.</span> <span class="nav-text">static</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%84%E5%90%88%E5%92%8C%E7%BB%A7%E6%89%BF"><span class="nav-number">7.</span> <span class="nav-text">组合和继承</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#composition%E5%A4%8D%E5%90%88%E5%85%B3%E7%B3%BB%E4%B8%8B%E7%9A%84%E6%9E%84%E9%80%A0%E5%92%8C%E6%9E%90%E6%9E%84"><span class="nav-number">7.1.</span> <span class="nav-text">Composition（复合）关系下的构造和析构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delegation%E5%A7%94%E6%89%98composition-by-reference"><span class="nav-number">7.2.</span> <span class="nav-text">Delegation（委托）&#x2F;Composition
+by reference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#inheritance%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB%E4%B8%8B%E7%9A%84%E6%9E%84%E9%80%A0%E5%92%8C%E6%9E%90%E6%9E%84"><span class="nav-number">7.3.</span> <span class="nav-text">Inheritance（继承）关系下的构造和析构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%9A%E6%80%81"><span class="nav-number">8.</span> <span class="nav-text">虚函数与多态</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inheritance-%E7%B9%BC%E6%89%BF-with-virtual-functions-%E8%99%9B%E5%87%BD%E6%95%B8"><span class="nav-number">8.1.</span> <span class="nav-text">Inheritance
+(繼承) with virtual functions (虛函數)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#inheritancecomposition-%E5%85%B3%E7%B3%BB%E4%B8%8B%E7%9A%84%E6%9E%84%E9%80%A0%E5%92%8C%E6%9E%90%E6%9E%84"><span class="nav-number">8.2.</span> <span class="nav-text">Inheritance+Composition
+关系下的构造和析构</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -242,7 +247,7 @@ delete</span></a></li></ol></li></ol></div>
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/">
+    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Note/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -255,12 +260,12 @@ delete</span></a></li></ol></li></ol></div>
     </span>
     
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="C++面向对象高级编程学习笔记（1） | Ushioの鸽子屋">
+      <meta itemprop="name" content="C++面向对象高级编程学习笔记 | Ushioの鸽子屋">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          C++面向对象高级编程学习笔记（1）
+          C++面向对象高级编程学习笔记
         </h1>
 
         <div class="post-meta-container">
@@ -284,7 +289,7 @@ delete</span></a></li></ol></li></ol></div>
     </span>
 
   
-    <span id="/2022/03/31/CPP-OOP-Notes-1/" class="post-meta-item twikoo_visitors" data-flag-title="C++面向对象高级编程学习笔记（1）" title="阅读次数">
+    <span id="/2022/03/31/CPP-OOP-Note/" class="post-meta-item twikoo_visitors" data-flag-title="C++面向对象高级编程学习笔记" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -298,14 +303,14 @@ delete</span></a></li></ol></li></ol></div>
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2k</span>
+      <span>3.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
+      <span>3 分钟</span>
     </span>
 </div>
 
@@ -409,6 +414,53 @@ delete</h3>
 <code>delete</code> ，会导致系统只释放第一个 String
 ，后面两个不会被释放。</p>
 <p><img src="https://s2.loli.net/2022/03/31/cLJeV6GFrl1uYs9.png" style="zoom:50%;" /></p>
+<h2 id="类模板函数模板等">类模板、函数模板等</h2>
+<h3 id="static">static</h3>
+<p>写的一行代码使得变量获得内存称之为定义，与声明的区别如下。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Account</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">double</span> m_rate;			<span class="comment">//声明</span></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">set_rate</span><span class="params">(<span class="keyword">const</span> <span class="keyword">double</span>&amp; x)</span>  </span>&#123; m_rate = x; &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">double</span> Account::m_rate = <span class="number">8.0</span>;		<span class="comment">//定义</span></span><br></pre></td></tr></table></figure>
+<h2 id="组合和继承">组合和继承</h2>
+<h3
+id="composition复合关系下的构造和析构">Composition（复合）关系下的构造和析构</h3>
+<p>Container的构造由内而外，析构由外而内。</p>
+<h3
+id="delegation委托composition-by-reference">Delegation（委托）/Composition
+by reference</h3>
+<p>如下图所示，在左边的类中包含 <code>StringRep</code> 的指针，对于
+<code>String</code> 类的实现都放在 <code>StringRep</code>
+类中，这样称为Delegation（委托），也是pImpl 模式。优点如下：</p>
+<ul>
+<li>类方法定义与函数分离，适合作为API使用
+类的实现对用户来说完全是黑盒，在头文件中声明的类仅包含对用户有用的信息。</li>
+<li>加快编译速度 a.hpp 定义了类A，b.cpp 调用了类 A 的方法。当 A
+的方式实现变动时，传统方式 b.cpp 需要重新编译，PIMPL 模式下类 A
+的方法实现变动对外透明，b.cpp 无需重新编译</li>
+<li>二进制兼容性</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/04/01/hYOJtgkxUVpWcm1.png" alt="image-20220401204540652" style="zoom:40%;" /></p>
+<h3
+id="inheritance继承关系下的构造和析构">Inheritance（继承）关系下的构造和析构</h3>
+<p>构造由内而外，先调用父类的 default
+构造函数，然后才执行自己的构造函数。<br />
+析构由外而内，先执行自己的析构函数，然后才调用父类的析构函数。<br />
+注：父类的析构函数最好设为虚函数。</p>
+<h2 id="虚函数与多态">虚函数与多态</h2>
+<h3 id="inheritance-繼承-with-virtual-functions-虛函數">Inheritance
+(繼承) with virtual functions (虛函數)</h3>
+<p>non-virtual 函数：不希望 derived class 重新定义 （override, 覆写）
+。<br />
+virtual 函数：希望 derived class 重新定义（override,
+覆写)）它，且对它已有默认定义。<br />
+pure virtual 函数：希望 derived class 一定要重新定义 （override 覆写）
+它，对它没有默认定义。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Shape</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> <span class="keyword">const</span> </span>= <span class="number">0</span>;					<span class="comment">//pure virtual</span></span><br><span class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">error</span><span class="params">(<span class="keyword">const</span> std::string&amp; msg)</span></span>;		<span class="comment">//impure virtual</span></span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">objectID</span><span class="params">()</span> <span class="keyword">const</span></span>;							<span class="comment">//non-virtual</span></span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span>:</span> <span class="keyword">public</span> Shape &#123;...&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ellipse</span>:</span> <span class="keyword">public</span> Shape &#123;...&#125;;</span><br></pre></td></tr></table></figure>
+<h3
+id="inheritancecomposition-关系下的构造和析构">Inheritance+Composition
+关系下的构造和析构</h3>
+<p>如下图，上方，构造的顺序是 Base -&gt; Component -&gt;
+Derived，析构的顺序是 Derived -&gt; Component -&gt; Base<br />
+下方，构造的顺序是 Component -&gt; Base -&gt; Derived，析构的顺序是
+Derived -&gt; Base -&gt; Component</p>
+<p><img src="https://s2.loli.net/2022/04/01/KpOjV6itclezsb1.png" alt="image-20220401212715119" style="zoom:50%;" /></p>
 
     </div>
 
@@ -426,7 +478,7 @@ delete</h3>
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/" title="C++面向对象高级编程学习笔记（1）">https://dyhnoah.github.io/2022/03/31/CPP-OOP-Notes-1/</a>
+      <a href="https://dyhnoah.github.io/2022/03/31/CPP-OOP-Note/" title="C++面向对象高级编程学习笔记">https://dyhnoah.github.io/2022/03/31/CPP-OOP-Note/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -479,13 +531,13 @@ delete</h3>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">81k</span>
+    <span title="站点总字数">82k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:13</span>
+    <span title="站点阅读时长">1:14</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
