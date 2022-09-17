@@ -23,7 +23,7 @@
     <meta name="description" content="前情提要 由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DPDK学习">
-<meta property="og:url" content="https://dyhnoah.github.io/2021/07/01/learndpdk/index.html">
+<meta property="og:url" content="https://dyhnoah.github.io/2021/07/01/learn-dpdk/index.html">
 <meta property="og:site_name" content="Ushioの鸽子屋">
 <meta property="og:description" content="前情提要 由于最近pni项目需要处理的数据集提高了几个量级，原有的带宽速率显得不够，因此考虑在linux环境下提高网络速率，结合之前的项目实战，选择了使用DPDK。">
 <meta property="og:locale" content="zh_CN">
@@ -52,11 +52,11 @@
 <meta name="twitter:image" content="https://i.loli.net/2021/07/01/DYiWVrwSQkBsTZG.png">
 
 
-<link rel="canonical" href="https://dyhnoah.github.io/2021/07/01/learndpdk/">
+<link rel="canonical" href="https://dyhnoah.github.io/2021/07/01/learn-dpdk/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2021/07/01/learndpdk/","path":"2021/07/01/learndpdk/","title":"DPDK学习"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dyhnoah.github.io/2021/07/01/learn-dpdk/","path":"2021/07/01/learn-dpdk/","title":"DPDK学习"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>DPDK学习 | Ushioの鸽子屋</title>
@@ -183,18 +183,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-count">37</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-count">27</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -244,7 +244,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2021/07/01/learndpdk/">
+    <link itemprop="mainEntityOfPage" href="https://dyhnoah.github.io/2021/07/01/learn-dpdk/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -285,14 +285,6 @@
         </span>
     </span>
 
-  
-    <span id="/2021/07/01/learndpdk/" class="post-meta-item twikoo_visitors" data-flag-title="DPDK学习" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span id="twikoo_visitors"></span>
-    </span>
   
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
@@ -453,7 +445,7 @@ alt="测试程序" />
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://dyhnoah.github.io/2021/07/01/learndpdk/" title="DPDK学习">https://dyhnoah.github.io/2021/07/01/learndpdk/</a>
+      <a href="https://dyhnoah.github.io/2021/07/01/learn-dpdk/" title="DPDK学习">https://dyhnoah.github.io/2021/07/01/learn-dpdk/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -489,7 +481,7 @@ alt="测试程序" />
 
 
 
-    <div class="comments"><div id="twikoo-comments"></div></div>
+    <div class="comments utterances-container"></div>
 </div>
   </main>
 
@@ -510,13 +502,13 @@ alt="测试程序" />
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">97k</span>
+    <span title="站点总字数">98k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:28</span>
+    <span title="站点阅读时长">1:29</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
@@ -548,27 +540,8 @@ alt="测试程序" />
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
-<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":true,"envId":"hello-cloudbase-2go38lhz3b8945e4","el":"#twikoo-comments"}</script>
-<script>
-document.addEventListener('page:loaded', () => {
-  NexT.utils.loadComments(CONFIG.twikoo.el)
-    .then(() => NexT.utils.getScript(
-      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
-      { condition: window.twikoo }
-    ))
-    .then(() => {
-      twikoo.init(CONFIG.twikoo);
-    });
-});
-</script>
-<style>
-.post-block, .comments {
-  overflow: visible;
-}
-.tk-owo-emotion {
-  display: inline-block;
-}
-</style>
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"DYHNoah/blog-comments","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
 
 </body>
 </html>
